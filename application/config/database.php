@@ -48,6 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
+
 $db['default']['hostname'] = 'a0mds790rk.database.windows.net';
 $db['default']['username'] = 'gamegolf';
 $db['default']['password'] = 'Golfgolf1';
