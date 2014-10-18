@@ -39,7 +39,7 @@
 */
 
 $route['default_controller'] = "welcome";
-$route['404_override'] = '';
+$route['404_override'] = 'http://eiei.azurewebsites.net';
 
 
 /* End of file routes.php */
