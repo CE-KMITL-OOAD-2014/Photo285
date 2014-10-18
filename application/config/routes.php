@@ -39,7 +39,7 @@
 */
 
 $route['default_controller'] = "welcome";
-$route['404_override'] = 'views/welcome_message';
+$route['404_override'] = 'views/welcome_message.php';
 
 
 /* End of file routes.php */
