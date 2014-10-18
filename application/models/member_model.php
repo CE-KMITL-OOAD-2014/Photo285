@@ -1,7 +1,7 @@
 <?php
 	class Member_model extends CI_Model{
 		function register($data){
-			$this->db->insert('UserDB',$data);	
+			$this->db->insert('UserDBE',$data);	
 		}	
 	}
 ?>
