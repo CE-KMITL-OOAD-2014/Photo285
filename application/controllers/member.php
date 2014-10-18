@@ -1,7 +1,8 @@
 <?
 class Member extends CI_Controller {
+$ID = 1;
 	public function register(){
-			$ID = $_POST["ID"];
+			$ID++;
 			$ids = $_POST["ids"];
 			$pass = md5($_POST["pass"]);
 			$name = $_POST["name"];
