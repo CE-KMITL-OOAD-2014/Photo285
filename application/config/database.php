@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'nd9d4o512t.database.windows.net';
+$db['default']['hostname'] = 'a0mds790rk.database.windows.net';
 $db['default']['username'] = 'gamegolf';
 $db['default']['password'] = 'Golfgolf1';
 $db['default']['database'] = 'eieidb';
