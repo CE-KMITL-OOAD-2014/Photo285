@@ -19,46 +19,46 @@
 
   </head>
   <body>
-	<nav class="navbar navbar-default" role="navigation">
-	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		<a class="navbar-brand" href="#">Photo285</a>
-		</div>
+	<nav class="navbar navbar-default" role="navigation">   <!--เริ่ม NAVBAR--------------->
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Photo285</a> <!---------------ชื่อ PHOTO285------------------->
+			</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		<ul class="nav navbar-nav">
-		  <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target=".bs-example-modal-lg1">Sign Up</button>
-		</ul>
-		  <ul class="nav navbar-nav navbar-right">
-		  <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target=".bs-example-modal-lg2"><a href = "#">Log in</a></button>
-		  </ul>      
-		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
-	</nav>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-----เปิด NAVBARCOLLAPSE---->
+				<ul class="nav navbar-nav"> <!-----เปิด NAVBAR ฝั่งซ้าย--->
+					<button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target=".bs-example-modal-lg1">Sign Up</button> <!------------------------SIGN UP-->
+				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
+				<ul class="nav navbar-nav navbar-right"> <!-----เปิด NAVBAR ฝั่งขวา--->
+					<button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target=".bs-example-modal-lg2"><a href = "#">Log in</a></button> <!------LOG IN------>
+				</ul>   <!-----ปิด NAVBAR ฝั่งขวา--->
+			</div><!-- ปิด COLLAPSE -->
+		</div><!-- /.container-fluid -->
+	</nav> <!--  จบ NAVBAR------------------->
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">   <!--------------------------เปิดโค้ดส่วน ไสลด์รูป>
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
+  </ol> 
 
   <!-- xWrapper for slides -->
-  <div class="carousel-inner">
+  <div class="carousel-inner"> 
     <div class="item active">
 		<img class="img-responsive center-block" src="img/Tulips.jpg" alt="...">
 		<div class="carousel-caption">
@@ -80,22 +80,22 @@
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <!-- เปิด ส่วนที่ทำให้รูปสไลด์ไปทางซ้าย---------->
     <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  </a> <!--ปิด ส่วนที่ทำให้รูปสไลด์ไปทางซ้าย---------->
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <!-- เปิด ส่วนที่ทำให้รูปสไลด์ไปทางขวา---------->
     <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
+  </a> <!--ปิด ส่วนที่ทำให้รูปสไลด์ไปทางขวา---------->
+</div> <!--ปิดโค้ดส่วนสไลด์รูป---------------------->
 
 
     <!-- Modal -->
-	<div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!--ส่วนเชื่อม แถบเด้งๆ---ของ SIGN UP------->
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 				<div class= "row">
-					<form role="form">
-						<div class="col-md-12">
+					<form role="form">  
+						<div class="col-md-12">  <!--ส่วนกรอก username------>
 								<div class="form-group">
 									<div class="col-md-12">
 										<label for="exampleInputUsername1">Username</label>
@@ -104,8 +104,8 @@
 										<input type="username" class="form-control " width = "50%" id="exampleInputUsername1" placeholder="Enter username">
 									</div>
 								</div>
-						</div>
-						<div class="col-md-12">
+						</div> <!--ส่วนกรอก username------>
+						<div class="col-md-12"> <!--ส่วนกรอก NAME------>
 							<div class="form-group">
 								<div class="col-md-12">
 									<label for="exampleInputName1">Name</label>
@@ -114,8 +114,8 @@
 									<input type="name" class="form-control" id="exampleInputName1" placeholder="Enter name">
 								</div>
 							</div>
-						</div>
-						<div class="col-md-12">
+						</div>  <!--ส่วนกรอก NAME------>
+						<div class="col-md-12">  <!--ส่วนกรอก EMAIL------>
 							<div class="form-group">
 								<div class="col-md-12">
 									<label for="exampleInputEmail1">Email address</label>
@@ -124,8 +124,8 @@
 									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
 								</div>
 							</div>
-						</div>
-						<div class="col-md-12">
+						</div>  <!--ส่วนกรอก EMAIL------>
+						<div class="col-md-12"> <!--ส่วนกรอก PASSWAORD---->
 							<div class="form-group">
 								<div class="col-md-12">
 									<label for="exampleInputPassword1">Password</label>
@@ -134,8 +134,8 @@
 									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 								</div>
 							</div>
-						</div>
-						<div class="col-md-12">
+						</div> <!--ส่วนกรอก PASSWAORD---->
+						<div class="col-md-12"> <!--ส่วนกรอก คำอธิบาย---->
 							<div class="form-group">
 								<div class="col-md-12">
 								<label for="exampleInputDescription1">Description</label>
@@ -144,8 +144,8 @@
 								<input type="description" class="form-control" id="exampleInputDescription1" placeholder="What do you want to tell?">
 								</div>
 							</div>
-						</div>
-						<div class="col-md-12">
+						</div> <!--ส่วนกรอก คำอธิบาย---->
+						<div class="col-md-12"> <!--ส่วนใส่ ไฟล์---->
 							<div class="form-group">
 								<div class="col-md-12">
 								<label for="exampleInputFile">File input</label>
@@ -155,8 +155,8 @@
 								</div>
 								<!--p class="help-block">Example block-level help text here.</p-->
 							</div>
-						</div>
-						<div class="col-md-12">
+						</div> <!--ส่วนใส่ ไฟล์---->
+						<div class="col-md-12"> <!------ส่วนติ๊กถูก--->
 							<div class="checkbox">
 								<label>
 								<div class="col-md-12">
@@ -164,20 +164,20 @@
 								</div>
 								</label>
 							</div>
-						</div>
-						<div class="col-md-12">
+						</div> <!------ส่วนติ๊กถูก--->
+						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
 							<div class="col-md-12">
 							<button type="submit" class="btn btn-default">Submit</button>
 							</div>
-						</div>
+						</div> <!------ส่วนกด SUMMIT--->
 					</form>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>  <!--ปิดส่วนเชื่อม แถบเด้งๆ-----ของ SIGN UP----->
 	
 	 <!-- Modal -->
-	<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!--ส่วนเชื่อม แถบเด้งๆ---ของ LOG IN------->
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 					<form class="form-signin" role="form">
@@ -203,6 +203,6 @@
 					</form>
 			</div>
 		</div>
-	</div>
+	</div> <!--ส่วนเชื่อม แถบเด้งๆ---ของ LOG IN------->
   </body>
 </html>
