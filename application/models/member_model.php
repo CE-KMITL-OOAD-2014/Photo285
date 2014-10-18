@@ -3,8 +3,5 @@
 		function register($data){
 			$this->db->insert('paeeiei',$data);
 		}	
-		function memberDetail(){
-			$plist = $this->db->get('member');
-		}
 	}
 ?>
