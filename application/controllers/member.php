@@ -7,7 +7,7 @@ class Member extends CI_Controller {
 			$namejing = $_POST["namejing"];
 			$data = array('username'=>$username,'password'=>$password,'namejing'=>$namejing);
 			$this->load->models('member_model');	
-			$this->load->models>member_model->register($data);
+			$this->member_model->register($data);
 		}
 }
 ?>
