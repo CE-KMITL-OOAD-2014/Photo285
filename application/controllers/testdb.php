@@ -9,3 +9,4 @@ class Testdb extends CI_Controller {
 	}
 }
 
+?>
