@@ -2,7 +2,7 @@
 
 
 /*$config['base_url']	= '';*/
-$config['base_url'] = 'http://'.$_SERVER['eiei.azurewebsites.net'].'/controllers';
+$config['base_url'] = 'http://eiei.azurewebsites.net/';
 
 $config['index_page'] = '';
 
