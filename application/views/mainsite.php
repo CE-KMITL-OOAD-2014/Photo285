@@ -94,7 +94,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 				<div class= "row">
-					<form role="form">  
+					<form role="form" action="../member/mainsite">  
 					
 						<div class="col-md-12">  <!--ส่วนกรอก username----A-->
 								<div class="form-group">
