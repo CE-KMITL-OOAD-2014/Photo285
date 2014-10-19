@@ -171,7 +171,7 @@
 						</div> <!------ส่วนติ๊กถูก--->
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
 							<div class="col-md-12">
-							<button type="submit" class="btn btn-default">Submit</button>
+							<button type="submit" value="OK" class="btn btn-default">Submit</button>
 							</div>
 						</div> <!------ส่วนกด SUMMIT--->
 					</form>
