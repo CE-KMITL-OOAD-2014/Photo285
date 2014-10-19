@@ -5,8 +5,9 @@ class Member extends CI_Controller {
 			$ID = $_POST["ID"];
 			$pass = md5($_POST["pass"]);
 			$name = $_POST["name"];
-			$data = array('ID'=>$ID,'pass'=>$pass,'name'=>$name);
-			$this->load->models('member_model');	
+			$email = $_POST["email"];
+			$data = array('ID'=>$ID,'pass'=>$pass,'name'=>$name,'email'=>$email);
+			$this->load->model('member_model');	
 			$this->member_model->register($data);
 		}
 }

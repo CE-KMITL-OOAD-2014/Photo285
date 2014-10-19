@@ -96,40 +96,40 @@
 				<div class= "row">
 					<form role="form">  
 					
-						<div class="col-md-12">  <!--ส่วนกรอก username------>
+						<div class="col-md-12">  <!--ส่วนกรอก username----A-->
 								<div class="form-group">
 									<div class="col-md-12">
 										<label for="exampleInputUsername1">Username</label>
 									</div>
 									<div class="col-md-12">
-										<input type="username" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" placeholder="Enter username">
+										<input type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" placeholder="Enter username">
 									</div>
 								</div>
 						</div> <!--ส่วนกรอก username------>
 						
-						<div class="col-md-12"> <!--ส่วนกรอก NAME------>
+						<div class="col-md-12"> <!--ส่วนกรอก NAME----A-->
 							<div class="form-group">
 								<div class="col-md-12">
 									<label for="exampleInputName1">Name</label>
 								</div>
 								<div class="col-md-12">
-									<input type="name" name="name" class="form-control" id="exampleInputName1" placeholder="Enter name">
+									<input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="Enter name">
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NAME------>
 						
-						
-						<div class="col-md-12">  <!--ส่วนกรอก EMAIL------>
+						<div class="col-md-12">  <!--ส่วนกรอก EMAIL----A-->
 							<div class="form-group">
 								<div class="col-md-12">
 									<label for="exampleInputEmail1">Email address</label>
 								</div>
 								<div class="col-md-12">
-									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+									<input type="text" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก EMAIL------>
-						<div class="col-md-12"> <!--ส่วนกรอก PASSWAORD---->
+						
+						<div class="col-md-12"> <!--ส่วนกรอก PASSWAORD--A-->
 							<div class="form-group">
 								<div class="col-md-12">
 									<label for="exampleInputPassword1">Password</label>
@@ -139,36 +139,6 @@
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก PASSWAORD---->
-						<div class="col-md-12"> <!--ส่วนกรอก คำอธิบาย---->
-							<div class="form-group">
-								<div class="col-md-12">
-								<label for="exampleInputDescription1">Description</label>
-								</div>
-								<div class="col-md-12">
-								<input type="description" class="form-control" id="exampleInputDescription1" placeholder="What do you want to tell?">
-								</div>
-							</div>
-						</div> <!--ส่วนกรอก คำอธิบาย---->
-						<div class="col-md-12"> <!--ส่วนใส่ ไฟล์---->
-							<div class="form-group">
-								<div class="col-md-12">
-								<label for="exampleInputFile">File input</label>
-								</div>
-								<div class="col-md-12">
-								<input type="file" id="exampleInputFile">
-								</div>
-								<!--p class="help-block">Example block-level help text here.</p-->
-							</div>
-						</div> <!--ส่วนใส่ ไฟล์---->
-						<div class="col-md-12"> <!------ส่วนติ๊กถูก--->
-							<div class="checkbox">
-								<label>
-								<div class="col-md-12">
-								<input type="checkbox"> Check me out
-								</div>
-								</label>
-							</div>
-						</div> <!------ส่วนติ๊กถูก--->
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
 							<div class="col-md-12">
 							<button type="submit" value="OK" class="btn btn-default">Submit</button>
