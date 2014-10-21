@@ -139,13 +139,17 @@
 									<label for="exampleInputPassword1">Confirm Password</label>
 								</div>
 								<div class="col-md-12">
-									<input type="password" name="cpass" class="form-control" id="cpass" placeholder="Password" data-bv-identical-message="The password and its confirm are not the same" required autofocus>
+									<input type="password" name="cpass" class="form-control" id="cpass" placeholder="Password" required autofocus>
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
 						<script>
 						$('form').on('submit',function(){
 						   if($('#pass').val()!=$('#cpass').val()){
+							identical: {
+                        field: 'pass',
+                        message: 'The password and its confirm are not the same'
+                    }
 							   alert('Password not matches');
 							   return false;
 						   }
