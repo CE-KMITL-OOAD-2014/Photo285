@@ -118,15 +118,6 @@
 								</div>
 								<div class="col-md-12">
 									<input type="text" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-									$this->load->helper('email');
-									if (valid_email('email'))
-									{
-										echo 'email is valid';
-									}
-									else
-									{
-										echo 'email is not valid';
-									}
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก EMAIL------>
@@ -192,5 +183,9 @@
 			</div>
 		</div>
 	</div> <!--ส่วนเชื่อม แถบเด้งๆ---ของ LOG IN------->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
