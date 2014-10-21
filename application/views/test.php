@@ -24,42 +24,20 @@
 			<div class="modal-content"> 
 				<div class= "row">
 					<form role="form" action="../member/register" method="post">  
-						<br/>
-						<div class="col-md-12"> <!--ส่วนกรอก PASSWAORD--A-->
-							<div class="form-group">
-								<div class="col-md-12">
-									<label for="exampleInputPassword1">Password</label>
-								</div>
-								<div class="col-md-12">
-									<input type="password" name="pass" class="form-control" id="pass" placeholder="Password" required autofocus>
-								</div>
-							</div>
-						</div> <!--ส่วนกรอก PASSWAORD---->
-						
-						<div class="col-md-12"> <!--ส่วนกรอก CONFIRMPASSWAORD--A-->
-							<div class="form-group">
-								<div class="col-md-12">
-									<label for="exampleInputPassword1">Confirm Password</label>
-								</div>
-								<div class="col-md-12">
-									<input type="password" name="cpass" class="form-control" id="cpass" placeholder="Password" required autofocus>
-								</div>
-							</div>
-						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
-						<script>
-						$('form').on('submit',function(){
-						   if($('#pass').val()!=$('#cpass').val()){
-							   alert('Password not matches');
-							   return false;
-						   }
-						   return true;
-						});
-						</script>
-						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
-							<div class="col-md-12">
-							<button type="submit" value="OK" class="btn btn-default">Submit</button>
-							</div>
-						</div> <!------ส่วนกด SUMMIT--->
+					<input type="email" class="input-block-level" placeholder="Email address" required="">
+    <input id="pass" type="password" class="input-block-level" placeholder="Password" required="">
+    <input id="cpass" type="password" class="input-block-level" placeholder="ConfirmPassword" required="">
+	<script>
+	$('form').on('submit',function(){
+   if($('#pass').val()!=$('#cpass').val()){
+       alert('Password not matches');
+       return false;
+   }
+   return true;
+});
+</script>
+    <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+	
 					</form>
 				</div>
 			</div>
