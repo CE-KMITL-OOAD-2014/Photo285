@@ -139,7 +139,7 @@
 									<label for="exampleInputPassword1">Confirm Password</label>
 								</div>
 								<div class="col-md-12">
-									<input type="password" name="cpass" class="form-control" id="cpass" placeholder="Password" required autofocus>
+									<input type="password" name="cpass" class="form-control" id="cpass" placeholder="Password" data-bv-identical-message="The password and its confirm are not the same" required autofocus>
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
