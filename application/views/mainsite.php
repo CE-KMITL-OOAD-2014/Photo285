@@ -128,7 +128,7 @@
 									<label for="exampleInputPassword1">Password</label>
 								</div>
 								<div class="col-md-12">
-									<input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password" required autofocus>
+									<input type="password" name="pass" class="form-control" id="pass" placeholder="Password" required autofocus>
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก PASSWAORD---->
@@ -139,7 +139,7 @@
 									<label for="exampleInputPassword1">Confirm Password</label>
 								</div>
 								<div class="col-md-12">
-									<input type="password" name="cpass" class="form-control" id="exampleInputPassword1" placeholder="Password" required="pass">
+									<input type="password" name="cpass" class="form-control" id="cpass" placeholder="Password" required autofocus>
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
