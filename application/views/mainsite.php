@@ -159,7 +159,7 @@
 	<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!--ส่วนเชื่อม แถบเด้งๆ---ของ LOG IN------->
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
-					<form class="form-signin" role="form">
+					<form class="form-signin" action="../member/signin" role="form">
 						<div class="col-md-12">
 							<h2 class="form-signin-heading">Please sign in</h2>
 						</div>
