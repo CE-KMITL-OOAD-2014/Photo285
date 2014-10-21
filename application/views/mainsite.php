@@ -148,8 +148,8 @@
 							<div class="col-md-12">
 							<button type="submit" value="OK" class="btn btn-default">Submit</button>
 							</div>
+							<br/>
 						</div> <!------ส่วนกด SUMMIT--->
-						<br/>
 					</form>
 				</div>
 			</div>
