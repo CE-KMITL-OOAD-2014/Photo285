@@ -144,13 +144,33 @@
 							</div>
 						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
 						<script>
-						$('form').on('submit',function(){
-						   if($('#pass').val()!=$('#cpass').val()){
-							   alert('Password not matches');
-							   return false;
-						   }
-						   return true;
-						});
+							$(document).ready(function() {
+								$('#identicalForm').bootstrapValidator({
+									feedbackIcons: {
+										valid: 'glyphicon glyphicon-ok',
+										invalid: 'glyphicon glyphicon-remove',
+										validating: 'glyphicon glyphicon-refresh'
+									},
+									fields: {
+										password: {
+											validators: {
+												identical: {
+													field: 'cpass',
+													message: 'The password and its confirm are not the same'
+												}
+											}
+										},
+										confirmPassword: {
+											validators: {
+												identical: {
+													field: 'pass,
+													message: 'The password and its confirm are not the same'
+												}
+											}
+										}
+									}
+								});
+							});
 						</script>
 						
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
