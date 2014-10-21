@@ -16,7 +16,15 @@
     </div>
 	<script>
 	
-
+$('form').on('submit',function(){
+   if($('#password').val()!=$('#confirmPassword').val()){
+       alert('Password not matches');
+       return false;
+   }
+   return true;
+});
+	
+	
 $(document).ready(function() {
     $('#identicalForm').bootstrapValidator({
         feedbackIcons: {
