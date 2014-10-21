@@ -95,7 +95,7 @@
 										<label for="exampleInputUsername1">Username</label>
 									</div>
 									<div class="col-md-12">
-										<input type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" placeholder="Enter username">
+										<input type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" placeholder="Enter username" required autofocus>
 									</div>
 								</div>
 						</div> <!--ส่วนกรอก username------>
@@ -106,7 +106,7 @@
 									<label for="exampleInputName1">Name</label>
 								</div>
 								<div class="col-md-12">
-									<input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="Enter name">
+									<input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="Enter name" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NAME------>
@@ -117,7 +117,7 @@
 									<label for="exampleInputEmail1">Email address</label>
 								</div>
 								<div class="col-md-12">
-									<input type="text" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required autofocus>
+									<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก EMAIL------>
@@ -128,7 +128,7 @@
 									<label for="exampleInputPassword1">Password</label>
 								</div>
 								<div class="col-md-12">
-									<input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									<input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password" required autofocus>
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก PASSWAORD---->
@@ -139,10 +139,10 @@
 									<label for="exampleInputPassword1">Confirm Password</label>
 								</div>
 								<div class="col-md-12">
-									<input type="password" name="cpass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									<input type="password" name="cpass" class="form-control" id="exampleInputPassword1" placeholder="Password" required autofocus>
 								</div>
 							</div>
-						</div> <!--ส่วนกรอก PASSWAORD---->
+						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
 						
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
 							<div class="col-md-12">
@@ -167,7 +167,7 @@
 							<input type="email" class="form-control" placeholder="Email address" required autofocus>
 						</div>
 						<div class="col-md-12">
-							<input type="password" class="form-control" placeholder="Password" required>
+							<input type="password" class="form-control" placeholder="Password" required autofocus>
 						</div>
 						<div class="col-md-12">
 							<label class="checkbox">
