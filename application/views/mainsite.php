@@ -144,6 +144,7 @@
 							</div>
 						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
 						<script>
+						<!--เช็คpassword ว่าตรงกับ comfirm ไหม -->
 						$('form').on('submit',function(){
 						   if($('#pass').val()!=$('#cpass').val()){
 							   alert('Password not matches');
