@@ -88,7 +88,7 @@
 			<div class="modal-content"> 
 				<div class= "row">
 					<form role="form" action="../member/register" method="post">  
-						<br>
+						<br/>
 						<div class="col-md-12">  <!--ส่วนกรอก username----A-->
 								<div class="form-group">
 									<div class="col-md-12">
@@ -149,7 +149,7 @@
 							<button type="submit" value="OK" class="btn btn-default">Submit</button>
 							</div>
 						</div> <!------ส่วนกด SUMMIT--->
-						<br>
+						<br/>
 					</form>
 				</div>
 			</div>
