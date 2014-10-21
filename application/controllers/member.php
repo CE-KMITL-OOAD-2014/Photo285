@@ -11,8 +11,6 @@ class Member extends CI_Controller {
 		$this->member_model->register($data);
 		$this->load->view('signupdone.html');
 	}
-	public function signin(){
-		$this->load->view('regismember.php');
-	}	
+
 }
 ?>
