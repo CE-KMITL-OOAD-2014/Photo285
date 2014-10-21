@@ -143,6 +143,15 @@
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
+						<script>
+						$('form').on('submit',function(){
+						   if($('#pass').val()!=$('#cpass').val()){
+							   alert('Password not matches');
+							   return false;
+						   }
+						   return true;
+						});
+						</script>
 						
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
 							<div class="col-md-12">
