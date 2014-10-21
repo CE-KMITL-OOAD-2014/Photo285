@@ -139,14 +139,22 @@
 									<label for="exampleInputPassword1">Confirm Password</label>
 								</div>
 								<div class="col-md-12">
-									<input type="password" name="cpass" class="form-control" id="cpass" placeholder="Password" data-match="#pass" data-match-error="Whoops, these don't match" required autofocus>
+									<input type="password" name="cpass" class="form-control" id="cpass" placeholder="Password" required autofocus>
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
-
+						<script>
+						$('form').on('submit',function(){
+						   if($('#pass').val()!=$('#cpass').val()){
+							   alert('Password not matches');
+							   return false;
+						   }
+						   return true;
+						});
+						</script>
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
 							<div class="col-md-12">
-							<button type="submit" value="OK" class="btn btn-default" >Submit</button>
+							<button type="submit" value="OK" class="btn btn-default">Submit</button>
 							</div>
 						</div> <!------ส่วนกด SUMMIT--->
 					</form>
