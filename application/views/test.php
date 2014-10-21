@@ -14,35 +14,20 @@
   </head>
 
 
-<form id="identicalForm" class="form-horizontal"
-    data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
-    data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
-    data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
-
-    <div class="form-group">
-        <label class="col-sm-3 control-label">Password</label>
-        <div class="col-sm-5">
-            <input type="password" class="form-control" name="password"
-                data-bv-identical="true"
-                data-bv-identical-field="confirmPassword"
-                data-bv-identical-message="The password and its confirm are not the same" />
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-3 control-label">Retype password</label>
-        <div class="col-sm-5">
-            <input type="password" class="form-control" name="confirmPassword"
-                data-bv-identical="true"
-                data-bv-identical-field="password"
-                data-bv-identical-message="The password and its confirm are not the same" />
-        </div>
-    </div>
+<form class="form-signin">
+    <input type="email" class="input-block-level" placeholder="Email address" required="">
+    <input id="pass" type="password" class="input-block-level" placeholder="Password" required="">
+    <input id="cpass" type="password" class="input-block-level" placeholder="ConfirmPassword" required="">
+    <button class="btn btn-large btn-primary" type="submit">Sign in</button>
 </form>
 
+
 <script>
-$(document).ready(function() {
-    $('#identicalForm').bootstrapValidator();
+$('form').on('submit',function(){
+   if($('#pass').val()!=$('#cpass').val()){
+       alert('Password not matches');
+       return false;
+   }
+   return true;
 });
 </script>
-
