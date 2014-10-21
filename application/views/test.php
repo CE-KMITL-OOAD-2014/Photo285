@@ -13,7 +13,7 @@
 
   </head>
 
-
+<body>
 <form class="form-signin">
     <input type="email" class="input-block-level" placeholder="Email address" required="">
     <input id="pass" type="password" class="input-block-level" placeholder="Password" required="">
@@ -35,3 +35,5 @@ $('form').on('submit',function(){
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	
+	</body>
