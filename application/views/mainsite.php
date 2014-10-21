@@ -10,13 +10,6 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
   </head>
   <body>
 	<nav class="navbar navbar-default" role="navigation">   <!--เริ่ม NAVBAR--------------->
@@ -125,6 +118,15 @@
 								</div>
 								<div class="col-md-12">
 									<input type="text" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+									$this->load->helper('email');
+									if (valid_email('email'))
+									{
+										echo 'email is valid';
+									}
+									else
+									{
+										echo 'email is not valid';
+									}
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก EMAIL------>
@@ -139,6 +141,18 @@
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก PASSWAORD---->
+						
+						<div class="col-md-12"> <!--ส่วนกรอก CONFIRMPASSWAORD--A-->
+							<div class="form-group">
+								<div class="col-md-12">
+									<label for="exampleInputPassword1">Confirm Password</label>
+								</div>
+								<div class="col-md-12">
+									<input type="password" name="cpass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+								</div>
+							</div>
+						</div> <!--ส่วนกรอก PASSWAORD---->
+						
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
 							<div class="col-md-12">
 							<button type="submit" value="OK" class="btn btn-default">Submit</button>
