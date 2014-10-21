@@ -87,7 +87,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 				<div class= "row">
-					<form id="identicalForm" role="form" action="../member/register" method="post">  
+					<form role="form" action="../member/register" method="post">  
 						<br/>
 						<div class="col-md-12">  <!--ส่วนกรอก username----A-->
 								<div class="form-group">
@@ -144,8 +144,7 @@
 							</div>
 						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
 						<script>
-							$(document).ready(function() {
-								$('#identicalForm').bootstrapValidator({
+							$('form').on('submit',function(){
 									feedbackIcons: {
 										valid: 'glyphicon glyphicon-ok',
 										invalid: 'glyphicon glyphicon-remove',
