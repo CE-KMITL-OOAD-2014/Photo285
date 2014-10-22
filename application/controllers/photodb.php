@@ -7,7 +7,7 @@ class Photodb extends CI_Controller {
 		$namealbum = $_POST["namealbum"];
 		$data = array('ID'=>$ID,'nameuser'=>$nameuser,'namealbum'=>$namealbum);
 		$this->load->model('photo_model');	
-		$this->member_model->addPhoto($data);
+		$this->photo_model->addPhoto($data);
 	}
 }
 ?>
