@@ -6,7 +6,7 @@ class Photodb extends CI_Controller {
 		$ID = $this->photo_model->number();
 		foreach($ID as $row)
 		$ID = $row['ID'];
-		
+		echo $ID;
 		
 	}
 }
