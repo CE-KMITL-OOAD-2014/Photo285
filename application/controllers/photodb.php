@@ -1,10 +1,10 @@
 <?
 
-class Test extends CI_Controller {
+class Photodb extends CI_Controller {
 	public function addPhoto(){
-		$ID = 1;
-		$nameuser = "admin";
-		$namealbum = "albumtest";
+		$ID = $_POST["ID"];
+		$nameuser = $_POST["nameuser"];
+		$namealbum = $_POST["namealbum"];
 		$data = array('ID'=>$ID,'nameuser'=>$nameuser,'namealbum'=>$namealbum);
 		$this->load->model('photo_model');	
 		$this->member_model->addPhoto($data);
