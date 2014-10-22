@@ -7,8 +7,7 @@
 		function number(){
 			$this->db->select_max('ID');
 			$ID = $this->db->get('picture');
-			$ID = $ID->result_array();
-			return $ID['ID'];
+			return $ID->result_array();
 		}
 	}
 ?>
