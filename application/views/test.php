@@ -1,13 +1,6 @@
-<?
-
-class Test extends CI_Controller {
-	public function addPhoto(){
-		$ID = 1;
-		$nameuser = "admin";
-		$namealbum = "albumtest";
-		$data = array('ID'=>$ID,'nameuser'=>$nameuser,'namealbum'=>$namealbum);
-		$this->load->model('photo_model');	
-		$this->member_model->addPhoto($data);
-	}
-}
-?>
+<form role="form" action="../photodb/addPhoto" method="post">  
+<input type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" placeholder="Enter username" required autofocus>
+<input type="text" name="nameuser" class="form-control" id="exampleInputName1" placeholder="Enter name" required autofocus>
+<input type="email" name="namealbum" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required autofocus>
+<button type="submit" value="OK" class="btn btn-default">Submit</button>
+</form>
