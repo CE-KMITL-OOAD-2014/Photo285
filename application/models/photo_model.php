@@ -6,7 +6,9 @@
 		
 		function number(){
 			$this->db->select_max('ID');
-			return $this->db->get('picture');
+			$ID = $this->db->get('picture');
+			$ID = $ID->result_array();
+			return $ID['ID'];
 		}
 	}
 ?>
