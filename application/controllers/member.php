@@ -11,6 +11,16 @@ class Member extends CI_Controller {
 		$this->member_model->register($data);
 		$this->load->view('signupdone.html');
 	}
-
+	public function login(){
+		$ID = $_POST['ID'];
+		$pass = md5($_POST['pass']);
+		$check = $this->db->where('ID',$ID)->where('pass',$pass->count_all_results('account');
+		if($check==1){
+			$newdata = array('ID' => $ID,'logged_in' => TRUE);
+			$this->session->set_userdata($newdata);
+			$this->load->view('test2');
+		}
+		else echo "fail";
+	}
 }
 ?>
