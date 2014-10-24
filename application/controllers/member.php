@@ -13,8 +13,8 @@ class Member extends CI_Controller {
 	}
 	public function login(){
 		$ID = $_POST["ID"];
-		$pass = md5($_POST["pass"]);
-		$check = $this->db->where('ID',$ID)->where('pass',$pass->count_all_results('account');
+		$pass = $_POST["pass"];
+		$check = $this->db->where('ID',$ID)->where('pass',$pass)->count_all_results('account');
 		if($check==1){
 			$newdata = array('ID' => $ID,'logged_in' => TRUE);
 			$this->session->set_userdata($newdata);
