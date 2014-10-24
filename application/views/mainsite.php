@@ -165,33 +165,45 @@
 	</div>  <!--ปิดส่วนเชื่อม แถบเด้งๆ-----ของ SIGN UP----->
 	
 	 <!-- Modal -->
-	<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!--ส่วนเชื่อม แถบเด้งๆ---ของ LOG IN------->
+<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!--?????????? ????????---??? LOG IN------->
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
+				<div class= "row">
 					<form action="../member/login"  method="post" role="form">
 						<div class="col-md-12">
-							<h2 class="form-signin-heading">Please sign in</h2>
+							<div class="col-md-12">
+							<h2 class="form">Please sign in</h2>
+							</div>
 						</div>
 						<div class="col-md-12">
-							<input type="id" name="ID" id="ID" class="form-control" placeholder="id" required autofocus>
+							<div class="col-md-12">
+							<input type="username" name="ID" id="ID" class="form-control" placeholder="Username" required autofocus>
+							</div>
 						</div>
 						<div class="col-md-12">
-							<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required autofocus>
+						<div class="col-md-12">
+							<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+							</div>
 						</div>
+						<div class="col-md-12">
 						<div class="col-md-12">
 							<label class="checkbox">
 								<div class="col-md-12">
-									<input type="checkbox" value="remember-me"> Remember me
+									<br><input type="checkbox" value="remember-me"> Remember me
 								</div>
 							</label>
+							</div>
 						</div>
 						<div class="col-md-12">
-							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+						<div class="col-md-12">
+							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></br>
+							</div>
 						</div>
 					</form>
+				</div>
 			</div>
 		</div>
-	</div> <!--ส่วนเชื่อม แถบเด้งๆ---ของ LOG IN------->
+	</div> <!--?????????? ????????---??? LOG IN------->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
