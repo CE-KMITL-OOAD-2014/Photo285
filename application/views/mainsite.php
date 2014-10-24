@@ -173,10 +173,10 @@
 							<h2 class="form-signin-heading">Please sign in</h2>
 						</div>
 						<div class="col-md-12">
-							<input type="id" class="form-control" placeholder="id" required autofocus>
+							<input type="id" name="ID" id="ID" class="form-control" placeholder="id" required autofocus>
 						</div>
 						<div class="col-md-12">
-							<input type="password" class="form-control" placeholder="Password" required autofocus>
+							<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required autofocus>
 						</div>
 						<div class="col-md-12">
 							<label class="checkbox">
