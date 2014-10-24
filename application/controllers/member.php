@@ -22,5 +22,8 @@ class Member extends CI_Controller {
 		}
 		else echo "fail";
 	}
+	public function logout(){
+	$this->session->sess_destroy();
+	}
 }
 ?>
