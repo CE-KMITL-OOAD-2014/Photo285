@@ -4,6 +4,7 @@ class Test extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('test.php');
+		$this->session->sess_destroy();
+		//$this->load->view('test.php');
 	}
 }

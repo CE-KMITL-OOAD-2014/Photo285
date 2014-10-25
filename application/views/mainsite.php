@@ -187,15 +187,6 @@
 						</div>
 						<div class="col-md-12">
 						<div class="col-md-12">
-							<label class="checkbox">
-								<div class="col-md-12">
-									<br><input type="checkbox" value="remember-me"> Remember me
-								</div>
-							</label>
-							</div>
-						</div>
-						<div class="col-md-12">
-						<div class="col-md-12">
 							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></br>
 							</div>
 						</div>
