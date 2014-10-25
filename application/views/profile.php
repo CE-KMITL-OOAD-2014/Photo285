@@ -6,6 +6,7 @@ if($this->session->userdata('ID')){
 	$data = $this->db->where('ID',$ID['ID'])->get('account');
 	foreach($data->result_array() as $row){
 		echo"".$row['name'];
+		echo \n;
 		echo"".$row['email'];
 	}
 	/*
