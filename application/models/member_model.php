@@ -3,6 +3,8 @@
 		function register($data){
 			$this->db->insert('account',$data);	
 		}	
+		
+		
 		/*
 		function login($ID, $pass){
 			$this -> db -> select('ID,pass');
