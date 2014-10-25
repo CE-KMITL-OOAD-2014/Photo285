@@ -18,12 +18,12 @@ class Member extends CI_Controller {
 		if($check==1){
 			$newdata = array('ID' => $ID,'logged_in' => TRUE);
 			$this->session->set_userdata($newdata);
-			$this->load->view('test2');
+			$this->load->view('profile');
 		}
 		else echo "fail";
 	}
 	public function logout(){
-	$this->session->sess_destroy();
+		$this->session->sess_destroy();
 	}
 }
 ?>
