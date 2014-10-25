@@ -187,7 +187,7 @@
 						</div>
 						<div class="col-md-12">
 						<div class="col-md-12">
-							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in test</button></br>
+							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></br>
 							</div>
 						</div>
 					</form>
