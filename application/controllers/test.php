@@ -2,8 +2,12 @@
 
 class Test extends CI_Controller {
 
-	public function index()
-	{
+	public function index(){
+		$this->load->view('test.php');
+	}
+	
+	public function endses(){
 		$this->session->sess_destroy();
 	}
 }
+
