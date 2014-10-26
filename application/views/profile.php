@@ -10,7 +10,7 @@ if($this->session->userdata('ID')){
 	}
 	
 	$datam1 = $this->db->where('nameuser',$ID['ID'])->where('showm1',"1")->get('picture');
-	if($datam1 == NULL) echo "fail";
+	if(!$datam1) echo "fail";
 	foreach($datam1->result_array() as $row){
 		echo"Photom1ID: ".$row['ID']."<br/>";
 	}
