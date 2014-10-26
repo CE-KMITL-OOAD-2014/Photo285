@@ -6,8 +6,17 @@ if($this->session->userdata('ID')){
 	$data = $this->db->where('ID',$ID['ID'])->get('account');
 	foreach($data->result_array() as $row){
 		echo"".$row['name']."<br/>";
-		echo"".$row['email'];
+		echo"".$row['email']."<br/>";
 	}
+	
+	$datam1 = $this->db->where('nameuser',$ID['ID'])->where('showm1',"1")->get('picture');
+	foreach($datam1->result_array() as $row){
+		echo"".$row['ID']."<br/>";
+	}
+	
+	
+	
+	
 	/*
 	$data = $this->db->where('ID'=>$ID['ID'])->get('account');
 	echo $data['name'];
