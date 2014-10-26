@@ -13,7 +13,7 @@ if($this->session->userdata('ID')){
 	$datam1 = $this->db->where('nameuser',$ID['ID'])->where('showm1',"1")->get('picture');
 	echo $datam1['ID'];
 	foreach($datam1->result_array() as $row){
-		echo"Photom1ID: ".$row['ID']."<br/>";
+		echo"".$row['ID']."<br/>";
 	}
 	
 	/*
