@@ -1,18 +1,18 @@
 <?
 if($this->session->userdata('ID')){
 	$ID = $this->session->all_userdata();
-	echo $ID['ID']."<br/>";
+	echo "username: ".$ID['ID']."<br/>";
 	
 	$data = $this->db->where('ID',$ID['ID'])->get('account');
 	foreach($data->result_array() as $row){
-		echo"".$row['name']."<br/>";
-		echo"".$row['email']."<br/>";
+		echo"name: ".$row['name']."<br/>";
+		echo"email: ".$row['email']."<br/>";
 	}
 	
 	//รูปตรงกลางอันบน
 	$datam1 = $this->db->where('nameuser',$ID['ID'])->where('showm1',"1")->get('picture');
 	foreach($datam1->result_array() as $row){
-		echo"Photom1ID".$row['ID']."<br/>";
+		echo"Photom1ID: ".$row['ID']."<br/>";
 	}
 	
 	//รูปตรงกลางอันล่าง
