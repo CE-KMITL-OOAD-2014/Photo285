@@ -12,7 +12,7 @@ if($this->session->userdata('ID')){
 	//รูปตรงกลางอันบน
 	$datam1 = $this->db->where('nameuser',$ID['ID'])->where('showm1',"1")->get('picture');
 	foreach($datam1->result_array() as $row){
-		echo"".$row['ID']."<br/>";
+		echo"Photom1ID".$row['ID']."<br/>";
 	}
 	
 	//รูปตรงกลางอันล่าง
