@@ -16,6 +16,7 @@ if($this->session->userdata('ID')){
 		echo"Photom1ID: ".$row['ID']."<br/>";
 	}
 	
+	/*
 	//รูปตรงกลางอันล่าง
 	$datam2 = $this->db->where('nameuser',$ID['ID'])->where('showm2',"1")->get('picture');
 	echo $datam2['ID'];
@@ -50,12 +51,6 @@ if($this->session->userdata('ID')){
 	foreach($datar4->result_array() as $row){
 		echo"Photor4ID: ".$row['ID']."<br/>";
 	}
-	
-	/*
-	$data = $this->db->where('ID'=>$ID['ID'])->get('account');
-	echo $data['name'];
-	echo $data['email'];
-
 	*/
  }
 ?>
