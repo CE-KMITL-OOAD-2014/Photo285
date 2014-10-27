@@ -18,8 +18,8 @@ class Member extends CI_Controller {
 		if($check==1){
 			$newdata = array('ID' => $ID,'logged_in' => TRUE);
 			$this->session->set_userdata($newdata);
-			$sentid['id'] = $ID['ID'];
-			redirect('/profile/show/'.$sentid);
+			//$sentid['id'] = $ID['ID'];
+			redirect('/profile/show/'.$ID);
 			//$this->load->view('profile',$sentid);
 		}
 		else echo "fail";
