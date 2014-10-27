@@ -8,7 +8,7 @@ class Profile extends CI_Controller {
 		}
 		else{
 			$test = $this->uri->segment(3);
-			echo $test;
+			$this->view->show($test);
 		}
 	}
 }
