@@ -147,12 +147,7 @@
 						
 						<!--เช็คpassword ว่าตรงกับ comfirm ไหม -->
 						$('form').on('submit',function(){
-							$check = $this->db->where('ID','#ID')->count_all_results('account');
-							if($check==1){
-								alert('ID นี้มีแล้ว');
-								return false;
-							}
-							if($('#pass').val()!=$('#cpass').val()){
+						   if($('#pass').val()!=$('#cpass').val()){
 							   alert('Password not matches');
 							   return false;
 						   }
