@@ -154,18 +154,6 @@
 						});
 						</script>
 						
-						<script>
-						<!--เช็คpassword ว่าตรงกับ comfirm ไหม -->
-						$('form').on('submit',function(){
-							$check = $this->db->where('ID',$('#ID').val())->count_all_results('account');
-							if($check==1){
-								alert('ID match');
-								return false;
-							}
-							return true;
-						});
-						</script>
-						
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
 							<div class="col-md-12">
 							<button type="submit" value="OK" class="btn btn-default">Submit</button>
