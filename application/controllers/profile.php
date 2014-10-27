@@ -17,37 +17,37 @@ class Profile extends CI_Controller {
 				echo"email: ".$row['email']."<br/>";
 			}
 			
-			//รูปตรงกลางอันบน
+			//IDpicture photom1 if "1" in database show picture
 			$datam1 = $this->db->where('nameuser',$id)->where('showm1',"1")->get('picture');
 			foreach($datam1->result_array() as $row){
 				echo"Photom1ID: ".$row['ID']."<br/>";
 			}
 							
-			//รูปตรงกลางอันล่าง
+			//IDpicture photom2 if "1" in database show picture
 			$datam2 = $this->db->where('nameuser',$id)->where('showm2',"1")->get('picture');
 			foreach($datam2->result_array() as $row){
 				echo"Photom2ID: ".$row['ID']."<br/>";
 			}
 							
-			//รูปด้านขวาอันที่ 1
+			//IDpicture photor1 if "1" in database show picture
 			$datar1 = $this->db->where('nameuser',$id)->where('showr1',"1")->get('picture');
 			foreach($datar1->result_array() as $row){
 				echo"Photor1ID: ".$row['ID']."<br/>";
 			}
 							
-			//รูปด้านขวาอันที่ 2
+			//IDpicture photor2 if "1" in database show picture
 			$datar2 = $this->db->where('nameuser',$id)->where('showr2',"1")->get('picture');
 			foreach($datar2->result_array() as $row){
 				echo"Photor2ID: ".$row['ID']."<br/>";
 			}
 							
-			//รูปด้านขวาอันที่ 3
+			//IDpicture photor3 if "1" in database show picture
 			$datar3 = $this->db->where('nameuser',$id)->where('showr3',"1")->get('picture');
 			foreach($datar3->result_array() as $row){
 				echo"Photor3ID: ".$row['ID']."<br/>";
 			}
 							
-			//รูปด้านขวาอันที่ 4
+			//IDpicture photor4 if "1" in database show picture
 			$datar4 = $this->db->where('nameuser',$id)->where('showr4',"1")->get('picture');
 			foreach($datar4->result_array() as $row){
 				echo"Photor4ID: ".$row['ID']."<br/>";
