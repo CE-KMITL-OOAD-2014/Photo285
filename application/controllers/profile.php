@@ -4,12 +4,12 @@ class Profile extends CI_Controller {
 
 	public function show(){
 		if ($this->uri->segment(3) === FALSE){
-			$test = 0;
+			$profileID = 0;
 		}
 		else{
-			$test = $this->uri->segment(3);
-			$this->load->view('profile');
-			$this->view->show($test);
+			$profileID = $this->uri->segment(3);
+			$this->load->model('view/profile');
+			$this->profile->show($profileID);
 		}
 	}
 }
