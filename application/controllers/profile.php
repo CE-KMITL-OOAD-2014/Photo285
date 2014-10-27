@@ -8,7 +8,9 @@ class Profile extends CI_Controller {
 		}
 		else{
 			$id = $this->uri->segment(3);
-			
+			$data['id'] = $id;
+			$this->load->view('profile',$data);
+			/*
 			//
 			echo $id."<br/>";
 			$data = $this->db->where('ID',$id)->get('account');
@@ -52,7 +54,7 @@ class Profile extends CI_Controller {
 			foreach($datar4->result_array() as $row){
 				echo"Photor4ID: ".$row['ID']."<br/>";
 			}
-			
+			*/
 		}
 	}
 }

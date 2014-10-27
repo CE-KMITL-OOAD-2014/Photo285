@@ -1,5 +1,4 @@
 <?
-	public function show($id){
 		/*
 		if($this->session->userdata('ID')){
 			$ID = $this->session->all_userdata();
@@ -52,6 +51,5 @@
 		$datar4 = $this->db->where('nameuser',$id)->where('showr4',"1")->get('picture');
 		foreach($datar4->result_array() as $row){
 			echo"Photor4ID: ".$row['ID']."<br/>";
-		}
-	}			
+		}			
 ?>
