@@ -19,7 +19,8 @@ class Member extends CI_Controller {
 			$newdata = array('ID' => $ID,'logged_in' => TRUE);
 			$this->session->set_userdata($newdata);
 			$sentid['id'] = $ID;
-			$this->load->view('profile',$sentid);
+			redirect('/profile/show/',$sentid);
+			//$this->load->view('profile',$sentid);
 		}
 		else echo "fail";
 	}
