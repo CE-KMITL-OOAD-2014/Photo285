@@ -144,9 +144,15 @@
 							</div>
 						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
 						<script>
+						
 						<!--เช็คpassword ว่าตรงกับ comfirm ไหม -->
 						$('form').on('submit',function(){
-						   if($('#pass').val()!=$('#cpass').val()){
+							$check = $this->db->where('ID',$ID)->count_all_results('account');
+							if($check==1){
+								alert('ID นี้มีแล้ว');
+								return false;
+							}
+							if($('#pass').val()!=$('#cpass').val()){
 							   alert('Password not matches');
 							   return false;
 						   }
