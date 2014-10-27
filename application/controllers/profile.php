@@ -8,6 +8,7 @@ class Profile extends CI_Controller {
 		}
 		else{
 			$test = $this->uri->segment(3);
+			$this->load->view('profile');
 			$this->view->show($test);
 		}
 	}
