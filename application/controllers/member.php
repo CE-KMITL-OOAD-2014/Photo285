@@ -22,13 +22,12 @@ class Member extends CI_Controller {
 			$newdata = array('ID' => $ID,'logged_in' => TRUE);
 			$this->session->set_userdata($newdata);
 			echo"<script language='javascript'>window.location.href = '../profile/show/".$ID."';</script>"; //redirect หน้าหลัง login
-			
 		}
 		else {
-			"<script language='javascript'>
-			alert('login fail');
-			window.location.href = '../';
-			</script>";
+			echo "<script language='javascript'>
+					alert('login fail');
+					window.location.href = '../';
+				</script>";
 		}
 	}
 	public function logout(){
