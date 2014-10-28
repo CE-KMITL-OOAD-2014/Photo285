@@ -113,7 +113,12 @@
 								<div class="info">
 									<h3 class="title">TOPIC</h3>
 									<p>
-										ithink i know you.
+									<?
+										$data = $this->db->where('ID',$id)->get('account');
+											foreach($data->result_array() as $row){
+												echo"".$row['detail'];
+											}
+									?>
 									</p>
 								</div>
 							</div>
