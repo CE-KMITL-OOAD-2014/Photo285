@@ -95,12 +95,14 @@
 						<center>
 							<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
 							<h3><? echo $id; ?></h3>
-							<em><?
-								$data = $this->db->where('ID',$id)->get('account');
-									foreach($data->result_array() as $row){
-										echo"email: ".$row['email'];
-									}
-							?></em>
+							<em>
+								<?
+									$data = $this->db->where('ID',$id)->get('account');
+										foreach($data->result_array() as $row){
+											echo"email: ".$row['email'];
+										}
+								?>
+							</em>
 						</center>
 					</div>
 					
@@ -113,12 +115,12 @@
 								<div class="info">
 									<h3 class="title">ข่าวสาร</h3>
 									<p>
-									<?
-										$data = $this->db->where('ID',$id)->get('account');
-											foreach($data->result_array() as $row){
-												echo"".$row['detail'];
-											}
-									?>
+										<?
+											$data = $this->db->where('ID',$id)->get('account');
+												foreach($data->result_array() as $row){
+													echo"".$row['detail'];
+												}
+										?>
 									</p>
 								</div>
 							</div>
@@ -134,12 +136,12 @@
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
 								<h4 class="modal-title" id="myModalLabel">
-								<?
-									$data = $this->db->where('ID',$id)->get('account');
-										foreach($data->result_array() as $row){
-											echo"".$row['name'];
-										}
-								?>
+									<?
+										$data = $this->db->where('ID',$id)->get('account');
+											foreach($data->result_array() as $row){
+												echo"".$row['name'];
+											}
+									?>
 								</h4>   <!--ดึงชื่อมาจาก db-->
 							</div>
 							<div class="modal-body">
@@ -150,24 +152,25 @@
 									<span><strong>Email: </strong></span>
 									<span>
 									<!--ดึงข้อมูลจาก db มาแสดง email-->
-									<?
-										$data = $this->db->where('ID',$id)->get('account');
-											foreach($data->result_array() as $row){
-												echo"".$row['email'];
-											}
-									?>
+										<?
+											$data = $this->db->where('ID',$id)->get('account');
+												foreach($data->result_array() as $row){
+													echo"".$row['email'];
+												}
+										?>
 									</span>
 								</center>
 								<hr>
 								<center>
 								<p class="text-left"><strong>ประวัติส่วนตัว: </strong><br>
-										I am looking for someone with honesty and integrity. 
-										Please be who you say you are–please no game players! 
-										Please show a recent photo (get out of denial, yes, you 
-										and I both have aged–hopefully, gracefully, lol!) 
-										We all wish we looked and felt the way we did 10 years ago! :)
-										A person with a good sense of humor… A smile goes a long way–make someone happy today! 
-										My profile says I am 50… Sorry, I wasn’t able to change it… I am ….. 56!</p>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+									<?
+										$data = $this->db->where('ID',$id)->get('account');
+											foreach($data->result_array() as $row){
+												echo"".$row['resume'];
+											}
+									?>								
+								
+								</p>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 								<br>
 								</center>
 							</div>
