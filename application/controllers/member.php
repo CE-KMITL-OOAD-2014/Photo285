@@ -9,8 +9,10 @@ class Member extends CI_Controller {
 		$data = array('ID'=>$ID,'pass'=>$pass,'name'=>$name,'email'=>$email);
 		$this->load->model('member_model');	
 		$this->member_model->register($data);
-		$this->load->view('signupdone.html');
-		echo"<script language='javascript'>window.location.href = '../';</script>";
+		echo"<script language='javascript'>
+			alert('Signup done');
+			window.location.href = '../';
+			</script>";
 	}
 	public function login(){
 		$ID = $_POST["ID"];
@@ -22,7 +24,12 @@ class Member extends CI_Controller {
 			echo"<script language='javascript'>window.location.href = '../profile/show/".$ID."';</script>"; //redirect หน้าหลัง login
 			
 		}
-		else echo "fail";
+		else {
+			"<script language='javascript'>
+			alert('login fail');
+			window.location.href = '../';
+			</script>";
+		}
 	}
 	public function logout(){
 		$this->session->sess_destroy();
