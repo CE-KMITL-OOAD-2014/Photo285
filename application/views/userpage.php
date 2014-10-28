@@ -131,7 +131,14 @@
 									
 									<h3 class="media-heading"><? echo $id; ?></h3> <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 									<span><strong>Email: </strong></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-									<span>joe.sixpack@hotmail.com</span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+									<span>
+									<?
+									$data = $this->db->where('ID',$id)->get('account');
+										foreach($data->result_array() as $row){
+											echo"email: ".$row['email'];
+										}
+									?>
+									</span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 								</center>
 								<hr>
 								<center>
