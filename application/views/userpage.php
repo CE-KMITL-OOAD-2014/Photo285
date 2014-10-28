@@ -7,7 +7,7 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -95,7 +95,12 @@
 						<center>
 							<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
 							<h3><? echo $id; ?></h3>
-							<em>joe.sixpack@hotmail.com</em>
+							<em><?
+								$data = $this->db->where('ID',$id)->get('account');
+									foreach($data->result_array() as $row){
+										echo"email: ".$row['email'];
+									}
+							?></em>
 						</center>
 					</div>
 					
@@ -131,14 +136,7 @@
 									
 									<h3 class="media-heading"><? echo $id; ?></h3> <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 									<span><strong>Email: </strong></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-									<span>
-									<?
-									$data = $this->db->where('ID',$id)->get('account');
-										foreach($data->result_array() as $row){
-											echo"email: ".$row['email'];
-										}
-									?>
-									</span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+									<span>joe.sixpack@hotmail.com</span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 								</center>
 								<hr>
 								<center>
