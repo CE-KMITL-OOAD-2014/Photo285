@@ -152,16 +152,14 @@
 								  $("#cpass").css( "background-color", "#F78181" );
 								  $("#regisbutton").prop("type", "button");	 
 							}
-							else{
+							else{//เปลี่ยนสี
 								$("#cpass").css( "background-color", "#9FF781" );
 								$("#regisbutton").prop("type", "submit");
 							}
 						}
-
 						$(document).ready(function () {
 						   $("#cpass").keyup(checkPasswordMatch);					
 						});
-
 						</script>
 						
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
