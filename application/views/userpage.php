@@ -160,7 +160,7 @@
 							</div>
 							<div class="modal-footer">
 								<center>
-								<button type="button" class="btn btn-default" data-dismiss="modal">☺ Close</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 								</center>
 							</div>
 						</div>
