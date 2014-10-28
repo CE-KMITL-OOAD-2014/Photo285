@@ -148,7 +148,7 @@
 									<?
 										$data = $this->db->where('ID',$id)->get('account');
 											foreach($data->result_array() as $row){
-												echo"email: ".$row['email'];
+												echo"".$row['email'];
 											}
 									?>
 									</span>
