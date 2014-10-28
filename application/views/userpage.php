@@ -128,22 +128,30 @@
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-								<h4 class="modal-title" id="myModalLabel">More About Joe</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+								<h4 class="modal-title" id="myModalLabel">
+								<?
+									$data = $this->db->where('ID',$id)->get('account');
+										foreach($data->result_array() as $row){
+											echo"".$row['name'];
+										}
+								?>
+								</h4>   <!--ดึงชื่อมาจาก db-->
 							</div>
 							<div class="modal-body">
 								<center>
 									<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
 									
-									<h3 class="media-heading"><? echo $id; ?></h3> <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-									<span><strong>Email: </strong></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+									<h3 class="media-heading"><? echo $id; ?></h3> <!--รับตัวแปร id มาจาก controller-->
+									<span><strong>Email: </strong></span>
 									<span>
+									<!--ดึงข้อมูลจาก db มาแสดง email-->
 									<?
 										$data = $this->db->where('ID',$id)->get('account');
 											foreach($data->result_array() as $row){
 												echo"email: ".$row['email'];
 											}
 									?>
-									</span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+									</span>
 								</center>
 								<hr>
 								<center>
