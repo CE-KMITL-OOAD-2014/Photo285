@@ -111,7 +111,7 @@
 								</br>
 								</br>
 								<div class="info">
-									<h3 class="title">TOPIC</h3>
+									<h3 class="title">ข่าวสาร</h3>
 									<p>
 									<?
 										$data = $this->db->where('ID',$id)->get('account');
@@ -160,7 +160,7 @@
 								</center>
 								<hr>
 								<center>
-								<p class="text-left"><strong>Annouce: </strong><br>
+								<p class="text-left"><strong>ประวัติส่วนตัว: </strong><br>
 										I am looking for someone with honesty and integrity. 
 										Please be who you say you are–please no game players! 
 										Please show a recent photo (get out of denial, yes, you 
