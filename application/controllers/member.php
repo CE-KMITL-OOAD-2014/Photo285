@@ -9,7 +9,7 @@ class Member extends CI_Controller {
 		$data = array('ID'=>$ID,'pass'=>$pass,'name'=>$name,'email'=>$email);
 		$this->load->model('member_model');	
 		$this->member_model->register($data);
-		alert('Signup done');
+		$this->load->view('signupdone');
 		echo"<script language='javascript'>window.location.href = '../';</script>";
 	}
 	public function login(){
