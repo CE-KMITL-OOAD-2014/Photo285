@@ -9,8 +9,8 @@ class Member extends CI_Controller {
 		$data = array('ID'=>$ID,'pass'=>$pass,'name'=>$name,'email'=>$email);
 		$this->load->model('member_model');	
 		$this->member_model->register($data);
-		echo"<script language='javascript'>window.location.href = '../';</script>";
 		alert('Signup done');
+		echo"<script language='javascript'>window.location.href = '../';</script>";
 	}
 	public function login(){
 		$ID = $_POST["ID"];
