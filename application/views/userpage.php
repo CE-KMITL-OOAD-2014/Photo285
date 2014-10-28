@@ -136,7 +136,14 @@
 									
 									<h3 class="media-heading"><? echo $id; ?></h3> <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 									<span><strong>Email: </strong></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-									<span>joe.sixpack@hotmail.com</span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+									<span>
+									<?
+										$data = $this->db->where('ID',$id)->get('account');
+											foreach($data->result_array() as $row){
+												echo"email: ".$row['email'];
+											}
+									?>
+									</span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 								</center>
 								<hr>
 								<center>
@@ -153,7 +160,7 @@
 							</div>
 							<div class="modal-footer">
 								<center>
-								<button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">☺ Close</button>
 								</center>
 							</div>
 						</div>
