@@ -18,7 +18,9 @@ class Member extends CI_Controller {
 		if($check==1){
 			$newdata = array('ID' => $ID,'logged_in' => TRUE);
 			$this->session->set_userdata($newdata);
-			redirect('profile/show/'.$ID);
+			//redirect('profile/show/'.$ID);
+			echo"<script language='javascript'>window.location.href = '../profile/show/".$ID."';</script>";
+			
 		}
 		else echo "fail";
 	}
