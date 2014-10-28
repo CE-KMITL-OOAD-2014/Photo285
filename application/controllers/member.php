@@ -19,7 +19,7 @@ class Member extends CI_Controller {
 			$newdata = array('ID' => $ID,'logged_in' => TRUE);
 			$this->session->set_userdata($newdata);
 			//redirect('profile/show/'.$ID);
-			echo"<script language='javascript'>window.location.href = '../profile/show/".$ID."';</script>";
+			echo"<script language='javascript'>window.location.href = '../profile/show/".$ID."';</script>"; //redirect หน้าหลัง login
 			
 		}
 		else echo "fail";
