@@ -122,7 +122,7 @@
 						<div class="row">
 						<center>
 							<br>
-							<button type="button" class="btn btn-primary navbar-btn"><a href="#"><div class="link">See More Album ...</div></a></button> <!-----see album----->
+							<button type="button" class="btn btn-primary navbar-btn"><a href="#"><div class="link">See More Album</div></a></button> <!-----see album----->
 						</center>
 						</ul>
 					</div>
