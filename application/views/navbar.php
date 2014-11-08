@@ -41,14 +41,14 @@
 					<button type="button" class="btn btn-primary navbar-btn">Manage Album</a></button> <!------Manage Album------>
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
 				  <ul class="nav navbar-nav navbar-right">
-					<button type="submit" class="btn btn-danger navbar-btn"><a href="../../member/logout">Log out</a></button> <!------Manage Album------>
-					 <li ><a href="<?
-						if($this->session->userdata('ID')){
+					<button type="submit" class="btn btn-danger navbar-btn"><a href="../../member/logout">Log out</a></button> <!------logout------>
+					 <li ><a href="<? // redirect ไปโชว์โปรไฟล์ตัวเอง
+						if($this->session->userdata('ID')){ 
 							$ID = $this->session->all_userdata();
 							echo "".$ID['ID'];
 						} ?>">
 						<?
-						if($this->session->userdata('ID')){
+						if($this->session->userdata('ID')){ // แสดงชื่อโปรไฟล์ตัวเอง
 							$ID = $this->session->all_userdata();
 							echo "".$ID['ID'];
 						}
