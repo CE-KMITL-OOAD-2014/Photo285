@@ -15,12 +15,20 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	
+  </head>
+  <style>
+  .link
+{
+   color:white;
+   text-decoration: none; 
+   background-color: none;
+}
+  </style>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-  </head>
-  
   <body>
     
 	<nav class="navbar navbar-default" role="navigation">
@@ -41,7 +49,7 @@
 					<button type="button" class="btn btn-primary navbar-btn">Manage Album</a></button> <!------Manage Album------>
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
 				  <ul class="nav navbar-nav navbar-right">
-					<button type="submit" class="btn btn-danger navbar-btn"><a href="../../member/logout">Log out</a></button> <!------logout------>
+					<button type="submit" class="btn btn-danger navbar-btn"><a href="../../member/logout"><div class="link">Log out</div></a></button> <!------logout------>
 					 <li ><a href="<? // redirect ไปโชว์โปรไฟล์ตัวเอง
 						if($this->session->userdata('ID')){ 
 							$ID = $this->session->all_userdata();
