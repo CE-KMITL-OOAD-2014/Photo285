@@ -40,9 +40,8 @@
 				<ul class="nav navbar-nav"> <!-----เปิด NAVBAR ฝั่งซ้าย--->
 					<button type="button" class="btn btn-primary navbar-btn">Manage Album</a></button> <!------Manage Album------>
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
-				<form action="../../member/logout" role="form">
 				  <ul class="nav navbar-nav navbar-right">
-					<button type="submit" class="btn btn-danger navbar-btn">Log out</a></button> <!------Manage Album------>
+					<button type="submit" class="btn btn-danger navbar-btn"><href="../../member/logout">Log out</a></button> <!------Manage Album------>
 					 <li ><a href="#"><?
 						if($this->session->userdata('ID')){
 							$ID = $this->session->all_userdata();
@@ -52,7 +51,6 @@
 						?>
 						</a></li>   <!--ตรงนี้ต้องเอาโค้ด php มาตรวจสอบ session มาตรวจสอบว่า เป็นหน้าไหนแล้ว ดูตามเป้-->
 				  </ul>
-				</form>
 				</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
