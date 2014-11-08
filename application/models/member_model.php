@@ -4,12 +4,13 @@
 			$this->db->insert('account',$data);	
 		}	
 		
+		/*
 		function showProfile($data){
 			$ID = $dataID['ID'];
 			$show = $this->db->where('ID',$ID)->get('account');
 			return $show;
 		}
-		
+		*/
 		function getName(){
 			$ID = $this->session->all_userdata();
 			$name = $this->db->where('name',$ID['ID'])->get('account');
