@@ -32,6 +32,7 @@ class Member extends CI_Controller {
 	}
 	public function logout(){
 		$this->session->sess_destroy();
+		$this->load->view->('mainsite');
 	}
 }
 ?>
