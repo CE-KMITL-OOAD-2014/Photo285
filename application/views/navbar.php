@@ -41,7 +41,9 @@
 					<button type="button" class="btn btn-primary navbar-btn">Manage Album</a></button> <!------Manage Album------>
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
 				  <ul class="nav navbar-nav navbar-right">
-				  <button type="button" class="btn btn-danger navbar-btn">Log out</a></button> <!------Manage Album------>
+				  <form action="../member/logout" role="form">
+					<button type="submit" class="btn btn-danger navbar-btn">Log out</a></button> <!------Manage Album------>
+				  </form>
 					 <li ><a href="#"><?
 						if($this->session->userdata('ID')){
 							$ID = $this->session->all_userdata();
