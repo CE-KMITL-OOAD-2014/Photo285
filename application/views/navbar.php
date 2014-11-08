@@ -42,7 +42,11 @@
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
 				  <ul class="nav navbar-nav navbar-right">
 				  <button type="button" class="btn btn-danger navbar-btn">Log out</a></button> <!------Manage Album------>
-					 <li ><a href="#">$USERNAME 's Page</a></li>   <!--ตรงนี้ต้องเอาโค้ด php มาตรวจสอบ session มาตรวจสอบว่า เป็นหน้าไหนแล้ว ดูตามเป้-->
+					 <li ><a href="#"><?
+						$ID = $this->session->all_userdata();
+						echo "".$ID['ID'];
+						?>
+						</a></li>   <!--ตรงนี้ต้องเอาโค้ด php มาตรวจสอบ session มาตรวจสอบว่า เป็นหน้าไหนแล้ว ดูตามเป้-->
 				  </ul>
 				</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
