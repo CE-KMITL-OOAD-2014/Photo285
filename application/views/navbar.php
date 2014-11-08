@@ -52,11 +52,10 @@
 				  <ul class="nav navbar-nav navbar-right">
 				  <?
 					if($this->session->userdata('ID')){
-						echo "logout";
+						echo "<a href='../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log out</div></button></a>";
 					}
-					else echo "login";
+					else echo "<a href='../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log in</div></button></a>";
 				  ?>
-					<a href="../../member/logout"><button type="input" class="btn btn-danger navbar-btn"><div class="link">Log out</div></button></a>
 					 <li ><a href="<? // redirect ไปโชว์โปรไฟล์ตัวเอง
 						if($this->session->userdata('ID')){ 
 							$ID = $this->session->all_userdata();
