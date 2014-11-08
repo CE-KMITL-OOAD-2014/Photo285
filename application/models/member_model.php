@@ -12,7 +12,7 @@
 		
 		function getName(){
 			$ID = $this->session->all_userdata();
-			$show = $this->db->where('name',$ID)->get('account');
+			$show = $this->db->where('name',$ID['ID'])->get('account');
 			return $show;
 		}
 		
