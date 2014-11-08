@@ -10,9 +10,11 @@
 			return $show;
 		}
 		
-		function getName(){ 
+		function getName(){
 			$ID = $this->session->all_userdata();
-			echo "".$ID['ID'];
+			$show = $this->db->where('name',$ID)->get('account');
+			return $show;
 		}
+		
 	}
 ?>

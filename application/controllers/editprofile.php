@@ -5,7 +5,13 @@ class Editprofile extends CI_Controller {
 	public function index(){
 		if($this->session->userdata('ID')){
 			$ID = $this->session->all_userdata();
-			$this->load->view('editprofile');
+			
+			//load all
+			$this->load->model('member_model');
+			$name = $this->member_model->getName();
+			$data['name'] = $name;
+			//
+			$this->load->view('editprofile',$data);
 		}
 		else $this->load->view('mainsite');
 	}
