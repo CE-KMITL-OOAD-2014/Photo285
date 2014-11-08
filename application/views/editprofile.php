@@ -62,17 +62,6 @@
 								</div>
 						</div> <!--ส่วนกรอก username------>
 						
-						<div class="col-md-12"> <!--ส่วนกรอก NAME----A-->
-							<div class="form-group">
-								<div class="col-md-12">
-									<label for="exampleInputName1">Name</label>
-								</div>
-								<div class="col-md-12">
-									<input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="ตรงนี้ต้องเป็นชื่อเก่า แสดงอยู่ ชื่อออออ " required autofocus>
-								</div>
-							</div>
-						</div>  <!--ส่วนกรอก NAME------>
-						
 						<div class="col-md-12">  <!--ส่วนกรอก EMAIL----A-->
 							<div class="form-group">
 								<div class="col-md-12">
@@ -84,12 +73,21 @@
 							</div>
 						</div>  <!--ส่วนกรอก EMAIL------>
 						
-						
+						<div class="col-md-12"> <!--ส่วนกรอก NAME----A-->
+							<div class="form-group">
+								<div class="col-md-12">
+									<label for="exampleInputName1">Name</label>
+								</div>
+								<div class="col-md-12">
+									<input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="ตรงนี้ต้องเป็นชื่อเก่า แสดงอยู่ ชื่อออออ " required autofocus>
+								</div>
+							</div>
+						</div>  <!--ส่วนกรอก NAME------>					
 						
 						<div class="col-md-12">  <!--ส่วนกรอก DESCRIPTION----->
 							<div class="form-group">
 								<div class="col-md-12">
-									<label for="exampleInputEmail1">Description</label>
+									<label for="exampleInputEmail1">ประวัติส่วนตัว</label>
 								</div>
 								<div class="col-md-12">
 									  <textarea type="message" name="des" class="form-control" id="des" placeholder="Enter Description Here ..." required autofocus rows="5"></textarea>
@@ -100,7 +98,7 @@
 						<div class="col-md-12">  <!--ส่วนกรอก NOTICE--->
 							<div class="form-group">
 								<div class="col-md-12">
-									<label for="exampleInputEmail1">Notices Header</label>
+									<label for="exampleInputEmail1">ข่าวสาร</label>
 								</div>
 								<div class="col-md-12">
 									 <input type="email" name="email" maxlength="64" class="form-control" id="exampleInputEmail1" placeholder="Enter Notice Header here ..."  required autofocus>

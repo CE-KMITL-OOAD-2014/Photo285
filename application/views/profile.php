@@ -103,7 +103,14 @@
 				  <div class="col-md-12 col-xs-12 col-sm-12">
 						<center>
 							<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
-							<h3><? echo $id; ?></h3>
+							<h3>
+								<?
+								$data = $this->db->where('ID',$id)->get('account');
+									foreach($data->result_array() as $row){
+										echo"".$row['name'];
+								}
+								?>
+							</h3>
 							<em>
 								<?
 									$data = $this->db->where('ID',$id)->get('account');
@@ -155,7 +162,7 @@
 									<?
 										$data = $this->db->where('ID',$id)->get('account');
 											foreach($data->result_array() as $row){
-												echo"".$row['name'];
+												echo"".$row['ID'];
 											}
 									?>
 								</h4>   <!--ดึงชื่อมาจาก db-->
