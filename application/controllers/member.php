@@ -31,13 +31,6 @@ class Member extends CI_Controller {
 		}
 	}
 	
-	public function getname(){
-		$data = $this->db->where('ID',$id)->get('account');
-			foreach($data->result_array() as $row){
-				return "".$row['name'];
-		}
-	}
-	
 	public function logout(){
 		$this->session->sess_destroy();
 		echo"<script language='javascript'>window.location.href = '../../';</script>";

@@ -10,5 +10,9 @@
 			return $show;
 		}
 		
+		function getName(){ 
+			$ID = $this->session->all_userdata();
+			echo "".$ID['ID'];
+		}
 	}
 ?>
