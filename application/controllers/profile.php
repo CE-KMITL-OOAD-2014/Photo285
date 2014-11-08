@@ -16,7 +16,7 @@ class Profile extends CI_Controller {
 				$this->load->view('navbar');
 				$this->load->view('profile',$data);
 			}
-			else echo"<script language='javascript'>window.location.href = '../profile/show/".$ID."';</script>"; //redirect หน้าหลัง login
+			else echo"<script language='javascript'>window.location.href = '../../';</script>"; //redirect หน้าหลัง login
 
 		}
 	}
