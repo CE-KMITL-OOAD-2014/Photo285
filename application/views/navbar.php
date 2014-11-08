@@ -54,7 +54,7 @@
 					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
 						echo "<a href='../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log out</div></button></a>";
 					}
-					else echo "<a href='../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log in</div></button></a>";
+					else echo "<a href='#'><button type='input' class='btn btn-danger navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg2'><div class='link'>Log in</div></button></a>";
 				  ?>
 					 <li ><a href="<? // redirect ไปโชว์โปรไฟล์ตัวเอง
 						if($this->session->userdata('ID')){ 
@@ -73,5 +73,38 @@
 				</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+		
+		
+		<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!--?????????? ????????---??? LOG IN------->
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content"> 
+				<div class= "row">
+					<form action="../member/login"  method="post" role="form">
+						<div class="col-md-12">
+							<div class="col-md-12">
+							<h2 class="form">Please sign in</h2>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="col-md-12">
+							<input type="username" name="ID" id="ID" class="form-control" placeholder="Username" required autofocus>
+							</div>
+						</div>
+						<div class="col-md-12">
+						<div class="col-md-12">
+							<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+							</div>
+						</div>
+						<div class="col-md-12">
+						<div class="col-md-12">
+							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></br>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> <!--?????????? ????????---??? LOG IN------->
+	
   </body>
 </html>
