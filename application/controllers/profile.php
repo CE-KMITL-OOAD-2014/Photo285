@@ -11,6 +11,7 @@ class Profile extends CI_Controller {
 		else{
 			$id = $this->uri->segment(3); // ถ้ามี / อันที่ 3 เช่น (web.net/profile/show/admin) user คือ admin ก็เอามาเก็บในตัวแปล id
 			$data['id'] = $id;
+			$this->load->view('navbar');
 			$this->load->view('profile',$data);
 		}
 	}
