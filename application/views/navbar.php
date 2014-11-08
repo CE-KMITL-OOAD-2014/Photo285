@@ -79,7 +79,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 				<div class= "row">
-					<form action="../member/login"  method="post" role="form">
+					<form action="../../member/login"  method="post" role="form">
 						<div class="col-md-12">
 							<div class="col-md-12">
 							<h2 class="form">Please sign in</h2>
