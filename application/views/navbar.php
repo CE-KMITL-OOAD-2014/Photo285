@@ -46,7 +46,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav"> <!-----เปิด NAVBAR ฝั่งซ้าย--->
-				<button type="button" class="btn btn-warning navbar-btn"><a href="#"><div class="link">Edit Profile</div></a></button> <!------Manage Album------>
+				<button type="button" class="btn btn-warning navbar-btn"><a href="../../member/editprofile"><div class="link">Edit Profile</div></a></button> <!------Manage Album------>
 					<button type="button" class="btn btn-primary navbar-btn">Manage Album</a></button> <!------Manage Album------>
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
 				  <ul class="nav navbar-nav navbar-right">

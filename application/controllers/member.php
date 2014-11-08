@@ -35,5 +35,11 @@ class Member extends CI_Controller {
 		$this->session->sess_destroy();
 		echo"<script language='javascript'>window.location.href = '../../';</script>";
 	}
+	
+	public function editprofile(){
+		$this->load->view('editprofile');
+	
+	}
+	
 }
 ?>
