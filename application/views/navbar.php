@@ -50,7 +50,10 @@
 					<button type="button" class="btn btn-primary navbar-btn">Manage Album</a></button> <!------Manage Album------>
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
 				  <ul class="nav navbar-nav navbar-right">
-					<a href="../../member/logout"><button type="input" class="btn btn-danger navbar-btn"><div class="link">Log out</div></button></a> <!------logout------>
+					<?php if($this->session->userdata('ID')){
+					echo"<a href="../../member/logout"><button type="input" class="btn btn-danger navbar-btn"><div class="link">Log out</div></button></a> <!------logout------>"}
+					else {
+					echo"<button type='button' class='btn btn-default navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg2'><a href = '#'>Log in</a></button> <!------LOG IN------>}"?>
 					 <li ><a href="<? // redirect ไปโชว์โปรไฟล์ตัวเอง
 						if($this->session->userdata('ID')){ 
 							$ID = $this->session->all_userdata();
@@ -68,5 +71,37 @@
 				</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+		
+		<!-- Modal -->
+<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!--?????????? ????????---??? LOG IN------->
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content"> 
+				<div class= "row">
+					<form action="../member/login"  method="post" role="form">
+						<div class="col-md-12">
+							<div class="col-md-12">
+							<h2 class="form">Please sign in</h2>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="col-md-12">
+							<input type="username" name="ID" id="ID" class="form-control" placeholder="Username" required autofocus>
+							</div>
+						</div>
+						<div class="col-md-12">
+						<div class="col-md-12">
+							<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+							</div>
+						</div>
+						<div class="col-md-12">
+						<div class="col-md-12">
+							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></br>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> <!--?????????? ????????---??? LOG IN------->
   </body>
 </html>
