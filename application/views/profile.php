@@ -46,7 +46,6 @@
    background-color: none; <!--Link remove href-->
 }
 
-
 .box > .icon { text-align: center; position: relative; }
 .box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #63B76C; vertical-align: middle; }
 .box > .icon:hover > .image { background: #333; }
@@ -61,7 +60,7 @@
 .box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #63B76C; }
 .box .space { height: 30px; }
 	</style>
-	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
@@ -98,7 +97,6 @@
   </head>
   <body background="../../img/white.jpg">
   
- 
 	   <div class="container">
 			<div class="col-md-3 col-xs-12 col-sm-12">
 					
