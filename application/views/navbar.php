@@ -15,7 +15,12 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </head>
+  
   <body>
     
 	<nav class="navbar navbar-default" role="navigation">
@@ -32,19 +37,16 @@
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav"> <!-----เปิด NAVBAR ฝั่งซ้าย--->
+					<button type="button" class="btn btn-primary navbar-btn">Manage Album</a></button> <!------Manage Album------>
+				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
 				  <ul class="nav navbar-nav navbar-right">
-					 <li class="nonactive"><a href="#">Manage Album</a></li>
-					 <li class="active"><a href="#">$USERNAME 's Page</a></li>   <!--ตรงนี้ต้องเอาโค้ด php มาตรวจสอบ session มาตรวจสอบว่า เป็นหน้าไหนแล้ว ดูตามเป้-->
-					 <li class="nonactive"><a href="#">Log out</a></li>
-					 </li>
+				  <button type="button" class="btn btn-danger navbar-btn">Log out</a></button> <!------Manage Album------>
+					 <li ><a href="#">$USERNAME 's Page</a></li>   <!--ตรงนี้ต้องเอาโค้ด php มาตรวจสอบ session มาตรวจสอบว่า เป็นหน้าไหนแล้ว ดูตามเป้-->
 				  </ul>
 				</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+   
   </body>
 </html>
