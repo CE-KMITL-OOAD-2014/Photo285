@@ -12,8 +12,11 @@
 		
 		function getName(){
 			$ID = $this->session->all_userdata();
-			$show = $this->db->where('name',$ID['ID'])->get('account');
-			return $show;
+			$name = $this->db->where('name',$ID['ID'])->get('account');
+			foreach($name->result_array() as $row){
+				return $row['name'];
+			}
+
 		}
 		
 	}
