@@ -43,14 +43,16 @@
 				  <ul class="nav navbar-nav navbar-right">
 				  <button type="button" class="btn btn-danger navbar-btn">Log out</a></button> <!------Manage Album------>
 					 <li ><a href="#"><?
+						if($this->session->userdata('ID')){
 						$ID = $this->session->all_userdata();
 						echo "".$ID['ID'];
+						}
+						else echo "";
 						?>
 						</a></li>   <!--ตรงนี้ต้องเอาโค้ด php มาตรวจสอบ session มาตรวจสอบว่า เป็นหน้าไหนแล้ว ดูตามเป้-->
 				  </ul>
 				</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-   
   </body>
 </html>
