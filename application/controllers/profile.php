@@ -9,10 +9,15 @@ class Profile extends CI_Controller {
 			</script>";
 		}
 		else{
-			$id = $this->uri->segment(3); // ถ้ามี / อันที่ 3 เช่น (web.net/profile/show/admin) user คือ admin ก็เอามาเก็บในตัวแปล id
-			$data['id'] = $id;
-			$this->load->view('navbar');
-			$this->load->view('profile',$data);
+			$check = $this->db->where('ID',$this->uri->segment(3))->count_all_results('account');
+			if($check==1){
+				$id = $this->uri->segment(3); // ถ้ามี / อันที่ 3 เช่น (web.net/profile/show/admin) user คือ admin ก็เอามาเก็บในตัวแปล id
+				$data['id'] = $id;
+				$this->load->view('navbar');
+				$this->load->view('profile',$data);
+			}
+			else echo"<script language='javascript'>window.location.href = '../profile/show/".$ID."';</script>"; //redirect หน้าหลัง login
+
 		}
 	}
 }
