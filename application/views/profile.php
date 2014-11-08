@@ -87,7 +87,7 @@
 	</script>
 
   </head>
-  <body>
+  <body background="img/white.jpg">
   
  
 	   <div class="container">
