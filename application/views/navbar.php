@@ -44,8 +44,8 @@
 				  <button type="button" class="btn btn-danger navbar-btn">Log out</a></button> <!------Manage Album------>
 					 <li ><a href="#"><?
 						if($this->session->userdata('ID')){
-						$ID = $this->session->all_userdata();
-						echo "".$ID['ID'];
+							$ID = $this->session->all_userdata();
+							echo "".$ID['ID'];
 						}
 						else echo "";
 						?>
