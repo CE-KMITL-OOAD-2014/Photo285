@@ -52,12 +52,11 @@
 				  <ul class="nav navbar-nav navbar-right">
 					<?
 					if($this->session->userdata('ID')){
-						echo "<a href="../../member/logout"><button type="input" class="btn btn-danger navbar-btn"><div class="link">Log out</div></button></a>";
+						echo "<script language='javascript'><a href="../../member/logout"><button type="input" class="btn btn-danger navbar-btn"><div class="link">Log out</div></button></a></script>";
 					}
-					else echo "<a href="../../member/logout"><button type="input" class="btn btn-danger navbar-btn"><div class="link">Log in</div></button></a>";
+					else echo "<script language='javascript'><a href="../../member/logout"><button type="input" class="btn btn-danger navbar-btn"><div class="link">Log in</div></button></a></script>";
 					
 					?>
-					<a href="../../member/logout"><button type="input" class="btn btn-danger navbar-btn"><div class="link">Log out</div></button></a> <!------logout------>
 					 <li ><a href="<? // redirect ไปโชว์โปรไฟล์ตัวเอง
 						if($this->session->userdata('ID')){ 
 							$ID = $this->session->all_userdata();
