@@ -50,8 +50,7 @@
 					<button type="button" class="btn btn-primary navbar-btn">Manage Album</a></button> <!------Manage Album------>
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
 				  <ul class="nav navbar-nav navbar-right">
-					<?php if($this->session->userdata('ID')) ehco"<a href='../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log out</div></button></a> <!------logout------>";
-					else echo"<button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log in</div></button></a> <!------logout------>";?>
+					
 					 <li ><a href="<? // redirect ไปโชว์โปรไฟล์ตัวเอง
 						if($this->session->userdata('ID')){ 
 							$ID = $this->session->all_userdata();
