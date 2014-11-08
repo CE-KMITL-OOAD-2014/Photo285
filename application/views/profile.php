@@ -110,6 +110,13 @@
 					
 					<!-- Boxes de Acoes -->
 					<div class="col-md-12 col-xs-12 col-sm-12">
+						<div class="row">
+						<center>
+							<br>
+							<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">See More Album</a>						
+						</center>
+						</ul>
+					</div>
 						<div class="box">							
 							<div class="icon">
 								</br>
