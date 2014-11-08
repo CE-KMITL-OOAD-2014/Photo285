@@ -51,7 +51,7 @@
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
 				  <ul class="nav navbar-nav navbar-right">
 				  <?
-					if($this->session->userdata('ID')){
+					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
 						echo "<a href='../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log out</div></button></a>";
 					}
 					else echo "<a href='../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log in</div></button></a>";
