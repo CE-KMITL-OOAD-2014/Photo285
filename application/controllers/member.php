@@ -1,5 +1,4 @@
 <?
-
 class Member extends CI_Controller {
 	public function register(){
 		$ID = $_POST["ID"];
@@ -14,6 +13,7 @@ class Member extends CI_Controller {
 			window.location.href = '../';
 			</script>";
 	}
+	
 	public function login(){
 		$ID = $_POST["ID"];
 		$pass = md5($_POST["pass"]);
@@ -30,6 +30,7 @@ class Member extends CI_Controller {
 				</script>";
 		}
 	}
+	
 	public function logout(){
 		$this->session->sess_destroy();
 		echo"<script language='javascript'>window.location.href = '../../';</script>";
