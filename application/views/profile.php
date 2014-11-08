@@ -39,28 +39,14 @@
     z-index:1032;
 }
 
-.dynamicTile .col-sm-2.col-xs-4{
-    padding:5px;
+ .link
+{
+   color:white;
+   text-decoration: none; 
+   background-color: none; <!--Link remove href-->
 }
 
-.dynamicTile .col-sm-4.col-xs-8{
-    padding:5px;
-}
-#tile10{
-    background: rgb(0,93,233);
-}
-.tilecaption{
-    position: relative;
-    top: 100%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%); 
-    margin:0!important;
-    text-align: center;
-    color:white;
-    font-family: Segoe UI;
-    font-weight: lighter;
-} 
+
 .box > .icon { text-align: center; position: relative; }
 .box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #63B76C; vertical-align: middle; }
 .box > .icon:hover > .image { background: #333; }
@@ -136,35 +122,7 @@
 						<div class="row">
 						<center>
 							<br>
-							
-							<div class="container-fluid dynamicTile">
-								<div class="col-md-12">
-									<div id="tile1" class="tile">
-        
-										<div class="carousel slide" data-ride="carousel">
-											  <!-- Wrapper for slides -->
-											  <div class="carousel-inner">
-													<div class="item active">
-													   <a href="#####"><img src="../../img/Fish.jpg" class="img-responsive"/></a>
-													</div>
-													<div class="item">
-													   <a href="#####"><img src="../../img/Woman.jpg" class="img-responsive"/></a>
-													</div>
-													 <div class="item">
-													   <a href="######"><img src="../../img/Lotus.jpg" class="img-responsive"/></a>
-													</div>
-													<div class="item">
-													   <a href="#####"><img src="../../img/seemore.jpg" class="img-responsive"/></a> <!--รูปนี้ไม่ต้องเปลี่ยน รูปนี้ถาวร-->
-													</div>
-												</div>
-										</div>
-         
-									</div>
-								</div>
-						
-						
-						</div>
-							
+							<button type="button" class="btn btn-primary navbar-btn"><a href="#"><div class="link">See More Album ...</div></a></button> <!-----see album----->
 						</center>
 						</ul>
 					</div>
