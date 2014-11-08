@@ -39,6 +39,28 @@
     z-index:1032;
 }
 
+.dynamicTile .col-sm-2.col-xs-4{
+    padding:5px;
+}
+
+.dynamicTile .col-sm-4.col-xs-8{
+    padding:5px;
+}
+#tile10{
+    background: rgb(0,93,233);
+}
+.tilecaption{
+    position: relative;
+    top: 100%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%); 
+    margin:0!important;
+    text-align: center;
+    color:white;
+    font-family: Segoe UI;
+    font-weight: lighter;
+} 
 .box > .icon { text-align: center; position: relative; }
 .box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #63B76C; vertical-align: middle; }
 .box > .icon:hover > .image { background: #333; }
@@ -53,10 +75,11 @@
 .box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #63B76C; }
 .box .space { height: 30px; }
 	</style>
-	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/font-awesome.min.css"></script>
 	
 	<script>
 	$(document).ready(function() {
@@ -113,7 +136,35 @@
 						<div class="row">
 						<center>
 							<br>
-							<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">See More Album</a>						
+							
+							<div class="container-fluid dynamicTile">
+								<div class="col-md-12">
+									<div id="tile1" class="tile">
+        
+										<div class="carousel slide" data-ride="carousel">
+											  <!-- Wrapper for slides -->
+											  <div class="carousel-inner">
+													<div class="item active">
+													   <a href="#####"><img src="../../img/Fish.jpg" class="img-responsive"/></a>
+													</div>
+													<div class="item">
+													   <a href="#####"><img src="../../img/Woman.jpg" class="img-responsive"/></a>
+													</div>
+													 <div class="item">
+													   <a href="######"><img src="../../img/Lotus.jpg" class="img-responsive"/></a>
+													</div>
+													<div class="item">
+													   <a href="#####"><img src="../../img/seemore.jpg" class="img-responsive"/></a> <!--รูปนี้ไม่ต้องเปลี่ยน รูปนี้ถาวร-->
+													</div>
+												</div>
+										</div>
+         
+									</div>
+								</div>
+						
+						
+						</div>
+							
 						</center>
 						</ul>
 					</div>
