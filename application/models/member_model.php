@@ -13,13 +13,9 @@
 		*/
 		function getName($data){
 			$name = $this->db->where('ID',$data)->get('account');
-			echo "d1".$data."<br/>";
-			echo "d2".$name."<br/>";
 			foreach($name->result_array() as $row){
-				echo "d3".$row['name']."<br/>";
 				return $row['name'];
 			}
-			
 		}
 	}
 ?>
