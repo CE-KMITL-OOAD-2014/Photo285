@@ -12,13 +12,17 @@
 		}
 		*/
 		function getName(){
-			$ID = $this->session->all_userdata();
-			echo "<script>alert('test');</script>";
-			$name = $this->db->where('name',$ID['ID'])->get('account');
-			foreach($name->result_array() as $row){
-				return $row['name'];
+			if($this->session->userdata('ID')){ 
+				$ID = $this->session->all_userdata();
+				echo "<script>alert('ok');</script>";
 			}
-
+			//$ID = $this->session->all_userdata();
+			//echo "<script>alert('test');</script>";
+			//$name = $this->db->where('name',$ID['ID'])->get('account');
+			//foreach($name->result_array() as $row){
+			//	return $row['name'];
+			//}
+			else echo "<script>alert('fail');</script>";
 		}
 		
 	}
