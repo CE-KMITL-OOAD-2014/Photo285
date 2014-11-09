@@ -68,7 +68,7 @@
 									<label for="exampleInputEmail1">Email address</label>
 								</div>
 								<div class="col-md-12">
-									<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="ตรงนี้ต้อง เป็น EMANIL ห้ามเปลี่ยนนน" readonly="readonly" required autofocus>
+									<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="email" readonly="readonly" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก EMAIL------>
