@@ -68,7 +68,7 @@
 									<label for="exampleInputEmail1">Email address</label>
 								</div>
 								<div class="col-md-12">
-									<input type="email" name="email" class="form-control" id="exampleInputEmail1" value="emaddial" readonly="readonly" required autofocus>
+									<input type="email" name="email" class="form-control" id="exampleInputEmail1" value="<? echo "".$email; ?>" readonly="readonly" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก EMAIL------>
@@ -79,7 +79,7 @@
 									<label for="exampleInputName1">Name</label>
 								</div>
 								<div class="col-md-12">
-									<input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="ตรงนี้ต้องเป็นชื่อเก่า แสดงอยู่ ชื่อออออ " required autofocus>
+									<input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="<? echo "".$name; ?>" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NAME------>					

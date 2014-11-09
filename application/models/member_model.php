@@ -23,5 +23,6 @@
 			foreach($email->result_array() as $row){
 				return $row['email'];
 			}
+		}
 	}
 ?>
