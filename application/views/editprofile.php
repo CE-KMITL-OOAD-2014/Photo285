@@ -57,7 +57,7 @@
 										<label for="exampleInputUsername1">Username</label>
 									</div>
 									<div class="col-md-12">
-										<output type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" placeholder="<? echo "test"; ?>" readonly="readonly"required autofocus>
+										<output type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" value="<? echo "test"; ?>" readonly="readonly"required autofocus>
 									</div>
 								</div>
 						</div> <!--ส่วนกรอก username------>
@@ -68,7 +68,7 @@
 									<label for="exampleInputEmail1">Email address</label>
 								</div>
 								<div class="col-md-12">
-									<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="emaial" readonly="readonly" required autofocus>
+									<input type="email" name="email" class="form-control" id="exampleInputEmail1" value="emaial" readonly="readonly" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก EMAIL------>
