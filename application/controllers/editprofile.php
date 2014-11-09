@@ -11,6 +11,7 @@ class Editprofile extends CI_Controller {
 			$name = $this->member_model->getName($ID['ID']);
 			$data['name'] = $name;
 			//
+			echo "d1".$name;
 			$this->load->view('editprofile',$data);
 		}
 		else $this->load->view('mainsite');
