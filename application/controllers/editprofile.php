@@ -9,8 +9,8 @@ class Editprofile extends CI_Controller {
 			//load all
 			$this->load->model('member_model');
 			$name = $this->member_model->getName($ID['ID']);
-			$data = array('name' => $name , 'id' => $ID['ID'];
-			//
+			$data = array('name' => $name , 'id' => $ID['ID']);
+			//$temp = array( 'detail' => $detail, 'pdata' => $pdata);
 			$this->load->view('editprofile',$data);
 		}
 		else $this->load->view('mainsite');
