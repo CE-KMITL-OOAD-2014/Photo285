@@ -68,7 +68,7 @@
 									<label for="exampleInputEmail1">Email address</label>
 								</div>
 								<div class="col-md-12">
-									<input type="email" name="email" class="form-control" id="exampleInputEmail1" value="emaial" readonly="readonly" required autofocus>
+									<input type="email" name="email" class="form-control" id="exampleInputEmail1" value="emaddial" readonly="readonly" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก EMAIL------>
