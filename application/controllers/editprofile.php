@@ -10,7 +10,7 @@ class Editprofile extends CI_Controller {
 			$this->load->model('member_model');
 			$name = $this->member_model->getName();
 			$data['name'] = $name;
-			echo "<script>alert($name);</script>"
+			echo "<script>alert($name);</script>";
 			//
 			$this->load->view('editprofile',$data);
 		}
