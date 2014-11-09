@@ -17,5 +17,11 @@
 				return $row['name'];
 			}
 		}
+		
+		function getEmail($data){
+			$email = $this->db->where('ID',$data)->get('account');
+			foreach($email->result_array() as $row){
+				return $row['email'];
+			}
 	}
 ?>
