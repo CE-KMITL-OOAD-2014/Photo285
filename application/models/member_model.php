@@ -11,21 +11,11 @@
 			return $show;
 		}
 		*/
-		function getName(){
-			if($this->session->userdata('ID')){ 
-				$ID = $this->session->all_userdata();
-				$ID = "".$ID['ID'];
-				echo $ID;
-				echo "<script>alert($ID);</script>";
+		function getName($data){
+			$name = $this->db->where('name',$data['ID'])->get('account');
+			foreach($name->result_array() as $row){
+				return $row['name'];
 			}
-			//$ID = $this->session->all_userdata();
-			//echo "<script>alert('test');</script>";
-			//$name = $this->db->where('name',$ID['ID'])->get('account');
-			//foreach($name->result_array() as $row){
-			//	return $row['name'];
-			//}
-			else echo "<script>alert('fail');</script>";
 		}
-		
 	}
 ?>
