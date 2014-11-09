@@ -15,7 +15,7 @@
 			if($this->session->userdata('ID')){ 
 				$ID = $this->session->all_userdata();
 				$ID = "".$ID['ID'];
-				echo $ID;
+				//echo $ID;
 				echo "<script>alert($ID);</script>";
 			}
 			//$ID = $this->session->all_userdata();
