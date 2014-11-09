@@ -14,7 +14,8 @@
 		function getName(){
 			if($this->session->userdata('ID')){ 
 				$ID = $this->session->all_userdata();
-				echo "".$ID['ID'];
+				$ID = "".$ID['ID'];
+				echo $ID;
 			}
 			//$ID = $this->session->all_userdata();
 			//echo "<script>alert('test');</script>";
