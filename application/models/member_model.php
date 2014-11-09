@@ -13,7 +13,7 @@
 		*/
 		function getName(){
 			$ID = $this->session->all_userdata();
-			echo "<script>alert($ID);</script>";
+			echo "<script>alert("".$ID['ID']);</script>";
 			$name = $this->db->where('name',$ID['ID'])->get('account');
 			foreach($name->result_array() as $row){
 				return $row['name'];
