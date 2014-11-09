@@ -57,7 +57,7 @@
 										<label for="exampleInputUsername1">Username</label>
 									</div>
 									<div class="col-md-12">
-										<output type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" value="<? echo "test"; ?>" readonly="readonly"required autofocus>
+										<input type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" value="<? echo "test"; ?>" readonly="readonly"required autofocus>
 									</div>
 								</div>
 						</div> <!--ส่วนกรอก username------>
