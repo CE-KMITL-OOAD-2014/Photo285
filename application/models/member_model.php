@@ -15,7 +15,7 @@
 			$ID = $this->session->all_userdata();
 			$name = $this->db->where('name',$ID['ID'])->get('account');
 			foreach($name->result_array() as $row){
-				return "".$row['name'];
+				return $row['name'];
 			}
 
 		}
