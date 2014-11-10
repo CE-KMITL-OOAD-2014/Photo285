@@ -369,7 +369,7 @@
 									<label for="exampleInputPassword1">Password</label>
 								</div>
 								<div class="col-md-12">
-									<input type="password" name="pass" class="form-control" pattern=".{5,10}" required title="5 to 10 characters" id="pass" placeholder="Password" required autofocus>
+									<input type="password" name="pass" class="form-control" pattern=".{6,12}" required title="6 to 12 characters" id="pass" placeholder="Password" required autofocus>
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก PASSWAORD---->
