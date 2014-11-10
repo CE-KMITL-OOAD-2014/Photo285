@@ -79,7 +79,7 @@
 									<label for="exampleInputName1">Name</label>
 								</div>
 								<div class="col-md-12">
-									<input type="text" name="name" class="form-control" id="exampleInputName1"  pattern=".{6,15}" required title="6 to 15 characters" value="<? echo "".$name; ?>" required autofocus>
+									<input type="text" name="name" class="form-control" id="exampleInputName1"  pattern=".{6,60}" required title="6 to 15 characters" value="<? echo "".$name; ?>" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NAME------>					
