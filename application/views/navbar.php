@@ -45,11 +45,21 @@
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				
+				
+				<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
 				<ul class="nav navbar-nav"> <!-----เปิด NAVBAR ฝั่งซ้าย--->
-				<a href="../member/editprofile"><button type="input" class="btn btn-warning navbar-btn"><div class="link">Edit Profile</div></button></a> <!------Manage Album------>
-					<button type="button" class="btn btn-primary navbar-btn">Manage Album</a></button> <!------Manage Album------>
+				<?
+					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
+						echo "<a href='../member/editprofile'><button type='input' class='btn btn-warning navbar-btn'><div class='link'>Edit Profile</div></button></a>"; // <!------Manage Album------>
+						echo "<button type='button' class='btn btn-primary navbar-btn'>Manage Album</a></button>"; // <!------Manage Album------>
+					}
+				?>
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
-				  <ul class="nav navbar-nav navbar-right">
+				<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+				
+				<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+				  <ul class="nav navbar-nav navbar-right"><!-----เปิด NAVBAR ฝั่งขวา--->
 				  <?
 					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
 						echo "<a href='../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log out</div></button></a>";
@@ -69,9 +79,12 @@
 						else echo "";
 						?>
 						</a></li>   <!--ตรงนี้ต้องเอาโค้ด php มาตรวจสอบ session มาตรวจสอบว่า เป็นหน้าไหนแล้ว ดูตามเป้-->
-				  </ul>
+				  </ul><!-----ปิด NAVBAR ฝั่งขวา--->
+				<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+				
+				
 				</div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
+			</div><!-- /.container-fluid -->
 		</nav>
 		
 		
