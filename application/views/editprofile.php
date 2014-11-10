@@ -90,7 +90,7 @@
 									<label for="exampleInputEmail1">ประวัติส่วนตัว</label>
 								</div>
 								<div class="col-md-12">
-									  <textarea type="message" name="des" class="form-control" id="des" value="test" required autofocus rows="5"></textarea>
+									  <input type="message" name="des" class="form-control" id="des" value="<? echo "".$resume; ?>" required autofocus rows="5">
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก DESCRIPTION----->
