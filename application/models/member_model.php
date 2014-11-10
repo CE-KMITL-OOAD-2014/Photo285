@@ -24,5 +24,19 @@
 				return $row['email'];
 			}
 		}
+		
+		function getDetail($data){
+			$email = $this->db->where('ID',$data)->get('account');
+			foreach($email->result_array() as $row){
+				return $row['detail'];
+			}
+		}
+		
+		function getResume($data){
+			$email = $this->db->where('ID',$data)->get('account');
+			foreach($email->result_array() as $row){
+				return $row['resume'];
+			}
+		}
 	}
 ?>

@@ -44,8 +44,9 @@ class Member extends CI_Controller {
 			$this->load->model('member_model');
 			$name = $this->member_model->getName($ID['ID']);
 			$email = $this->member_model->getEmail($ID['ID']);
-			$data = array('name' => $name , 'id' => $ID['ID'] , 'email' => $email);
-			//$temp = array( 'detail' => $detail, 'pdata' => $pdata);
+			$detail = $this->member_model->getDetail($ID['ID']);
+			$resume = $this->member_model->getResume($ID['ID']);
+			$data = array('name' => $name , 'id' => $ID['ID'] , 'email' => $email , 'detail' => $detail , 'resume' => $resume);
 			$this->load->view('editprofile',$data);
 		}
 		else $this->load->view('mainsite');
