@@ -37,7 +37,7 @@
 						<div class ="col-md-4">	
 						 <div class="col-md-12 col-xs-12 col-sm-12">
 						<center>
-							<a href="#aboutModal" ><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
+							<a href="#aboutModal" ><img src="img/user.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
 							<div class="row">
 						<center>
 							<br>
