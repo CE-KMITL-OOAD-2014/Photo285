@@ -110,7 +110,7 @@
 							<div class="col-md-12">
 							</br>
 							<button type="submit" value="OK" id ="regisbutton" class="btn btn-success">Submit</button>
-							<a href="../../profile/show/<? echo "".$id; ?>" class="btn btn-success btn-block btn-lg">cancel</a>
+							<a href="../../profile/show/<? echo "".$id; ?>" id ="cancel" class="btn btn-warning"><div class="link">cancel</div></a>
 							</div>
 						</div> <!------ส่วนกด SUMMIT--->
 						
