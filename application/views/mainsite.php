@@ -86,12 +86,14 @@
 	</script>
   </head>
   <body background="img/back.jpg">
-	<?
+  
+	<?//redirect ไปหน้า profile กรณี login แล้ว
 		if($this->session->userdata('ID')){ // แสดงชื่อโปรไฟล์ตัวเอง
 			$ID = $this->session->all_userdata();
-			echo"<script language='javascript'>window.location.href = 'profile/show/admin';</script>";
+			echo"<script language='javascript'>window.location.href = 'profile/show/".$ID['ID']."';</script>";
 		}
 	?>
+	
 	<nav class="navbar navbar-default" role="navigation">   <!--เริ่ม NAVBAR--------------->
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
