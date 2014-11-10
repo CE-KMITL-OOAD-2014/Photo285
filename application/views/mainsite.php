@@ -110,7 +110,6 @@
 			</div><!-- ปิด COLLAPSE -->
 		</div><!-- /.container-fluid -->
 	</nav> <!--  จบ NAVBAR------------------->
-	<div class="container-fluid dynamicTile">
 		<div class="row ">
 			<div class="col-sm-2 col-xs-4">
 				<div id="tile1" class="tile">
