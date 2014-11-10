@@ -52,7 +52,9 @@
 				<?
 					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
 						echo "<a href='../member/editprofile'><button type='input' class='btn btn-warning navbar-btn'><div class='link'>Edit Profile</div></button></a>"; // <!------Manage Album------>
-						echo "<button type='button' class='btn btn-primary navbar-btn'>Manage Album</a></button>"; // <!------Manage Album------>
+						echo "  ";
+						echo "<a href='#'><button type='button' class='btn btn-primary navbar-btn'>Manage Album</a></button>"; // <!------Manage Album------>
+						echo "  ";
 					}
 				?>
 				</ul> <!-----ปิด NAVBAR ฝั่งซ้าย--->
@@ -78,7 +80,7 @@
 						}
 						else echo "";
 						?>
-						</a></li>   <!--ตรงนี้ต้องเอาโค้ด php มาตรวจสอบ session มาตรวจสอบว่า เป็นหน้าไหนแล้ว ดูตามเป้-->
+						</a></li>
 				  </ul><!-----ปิด NAVBAR ฝั่งขวา--->
 				<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
 				
