@@ -53,5 +53,22 @@ class Member extends CI_Controller {
 		else $this->load->view('mainsite');
 	}
 	
+	public function editProfileSend(){
+		$name = $_POST["name"];
+		$resume = $_POST["resume"];
+		$detail = $_POST["detail"];
+		$data = array('name'=>$name,'resume'=>$resume,'detail'=>$detail);
+		$this->load->model('member_model');
+		echo $name;
+		echo $resume;
+		echo $detail;
+		//$this->member_model->editprofile($data);
+		//echo"<script language='javascript'>
+		//	alert('Edit done');
+		//	window.location.href = '../';
+		//	</script>";
+	
+	}
+	
 }
 ?>

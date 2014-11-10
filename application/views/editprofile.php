@@ -57,7 +57,7 @@
 										<label for="exampleInputUsername1">Username</label>
 									</div>
 									<div class="col-md-12">
-										<input type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" value="<? echo "".$id; ?>" readonly="readonly"required autofocus>
+										<input type="text" name="username" class="form-control " width = "50%" id="exampleInputUsername1" value="<? echo "".$id; ?>" readonly="readonly"required autofocus>
 									</div>
 								</div>
 						</div> <!--ส่วนกรอก username------>
@@ -90,7 +90,7 @@
 									<label for="exampleInputEmail1">ประวัติส่วนตัว</label>
 								</div>
 								<div class="col-md-12">
-									  <input type="message" name="des" class="form-control" id="des" value="<? echo "".$resume; ?>">
+									  <input type="message" name="resume" class="form-control" id="des" value="<? echo "".$resume; ?>">
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก DESCRIPTION----->
@@ -101,7 +101,7 @@
 									<label for="exampleInputEmail1">ข่าวสาร</label>
 								</div>
 								<div class="col-md-12">
-									 <input type="text" maxlength="64" class="form-control" id="test" value="<? echo "".$detail; ?>">
+									 <input type="text" name="detail" maxlength="64" class="form-control" id="test" value="<? echo "".$detail; ?>">
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NOTICE----->
