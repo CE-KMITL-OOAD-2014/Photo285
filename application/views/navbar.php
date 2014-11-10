@@ -53,7 +53,7 @@
 					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
 						echo "<a href='../member/editprofile'><button type='input' class='btn btn-warning navbar-btn'><div class='link'>Edit Profile</div></button></a>"; // <!------Manage Album------>
 						echo "  ";
-						echo "<a href='#'><button type='button' class='btn btn-primary navbar-btn'>Manage Album</a></button>"; // <!------Manage Album------>
+						echo "<a href='#'><button type='button' class='btn btn-primary navbar-btn'><div class='link'>Manage Album</div></a></button>"; // <!------Manage Album------>
 						echo "  ";
 					}
 				?>
