@@ -90,7 +90,7 @@
 									<label for="exampleInputEmail1">ประวัติส่วนตัว</label>
 								</div>
 								<div class="col-md-12">
-									  <input type="message" name="resume" class="form-control" id="des" value="<? echo "".$resume; ?>">
+									  <input type="message" name="resume" class="form-control" pattern=".{6,15}" required title="6 to 15 characters" id="des" value="<? echo "".$resume; ?>">
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก DESCRIPTION----->
