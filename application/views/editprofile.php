@@ -105,16 +105,6 @@
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NOTICE----->
-						<div class="col-md-12">  <!--ส่วนกรอก NOTICE--->
-							<div class="form-group">
-								<div class="col-md-12">
-									<label for="exampleInputEmail1">Notices</label>
-								</div>
-								<div class="col-md-12">
-									  <textarea type="message" name="mess2" maxlength="256" class="form-control" id="mess2" placeholder="Enter Notices Story Here ..." required autofocus rows="3"></textarea>
-								</div>
-							</div>
-						</div>  <!--ส่วนกรอก NOTICE----->
 						<script>
 						<!--เช็คpassword ว่าตรงกับ comfirm ไหม -->
 						function checkPasswordMatch() {
