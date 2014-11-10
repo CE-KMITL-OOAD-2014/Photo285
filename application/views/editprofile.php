@@ -57,7 +57,7 @@
 										<label for="exampleInputUsername1">Username</label>
 									</div>
 									<div class="col-md-12">
-										<input type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" value="<? echo "".$id; ?>" readonly="readonly">
+										<input type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" value="<? echo "".$id; ?>" readonly="readonly"required autofocus>
 									</div>
 								</div>
 						</div> <!--ส่วนกรอก username------>
@@ -68,7 +68,7 @@
 									<label for="exampleInputEmail1">Email address</label>
 								</div>
 								<div class="col-md-12">
-									<input type="email" name="email" class="form-control" id="exampleInputEmail1" value="<? echo "".$email; ?>" readonly="readonly">
+									<input type="email" name="email" class="form-control" id="exampleInputEmail1" value="<? echo "".$email; ?>" readonly="readonly" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก EMAIL------>
@@ -79,7 +79,7 @@
 									<label for="exampleInputName1">Name</label>
 								</div>
 								<div class="col-md-12">
-									<input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="<? echo "".$name; ?>">
+									<input type="text" name="name" class="form-control" id="exampleInputName1" value="<? echo "".$name; ?>" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NAME------>					
@@ -90,7 +90,7 @@
 									<label for="exampleInputEmail1">ประวัติส่วนตัว</label>
 								</div>
 								<div class="col-md-12">
-									  <textarea type="message" name="des" class="form-control" id="des" placeholder="Enter Description Here ..." rows="5"></textarea>
+									  <textarea type="message" name="des" class="form-control" id="des" value="Enter Description Here ..." placeholder="Enter Description Here ..." required autofocus rows="5"></textarea>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก DESCRIPTION----->
@@ -101,7 +101,7 @@
 									<label for="exampleInputEmail1">ข่าวสาร</label>
 								</div>
 								<div class="col-md-12">
-									 <input type="email" name="email" maxlength="64" class="form-control" id="exampleInputEmail1" placeholder="Enter Notice Header here ...">
+									 <input type="email" name="email" maxlength="64" class="form-control" id="exampleInputEmail1" placeholder="Enter Notice Header here ..."  required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NOTICE----->
