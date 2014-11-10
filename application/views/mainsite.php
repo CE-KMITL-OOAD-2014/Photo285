@@ -337,7 +337,7 @@
 										<label for="exampleInputUsername1">Username</label>
 									</div>
 									<div class="col-md-12">
-										<input type="text" name="ID" class="form-control " width = "50%" id="exampleInputUsername1" placeholder="Enter username" required autofocus>
+										<input type="text" name="ID" class="form-control" pattern=".{6,12}" required title="6 to 12 characters" width = "50%" id="exampleInputUsername1" placeholder="Enter username" required autofocus>
 									</div>
 								</div>
 						</div> <!--ส่วนกรอก username------>
