@@ -1,16 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Photo285 : Upload Youe Picture</title>
-
+	<title>Photo285 : Upload Youe Picture</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-		<style>
+	<style> <!--ส่วนตั้งค่ารูป-->
 	.dynamicTile .col-sm-2.col-xs-4{
     padding:5px;
 }
@@ -73,26 +70,20 @@
     font-weight: lighter;
 }
 
-  </style>
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	</style>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/font-awesome.min.css"></script>
-	
-  <script>
-    
-     
-    $(window).resize(function() {
-    if(this.resizeTO) clearTimeout(this.resizeTO);
-	this.resizeTO = setTimeout(function() {
-		$(this).trigger('resizeEnd');
-	}, 10);
-    });
-    
- 
-  </script>
-  
+	<script> <!--ส่วนตั้งเวลา ไสลด์รูป-->
+		$(window).resize(function() {
+		if(this.resizeTO) clearTimeout(this.resizeTO);
+		this.resizeTO = setTimeout(function() {
+			$(this).trigger('resizeEnd');
+		}, 10);
+		});
+	</script>
   </head>
   <body background="img/back.jpg">
 	<nav class="navbar navbar-default" role="navigation">   <!--เริ่ม NAVBAR--------------->
@@ -119,27 +110,23 @@
 			</div><!-- ปิด COLLAPSE -->
 		</div><!-- /.container-fluid -->
 	</nav> <!--  จบ NAVBAR------------------->
-
-		
-   <div class="container-fluid dynamicTile">
-<div class="row ">
-    <div class="col-sm-2 col-xs-4">
-    	<div id="tile1" class="tile">
-        
-         <div class="carousel slide" data-ride="carousel">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-               <img src="img/Jellyfish.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-               <img src="img/Koala.jpg" class="img-responsive"/>
-            </div>
-          </div>
-        </div>
-         
-    	</div>
-	</div>
+	<div class="container-fluid dynamicTile">
+		<div class="row ">
+			<div class="col-sm-2 col-xs-4">
+				<div id="tile1" class="tile">
+					<div class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+							   <img src="img/Jellyfish.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							   <img src="img/Koala.jpg" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 	<div class="col-sm-2 col-xs-4">
 		<div id="tile2" class="tile">
     	 
@@ -228,7 +215,7 @@
 		</div>
 	</div>
 </div>
-
+</div>
 <div class="row">
 	<div class="col-sm-4 col-xs-12 col-md-4" >
 		<div id="tile7" class="tile">
