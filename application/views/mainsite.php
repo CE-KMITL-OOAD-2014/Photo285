@@ -215,7 +215,7 @@
 		</div>
 	</div>
 </div>
-</div>
+
 <div class="row">
 	<div class="col-sm-4 col-xs-12 col-md-4" >
 		<div id="tile7" class="tile">
