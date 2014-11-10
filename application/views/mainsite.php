@@ -323,8 +323,7 @@
 		</div>
 	</div>
 
-
-    <!-- Modal -->
+    <!-- Modal ส่วน SIGN UP-->
 	<div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!--ส่วนเชื่อม แถบเด้งๆ---ของ SIGN UP------->
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
@@ -352,7 +351,7 @@
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NAME------>
-						
+	
 						<div class="col-md-12">  <!--ส่วนกรอก EMAIL----A-->
 							<div class="form-group">
 								<div class="col-md-12">
@@ -415,37 +414,36 @@
 		</div>
 	</div>  <!--ปิดส่วนเชื่อม แถบเด้งๆ-----ของ SIGN UP----->
 	
-	 <!-- Modal -->
-<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!--?????????? ????????---??? LOG IN------->
+	<!-- Modal LOG IN-->
+	<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 				<div class= "row">
 					<form action="../member/login"  method="post" role="form">
 						<div class="col-md-12">
 							<div class="col-md-12">
-							<h2 class="form">Please sign in</h2>
+								<h2 class="form">Please sign in</h2>
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="col-md-12">
-							<input type="username" name="ID" id="ID" class="form-control" placeholder="Username" required autofocus>
+								<input type="username" name="ID" id="ID" class="form-control" placeholder="Username" required autofocus>
 							</div>
 						</div>
 						<div class="col-md-12">
-						<div class="col-md-12">
-							<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+							<div class="col-md-12">
+								<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
 							</div>
 						</div>
 						<div class="col-md-12">
-						<div class="col-md-12">
-							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></br>
+							<div class="col-md-12">
+								<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></br>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
-	</div> <!--?????????? ????????---??? LOG IN------->
-	
+	</div> <!----ปิดส่วน modal LOG IN------->
   </body>
 </html>
