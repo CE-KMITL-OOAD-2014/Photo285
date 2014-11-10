@@ -110,8 +110,9 @@
 			</div><!-- ปิด COLLAPSE -->
 		</div><!-- /.container-fluid -->
 	</nav> <!--  จบ NAVBAR------------------->
+	<div class="container-fluid dynamicTile"> <!--ส่วนแสดงรูปภาพ ไสลด์อยู่ใน container-->
 		<div class="row ">
-			<div class="col-sm-2 col-xs-4">
+			<div class="col-sm-2 col-xs-4"> 
 				<div id="tile1" class="tile">
 					<div class="carousel slide" data-ride="carousel">
 						<!-- Wrapper for slides -->
@@ -126,125 +127,112 @@
 					</div>
 				</div>
 			</div>
-	<div class="col-sm-2 col-xs-4">
-		<div id="tile2" class="tile">
-    	 
-         <div class="carousel slide" data-ride="carousel">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="img/Woman.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-              <img src="img/Flowers.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-              <img src="img/Icemountain.jpg" class="img-responsive"/>
-            </div>
-          </div>
-        </div>
-         
+			<div class="col-sm-2 col-xs-4"> 
+				<div id="tile2" class="tile">
+					<div class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+							  <img src="img/Woman.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							  <img src="img/Flowers.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							  <img src="img/Icemountain.jpg" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-4"> 
+				<div id="tile3" class="tile">
+					<div class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+							   <img src="img/Fiord.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							   <img src="img/Chrysanthemum.jpg" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-4"> <!--แถวแนวตั้งที่ 1-->
+				<div id="tile4" class="tile">
+					<div class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+							  <img src="img/Beach.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							  <img src="img/Hydrangeas.jpg" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<div id="tile5" class="tile">
+					<div class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+							  <img src="img/Desert.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							  <img src="img/Tulips.jpg" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<div id="tile6" class="tile">
+					<div class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+							  <img src="img/Lighthouse.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							  <img src="img/Penguins.jpg" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="col-sm-2 col-xs-4">
-		<div id="tile3" class="tile">
-    	 
-        <div class="carousel slide" data-ride="carousel">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-               <img src="img/Fiord.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-               <img src="img/Chrysanthemum.jpg" class="img-responsive"/>
-            </div>
-            </div>
-         </div>
-		</div>
-	</div>
-	<div class="col-sm-2 col-xs-4">
-		<div id="tile4" class="tile">
-    	 
-        <div class="carousel slide" data-ride="carousel">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="img/Beach.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-              <img src="img/Hydrangeas.jpg" class="img-responsive"/>
-            </div>
-          </div>
-        </div>
-         
-		</div>
-	</div>
-    <div class="col-sm-2 col-xs-4">
-		<div id="tile5" class="tile">
-    	 
-         <div class="carousel slide" data-ride="carousel">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="img/Desert.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-              <img src="img/Tulips.jpg" class="img-responsive"/>
-            </div>
-          </div>
-        </div>
-         
-		</div>
-	</div>
-	<div class="col-sm-2 col-xs-4">
-		<div id="tile6" class="tile">
-    	 
-         <div class="carousel slide" data-ride="carousel">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="img/Lighthouse.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-              <img src="img/Penguins.jpg" class="img-responsive"/>
-            </div>
-          </div>
-        </div>
-         
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-sm-4 col-xs-12 col-md-4" >
-		<div id="tile7" class="tile">
-    	 
-        <div class="carousel slide" data-ride="carousel">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="img/Serf.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-              <img src="img/Tiger.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-              <img src="img/House.jpg" class="img-responsive"/>
-            </div>
-          </div>
-        </div>
-         
-		</div>
-		<br>
-	</div>
+		<div class="row">
+			<div class="col-sm-4 col-xs-12 col-md-4" >
+				<div id="tile7" class="tile">
+					<div class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+							  <img src="img/Serf.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							  <img src="img/Tiger.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							  <img src="img/House.jpg" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
 			<div class="col-sm-4 col-xs-12">
 				<div class="row">
 					<div class="col-sm-6 col-xs-6">
-								<div id="tile8" class="tile">
-								 
-								 <div class="carousel slide" data-ride="carousel">
-								  <!-- Wrapper for slides -->
-								  <div class="carousel-inner">
+						<div id="tile8" class="tile">
+							<div class="carousel slide" data-ride="carousel">
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
 									<div class="item active">
 									   <img src="img/Green.jpg" class="img-responsive"/>
 									</div>
@@ -252,97 +240,80 @@
 									   <img src="img/Swan.jpg" class="img-responsive"/>
 									</div>
 									</div>
-								 </div>
-								 
-								</div>
+							</div> 
+						</div>
 					</div>
 					<div class="col-sm-6 col-xs-6">
 						<div id="tile9" class="tile">
-						 
-						  <div class="carousel slide" data-ride="carousel">
-						  <!-- Wrapper for slides -->
-						  <div class="carousel-inner">
-							<div class="item active">
-							  <img src="img/Yellow.jpg" class="img-responsive"/>
+							<div class="carousel slide" data-ride="carousel">
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
+									<div class="item active">
+									  <img src="img/Yellow.jpg" class="img-responsive"/>
+									</div>
+									<div class="item">
+									  <img src="img/Lotus.jpg" class="img-responsive"/>
+									</div>
+								</div>
 							</div>
-							<div class="item">
-							  <img src="img/Lotus.jpg" class="img-responsive"/>
-							</div>
-						  </div>
-						</div>
-						 
 						</div>
 					</div>
 				</div>
 				</br>
-				
 				<div class="row">
 					<div class="col-sm-6 col-xs-6">
-								<div id="tile8" class="tile">
-								 
-								 <div class="carousel slide" data-ride="carousel">
-								  <!-- Wrapper for slides -->
-								  <div class="carousel-inner">
+						<div id="tile8" class="tile">
+							<div class="carousel slide" data-ride="carousel">
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
 									<div class="item active">
 									   <img src="img/Greendrop.jpg" class="img-responsive"/>
 									</div>
 									<div class="item">
 									   <img src="img/Fish.jpg" class="img-responsive"/>
 									</div>
-									</div>
-								 </div>
-								 
 								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-sm-6 col-xs-6">
 						<div id="tile9" class="tile">
-						 
-						  <div class="carousel slide" data-ride="carousel">
-						  <!-- Wrapper for slides -->
-						  <div class="carousel-inner">
-							<div class="item active">
-							  <img src="img/Pink.jpg" class="img-responsive"/>
+							<div class="carousel slide" data-ride="carousel">
+							<!-- Wrapper for slides -->
+								<div class="carousel-inner">
+									<div class="item active">
+									  <img src="img/Pink.jpg" class="img-responsive"/>
+									</div>
+									<div class="item">
+									  <img src="img/Wolf.jpg" class="img-responsive"/>
+									</div>
+								</div>
 							</div>
-							<div class="item">
-							  <img src="img/Wolf.jpg" class="img-responsive"/>
-							</div>
-						  </div>
-						</div>
-						 
 						</div>
 					</div>
 				</div>
 				</br>
+			</div>			
+			<div class="col-sm-4 col-xs-12">
+				<div id="tile7" class="tile">
+					<div class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+							  <img src="img/Drop.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							  <img src="img/Cat.jpg" class="img-responsive"/>
+							</div>
+							<div class="item">
+							  <img src="img/Redpanda.jpg" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			
-			
-			
-			
-	
-			
-			
-	<div class="col-sm-4 col-xs-12">
-		<div id="tile7" class="tile">
-    	 
-        <div class="carousel slide" data-ride="carousel">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="img/Drop.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-              <img src="img/Cat.jpg" class="img-responsive"/>
-            </div>
-            <div class="item">
-              <img src="img/Redpanda.jpg" class="img-responsive"/>
-            </div>
-          </div>
-        </div>
-         
 		</div>
 	</div>
-</div>
-
 
 
     <!-- Modal -->
