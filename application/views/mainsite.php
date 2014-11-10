@@ -168,7 +168,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-2 col-xs-4"> <!--แถวแนวตั้งที่ 1-->
+			<div class="col-sm-2 col-xs-4"> 
 				<div id="tile4" class="tile">
 					<div class="carousel slide" data-ride="carousel">
 						<!-- Wrapper for slides -->

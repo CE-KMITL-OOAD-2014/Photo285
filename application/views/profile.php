@@ -8,14 +8,8 @@
 
     <!-- Bootstrap -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	<style>
+	
+	<style> <!--ส่วนตั้งค่า รูป และ Light box-->
 	body {
     padding: 30px 0px;
 }
@@ -35,7 +29,6 @@
     position: absolute;
     top: -15px;
     right: -55px;
-    
     z-index:1032;
 }
 
@@ -60,13 +53,13 @@
 .box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #63B76C; }
 .box .space { height: 30px; }
 	</style>
+	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../js/bootstrap.min.js"></script>
 	<script src="../../js/font-awesome.min.css"></script>
-	
-	<script>
+	<script> <!--ส่วน lightbox-->
 	$(document).ready(function() {
     var $lightbox = $('#lightbox');
     
