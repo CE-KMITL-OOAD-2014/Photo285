@@ -29,7 +29,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
   <body background="img/white.jpg">
-    <form role="form" action="../member/register" method="post"> 
+    <form role="form" action="../member/editProfileSend" method="post"> 
 <div class ="col-md-2"></div>
 						<div class ="col-md-8">	
 						<h2> Edit Profile</h2>
