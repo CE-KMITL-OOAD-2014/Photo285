@@ -90,7 +90,7 @@
 									<label for="exampleInputEmail1">ประวัติส่วนตัว</label>
 								</div>
 								<div class="col-md-12">
-									  <input type="message" name="des" class="form-control" id="des" value="<? echo "".$resume; ?>">
+									  <input type="message" name="des" class="form-control" id="des" value="<? echo "".$resume; ?>" required autofocus>
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก DESCRIPTION----->
@@ -128,7 +128,7 @@
 							<div class="col-md-12">
 							</br>
 							<button type="submit" value="OK" id ="regisbutton" class="btn btn-success">Submit</button>
-							<button class="btn btn-danger btn-cancel-action"><a href="../../profile/show/<? echo "".$id; ?>"><div class="link"> Cancel</div> </a></button>
+							<button  id ="cancel" class="btn btn-warning"><a href="../../profile/show/<? echo "".$id; ?>"><div class="link"> Cancel</div> </a></button>
 							</div>
 						</div> <!------ส่วนกด SUMMIT--->
 						
