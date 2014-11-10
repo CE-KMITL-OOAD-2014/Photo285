@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Photo285 : Upload Youe Picture</title>
+	<title>Photo285 : Upload Your Picture</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<style> <!--ส่วนตั้งค่ารูป-->
-	.dynamicTile .col-sm-2.col-xs-4{
+.dynamicTile .col-sm-2.col-xs-4{
     padding:5px;
 }
 
@@ -118,6 +118,7 @@
 			</div><!-- ปิด COLLAPSE -->
 		</div><!-- /.container-fluid -->
 	</nav> <!--  จบ NAVBAR------------------->
+	
 	<div class="container-fluid dynamicTile"> <!--ส่วนแสดงรูปภาพ ไสลด์อยู่ใน container-->
 		<div class="row ">
 			<div class="col-sm-2 col-xs-4"> 
