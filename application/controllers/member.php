@@ -36,5 +36,20 @@ class Member extends CI_Controller {
 		echo"<script language='javascript'>window.location.href = '../../';</script>";
 	}
 	
+	public function editProfile(){
+		if($this->session->userdata('ID')){
+			$ID = $this->session->all_userdata();
+			
+			//load all
+			$this->load->model('member_model');
+			$name = $this->member_model->getName($ID['ID']);
+			$email = $this->member_model->getEmail($ID['ID']);
+			$data = array('name' => $name , 'id' => $ID['ID'] , 'email' => $email);
+			//$temp = array( 'detail' => $detail, 'pdata' => $pdata);
+			$this->load->view('editprofile',$data);
+		}
+		else $this->load->view('mainsite');
+	}
+	
 }
 ?>
