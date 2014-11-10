@@ -3,7 +3,8 @@
 class Test extends CI_Controller {
 
 	public function index(){
-		$this->load->view('test.php');
+		echo "eiei";
+		
 	}
 	
 	public function endses(){
