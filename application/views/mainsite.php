@@ -86,7 +86,12 @@
 	</script>
   </head>
   <body background="img/back.jpg">
-	
+	<?
+		if($this->session->userdata('ID')){ // แสดงชื่อโปรไฟล์ตัวเอง
+			$ID = $this->session->all_userdata();
+			echo"<script language='javascript'>window.location.href = 'profile/show/';</script>";
+		}
+	?>
 	<nav class="navbar navbar-default" role="navigation">   <!--เริ่ม NAVBAR--------------->
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
