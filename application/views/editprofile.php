@@ -105,30 +105,12 @@
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NOTICE----->
-						<script>
-						<!--เช็คpassword ว่าตรงกับ comfirm ไหม -->
-						function checkPasswordMatch() {
-							var password = $("#pass").val();
-							var confirmPassword = $("#cpass").val();
-							if (password != confirmPassword){
-								  $("#cpass").css( "background-color", "#F78181" );
-								  $("#regisbutton").prop("type", "button");	 
-							}
-							else{//เปลี่ยนสี
-								$("#cpass").css( "background-color", "#9FF781" );
-								$("#regisbutton").prop("type", "submit");
-							}
-						}
-						$(document).ready(function () {
-						   $("#cpass").keyup(checkPasswordMatch);					
-						});
-						</script>
-						
+			
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
 							<div class="col-md-12">
 							</br>
 							<button type="submit" value="OK" id ="regisbutton" class="btn btn-success">Submit</button>
-							<button id ="cancel" class="btn btn-warning"> Cancele</button>
+							<a href="../../"><button id ="cancel" class="btn btn-warning"> Cancele</button></a>
 							</div>
 						</div> <!------ส่วนกด SUMMIT--->
 						
