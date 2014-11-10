@@ -89,7 +89,7 @@
 	<?
 		if($this->session->userdata('ID')){ // แสดงชื่อโปรไฟล์ตัวเอง
 			$ID = $this->session->all_userdata();
-			echo"<script language='javascript'>window.location.href = 'profile/show/';</script>";
+			echo"<script language='javascript'>window.location.href = 'profile/show/admin';</script>";
 		}
 	?>
 	<nav class="navbar navbar-default" role="navigation">   <!--เริ่ม NAVBAR--------------->
