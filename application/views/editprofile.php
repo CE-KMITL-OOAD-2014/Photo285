@@ -128,7 +128,7 @@
 							<div class="col-md-12">
 							</br>
 							<button type="submit" value="OK" id ="regisbutton" class="btn btn-success">Submit</button>
-							<button  id ="cancel" class="btn btn-warning"><a href="../../profile/show/<? echo "".$id; ?>"><div class="link"> Cancel</div> </a></button>
+							<a href="../../profile/show/<? echo "".$id; ?>"><button  id ="cancel" class="btn btn-warning"><div class="link"> Cancel</div></button></a>
 							</div>
 						</div> <!------ส่วนกด SUMMIT--->
 						
