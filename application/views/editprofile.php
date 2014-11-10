@@ -90,7 +90,7 @@
 									<label for="exampleInputEmail1">ประวัติส่วนตัว</label>
 								</div>
 								<div class="col-md-12">
-									  <input type="message" name="des" class="form-control" id="des" value="<? echo "".$resume; ?>" required autofocus>
+									  <input type="message" name="des" class="form-control" id="des" value="<? echo "".$resume; ?>">
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก DESCRIPTION----->
@@ -101,7 +101,7 @@
 									<label for="exampleInputEmail1">ข่าวสาร</label>
 								</div>
 								<div class="col-md-12">
-									 <input type="email" name="email" maxlength="64" class="form-control" id="exampleInputEmail1" value="<? echo "".$detail; ?>"  required autofocus>
+									 <input type="text" maxlength="64" class="form-control" id="exampleInputEmail1" value="<? echo "".$detail; ?>">
 								</div>
 							</div>
 						</div>  <!--ส่วนกรอก NOTICE----->
