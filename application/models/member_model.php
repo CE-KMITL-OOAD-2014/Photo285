@@ -8,7 +8,7 @@
 			$ID = $this->session->all_userdata();
 			$this->db->where('ID', $ID['ID']);
 			$this->db->update('account', $data);
-			echo"<script language='javascript'>window.location.href = '../profile/show/".$ID."';</script>";
+			echo"<script language='javascript'>window.location.href = '../profile/show/".$ID['ID']."';</script>";
 		}
 		/*
 		function showProfile($data){
