@@ -209,10 +209,9 @@ img {
 							</div>
 							<form action="../Upload/uploaded" method="POST" enctype="multipart/form-data" >
 								<input type="text" name="nameAlbum" class="form-control" id="exampleInputName1" placeholder="Type Album Name " required autofocus><br>
-								Select File To Upload:<br />
-								<input type="file" name="userfile"  />
-								<br /><br />
-								<input type="submit" name="submit" value="Upload" class="btn btn-success" />
+								<center>
+								<input type="submit" name="submit" value="Summit" class="btn btn-primary" />
+								</center>
 							</form>
 						</div>
 					</div>
