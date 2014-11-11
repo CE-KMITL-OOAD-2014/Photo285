@@ -31,6 +31,7 @@
   
   <body background="img/white.jpg">
     <form role="form" action="../member/editProfileSend" method="post"> 
+		<center>	
 			<div class ="col-md-8">	
 				<h2> Edit Profile</h2>
 				<hr>
@@ -113,7 +114,7 @@
 					</div> <!------ส่วนกด SUMMIT--->
 				</div>	
 			</div>
-		
+		</center>
 	</form>
 					
     
