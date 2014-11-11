@@ -16,10 +16,17 @@ class Uploadphoto extends CI_Controller {
 		$this->load->library('upload', $this->config);
 		
 		if($this->upload->do_upload()){
-			echo "file upload success";
+			echo "<script language='javascript'>
+					alert('Upload Complete');
+					window.location.href = '../../profile/show/".$ID."';
+				</script>";
+			
 		}
 		else{
-			echo "file upload failed";
+			echo "<script language='javascript'>
+					alert('Upload Fail');
+					window.location.href = '../../member/editprofile';
+				</script>";
 		}
 		
 	}
