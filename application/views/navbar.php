@@ -51,6 +51,7 @@
 				<ul class="nav navbar-nav"> <!-----เปิด NAVBAR ฝั่งซ้าย--->
 				<?
 					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
+						$ID = $this->session->all_userdata();
 						echo "<a href='../../member/editprofile'><button type='input' class='btn btn-warning navbar-btn'><div class='link'>Edit Profile</div></button></a>"; // <!------edit profile------>
 						echo "  ";
 						echo "<a href='../../album/show/"".$ID['ID'];'><button type='button' class='btn btn-primary navbar-btn'><div class='link'>Manage Album</div></button></a>"; // <!------Manage Album------>
