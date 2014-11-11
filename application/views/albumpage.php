@@ -113,10 +113,10 @@ img {
             color = $button.data('color'),
             settings = {
                 on: {
-                    icon: 'glyphicon glyphicon-check'
+                    icon: 'glyphicon glyphicon-unchecked'
                 },
                 off: {
-                    icon: 'glyphicon glyphicon-unchecked'
+                    icon: 'glyphicon glyphicon-checked'
                 }
             };
 
