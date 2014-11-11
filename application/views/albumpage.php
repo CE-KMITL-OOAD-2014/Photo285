@@ -256,9 +256,10 @@ img {
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<a href="#" title="Nature Portfolio" class="zoom" data-title="Amazing Nature" data-footer="The beauty of nature" data-type="image" data-toggle="lightbox">
+								<a href="#" title="Nature Portfolio" class="button-checkbox" data-title="Amazing Nature" data-footer="The beauty of nature" data-type="image" data-toggle="lightbox">
+									<button type="button" class="btn  btnchk" data-color="default"></button>
+									<input type="checkbox" class="hidden" checked />
 									<img src="http://lorempixel.com/350/350/nature/4" alt="Nature Portfolio" />
-									<span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
 								</a>
 							</div>
 							<div class="panel-footer">
@@ -270,9 +271,10 @@ img {
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<a href="#" title="Food Portfolio" class="zoom" data-title="Delicious Food" data-footer="Whatever your desire" data-type="image" data-toggle="lightbox">
+								<a href="#" title="Food Portfolio" class="button-checkbox" data-title="Delicious Food" data-footer="Whatever your desire" data-type="image" data-toggle="lightbox">
+									<button type="button" class="btn  btnchk" data-color="default"></button>
+									<input type="checkbox" class="hidden" checked />
 									<img src="http://lorempixel.com/350/350/food/2" alt="Food Portfolio" />
-									<span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
 								</a>
 							</div>
 							<div class="panel-footer">
@@ -284,9 +286,10 @@ img {
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<a href="#" title="Sports Portfolio" class="zoom" data-title="Radical Sports" data-footer="This are the best moments" data-type="image" data-toggle="lightbox">
+								<a href="#" title="Sports Portfolio" class="button-checkbox" data-title="Radical Sports" data-footer="This are the best moments" data-type="image" data-toggle="lightbox">
+									<button type="button" class="btn  btnchk" data-color="default"></button>
+									<input type="checkbox" class="hidden" checked />
 									<img src="http://lorempixel.com/350/350/sports/3" alt="Sports Portfolio" />
-									<span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
 								</a>
 							</div>
 							<div class="panel-footer">
@@ -298,9 +301,10 @@ img {
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<a href="#" title="People Portfolio" class="zoom" data-title="Beautiful People" data-footer="We create relationships" data-type="image" data-toggle="lightbox">
+								<a href="#" title="People Portfolio" class="button-checkbox" data-title="Beautiful People" data-footer="We create relationships" data-type="image" data-toggle="lightbox">
+									<button type="button" class="btn  btnchk" data-color="default"></button>
+									<input type="checkbox" class="hidden" checked />
 									<img src="http://lorempixel.com/350/350/people/1" alt="People Portfolio" />
-									<span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
 								</a>
 							</div>
 							<div class="panel-footer">
@@ -314,9 +318,10 @@ img {
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<a href="#" title="Nature Portfolio" class="zoom" data-title="Amazing Nature" data-footer="The beauty of nature" data-type="image" data-toggle="lightbox">
+								<a href="#" title="Nature Portfolio" class="button-checkbox" data-title="Amazing Nature" data-footer="The beauty of nature" data-type="image" data-toggle="lightbox">
+									<button type="button" class="btn  btnchk" data-color="default"></button>
+									<input type="checkbox" class="hidden" checked />
 									<img src="http://lorempixel.com/350/350/nature/4" alt="Nature Portfolio" />
-									<span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
 								</a>
 							</div>
 							<div class="panel-footer">
@@ -328,9 +333,10 @@ img {
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<a href="#" title="Food Portfolio" class="zoom" data-title="Delicious Food" data-footer="Whatever your desire" data-type="image" data-toggle="lightbox">
+								<a href="#" title="Food Portfolio" class="button-checkbox" data-title="Delicious Food" data-footer="Whatever your desire" data-type="image" data-toggle="lightbox">
+									<button type="button" class="btn  btnchk" data-color="default"></button>
+									<input type="checkbox" class="hidden" checked />
 									<img src="http://lorempixel.com/350/350/food/2" alt="Food Portfolio" />
-									<span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
 								</a>
 							</div>
 							<div class="panel-footer">
@@ -342,15 +348,15 @@ img {
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<a href="#" title="Sports Portfolio" class="zoom" data-title="Radical Sports" data-footer="This are the best moments" data-type="image" data-toggle="lightbox">
+								<a href="#" title="Sports Portfolio" class="button-checkbox" data-title="Radical Sports" data-footer="This are the best moments" data-type="image" data-toggle="lightbox">
+									<button type="button" class="btn  btnchk" data-color="default"></button>
+									<input type="checkbox" class="hidden" checked />
 									<img src="http://lorempixel.com/350/350/sports/3" alt="Sports Portfolio" />
-									<span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
 								</a>
 							</div>
 							<div class="panel-footer">
 								<h4><a href="#" title="Sports Portfolio" title="Sports">Sports</a></h4>  
 								<span class="pull-right">
-
 								</span>
 							</div>
 						</div>
@@ -359,14 +365,14 @@ img {
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<a href="#" title="People Portfolio" class="zoom" data-title="Beautiful People" data-footer="We create relationships" data-type="image" data-toggle="lightbox">
+								<a href="#" title="People Portfolio" class="button-checkbox" data-title="Beautiful People" data-footer="We create relationships" data-type="image" data-toggle="lightbox">
+									<button type="button" class="btn  btnchk" data-color="default"></button>
+									<input type="checkbox" class="hidden" checked />
 									<img src="http://lorempixel.com/350/350/people/1" alt="People Portfolio" />
-									<span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
 								</a>
 							</div>
 							<div class="panel-footer">
-								<h4><a href="#" title="People Portfolio">People</a></h4>  
-
+								<h4><a href="#" title="People Portfolio">People</a></h4>
 							</div>
 						</div>
 					</article>                                              
