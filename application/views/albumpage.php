@@ -116,7 +116,7 @@ img {
                     icon: 'glyphicon glyphicon-unchecked'
                 },
                 off: {
-                    icon: 'glyphicon glyphicon-checked'
+                    icon: 'glyphicon glyphicon-check'
                 }
             };
 
