@@ -146,7 +146,7 @@ img {
 							</div>
 							<div class="modal-footer"> <!--ปุ่ม ปิด modal ส่วนล่าง--->
 								<center>
-								<button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 								</center>
 							</div>
 						</div>
