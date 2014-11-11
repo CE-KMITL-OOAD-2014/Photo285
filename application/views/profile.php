@@ -162,7 +162,7 @@
 							</div>
 							<div class="modal-body">
 								<center>
-									<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+									<img src="../../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$ID['ID'].".jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
 									
 									<h3 class="media-heading"><? echo $id; ?></h3> <!--รับตัวแปร id มาจาก controller-->
 									<span><strong>Email: </strong></span>
