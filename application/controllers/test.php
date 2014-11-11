@@ -3,7 +3,7 @@
 class Test extends CI_Controller {
 
 	public function index(){
-		$check = $this->db->where('ID','admin')->count_all_results('account');
+		$check = $this->db->where('nameuser','admin');
 		echo "".$check;
 	}
 	
