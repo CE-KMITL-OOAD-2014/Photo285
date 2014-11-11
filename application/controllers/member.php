@@ -48,6 +48,7 @@ class Member extends CI_Controller {
 			$detail = $this->member_model->getDetail($ID['ID']);
 			$resume = $this->member_model->getResume($ID['ID']);
 			$data = array('name' => $name , 'id' => $ID['ID'] , 'email' => $email , 'detail' => $detail , 'resume' => $resume);
+			$this->load->view('navbar');
 			$this->load->view('editprofile',$data);
 		}
 		else $this->load->view('mainsite');
