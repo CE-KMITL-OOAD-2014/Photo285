@@ -155,7 +155,7 @@ img {
 			</div>
 			<!--ส่วนแสดงอัลบั้ม-->
 			<div class="col-md-9 col-xs-12 col-sm-12"> 
-				<h3>Choose Your Album you</h3>
+				<h3>Choose Album you</h3>
 				<hr>
 				<section class="row"><!--จัดรูปเป็นแถว-->
 					<article class="col-xs-12 col-sm-6 col-md-3">
