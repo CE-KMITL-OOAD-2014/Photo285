@@ -6,7 +6,7 @@ class Uploadphoto extends CI_Controller {
 		
 		$this->config =  array(
 			'file_name'    => "".$ID['ID'].".jpg", //name
-			'upload_path'     => "./photo/",
+			'upload_path'     => "./photo/profile",
 			'allowed_types'   => "jpg",
 			'overwrite'       => TRUE,
 			'max_size'        => "1000KB",
