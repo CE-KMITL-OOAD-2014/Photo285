@@ -63,9 +63,11 @@
 							</a>
 						</div>
 					</div>
-					<h4>Choose your Picture </h4>
-					<h4>you want to show in Profile Page</h4>
-					<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">Upload photo</a>
+					<center>
+						<h4>Choose your Picture </h4>
+						<h4>you want to show in Profile Page</h4>
+						<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">Upload photo</a>
+					</center>
 				</div>
 			</div>
 			<div class ="col-md-8">	
