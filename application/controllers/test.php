@@ -3,12 +3,9 @@
 class Test extends CI_Controller {
 
 	public function index(){
-		echo "eiei";
-		
+		$check = $this->db->where('ID','admin')->count_all_results('account');
+		echo "".$check;
 	}
 	
-	public function endses(){
-		$this->session->sess_destroy();
-	}
 }
 

@@ -41,7 +41,8 @@ class Album extends CI_Controller {
 				$email = $this->member_model->getEmail($id);
 				$resume = $this->member_model->getResume($id);
 				$data = array('name' => $name , 'id' => $id , 'email' => $email, 'resume' => $resume);
-				
+				//$data2
+				//$data3 = array('account'=>$data , 'album'=>$data2);
 				$this->load->view('navbar');
 				$this->load->view('albumpage',$data);
 			}
