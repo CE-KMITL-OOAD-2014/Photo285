@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Photo285:Upload Your Photo</title>
 		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../css/bootstrap.min.css" rel="stylesheet">
 		<style>
 <!--ส่วนแสดงผู้ใช้-->
 img {
@@ -105,7 +105,7 @@ body {
 			}, 10);
 			});
 		</script>
-		<script src="js/ekko-lightbox.js"></script> <!--lightbox--->
+		<script src="../../../js/ekko-lightbox.js"></script> <!--lightbox--->
 	</head>
 	<body background="img/white.jpg">
 	   <div class="container mt40">
