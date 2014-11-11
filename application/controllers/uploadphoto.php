@@ -5,7 +5,7 @@ class Uploadphoto extends CI_Controller {
 		$ID = $this->session->all_userdata();
 		
 		$this->config =  array(
-			'file_name'    => "".$ID.".jpg", //name
+			'file_name'    => "".$ID['ID'].".jpg", //name
 			'upload_path'     => "./photo/",
 			'allowed_types'   => "gif|jpg|png|jpeg",
 			'overwrite'       => TRUE,
