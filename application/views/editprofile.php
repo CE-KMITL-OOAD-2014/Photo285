@@ -31,7 +31,6 @@
   
   <body background="img/white.jpg">
     <form role="form" action="../member/editProfileSend" method="post"> 
-		<div class ="col-md-2"> <!--ใช้ขยับให้ ตรง col-->
 			<div class ="col-md-8">	
 				<h2> Edit Profile</h2>
 				<hr>
@@ -114,7 +113,7 @@
 					</div> <!------ส่วนกด SUMMIT--->
 				</div>	
 			</div>
-		</div>
+		
 	</form>
 					
     
