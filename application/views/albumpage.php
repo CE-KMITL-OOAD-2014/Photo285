@@ -80,6 +80,14 @@ img {
 .modal-title { font: 400 normal 1.625em "Roboto",Arial,Verdana,sans-serif; }
 .modal-footer { font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; } 
 
+
+.chkhidden{
+		display:none;
+		position: absolute;
+	}
+	.btnchk{
+		position: absolute;
+	}
 /*!
  * Lightbox for Bootstrap 3 by @ashleydw
  * https://github.com/ashleydw/lightbox
@@ -93,15 +101,85 @@ img {
 		<script src="../../../js/bootstrap.min.js"></script>
 		<script src="../../../jquery/jquery-1.10.2.min.js"></script>
 		<script src="../../../js/font-awesome.min.css"></script>
-		<script> <!--ส่วนตั้งเวลา ไสลด์รูป-->
-			$(window).resize(function() {
-			if(this.resizeTO) clearTimeout(this.resizeTO);
-			this.resizeTO = setTimeout(function() {
-				$(this).trigger('resizeEnd');
-			}, 10);
-			});
-		</script>
 		<script src="../../../js/ekko-lightbox.js"></script> <!--lightbox--->
+		<script> <!--นำมาจาก bootsnipp.com--->
+	$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'glyphicon glyphicon-check'
+                },
+                off: {
+                    icon: 'glyphicon glyphicon-unchecked'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                    .removeClass('btn-default')
+                    .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                    .removeClass('btn-' + color + ' active')
+                    .addClass('btn-default');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+		
+		$("#btndel").click(function(){
+			$(".btnchk").toggleClass("chkhidden");
+			$(".btnchk").siblings("input").prop("checked");
+			console.log($(".btnchk").siblings("input").is(":checked"));
+		}).click();
+});
+	</script>
+	<script> <!--นำ code มาจาก bootsnipp.com---->
+	function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
+
+	</script>
 	</head>
 	<body background="../../../img/white.jpg">
 	   <div class="container mt40">
@@ -112,15 +190,32 @@ img {
 						<h3><? echo "".$name; ?></h3>
 					</center>
 				</div>
-				<!-- Boxes de Acoes -->
-				<div class="col-md-12 col-xs-12 col-sm-12">
-					<div class="box">							
-						<div class="icon">
-							</br>
-							</br>	
+				<div class="row">
+					<center>
+						<br>
+						<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-lg">Create Album</a>
+							<a class="btn btn-warning " id="btndel" >Delete</a><br>
+						<span class="button"><button type="button" class="btn  btnchk btn btn-success " data-color="success">SAVE?</button></span>
+					</center>
+					</ul>
+				</div>	
+				<!-- Small modal --> <!--ส่วนที่ตัวเด้ง อัพโหลดจะเด้งขึ้นมา---> 
+				<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+								<h4 class="modal-title" id="mySmallModalLabel">Your Album Name :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+							</div>
+							<form action="../Upload/uploaded" method="POST" enctype="multipart/form-data" >
+								<input type="text" name="nameAlbum" class="form-control" id="exampleInputName1" placeholder="Type Album Name " required autofocus><br>
+								Select File To Upload:<br />
+								<input type="file" name="userfile"  />
+								<br /><br />
+								<input type="submit" name="submit" value="Upload" class="btn btn-success" />
+							</form>
 						</div>
-						<div class="space"></div>
-					</div> 
+					</div>
 				</div>
 					
 				<!-- Modal ของผู้ใช้ที่เด้งขึ้นมา---->
