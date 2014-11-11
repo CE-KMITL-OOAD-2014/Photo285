@@ -113,10 +113,14 @@
 	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title" id="mySmallModalLabel">Choose your profile picture :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+				</div>
 				<form action="../../uploadphoto/uploadprofile" method="POST" enctype="multipart/form-data" >
 					Select File To Upload:<br />
 					<input type="file" name="userfile"  />
-					<br /><br />
+					<br />
 					<input type="submit" name="submit" value="Upload" class="btn btn-success" />
 				</form>
 			</div>
