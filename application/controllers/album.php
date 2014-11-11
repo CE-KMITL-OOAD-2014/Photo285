@@ -22,6 +22,41 @@ class Album extends CI_Controller {
 		$this->load->view('navbar');
 		$this->load->view('albumpage');
 	}
+	
+	public function show(){
+	
+		if ($this->uri->segment(3) === FALSE){ // ถ้าไม่มี / อันที่ 3 ให้เซตค่า 0
+			echo"<script language='javascript'>
+			window.location.href = '../../';
+			</script>";
+		}
+		else{
+			$check = $this->db->where('ID',$this->uri->segment(3))->count_all_results('account');
+			if($check==1){ // เช็คว่าใส่ profile ถูกไหม
+				$id = $this->uri->segment(3); // ถ้ามี / อันที่ 3 เช่น (web.net/profile/show/admin) user คือ admin ก็เอามาเก็บในตัวแปล id
+				$data['id'] = $id;
+				
+				//load all
+				$this->load->model('member_model');
+				$name = $this->member_model->getName($ID['ID']);
+				$email = $this->member_model->getEmail($ID['ID']);
+				$detail = $this->member_model->getDetail($ID['ID']);
+				$resume = $this->member_model->getResume($ID['ID']);
+				$data = array('name' => $name , 'id' => $ID['ID'] , 'email' => $email , 'detail' => $detail , 'resume' => $resume);
+				$this->load->view('navbar');
+				$this->load->view('editprofile',$data);
+					
+				
+				$this->load->view('navbar');
+				$this->load->view('albumpage',$data);
+			}
+			else echo"<script language='javascript'>window.location.href = '../../';</script>"; //ถ้า profile ไม่ถูก redirect ไปหน้าแรก
+
+		}
+		
+	}
+	
+	
 }
 
 /* End of file welcome.php */
