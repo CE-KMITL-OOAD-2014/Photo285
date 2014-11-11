@@ -36,12 +36,10 @@
 			<h2> Edit Profile</h2>
 			<hr>
 			<div class ="col-md-4">	
-				<div class="col-md-12 col-xs-12 col-sm-12">
-					<center>
-						<a href="#aboutModal" ><img src="../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$ID['ID'].".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a></br><br/>
-						<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">Upload photo</a>
-					</center>
-				</div>
+				<center>
+					<a href="#aboutModal" ><img src="../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$ID['ID'].".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a></br><br/>
+					<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">Upload photo</a>
+				</center>
 			</div>
 			<div class ="col-md-8">	
 				<div class="col-md-12">  <!--ส่วนกรอก username----A-->
