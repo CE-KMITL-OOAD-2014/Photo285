@@ -13,7 +13,7 @@ class Profile extends CI_Controller {
 			if($check==1){ // เช็คว่าใส่ profile ถูกไหม
 				$id = $this->uri->segment(3); // ถ้ามี / อันที่ 3 เช่น (web.net/profile/show/admin) user คือ admin ก็เอามาเก็บในตัวแปล id
 				$data['id'] = $id;
-				$this->load->view('navbar');
+				//$this->load->view('navbar');
 				$this->load->view('profile',$data);
 			}
 			else echo"<script language='javascript'>window.location.href = '../../';</script>"; //ถ้า profile ไม่ถูก redirect ไปหน้าแรก
