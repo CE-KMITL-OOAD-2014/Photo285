@@ -37,10 +37,10 @@ class Album extends CI_Controller {
 			
 				//load all
 				$this->load->model('member_model');
-				$name = $this->member_model->getName($ID['ID']);
-				$email = $this->member_model->getEmail($ID['ID']);
-				$resume = $this->member_model->getResume($ID['ID']);
-				$data = array('name' => $name , 'id' => $ID['ID'] , 'email' => $email, 'resume' => $resume);
+				$name = $this->member_model->getName($id);
+				$email = $this->member_model->getEmail($id);
+				$resume = $this->member_model->getResume($id);
+				$data = array('name' => $name , 'id' => $id , 'email' => $email, 'resume' => $resume);
 				
 				$this->load->view('navbar');
 				$this->load->view('albumpage',$data);
