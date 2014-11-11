@@ -4,7 +4,7 @@ class Test extends CI_Controller {
 
 	public function index(){
 		$check = $this->db->where('nameuser','admin');
-		foreach($data->result_array() as $row){
+		foreach($check->result_array() as $row){
 			echo"".$row['namealbum'];
 		}
 	}	
