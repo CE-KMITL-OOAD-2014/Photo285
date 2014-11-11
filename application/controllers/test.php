@@ -3,7 +3,7 @@
 class Test extends CI_Controller {
 
 	public function index(){
-		$check = $this->db->where('nameuser','admin');
+		$check = $this->db->where('nameuser','admin')->get('picture');
 		foreach($check->result_array() as $row){
 			echo"".$row['namealbum'];
 		}
