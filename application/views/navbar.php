@@ -68,7 +68,7 @@
 					}
 					else echo "<a href='#'><button type='input' class='btn btn-danger navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg2'><div class='link'>Log in</div></button></a>";
 				  ?>
-					 <li ><a href="<? // redirect ไปโชว์โปรไฟล์ตัวเอง
+					 <li ><a href="../../profile/show/<? // redirect ไปโชว์โปรไฟล์ตัวเอง
 						if($this->session->userdata('ID')){ 
 							$ID = $this->session->all_userdata();
 							echo "".$ID['ID'];
