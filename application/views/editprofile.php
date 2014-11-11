@@ -38,34 +38,8 @@
 			<div class ="col-md-4">	
 				<div class="col-md-12 col-xs-12 col-sm-12">
 					<center>
-						<a href="#aboutModal" ><img src="../img/user.jpg" name="aboutme" width="140" height="140" class="img-circle" data-toggle="modal" data-target=".bs-example-modal-sm"></a>
-					</center>
-					<hr>
-					<div class="col-md-12 col-xs-12 col-sm-12">
-						<div class="col-md-4 col-xs-6 col-sm-3">
-							<a href="#" class="thumbnail" data-toggle="modal" data-target=".bs-example-modal-sm"> 
-								<img src="https://s3.amazonaws.com/ooomf-com-files/lqCNpAk3SCm0bdyd5aA0_IMG_4060_1%20copy.jpg" alt="...">
-							</a>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-3">
-							<a href="#" class="thumbnail" data-toggle="modal" data-target=".bs-example-modal-sm"> 
-								<img src="https://s3.amazonaws.com/ooomf-com-files/deYU3EyQP9cN23moYfLw_Dandelion.jpg" alt="...">
-							</a>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-3">
-							<a href="#" class="thumbnail" data-toggle="modal" data-target=".bs-example-modal-sm"> 
-								<img src="https://s3.amazonaws.com/ooomf-com-files/8H0UdTsvRFqe03hZkNJr_New%20York%20-%20On%20the%20rock%20-%20Empire%20State%20Building.jpg" alt="...">
-							</a>
-						</div>
-						<div class="col-md-12 col-xs-6 col-sm-3">
-							<a href="#" class="thumbnail" data-toggle="modal" data-target=".bs-example-modal-sm"> 
-								<img src="https://s3.amazonaws.com/ooomf-com-files/Z3LXxzFMRe65FC3Dmhnp_woody_unsplash_DSC0129.jpg" alt="...">
-							</a>
-						</div>
-					</div>
-					<center>
-						<h4>Choose your Picture </h4>
-						<h4>you want to show in Profile Page</h4>
+						<a href="#aboutModal" ><img src="../img/user.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
+						<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">Upload photo</a>
 					</center>
 				</div>
 			</div>
