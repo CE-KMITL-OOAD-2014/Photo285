@@ -16,9 +16,10 @@ class Uploadphoto extends CI_Controller {
 		$this->load->library('upload', $this->config);
 		
 		if($this->upload->do_upload()){
+			$ID = $this->session->all_userdata();
 			echo "<script language='javascript'>
 					alert('Upload Complete');
-					window.location.href = '../../profile/show/".$ID."';
+					window.location.href = '../../profile/show/".$ID['ID']."';
 				</script>";
 			
 		}
