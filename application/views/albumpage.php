@@ -94,9 +94,9 @@ body {
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="jquery/jquery-1.10.2.min.js"></script>
-		<script src="js/font-awesome.min.css"></script>
+		<script src="../../../js/bootstrap.min.js"></script>
+		<script src="../../../jquery/jquery-1.10.2.min.js"></script>
+		<script src="../../../js/font-awesome.min.css"></script>
 		<script> <!--ส่วนตั้งเวลา ไสลด์รูป-->
 			$(window).resize(function() {
 			if(this.resizeTO) clearTimeout(this.resizeTO);
@@ -107,7 +107,7 @@ body {
 		</script>
 		<script src="../../../js/ekko-lightbox.js"></script> <!--lightbox--->
 	</head>
-	<body background="img/white.jpg">
+	<body background="../../../img/white.jpg">
 	   <div class="container mt40">
 			<div class="col-md-3 col-xs-12 col-sm-12">
 				<div class="col-md-12 col-xs-12 col-sm-12">
