@@ -16,10 +16,6 @@ img {
     margin-bottom:20px;
 }
 
-body {
-    padding: 30px 0px;
-}
-
 .dynamicTile .col-sm-2.col-xs-4{
     padding:5px;
 }
