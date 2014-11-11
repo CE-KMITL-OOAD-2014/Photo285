@@ -38,7 +38,7 @@
 			<div class ="col-md-4">	
 				<div class="col-md-12 col-xs-12 col-sm-12">
 					<center>
-						<a href="#aboutModal" ><img src="../img/user.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
+						<a href="#aboutModal" ><img src="../img/user.jpg" name="aboutme" width="140" height="140" class="img-circle" data-toggle="modal" data-target=".bs-example-modal-sm"></a>
 					</center>
 					<hr>
 					<div class="col-md-12 col-xs-12 col-sm-12">
@@ -66,7 +66,6 @@
 					<center>
 						<h4>Choose your Picture </h4>
 						<h4>you want to show in Profile Page</h4>
-						<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">Upload photo</a>
 					</center>
 				</div>
 			</div>
