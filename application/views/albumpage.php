@@ -186,7 +186,7 @@ img {
 			<div class="col-md-3 col-xs-12 col-sm-12">
 				<div class="col-md-12 col-xs-12 col-sm-12">
 					<center>
-						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../../photo/profile/<?echo "".$this->uri->segment(3) ?>" name="aboutme" width="140" height="140" class="img-circle"></a>
+						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../../photo/profile/<?echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a>
 						<h3><? echo "".$name; ?></h3>
 					</center>
 				</div>
@@ -197,13 +197,12 @@ img {
 								if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login	
 									$ID = $this->session->all_userdata();
 									if($ID['ID']==$this->uri->segment(3)){
-										echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-lg'>Create Album</a>";  //<!---ปุ่มสร้างอัลบั้ม--->
-										echo "<a class='btn btn-warning ' id='btndel' >Delete</a><br>"; // ปุ่มลบอัลบั้ม
+										echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-lg'>Create Album</a>  //<!---ปุ่มสร้างอัลบั้ม--->
+											  <a class='btn btn-warning ' id='btndel' >Delete</a><br> //ปุ่มลบอัลบั้ม
+											  <span class='button'><button type='button' class='btn  btnchk btn btn-success ' data-color='success'>SAVE?</button></span>"; // <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
 									}
 								}
 							?>
-							
-						<span class="button"><button type="button" class="btn  btnchk btn btn-success " data-color="success">SAVE?</button></span> <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
 					</center>
 					</ul>
 				</div>	
