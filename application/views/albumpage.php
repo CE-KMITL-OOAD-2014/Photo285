@@ -251,7 +251,12 @@ img {
 			<div class="col-md-9 col-xs-12 col-sm-12"> 
 				<h3>Choose Album</h3>
 				<hr>
-				 <? if($album==NULL) //ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
+				 <? 
+					$showal = $this->db->where('nameuser',$this->uri->segment(3))->get('album');
+					foreach($showal->result_array() as $row){
+						echo"".$row['namealbum'];
+					}
+					if($album==NULL) //ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
 					{
 						echo" 
 						<center>
