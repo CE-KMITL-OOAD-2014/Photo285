@@ -81,13 +81,7 @@ img {
 .modal-footer { font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; } 
 
 
-.chkhidden{
-		display:none;
-		position: absolute;
-	}
-	.btnchk{
-		position: absolute;
-	}
+
 /*!
  * Lightbox for Bootstrap 3 by @ashleydw
  * https://github.com/ashleydw/lightbox
@@ -198,8 +192,7 @@ img {
 									$ID = $this->session->all_userdata();
 									if($ID['ID']==$this->uri->segment(3)){
 										echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-lg'>Create Album</a>  <!---ปุ่มสร้างอัลบั้ม--->
-											  <a class='btn btn-warning ' id='btndel' >Delete</a><br> <!---ปุ่มลบอัลบั้ม-->
-											  <span class='button'><button type='button' class='btn  btnchk btn btn-success ' data-color='success'>SAVE?</button></span>
+											  <a class='btn btn-warning ' data-toggle='modal' data-target='.bs-example-modal-lg2' >Delete</a><br> <!---ปุ่มลบอัลบั้ม-->
 											  <!-- Small modal --> <!--ส่วนที่ตัวเด้ง อัพโหลดจะเด้งขึ้นมา---> 
 											<div class='modal fade bs-example-modal-lg' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
 												<div class='modal-dialog modal-sm'>
@@ -210,6 +203,27 @@ img {
 														</div>
 														<form action='../create' method='POST' enctype='multipart/form-data' >
 														<input type='text' name='namealbum' class='form-control' id='exampleInputName1' placeholder='Type Album Name ' required autofocus><br>
+															<center>
+															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
+															</center>
+														</form>
+													</div>
+												</div>
+											</div> <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
+											
+											 <!-- Small modal --> <!--ส่วนที่ตัวเด้ง ลบรูป---> 
+											<div class='modal fade bs-example-modal-lg' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
+												<div class='modal-dialog modal-sm'>
+													<div class='modal-content'>
+														<div class='modal-header'>
+															<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
+															<h4 class='modal-title' id='mySmallModalLabel'>Delete Album :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+														</div>
+														<form action='../create' method='POST' enctype='multipart/form-data' >
+														<span class='button-checkbox'>
+															<button type='button' class='btn' data-color='primary'>".$row['namealbum']."</button>
+															<input type='checkbox' class='hidden'/>
+														</span>
 															<center>
 															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
 															</center>
