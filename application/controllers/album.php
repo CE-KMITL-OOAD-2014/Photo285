@@ -55,7 +55,11 @@ class Album extends CI_Controller {
 				</script>";
 		}
 		else {
-			$data = array('nameuser'=>$ID['ID'],'namealbum'=>$namealbum);
+			$this->db->select_max('ID');
+			$sID = $this->db->get('album');
+			$sID = $sID->result_array();
+			foreach($sID as $row) $sID = $row['ID']+1;
+			$data = array('ID'=>$sID,'nameuser'=>$ID['ID'],'namealbum'=>$namealbum);
 			$this->db->insert('album',$data);
 		}
 	}
