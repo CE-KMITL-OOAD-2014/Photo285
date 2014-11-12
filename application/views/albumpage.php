@@ -265,26 +265,25 @@ img {
 						<h4>You don't have any album</h4>
 						</center>";
 					}
-					else { // ตรวจสอบแล้ว มีอัลบั้ม ทำ else
-						echo "mee album";
-						for($showal->result_array() as $row) //วนลูปตามจำนวน album ที่มี เพื่อ สร้าง ให้ได้ตามจำนวนอัลบั้ม
-						{
-						 echo"
-							<article class='col-xs-12 col-sm-6 col-md-3'>
-								<div class='panel panel-default'>
-									<div class='panel-body'>
-										<a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album' class='button-checkbox' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป-->
-											<button type='button' class='btn  btnchk' data-color='default'></button><!--ปุ่มติ๊กถูกที่ซ่อนไว้ รอกด delete---->
-											<input type='checkbox' class='hidden' checked />'
-											<img src='"."PHOTO"."'>
-										</a>
-									</div>
-									<div class='panel-footer'>
-										<h4><a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album'>".$row['namealbum']."</a></h4>
-									</div>
+					else // ตรวจสอบแล้ว มีอัลบั้ม ทำ else
+					echo "mee album";
+					for($i=0;$i<count($album);$i++) //วนลูปตามจำนวน album ที่มี เพื่อ สร้าง ให้ได้ตามจำนวนอัลบั้ม
+					{
+					 echo"
+						<article class='col-xs-12 col-sm-6 col-md-3'>
+							<div class='panel panel-default'>
+								<div class='panel-body'>
+									<a href='"."เข้าไปที่ALBUMที่กด"."' title='".$NameAlbum." Album' class='button-checkbox' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป-->
+										<button type='button' class='btn  btnchk' data-color='default'></button><!--ปุ่มติ๊กถูกที่ซ่อนไว้ รอกด delete---->
+										<input type='checkbox' class='hidden' checked />'
+										<img src='"."PHOTO"."'>
+									</a>
 								</div>
-							</article> "; 
-						}
+								<div class='panel-footer'>
+									<h4><a href='"."เข้าไปที่ALBUMที่กด"."' title='".$NameAlbum." Album'>".$NameAlbum."</a></h4>
+								</div>
+							</div>
+						</article> "; 
 					}
 				 ?>		
 			</div>
