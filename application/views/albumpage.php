@@ -212,7 +212,7 @@ img {
 											</div> <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
 											
 											 <!-- Small modal --> <!--ส่วนที่ตัวเด้ง ลบรูป---> 
-											<div class='modal fade bs-example-modal-lg' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
+											<div class='modal fade bs-example-modal-lg2' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
 												<div class='modal-dialog modal-sm'>
 													<div class='modal-content'>
 														<div class='modal-header'>
