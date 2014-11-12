@@ -7,7 +7,7 @@
 		<title>Photo285:Upload Your Photo</title>
 		<!-- Bootstrap -->
 		<link href="../../../css/bootstrap.min.css" rel="stylesheet">
-		<style>
+		<style> <!--จาก bootsnipp.com--->
 <!--ส่วนแสดงผู้ใช้-->
 img {
     -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
@@ -94,8 +94,8 @@ img {
  *
  * License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
  */.ekko-lightbox-container{position:relative}.ekko-lightbox-nav-overlay{position:absolute;top:0;left:0;z-index:100;width:100%;height:100%}.ekko-lightbox-nav-overlay a{z-index:100;display:block;width:49%;height:100%;padding-top:45%;font-size:30px;color:#fff;text-shadow:2px 2px 4px #000;opacity:0;filter:dropshadow(color=#000000,offx=2,offy=2);-webkit-transition:opacity .5s;-moz-transition:opacity .5s;-o-transition:opacity .5s;transition:opacity .5s}.ekko-lightbox-nav-overlay a:empty{width:49%}.ekko-lightbox a:hover{text-decoration:none;opacity:1}.ekko-lightbox .glyphicon-chevron-left{left:0;float:left;padding-left:15px;text-align:left}.ekko-lightbox .glyphicon-chevron-right{right:0;float:right;padding-right:15px;text-align:right}.ekko-lightbox .modal-footer{text-align:left
-	</style>
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	</style> 
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> <!---template from bootstrap.com--> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="../../../js/bootstrap.min.js"></script>
@@ -104,7 +104,7 @@ img {
 		<script src="../../../js/ekko-lightbox.js"></script> <!--lightbox--->
 		<script> <!--นำมาจาก bootsnipp.com--->
 	$(function () {
-    $('.button-checkbox').each(function () {
+    $('.button-checkbox').each(function () { <!--ส่วนปุ่ม checkbox icon---->
 
         // Settings
         var $widget = $(this),
@@ -121,7 +121,7 @@ img {
             };
 
         // Event Handlers
-        $button.on('click', function () {
+        $button.on('click', function () { <!---การเปลี่ยนแแปลงเมื่อกด button-->
             $checkbox.prop('checked', !$checkbox.is(':checked'));
             $checkbox.triggerHandler('change');
             updateDisplay();
@@ -193,9 +193,9 @@ img {
 				<div class="row">
 					<center>
 						<br>
-						<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-lg">Create Album</a>
-							<a class="btn btn-warning " id="btndel" >Delete</a><br>
-						<span class="button"><button type="button" class="btn  btnchk btn btn-success " data-color="success">SAVE?</button></span>
+						<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-lg">Create Album</a> <!---ปุ่มสร้างอัลบั้ม--->
+							<a class="btn btn-warning " id="btndel" >Delete</a><br> <!---ปุ่มลบอัลบั้ม--->
+						<span class="button"><button type="button" class="btn  btnchk btn btn-success " data-color="success">SAVE?</button></span> <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
 					</center>
 					</ul>
 				</div>	
@@ -210,7 +210,7 @@ img {
 							<form action="../Upload/uploaded" method="POST" enctype="multipart/form-data" >
 								<input type="text" name="nameAlbum" class="form-control" id="exampleInputName1" placeholder="Type Album Name " required autofocus><br>
 								<center>
-								<input type="submit" name="submit" value="Summit" class="btn btn-success" />
+								<input type="submit" name="submit" value="Summit" class="btn btn-success" /><!---กด ตกลง เพื่อยืนยันการอัพโหลด---->
 								</center>
 							</form>
 						</div>
@@ -255,9 +255,9 @@ img {
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<a href="#" title="Nature Portfolio" class="button-checkbox" data-title="Amazing Nature" data-footer="The beauty of nature" data-type="image" data-toggle="lightbox">
-									<button type="button" class="btn  btnchk" data-color="default"></button>
-									<input type="checkbox" class="hidden" checked />
+								<a href="#" title="Nature Portfolio" class="button-checkbox" data-title="Amazing Nature" data-footer="The beauty of nature" data-type="image" data-toggle="lightbox"><!--ชื่ออัลบั้มใต้รูป-->
+									<button type="button" class="btn  btnchk" data-color="default"></button><!--ปุ่มติ๊กถูกที่ซ่อนไว้ รอกด delete---->
+									<input type="checkbox" class="hidden" checked /> 
 									<img src="http://lorempixel.com/350/350/nature/4" alt="Nature Portfolio" />
 								</a>
 							</div>
@@ -378,6 +378,5 @@ img {
 				</section>
 			</div>
 		</div>
-		
   </body>
 </html>
