@@ -256,8 +256,12 @@ img {
 					foreach($showal->result_array() as $row){
 						echo"".$row['namealbum'];
 					}
+<<<<<<< HEAD
 					echo "".$this->db->where('nameuser',$this->uri->segment(3))->count_all_results('album');
 					if($this->db->where('nameuser',$this->uri->segment(3))->count_all_results('album')==0) //ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
+=======
+					if($album==NULL) //ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
+>>>>>>> origin/master
 					{
 						echo" 
 						<center>
