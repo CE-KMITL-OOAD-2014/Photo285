@@ -251,7 +251,7 @@ img {
 			<div class="col-md-9 col-xs-12 col-sm-12"> 
 				<h3>Choose Album</h3>
 				<hr>
-				 <? if($album==NULL) //ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
+				 <!---<? if($album==NULL) //ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
 					{
 						echo" 
 						<center>
@@ -277,7 +277,7 @@ img {
 							</div>
 						</article> "; 
 					}
-				 ?>			
+				 ?>	--->		
 			</div>
 		</div>
   </body>
