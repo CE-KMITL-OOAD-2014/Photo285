@@ -66,7 +66,7 @@ class Album extends CI_Controller {
 			foreach($showal->result_array() as $row){
 				echo"".$row['namealbum'];
 			}
-			//echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
+			/////////////echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
 		}
 	}
 }
