@@ -221,7 +221,7 @@ img {
 														</div>
 														<form action='../create' method='POST' enctype='multipart/form-data' >
 														<span class='button-checkbox'>
-															<button type='button' class='btn' data-color='primary'>".$row['namealbum']."</button>
+															<button type='button' class='btn' data-color='primary'>".Albumname."</button>
 															<input type='checkbox' class='hidden'/>
 														</span>
 															<center>
