@@ -261,7 +261,6 @@ img {
 						</center>";
 					}
 					else // ตรวจสอบแล้ว มีอัลบั้ม ทำ else
-					echo "mee album";
 					foreach($showal->result_array() as $row) //วนลูปตามจำนวน album ที่มี เพื่อ สร้าง ให้ได้ตามจำนวนอัลบั้ม
 					{
 					 echo"
