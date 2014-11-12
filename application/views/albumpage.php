@@ -274,9 +274,7 @@ img {
 						<article class='col-xs-12 col-sm-6 col-md-3'>
 							<div class='panel panel-default'>
 								<div class='panel-body'>
-									<a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album' class='button-checkbox' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป-->
-										<button type='button' class='btn  btnchk' data-color='default'></button><!--ปุ่มติ๊กถูกที่ซ่อนไว้ รอกด delete---->
-										<input type='checkbox' class='hidden' checked />'
+									<a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป-->
 										<img src='"."PHOTO"."'>
 									</a>
 								</div>
