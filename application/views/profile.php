@@ -117,7 +117,7 @@
 						<div class="row">
 						<center>
 							<br>
-							<button type="button" class="btn btn-primary navbar-btn"><a href="#"><div class="link">See More Album</div></a></button> <!-----see album----->
+							<button type="button" class="btn btn-primary navbar-btn"><a href="../../album/show/<?$ID = $this->session->all_userdata(); echo "".$ID['ID'].".jpg" ?>"><div class="link">See More Album</div></a></button> <!-----see album----->
 						</center>
 						</ul>
 					</div>
