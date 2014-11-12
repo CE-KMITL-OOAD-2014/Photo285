@@ -233,12 +233,13 @@ img {
 															foreach($showal->result_array() as $row) //วนลูปตามจำนวน album ที่มี เพื่อ สร้าง ให้ได้ตามจำนวนอัลบั้ม
 															{
 																echo"
-																<span class='button-checkbox'>
-																	<button type='button' class='btn'  data-color='primary'>".$row['namealbum']."</button>
-																	<input type='checkbox' name='checkbox' value=".$row['namealbum']." class='hidden'/>
-																</span>
-																<hr>
-																";
+																<div class='radio'>
+																  <label>
+																	<input type='radio' name='optionsRadios' id='optionsRadios1' value='option1'>
+																	".$row['namealbum']."
+																  </label>
+																</div>
+																<hr>";
 															}
 															echo"<center>
 															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
