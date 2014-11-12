@@ -256,11 +256,15 @@ img {
 					foreach($showal->result_array() as $row){
 						echo"".$row['namealbum'];
 					}
-					if($this->db->where('nameuser',$this->uri->segment(3))->count_all_results('album')==0) //ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
+					if($album==NULL) //ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
 					{
-						
-						
-						for($i=0;$i<count($album);$i++) //วนลูปตามจำนวน album ที่มี เพื่อ สร้าง ให้ได้ตามจำนวนอัลบั้ม
+						echo" 
+						<center>
+						<h4>You don't have any album</h4>
+						</center>";
+					}
+					else // ตรวจสอบแล้ว มีอัลบั้ม ทำ else
+					for($i=0;$i<count($album);$i++) //วนลูปตามจำนวน album ที่มี เพื่อ สร้าง ให้ได้ตามจำนวนอัลบั้ม
 					{
 					 echo"
 						<article class='col-xs-12 col-sm-6 col-md-3'>
@@ -278,13 +282,6 @@ img {
 							</div>
 						</article> "; 
 					}
-					}
-					else // ตรวจสอบแล้ว มีอัลบั้ม ทำ else
-					echo" 
-						<center>
-						<h4>You don't have any album</h4>
-						</center>";
-						
 				 ?>		
 			</div>
 		</div>
