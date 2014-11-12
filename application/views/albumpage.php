@@ -199,30 +199,30 @@ img {
 									if($ID['ID']==$this->uri->segment(3)){
 										echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-lg'>Create Album</a>  <!---ปุ่มสร้างอัลบั้ม--->
 											  <a class='btn btn-warning ' id='btndel' >Delete</a><br> <!---ปุ่มลบอัลบั้ม-->
-											  <span class='button'><button type='button' class='btn  btnchk btn btn-success ' data-color='success'>SAVE?</button></span>"; // <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
+											  <span class='button'><button type='button' class='btn  btnchk btn btn-success ' data-color='success'>SAVE?</button></span>
+											  <!-- Small modal --> <!--ส่วนที่ตัวเด้ง อัพโหลดจะเด้งขึ้นมา---> 
+											<div class='modal fade bs-example-modal-lg' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
+												<div class='modal-dialog modal-sm'>
+													<div class='modal-content'>
+														<div class='modal-header'>
+															<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
+															<h4 class='modal-title' id='mySmallModalLabel'>Your Album Name :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+														</div>
+														<form action='../create' method='POST' enctype='multipart/form-data' >
+														<input type='text' name='namealbum' class='form-control' id='exampleInputName1' placeholder='Type Album Name ' required autofocus><br>
+															<center>
+															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
+															</center>
+														</form>
+													</div>
+												</div>
+											</div>"; // <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
 									}
 								}
 							?>
 					</center>
 					</ul>
 				</div>	
-				<!-- Small modal --> <!--ส่วนที่ตัวเด้ง อัพโหลดจะเด้งขึ้นมา---> 
-				<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-sm">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-								<h4 class="modal-title" id="mySmallModalLabel">Your Album Name :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-							</div>
-							<form action="../create" method="POST" enctype="multipart/form-data" >
-								<input type="text" name="namealbum" class="form-control" id="exampleInputName1" placeholder="Type Album Name " required autofocus><br>
-								<center>
-								<input type="submit" name="submit" value="Summit" class="btn btn-success" /><!---กด ตกลง เพื่อยืนยันการอัพโหลด---->
-								</center>
-							</form>
-						</div>
-					</div>
-				</div>
 					
 				<!-- Modal ของผู้ใช้ที่เด้งขึ้นมา---->
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
