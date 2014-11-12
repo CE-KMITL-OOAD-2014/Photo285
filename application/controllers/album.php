@@ -24,7 +24,6 @@ class Album extends CI_Controller {
 	}
 	
 	public function show(){
-	
 		if ($this->uri->segment(3) === FALSE){ // ถ้าไม่มี / อันที่ 3 ให้เซตค่า 0
 			echo"<script language='javascript'>
 			window.location.href = '../../';
@@ -47,9 +46,12 @@ class Album extends CI_Controller {
 				$this->load->view('albumpage',$data);
 			}
 			else echo"<script language='javascript'>window.location.href = '../../';</script>"; //ถ้า profile ไม่ถูก redirect ไปหน้าแรก
-
 		}
-		
+	}
+	
+	public function create(){
+		$namealbum = $_POST["namealbum"];
+		echo "".$namealbum;
 	}
 	
 	

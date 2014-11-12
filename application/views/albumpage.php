@@ -207,8 +207,8 @@ img {
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
 								<h4 class="modal-title" id="mySmallModalLabel">Your Album Name :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 							</div>
-							<form action="../Upload/uploaded" method="POST" enctype="multipart/form-data" >
-								<input type="text" name="nameAlbum" class="form-control" id="exampleInputName1" placeholder="Type Album Name " required autofocus><br>
+							<form action="../../create" method="POST" enctype="multipart/form-data" >
+								<input type="text" name="namealbum" class="form-control" id="exampleInputName1" placeholder="Type Album Name " required autofocus><br>
 								<center>
 								<input type="submit" name="submit" value="Summit" class="btn btn-success" /><!---กด ตกลง เพื่อยืนยันการอัพโหลด---->
 								</center>
