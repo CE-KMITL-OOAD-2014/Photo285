@@ -226,7 +226,7 @@ img {
 															{ 
 																echo" 
 																<center>
-																<h4>You don't have any album</h4>
+																<h4>Don't have any album</h4>
 																</center>";
 															}
 															else // ตรวจสอบแล้ว มีอัลบั้ม ทำ else
