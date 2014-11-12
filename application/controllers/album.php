@@ -17,12 +17,7 @@ class Album extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$this->load->view('navbar');
-		$this->load->view('albumpage');
-	}
-	
+
 	public function show(){
 		if ($this->uri->segment(3) === FALSE){ // ถ้าไม่มี / อันที่ 3 ให้เซตค่า 0
 			echo"<script language='javascript'>
@@ -51,7 +46,18 @@ class Album extends CI_Controller {
 	
 	public function create(){
 		$namealbum = $_POST["namealbum"];
-		echo "".$namealbum;
+		$ID = $this->session->all_userdata();
+		$check = $this->db->where('nameuser',$ID['ID'])->where('namealbum',$namealbum)->count_all_results('account');
+		if($check==1){
+			echo "<script language='javascript'>
+					alert('มีอัลบั้มนี้แล้ว');
+					window.location.href = '../../';
+				</script>";
+		}
+		else {
+			$data = array('nameuser'=>$ID['ID'],'namealbum'=>$namealbum);
+			$this->db->insert('album',$data);
+		}
 	}
 	
 	
