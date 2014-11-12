@@ -197,8 +197,8 @@ img {
 								if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login	
 									$ID = $this->session->all_userdata();
 									if($ID['ID']==$this->uri->segment(3)){
-										echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-lg'>Create Album</a>  //<!---ปุ่มสร้างอัลบั้ม--->
-											  <a class='btn btn-warning ' id='btndel' >Delete</a><br> //ปุ่มลบอัลบั้ม
+										echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-lg'>Create Album</a>  <!---ปุ่มสร้างอัลบั้ม--->
+											  <a class='btn btn-warning ' id='btndel' >Delete</a><br> <!---ปุ่มลบอัลบั้ม-->
 											  <span class='button'><button type='button' class='btn  btnchk btn btn-success ' data-color='success'>SAVE?</button></span>"; // <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
 									}
 								}
