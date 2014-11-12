@@ -192,7 +192,7 @@ img {
 									$ID = $this->session->all_userdata();
 									if($ID['ID']==$this->uri->segment(3)){
 										echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-lg'>Create Album</a>  <!---ปุ่มสร้างอัลบั้ม--->
-											  <a class='btn btn-warning ' data-toggle='modal' data-target='.bs-example-modal-lg2' >Delete</a><br> <!---ปุ่มลบอัลบั้ม-->
+											  <a class='btn btn-warning ' data-toggle='modal' data-target='.bs-example-modal-lg3' >Delete</a><br> <!---ปุ่มลบอัลบั้ม-->
 											  <!-- Small modal --> <!--ส่วนที่ตัวเด้ง อัพโหลดจะเด้งขึ้นมา---> 
 											<div class='modal fade bs-example-modal-lg' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
 												<div class='modal-dialog modal-sm'>
@@ -212,7 +212,7 @@ img {
 											</div> <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
 											
 											 <!-- Small modal --> <!--ส่วนที่ตัวเด้ง ลบรูป---> 
-											<div class='modal fade bs-example-modal-lg2' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
+											<div class='modal fade bs-example-modal-lg3' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
 												<div class='modal-dialog modal-sm'>
 													<div class='modal-content'>
 														<div class='modal-header'>
