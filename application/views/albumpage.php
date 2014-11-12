@@ -234,8 +234,8 @@ img {
 															{
 																echo"
 																<span class='button-checkbox'>
-																	<button type='button' class='btn' data-color='primary'>".$row['namealbum']."</button>
-																	<input type='checkbox' class='hidden'/>
+																	<button type='button' class='btn'  data-color='primary'>".$row['namealbum']."</button>
+																	<input type='checkbox' name='checkbox' value=".$row['namealbum']." class='hidden'/>
 																</span>
 																<hr>
 																";

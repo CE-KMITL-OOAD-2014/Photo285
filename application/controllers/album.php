@@ -68,6 +68,14 @@ class Album extends CI_Controller {
 			//
 		}
 	}
+	
+	public function delete(){
+		$checkbox = $_POST["checkbox"];
+		echo $checkbox;
+	
+	
+	}
+	
 }
 
 /* End of file welcome.php */
