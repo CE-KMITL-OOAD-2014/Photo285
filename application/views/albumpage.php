@@ -219,7 +219,7 @@ img {
 															<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
 															<h4 class='modal-title' id='mySmallModalLabel'>Delete Album :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 														</div>
-														<form action='../create' method='POST' enctype='multipart/form-data' >";
+														<form action='../delete' method='POST' enctype='multipart/form-data' >";
 															 
 															$showal = $this->db->where('nameuser',$this->uri->segment(3))->get('album');
 															if($this->db->where('nameuser',$this->uri->segment(3))->count_all_results('album')==0)//ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
