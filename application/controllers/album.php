@@ -70,8 +70,8 @@ class Album extends CI_Controller {
 	}
 	
 	public function delete(){
-		$checkbox = $_POST["checkbox"];
-		echo $checkbox;
+		$checkdelete = $_POST["checkdelete"];
+		echo $checkdelete;
 	
 	
 	}

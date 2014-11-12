@@ -236,7 +236,7 @@ img {
 																<left>
 																<div class='radio'>
 																  <label>
-																	<input type='radio' name='optionsRadios' id='optionsRadios1' value='option1'>
+																	<input type='radio' name='checkdelete' id='optionsRadios1' value='".$row['namealbum']."'>
 																	".$row['namealbum']."
 																  </label>
 																</div>
