@@ -220,16 +220,11 @@ img {
 															<h4 class='modal-title' id='mySmallModalLabel'>Delete Album :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 														</div>
 														<form action='../create' method='POST' enctype='multipart/form-data' >
-														";
-														foreach($showal->result_array() as $row) //วนลูปตามจำนวน album ที่มี เพื่อ สร้าง ให้ได้ตามจำนวนอัลบั้ม
-														{
-															echo"
-															<span class='button-checkbox'>
-																<button type='button' class='btn' data-color='primary'>".$row['namealbum']."</button>
-																<input type='checkbox' class='hidden'/>
-															</span>";
-														}
-															echo"<center>
+														<span class='button-checkbox'>
+															<button type='button' class='btn' data-color='primary'>".$row['namealbum']."</button>
+															<input type='checkbox' class='hidden'/>
+														</span>
+															<center>
 															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
 															</center>
 														</form>
