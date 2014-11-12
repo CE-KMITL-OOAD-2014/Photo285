@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Photo285:Upload Your Photo</title> <!---ชื่อ title ที่จะอยู่ตรงแถบด้านบน--->
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -16,24 +16,24 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-   <style>
-  .link
+   <style> <!---css ที่ตั้งค่า -->
+  .link <!--ตั้งค่าให้ปุ่ม href เปลี่ยนเอักษรเป็นสีขาว-->
 {
    color:white;
    text-decoration: none; 
    background-color: none;
 }
-  </style>
+  </style> <!--เป็นการ import template มาจาก bootstrap.com--->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="../js/bootstrap.min.js"></script>
   
-  <body background="img/white.jpg">
-    <form role="form" action="../member/editProfileSend" method="post"> 
+  <body background="img/white.jpg"> <!---body พร้อม background-->
+    <form role="form" action="../member/editProfileSend" method="post"> <!---ส่วนกรอกฟอร์ม ที่ไว้กรอก---> 
 		<div class ="col-md-2"></div>	
 		<div class ="col-md-8">	
-			<h2> Edit Profile</h2>
+			<h2> Edit Profile</h2><!--คำพูดหัวข้อ-->
 			<hr>
 			<div class ="col-md-4">	
 				<center>
@@ -109,7 +109,7 @@
 	</form>
 					
     
-	<!-- Small modal -->
+	<!-- Small modal ที่เด้งมาให้เลือกอัพโหลดไฟล์ที่จะเป็น Profile picture-->
 	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
