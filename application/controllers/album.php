@@ -47,7 +47,7 @@ class Album extends CI_Controller {
 	public function create(){
 		$namealbum = $_POST["namealbum"];
 		$ID = $this->session->all_userdata();
-		$check = $this->db->where('nameuser',$ID['ID'])->where('namealbum',$namealbum)->count_all_results('account');
+		$check = $this->db->where('nameuser',$ID['ID'])->where('namealbum',$namealbum)->count_all_results('album');
 		if($check==1){
 			echo "<script language='javascript'>
 					alert('มีอัลบั้มนี้แล้ว');
