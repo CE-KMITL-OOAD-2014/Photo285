@@ -251,7 +251,6 @@ img {
 			<div class="col-md-9 col-xs-12 col-sm-12"> 
 				<h3>Choose Album</h3>
 				<hr>
-				<section class="row"><!--จัดรูปเป็นแถว-->
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
@@ -311,9 +310,7 @@ img {
 							</div>
 						</div>
 					</article>                                              
-				</section>
 				
-				<section class="row"> <!--จัดรูปเป็นแถว-->
 					<article class="col-xs-12 col-sm-6 col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-body">
@@ -375,7 +372,7 @@ img {
 							</div>
 						</div>
 					</article>                                              
-				</section>
+					
 			</div>
 		</div>
   </body>
