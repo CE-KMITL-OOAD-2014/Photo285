@@ -56,11 +56,12 @@ class Album extends CI_Controller {
 		}
 		else {
 			$this->db->select_max('ID');
-			$sID = $this->db->get('album');
+			$sID = $this->db->get('album'); // ซีเคว้นID ของ album
 			$sID = $sID->result_array();
 			foreach($sID as $row) $sID = $row['ID']+1;
 			$data = array('ID'=>$sID,'nameuser'=>$ID['ID'],'namealbum'=>$namealbum);
 			$this->db->insert('album',$data);
+			echo"<script language='javascript'>window.location.href = '../show/".$ID['ID']."';</script>";
 		}
 	}
 	
