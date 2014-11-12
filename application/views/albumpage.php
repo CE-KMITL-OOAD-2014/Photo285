@@ -216,8 +216,10 @@ img {
 												<div class='modal-dialog modal-sm'>
 													<div class='modal-content'>
 														<div class='modal-header'>
+															"if($this->db->where('nameuser',$this->uri->segment(3))->count_all_results('album')==0){"
 															<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
 															<h4 class='modal-title' id='mySmallModalLabel'>Delete Album :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+															"}"
 														</div>
 														<form action='../delete' method='POST' enctype='multipart/form-data' >";
 															 
