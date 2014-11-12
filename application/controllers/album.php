@@ -71,9 +71,10 @@ class Album extends CI_Controller {
 	
 	public function delete(){
 		$checkdelete = $_POST["checkdelete"];
-		echo $checkdelete;
-	
-	
+		$ID = $this->session->all_userdata();
+		$this->db->where('nameuser', $ID['ID']);
+		$this->db->delete('album', $checkdelete);
+		echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
 	}
 	
 }
