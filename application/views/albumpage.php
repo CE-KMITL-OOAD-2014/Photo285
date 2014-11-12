@@ -220,7 +220,7 @@ img {
 															<h4 class='modal-title' id='mySmallModalLabel'>Delete Album :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 														</div>
 														<form action='../create' method='POST' enctype='multipart/form-data' >";
-														for($i=0; $i <count($album) //วนลูปตามจำนวน album ที่มี เพื่อ สร้าง ให้ได้ตามจำนวนอัลบั้ม
+														for($i=0; $i <count($album);$i++) //วนลูปตามจำนวน album ที่มี เพื่อ สร้าง ให้ได้ตามจำนวนอัลบั้ม
 														{
 															echo"
 															<span class='button-checkbox'>
