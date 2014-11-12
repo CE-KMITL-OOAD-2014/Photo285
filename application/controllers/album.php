@@ -50,8 +50,8 @@ class Album extends CI_Controller {
 		$check = $this->db->where('nameuser',$ID['ID'])->where('namealbum',$namealbum)->count_all_results('album');
 		if($check==1){
 			echo "<script language='javascript'>
-					alert('มีอัลบั้มนี้แล้ว');
-					window.location.href = '../../';
+					alert('duplicate album');
+					window.location.href = 'show/".$ID['ID']."';
 				</script>";
 		}
 		else {
@@ -63,10 +63,10 @@ class Album extends CI_Controller {
 			$this->db->insert('album',$data);
 			echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
 			//
-			$showal = $this->db->where('nameuser',$ID['ID'])->get('album');
-			foreach($showal->result_array() as $row){
-				echo"".$row['namealbum'];
-			}
+			//$showal = $this->db->where('nameuser',$ID['ID'])->get('album');
+			//foreach($showal->result_array() as $row){
+			//	echo"".$row['namealbum'];
+			//}
 			//
 		}
 	}
