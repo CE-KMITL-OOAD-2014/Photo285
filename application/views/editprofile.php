@@ -29,7 +29,7 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="../js/bootstrap.min.js"></script>
   
-  <body background="img/white.jpg"> <!---body พร้อม background-->
+  <body background="../../img/white.jpg"> <!---body พร้อม background-->
     <form role="form" action="../member/editProfileSend" method="post"> <!---ส่วนกรอกฟอร์ม ที่ไว้กรอก---> 
 		<div class ="col-md-2"></div>	
 		<div class ="col-md-8">	
