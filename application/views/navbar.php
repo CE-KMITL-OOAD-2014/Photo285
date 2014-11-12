@@ -15,23 +15,22 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
   </head>
   <style>
-  .link
+  .link<!--เปนส่วนตั้งค่าให้ button ที่มี href มีอักษรเป็นสีขาว -->
 {
    color:white;
    text-decoration: none; 
    background-color: none;
 }
   </style>
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> <!--เป็น template ที่ import ค่าตามbootstrap.com-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   <body>
     
-	<nav class="navbar navbar-default" role="navigation">
+	<nav class="navbar navbar-default" role="navigation"><!---นำ template จาก bootstrap.com มาต่อเติม-->
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -90,8 +89,8 @@
 			</div><!-- /.container-fluid -->
 		</nav>
 		
-		
-		<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!--?????????? ????????---??? LOG IN------->
+		<!---ส่วน modal ที่จะเด้งเป็นหน้า login ขึ้นมา--->
+		<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!-- LOG IN------->
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 				<div class= "row">
@@ -120,7 +119,7 @@
 				</div>
 			</div>
 		</div>
-	</div> <!--?????????? ????????---??? LOG IN------->
+	</div> <!---LOG IN------->
 	
   </body>
 </html>
