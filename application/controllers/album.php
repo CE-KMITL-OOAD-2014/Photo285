@@ -61,7 +61,7 @@ class Album extends CI_Controller {
 			foreach($sID as $row) $sID = $row['ID']+1;
 			$data = array('ID'=>$sID,'nameuser'=>$ID['ID'],'namealbum'=>$namealbum);
 			$this->db->insert('album',$data);
-			echo"<script language='javascript'>window.location.href = '../show/".$ID['ID']."';</script>";
+			echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
 		}
 	}
 	
