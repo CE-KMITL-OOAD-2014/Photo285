@@ -252,6 +252,7 @@ img {
 				<h3>Choose Album</h3>
 				<hr>
 				 <? 
+					$showal = $this->db->where('nameuser',$this->uri->segment(3))->get('album');
 					if($this->db->where('nameuser',$this->uri->segment(3))->count_all_results('album')==0)//ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
 					{ 
 						echo" 
