@@ -13,12 +13,12 @@
 	body {
     padding: 30px 0px;
 }
-<!--ตั้งค่า lightbox-->
+
 #lightbox .modal-content {
     display: inline-block;
     text-align: center;   
 }
-<!--ตั้งค่า lightbox-->
+
 #lightbox .close {
     opacity: 1;
     color: rgb(255, 255, 255);
@@ -31,7 +31,7 @@
     right: -55px;
     z-index:1032;
 }
-<!--  ตั้งค่าให้แก้ปัญหา ปุ่มที่มี href ให้มีอีกษร เป็นสีขาว-->
+
  .link
 {
    color:white;
