@@ -219,12 +219,18 @@ img {
 															<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
 															<h4 class='modal-title' id='mySmallModalLabel'>Delete Album :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 														</div>
-														<form action='../create' method='POST' enctype='multipart/form-data' >
-														<span class='button-checkbox'>
-															<button type='button' class='btn' data-color='primary'>".Albumname."</button>
-															<input type='checkbox' class='hidden'/>
-														</span>
-															<center>
+														<form action='../create' method='POST' enctype='multipart/form-data' >";
+														for($i=0; $i <count($album) //วนลูปตามจำนวน album ที่มี เพื่อ สร้าง ให้ได้ตามจำนวนอัลบั้ม
+														{
+															echo"
+															<span class='button-checkbox'>
+																<button type='button' class='btn' data-color='primary'>".$Albumname."</button>
+																<input type='checkbox' class='hidden'/>
+															</span>
+															<hr>
+															";
+														}
+															echo"<center>
 															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
 															</center>
 														</form>
