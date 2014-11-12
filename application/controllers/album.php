@@ -70,8 +70,8 @@ class Album extends CI_Controller {
 	}
 	
 	public function delete(){
-		$checkdelete = $_POST["checkdelete"];
-		if(checkdelete != NULL){
+		if($_POST["checkdelete"] != NULL){
+			$checkdelete = $_POST["checkdelete"];
 			$ID = $this->session->all_userdata();
 			$this->db->delete('album', array('nameuser' => $ID['ID'],'namealbum'=>$checkdelete));
 			//$this->db->where('nameuser', $ID['ID'])->where('namealbum',$checkdelete);
