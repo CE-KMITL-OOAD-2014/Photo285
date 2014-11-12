@@ -220,10 +220,12 @@ img {
 															<h4 class='modal-title' id='mySmallModalLabel'>Delete Album :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 														</div>
 														<form action='../create' method='POST' enctype='multipart/form-data' >
-														<span class='button-checkbox'>
+														".for($i=0; $i <count($booklist) ; $i++){.
+														"<span class='button-checkbox'>
 															<button type='button' class='btn' data-color='primary'>".$row['namealbum']."</button>
 															<input type='checkbox' class='hidden'/>
 														</span>
+														".}."
 															<center>
 															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
 															</center>
