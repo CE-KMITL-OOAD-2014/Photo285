@@ -8,7 +8,7 @@
 		<!-- Bootstrap -->
 		<link href="../../../css/bootstrap.min.css" rel="stylesheet">
 		<style> <!--จาก bootsnipp.com--->
-<!--ส่วนแสดงผู้ใช้-->
+
 img {
     -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
@@ -40,7 +40,7 @@ img {
     font-family: Segoe UI;
     font-weight: lighter;
 }
-<!--ส่วนแสดงอัลบั้ม--->
+
 @import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
 
 .mt40 { margin-top: 40px; }
@@ -80,7 +80,9 @@ img {
 .modal-title { font: 400 normal 1.625em "Roboto",Arial,Verdana,sans-serif; }
 .modal-footer { font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; } 
 
-
+.panel-footer{
+	background:#FFCCFF;}
+}
 
 /*!
  * Lightbox for Bootstrap 3 by @ashleydw
@@ -312,9 +314,15 @@ img {
 									</a>
 								</div>
 								<div class='panel-footer'>
+<<<<<<< HEAD
 									<tr class="info">
 										<h4><a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album'>".$row['namealbum']."</a></h4>
 									</tr>
+=======
+								<center>
+									<h4><a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album'>".$row['namealbum']."</a></h4>
+								<center>
+>>>>>>> origin/master
 								</div>
 							</div>
 						</article> "; 
