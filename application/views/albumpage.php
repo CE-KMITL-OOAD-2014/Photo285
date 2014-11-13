@@ -198,6 +198,10 @@ img {
     // keyCode == 37 is left arrow
     // keyCode == 39 is right arrow
     // englishAlphabetAndWhiteSpace.test(key) does the matching, that is, test the key just typed against the regex pattern
+	 if (englishAlphabetAndWhiteSpace.test(key)) {
+        return true;
+    }
+
     // If we got this far, just return false because a disallowed key was typed.
     return false;
 });
@@ -236,7 +240,7 @@ $('#mytextbox').on("paste",function(e)
 															<h4 class='modal-title' id='mySmallModalLabel'>Your Album Name :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 														</div>
 														<form action='../create' method='POST' enctype='multipart/form-data' >
-														<label for='exampleInputName1'>Type Album Name</label>
+														<em><label for='exampleInputName1'>Type Album Name</label></em>
 														<input type='text' name='namealbum' class='form-control' id='mytextbox' placeholder='Only English letters are allowed here...' required autofocus><br>
 															<center>
 															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
