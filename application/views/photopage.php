@@ -453,25 +453,28 @@ html, body { height: 100%;}
 															<h4 class='modal-title' id='mySmallModalLabel'>เลือกรูปให้อยู่ในหน้าหลัก :</h4>  
 														</div>
 														<form action='....' method='POST' enctype='multipart/form-data' >
-																<center>
+																&nbsp
 																<div class='radio'>
 																  <label>
 																	<input type='radio' name='checkdelete' id='optionsRadios1' value=''>
 																	รูปหน้าหลักที่ 1
 																  </label>
 																</div>
+																&nbsp
 																<div class='radio'>
 																  <label>
 																	<input type='radio' name='checkdelete' id='optionsRadios1' value=''>
 																	รูปหน้าหลักที่ 2
 																  </label>
 																</div>
+																&nbsp
 																<div class='radio'>
 																  <label>
 																	<input type='radio' name='checkdelete' id='optionsRadios1' value=''>
 																	รูปหน้าหลักที่ 3
 																  </label>
 																</div>
+																&nbsp
 																<div class='radio'>
 																  <label>
 																	<input type='radio' name='checkdelete' id='optionsRadios1' value=''>
@@ -479,7 +482,6 @@ html, body { height: 100%;}
 																  </label>
 																</div>
 																<hr>
-																</center>
 															<center>
 															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
 															</center>
