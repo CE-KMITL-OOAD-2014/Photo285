@@ -54,7 +54,7 @@ class Uploadphoto extends CI_Controller {
 		);
 		$this->load->library('upload', $this->config);
 		
-		if($this->upload->do_upload()){
+		if($this->upload->do_upload()){ // ถ้า upload สำเร็จ
 			$ID = $this->session->all_userdata();
 			echo "<script language='javascript'>
 					alert('Upload Complete');

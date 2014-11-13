@@ -364,7 +364,8 @@ html, body { height: 100%;}
 					<div class='col-md-9 col-xs-12 col-sm-12'> 
 						<span onclick='javascript:$('#photoModal').modal('toggle');'> <!--ถ้าคลิก จะเชื่อมไป photomodal เด้ง comment&like-->
 							<?
-							if($photo==NULL) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
+							$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
+							if($this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->count_all_results('picture')==0) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
 							{
 								echo" 
 								<center>
@@ -372,10 +373,10 @@ html, body { height: 100%;}
 								</center>";
 							}
 							else {// ตรวจสอบแล้ว มีรูป ทำ else
-							for($i=0; $i <count($photo) ; $i++) //วน for เพื่อให้ รูปขึ้น
+							foreach($showpic->result_array() as $row) //วน for เพื่อให้ รูปขึ้น
 							echo"
 							{
-							<img style='margin-top:9px;' src='"."PHOTO"."' class='img-rounded'> <!--รูปในอัลบั้ม-->
+							<img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg"' class='img-rounded'> <!--รูปในอัลบั้ม-->
 							&nbsp
 							}";
 							}
