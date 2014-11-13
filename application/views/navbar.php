@@ -7,7 +7,7 @@
     <title>Photo285 : Upload Your Picture</title>
 
     <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +27,7 @@
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> <!--เป็น template ที่ import ค่าตามbootstrap.com-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../../../../js/bootstrap.min.js"></script>
   <body>
     
 	<nav class="navbar navbar-default" role="navigation"><!---นำ template จาก bootstrap.com มาต่อเติม-->
@@ -51,9 +51,9 @@
 				<?
 					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
 						$ID = $this->session->all_userdata();
-						echo "<a href='../../member/editprofile'><button type='input' class='btn btn-warning navbar-btn'><div class='link'>Edit Profile</div></button></a>"; // <!------edit profile------>
+						echo "<a href='../../../../member/editprofile'><button type='input' class='btn btn-warning navbar-btn'><div class='link'>Edit Profile</div></button></a>"; // <!------edit profile------>
 						echo "  ";
-						echo "<a href='../../album/show/".$ID['ID']."'><button type='button' class='btn btn-primary navbar-btn'><div class='link'>Manage Album</div></button></a>"; // <!------Manage Album------>
+						echo "<a href='../../../../album/show/".$ID['ID']."'><button type='button' class='btn btn-primary navbar-btn'><div class='link'>Manage Album</div></button></a>"; // <!------Manage Album------>
 						echo "  ";
 					}
 				?>
@@ -64,11 +64,11 @@
 				  <ul class="nav navbar-nav navbar-right"><!-----เปิด NAVBAR ฝั่งขวา--->
 				  <?
 					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
-						echo "<a href='../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log out</div></button></a>";
+						echo "<a href='../../../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log out</div></button></a>";
 					}
 					else echo "<a href='#'><button type='input' class='btn btn-danger navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg2'><div class='link'>Log in</div></button></a>";
 				  ?>
-					 <li ><a href="../../profile/show/<? // redirect ไปโชว์โปรไฟล์ตัวเอง
+					 <li ><a href="../../../../profile/show/<? // redirect ไปโชว์โปรไฟล์ตัวเอง
 						if($this->session->userdata('ID')){ 
 							$ID = $this->session->all_userdata();
 							echo "".$ID['ID'];
@@ -94,7 +94,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 				<div class= "row">
-					<form action="../../member/login"  method="post" role="form">
+					<form action="../../../../member/login"  method="post" role="form">
 						<div class="col-md-12">
 							<div class="col-md-12">
 							<h2 class="form">Please sign in</h2>
