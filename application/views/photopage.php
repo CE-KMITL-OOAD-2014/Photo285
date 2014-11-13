@@ -350,7 +350,7 @@ html, body { height: 100%;}
 						</div>
 						<div class="modal-footer">
 							<center>
-								<button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 							</center>
 						</div>
 					</div>
