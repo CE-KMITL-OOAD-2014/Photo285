@@ -167,9 +167,9 @@ html, body { height: 100%;}
 	</style>
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../../../https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../../../../js/bootstrap.min.js"></script>
 	<script> <!--นำมาจาก bootsnipp.com--->
 	$(function () {
     $('.button-checkbox').each(function () {
@@ -296,7 +296,7 @@ html, body { height: 100%;}
   </script>
 	
 	</head>
-	<body background="img/white.jpg">
+	<body background="../../../../img/white.jpg">
 	   <div class="container">
 			<div class="col-md-3 col-xs-12 col-sm-12">
 				<div class="col-md-12 col-xs-12 col-sm-12">
@@ -403,7 +403,7 @@ html, body { height: 100%;}
 			
             <div class="col-md-8 col-sm-8 col-xs-8 modal-image">
                  <img class="img-responsive " <!--รูปคุณลุง-->src="http://www.pimart.eu/wp-content/uploads/2014/04/martin-schoeller-george-clooney-portrait-up-close-and-personal.jpeg">        
-                <a href="" class="img-modal-btn right"><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
+				<a href="" class="img-modal-btn right"><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
           	</div>
         	<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
               <div class="modal-meta-top">
