@@ -308,7 +308,7 @@ img {
 							<div class='panel panel-default'>
 								<div class='panel-body'>
 									<a href='../../photo/show/".$this->uri->segment(3)."/".$row['namealbum']."' title='".$row['namealbum']." Album' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป-->
-										<img src='"."PHOTO"."'>
+										<img src='../../photo/album.jpg'>
 									</a>
 								</div>
 								<div class='panel-footer'>
