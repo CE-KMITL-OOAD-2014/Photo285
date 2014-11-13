@@ -59,7 +59,7 @@ class Uploadphoto extends CI_Controller {
 			$ID = $this->session->all_userdata();
 			echo "<script language='javascript'>
 					alert('Upload Complete');
-					window.location.href = '../../../../photo/show/".$ID['ID']."';
+					window.location.href = '../../../../photo/show/".$ID['ID']."/".$this->uri->segment(3)."';
 				</script>";
 			
 		}
