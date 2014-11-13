@@ -107,7 +107,7 @@
 						<div class="row">
 						<center>
 							<br>
-							<button type="button" class="btn btn-primary navbar-btn"><a href="../../album/show/<? echo "".$this->uri->segment(3); ?>"><div class="link">See More Album</div></a></button> <!-----see album----->
+							<a href="../../album/show/<? echo "".$this->uri->segment(3); ?>"><button type="button" class="btn btn-primary navbar-btn"><div class="link">See More Album</div></button></a> <!-----see album----->
 						</center>
 						</ul>
 					</div>
