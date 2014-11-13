@@ -267,7 +267,7 @@ img {
 							</div>
 							<div class="modal-body">
 								<center>
-									<img src="../../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+									<img src="../../../photo/profile/<? echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
 									<h3 class="media-heading"><? echo "".$name; ?></h3> <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 									<span><strong>Email: </strong></span> 
 									<span><? echo "".$email; ?></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
@@ -307,7 +307,7 @@ img {
 						<article class='col-xs-12 col-sm-6 col-md-3'>
 							<div class='panel panel-default'>
 								<div class='panel-body'>
-									<a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป-->
+									<a href='../photo/".$this->uri->segment(3)."/".$row['namealbum']."' title='".$row['namealbum']." Album' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป-->
 										<img src='"."PHOTO"."'>
 									</a>
 								</div>
