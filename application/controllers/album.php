@@ -42,7 +42,7 @@ class Album extends CI_Controller {
 		}
 	}
 	
-	public function create(){
+	public function create(){ // create album
 		$namealbum = $_POST["namealbum"];
 		$ID = $this->session->all_userdata();
 		$check = $this->db->where('nameuser',$ID['ID'])->where('namealbum',$namealbum)->count_all_results('album');
@@ -69,11 +69,16 @@ class Album extends CI_Controller {
 		}
 	}
 	
-	public function delete(){
+	public function delete(){ // delete album
 		$checkdelete = $_POST["checkdelete"];
 		$ID = $this->session->all_userdata();
 		$this->db->delete('album', array('nameuser' => $ID['ID'],'namealbum'=>$checkdelete));
 		echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
+	}
+	
+	public function albumcover(){ // show รูปหน้าปก album
+		
+	
 	}
 	
 }
