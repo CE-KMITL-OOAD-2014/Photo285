@@ -415,12 +415,13 @@ html, body { height: 100%;}
 						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 							sssss <span class="caret"></span>
 						  </button>
-						  <button data-dropdown="drop" aria-controls="drop", aria-expanded="false" class="large alert round button dropdown">Dropdown Button</button><br>
-							<ul id="drop" data-dropdown-content class="f-dropdown" role="menu", aria-hidden="false" tabindex="-1">
-							  <li><a href="#">This is a link</a></li>
-							  <li><a href="#">This is another</a></li>
-							  <li><a href="#">Yet another</a></li>
-							</ul>
+						  <ul class="dropdown-menu" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						  </ul>
 						</div>
 					</div>
 					<ul class="img-comment-list">
