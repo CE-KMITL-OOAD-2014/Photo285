@@ -70,8 +70,8 @@ img {
     filter: alpha(opacity=1);    
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 }
-.panel .panel-footer { padding: 8px !important; background-color: #FFCCFF !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }	
-.panel .panel-footer h4 { display: inline; font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #34495e margin: 0 !important; padding: 0 !important; }
+.panel .panel-footer { padding: 8px !important; background-color: #58ACFA !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }	
+.panel .panel-footer h4 { display: inline; font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #FFFFFF margin: 0 !important; padding: 0 !important; }
 .panel .panel-footer i.glyphicon { display: inline; font-size: 1.125em; cursor: pointer; }
 .panel .panel-footer i.glyphicon-thumbs-up { color: #1abc9c; }
 .panel .panel-footer i.glyphicon-thumbs-down { color: #e74c3c; padding-left: 5px; }
