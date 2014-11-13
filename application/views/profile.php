@@ -92,7 +92,7 @@
 			<div class="col-md-3 col-xs-12 col-sm-12"> <!--colในส่วนซ้าย ที่มี รายละเอียดของผู้ใช้งาน-->
 				  <div class="col-md-12 col-xs-12 col-sm-12">
 						<center>
-							<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$ID['ID'].".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a>
+							<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a>
 							<h3>
 								<?
 								$data = $this->db->where('ID',$id)->get('account');
@@ -159,7 +159,7 @@
 							</div>
 							<div class="modal-body">
 								<center>
-									<img src="../../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$ID['ID'].".jpg" ?>" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+									<img src="../../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
 									
 									<h3 class="media-heading"><? echo $id; ?></h3> <!--รับตัวแปร id มาจาก controller-->
 									<span><strong>Email: </strong></span>
