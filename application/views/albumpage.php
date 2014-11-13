@@ -198,10 +198,6 @@ img {
     // keyCode == 37 is left arrow
     // keyCode == 39 is right arrow
     // englishAlphabetAndWhiteSpace.test(key) does the matching, that is, test the key just typed against the regex pattern
-    if (event.keyCode == 8 || event.keyCode == 37 || event.keyCode == 39 || englishAlphabetAndWhiteSpace.test(key)) {
-        return true;
-    }
-
     // If we got this far, just return false because a disallowed key was typed.
     return false;
 });
