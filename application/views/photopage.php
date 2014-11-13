@@ -371,23 +371,7 @@ html, body { height: 100%;}
 					<hr>
 					<div class='col-md-9 col-xs-12 col-sm-12'> 
 						<span onclick='javascript:$('#photoModal').modal('toggle');'> <!--ถ้าคลิก จะเชื่อมไป photomodal เด้ง comment&like-->
-							<?
-							if($photo==NULL) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
-							{
-								echo" 
-								<center>
-								<h4>You don't have any photo</h4>
-								</center>";
-							}
-							else {// ตรวจสอบแล้ว มีรูป ทำ else
-							for($i=0; $i <count($photo) ; $i++) //วน for เพื่อให้ รูปขึ้น
-							echo"
-							{
-							<img style='margin-top:9px;' src='"."PHOTO"."' class='img-rounded'> <!--รูปในอัลบั้ม-->
-							&nbsp
-							}";
-							}
-							?>
+							
 						</span>
 					</div>
 				</div>
