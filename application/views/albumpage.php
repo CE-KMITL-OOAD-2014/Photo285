@@ -312,7 +312,9 @@ img {
 									</a>
 								</div>
 								<div class='panel-footer'>
+								<center>
 									<h4><a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album'>".$row['namealbum']."</a></h4>
+								<center>
 								</div>
 							</div>
 						</article> "; 
