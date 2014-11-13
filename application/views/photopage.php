@@ -411,7 +411,6 @@ html, body { height: 100%;}
 						<button type="button" class="btn btn-default btn-md">
 							<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Delete Photo
 						</button>
-						<!-- Single button -->
 						<div class="btn-group">
 						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 							Action <span class="caret"></span>
