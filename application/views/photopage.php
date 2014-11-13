@@ -375,10 +375,9 @@ html, body { height: 100%;}
 							else {// ตรวจสอบแล้ว มีรูป ทำ else
 							foreach($showpic->result_array() as $row) //วน for เพื่อให้ รูปขึ้น
 							echo"
-							{
 							<img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg' class='img-rounded'> <!--รูปในอัลบั้ม-->
 							&nbsp
-							}";
+							";
 							}
 							?>
 						</span>
