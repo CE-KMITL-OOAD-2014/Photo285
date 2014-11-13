@@ -4,6 +4,7 @@ class Photo extends CI_Controller {
 
 	public function show(){
 		$this->load->view('navbar');
+		
 		echo "test";
 		//echo $this->uri->segment(3); // nameuser
 		//echo $this->uri->segment(4); // namealbum
@@ -15,8 +16,4 @@ class Photo extends CI_Controller {
 		$this->load->view('photopage');
 	}
 	
-	public function addphoto(){
-		
-	
-	}
 }
