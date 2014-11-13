@@ -158,21 +158,12 @@ html, body { height: 100%;}
 .img-modal .img-comment-list span {
     font-size: .8em; 
     color: #aaa;
-}
-
-
-	
-
+}	
 .chkhidden{
 		display:none;
 		position: absolute;
 	}
-	
-
-
-	
 <!--ส่วน comment_like-->
- 
 	</style>
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -309,17 +300,15 @@ html, body { height: 100%;}
 	   <div class="container">
 			<div class="col-md-3 col-xs-12 col-sm-12">
 				<div class="col-md-12 col-xs-12 col-sm-12">
-					<center>
-						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
-						<h3>Joe Sixpack</h3>
+					<center>		
+						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><!--เปลี่ยนเป็นรูปตาม userprofile--><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
+						<h3>Joe Sixpack</h3> <!---เปลี่ยนเป็นตัวแปรตรงนี้---->
 					</center>
 				</div>
 				<div class="row">
 					<center>
 						<br>
 						<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">Upload photo</a>
-							<a class="btn btn-warning " id="btndel" >Delete</a><br>
-						<span class="button"><button type="button" class="btn  btnchk btn btn-success " data-color="success">SAVE?</button></span>
 					</center>
 					</ul>
 				</div>			
@@ -339,7 +328,7 @@ html, body { height: 100%;}
 				</div>
 			</div>						
 				
-			<!-- Modal -ส่วนแสดง popup user---->
+			<!-- Modal -ส่วนแสดง popup user----> 
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -351,7 +340,7 @@ html, body { height: 100%;}
 							<center>
 								<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
 									<h3 class="media-heading">Joe Sixpack </h3> <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-									<span><strong>Email: </strong></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+								<span><strong>Email: </strong></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 									<span>joe.sixpack@hotmail.com</span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 							</center>
 							<hr>
@@ -378,95 +367,30 @@ html, body { height: 100%;}
 		
 			<div class="col-md-9 col-xs-12 col-sm-12"> <!---ส่วนแสดงรูปในอัลบั้ม-->
 				<div class="container">
-					
-						<h1 class="muted">Album name</h1>
-						<hr>
-							<!--?php
-								 for($i = 0 ;$i<$x ;$i++){
-									 $databasePic =get form database;
-									 $string = "<img src = " +$databasePic +"  class='img-rounded'>"
-									 echo "$string";
-									 }
-								 }
-							?-->
-						<div class="col-md-9 col-xs-12 col-sm-12">
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img  style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span  style="margin-top:9px;" class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-						
-						
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-						</div>
+					<h1 class="muted">Album name</h1>
+					<hr>
+					<div class='col-md-9 col-xs-12 col-sm-12'> 
+						<span onclick='javascript:$('#photoModal').modal('toggle');'> <!--ถ้าคลิก จะเชื่อมไป photomodal เด้ง comment&like-->
+							<?
+							if($photo==NULL) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
+							{
+								echo" 
+								<center>
+								<h4>You don't have any photo</h4>
+								</center>";
+							}
+							else {// ตรวจสอบแล้ว มีรูป ทำ else
+							for($i=0; $i <count($photo) ; $i++) //วน for เพื่อให้ รูปขึ้น
+							echo"
+							{
+							<img style='margin-top:9px;' src='"."PHOTO"."' class='img-rounded'> <!--รูปในอัลบั้ม-->
+							&nbsp
+							}";
+							}
+							?>
+						</span>
+					</div>
 				</div>
-				
 			</div>	
 		</div>
 
@@ -476,49 +400,40 @@ html, body { height: 100%;}
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
-        
+			
             <div class="col-md-8 col-sm-8 col-xs-8 modal-image">
-                 <img class="img-responsive " src="http://www.pimart.eu/wp-content/uploads/2014/04/martin-schoeller-george-clooney-portrait-up-close-and-personal.jpeg">        
+                 <img class="img-responsive " <!--รูปคุณลุง-->src="http://www.pimart.eu/wp-content/uploads/2014/04/martin-schoeller-george-clooney-portrait-up-close-and-personal.jpeg">        
                 <a href="" class="img-modal-btn right"><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
           	</div>
         	<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
               <div class="modal-meta-top">
                   <button type="button" class="close"  data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                   <div class="img-poster clearfix">
-                      <a href=""><img class="img-circle" src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"/></a>
-                      <strong><a href="">John Doe</a></strong>
-                      
-                  </div>
-                  
-                  <ul class="img-comment-list">
-                    <li>
-                        <div class="comment-img">
-                          <img src="http://lorempixel.com/50/50/people/6">
-                        </div>
-                        <div class="comment-text">
-                            <strong><a href="">Jane Doe</a></strong>
-                            <p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="comment-img">
-                          <img src="http://lorempixel.com/50/50/people/7">
-                        </div>
-                        <div class="comment-text">
-                            <strong><a href="">Jane Doe</a></strong>
-                            <p>Hello this is a test comment and this comment is particularly very long and it goes on and on and on.</p> <span>on March 5th, 2014</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="comment-img">
-                          <img src="http://lorempixel.com/50/50/people/9">
-                        </div>
-                        <div class="comment-text">
-                            <strong><a href="">Jane Doe</a></strong>
-                            <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
-                        </div>
-                    </li>
-                </ul>
+						<a href=""><img class="img-circle" src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"/><!--รูปของเจ้าของภาพ--></a>
+						<strong><a href="">Jone Doe<!--ชื่อคนcomment--></a></strong>
+						<button type="button" class="btn btn-default btn-md">
+							<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Delete Photo
+						</button>
+					</div>
+					<ul class="img-comment-list">
+					<?if($comment==NULL)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
+					{ echo"";//เข้า if (ไม่มี comment ก็ไม่ต้องทำอะไร
+					}
+					  else 
+					  for($i=0; $i <count($booklist) ; $i++) //วน comment เพื่อให้รูปขึ้น
+						{echo"
+						<li>
+							<div class='comment-img'>
+							  <img src='http://lorempixel.com/50/50/people/6'>
+							</div>
+							<div class='comment-text'>
+								<strong><a href="">".$UserComment."</a></strong>
+								<p>".$commentMessage."</p> 
+							</div>
+						</li>";
+						}
+					?>
+					</ul>
               </div>
               <div class="modal-meta-bottom">
                   <input type="text" class="form-control" placeholder="Leave a commment.."/>
