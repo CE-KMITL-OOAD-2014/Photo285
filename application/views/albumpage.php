@@ -314,15 +314,11 @@ img {
 									</a>
 								</div>
 								<div class='panel-footer'>
-<<<<<<< HEAD
+								<center>
 									<tr class="info">
 										<h4><a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album'>".$row['namealbum']."</a></h4>
 									</tr>
-=======
-								<center>
-									<h4><a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album'>".$row['namealbum']."</a></h4>
-								<center>
->>>>>>> origin/master
+								</center>
 								</div>
 							</div>
 						</article> "; 
