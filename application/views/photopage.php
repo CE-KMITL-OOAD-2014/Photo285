@@ -409,10 +409,10 @@ html, body { height: 100%;}
 						<a href=""><img class="img-circle" src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"/><!--รูปของเจ้าของภาพ--></a>
 						<strong><a href="">Jone Doe<!--ชื่อคนcomment--></a></strong>
 						<button type="button" class="btn btn-default btn-md">
-							<span class="glyphicon glyphicon-trash" ></span>Delete Photo
+							<span class="glyphicon glyphicon-trash" >Delete Photo</span>
 						</button>
 						<button type="button" class="btn btn-default btn-md">
-							<span class="glyphicon glyphicon-glyphicon glyphicon-globe" data-toggle="modal" data-target=".bs-example-modal-lg4"></span>เลือกรูปนี้ให้แสดงในหน้าหลัก
+							<span class="glyphicon glyphicon-glyphicon glyphicon-globe" data-toggle="modal" data-target=".bs-example-modal-lg4">เลือกรูปนี้ให้แสดงในหน้าหลัก</span>
 						</button>
 					</div>
 					<ul class="img-comment-list">
