@@ -296,6 +296,7 @@ html, body { height: 100%;}
 	
 	</head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<body background="../../../../img/white.jpg">
 	   <div class="container">
 			<div class="col-md-3 col-xs-12 col-sm-12">
@@ -304,6 +305,8 @@ html, body { height: 100%;}
 						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
 						<h3><? echo "".$name; ?></h3>
 =======
+=======
+>>>>>>> origin/master
 	<body background="../../../img/white.jpg">
 	   <div class="container">
 			<div class="col-md-3 col-xs-12 col-sm-12">
@@ -311,7 +314,6 @@ html, body { height: 100%;}
 					<center>		
 						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><!--เปลี่ยนเป็นรูปตาม userprofile--><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
 						<h3>Joe Sixpack</h3> <!---เปลี่ยนเป็นตัวแปรตรงนี้---->
->>>>>>> origin/master
 					</center>
 				</div>
 				<div class="row">
@@ -343,30 +345,31 @@ html, body { height: 100%;}
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-							<h4 class="modal-title" id="myModalLabel"><? echo "".$id; ?></h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+							<h4 class="modal-title" id="myModalLabel">More About Joe</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 						</div>
 						<div class="modal-body">
 							<center>
 								<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
-<<<<<<< HEAD
-									<h3 class="media-heading"><? echo "".$name; ?></h3> <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-									<span><strong>Email: </strong></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-									<span><? echo "".$email; ?></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-=======
 									<h3 class="media-heading">Joe Sixpack </h3> <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 								<span><strong>Email: </strong></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 									<span>joe.sixpack@hotmail.com</span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
->>>>>>> origin/master
 							</center>
 							<hr>
 							<center>
-								<p class="text-left"><strong>ประวัติส่วนตัว: </strong><br><? echo "".$resume; ?></p>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+								<p class="text-left"><strong>Annouce: </strong><br>
+									I am looking for someone with honesty and integrity. 
+									Please be who you say you are–please no game players! 
+									Please show a recent photo (get out of denial, yes, you 
+									and I both have aged–hopefully, gracefully, lol!) 
+									We all wish we looked and felt the way we did 10 years ago! :)
+									A person with a good sense of humor… A smile goes a long way–make someone happy today! 
+									My profile says I am 50… Sorry, I wasn’t able to change it… I am ….. 56!</p>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 								<br>
 							</center>
 						</div>
 						<div class="modal-footer">
 							<center>
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
 							</center>
 						</div>
 					</div>
@@ -375,95 +378,6 @@ html, body { height: 100%;}
 		
 			<div class="col-md-9 col-xs-12 col-sm-12"> <!---ส่วนแสดงรูปในอัลบั้ม-->
 				<div class="container">
-<<<<<<< HEAD
-					
-						<h1 class="muted"><? echo "".$albumname; ?></h1>
-						<hr>
-							<!--?php
-								 for($i = 0 ;$i<$x ;$i++){
-									 $databasePic =get form database;
-									 $string = "<img src = " +$databasePic +"  class='img-rounded'>"
-									 echo "$string";
-									 }
-								 }
-							?-->
-						<div class="col-md-9 col-xs-12 col-sm-12">
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img  style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span  style="margin-top:9px;" class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-						
-						
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-							<span class="button-checkbox" onclick="javascript:$('#photoModal').modal('toggle');">
-								<button type="button" class="btn  btnchk" data-color="default"></button>
-								<input type="checkbox" class="hidden" checked />
-								<img style="margin-top:9px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-rounded">
-								&nbsp
-							</span>
-						</div>
-=======
 					<h1 class="muted">Album name</h1>
 					<hr>
 					<div class='col-md-9 col-xs-12 col-sm-12'> 
@@ -487,7 +401,6 @@ html, body { height: 100%;}
 							?>
 						</span>
 					</div>
->>>>>>> origin/master
 				</div>
 			</div>	
 		</div>
