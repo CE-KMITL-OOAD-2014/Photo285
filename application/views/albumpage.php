@@ -81,8 +81,11 @@ img {
 .modal-footer { font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; } 
 
 .panel-footer{
-	background:#FFCCFF;}
-}
+	 background-color: #FFCCFF;
+	}
+
+
+
 
 /*!
  * Lightbox for Bootstrap 3 by @ashleydw
