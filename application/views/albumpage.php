@@ -307,7 +307,7 @@ img {
 						<article class='col-xs-12 col-sm-6 col-md-3'>
 							<div class='panel panel-default'>
 								<div class='panel-body'>
-									<a href='../../photo/".$this->uri->segment(3)."/".$row['namealbum']."' title='".$row['namealbum']." Album' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป-->
+									<a href='../../photo/show/".$this->uri->segment(3)."/".$row['namealbum']."' title='".$row['namealbum']." Album' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป-->
 										<img src='"."PHOTO"."'>
 									</a>
 								</div>
