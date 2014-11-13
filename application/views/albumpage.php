@@ -315,7 +315,7 @@ img {
 								</div>
 								<div class='panel-footer'>
 									<center>
-										<h4><a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album'>".$row['namealbum']."</a></h4>
+										<h4><a href='../../photo/show/".$this->uri->segment(3)."/".$row['namealbum']."' title='".$row['namealbum']." Album'>".$row['namealbum']."</a></h4>
 									</center>
 								</div>
 							</div>
