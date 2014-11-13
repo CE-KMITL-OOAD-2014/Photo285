@@ -80,8 +80,8 @@ img {
 .modal-title { font: 400 normal 1.625em "Roboto",Arial,Verdana,sans-serif; }
 .modal-footer { font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; } 
 
-.panel-default > .panel-footer{
-  background-color: red;
+.panel-footer{
+	background:#FFCCFF;}
 }
 
 /*!
