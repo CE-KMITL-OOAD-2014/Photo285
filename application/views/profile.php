@@ -97,12 +97,7 @@
 								<? echo"".$name; ?>
 							</h3>
 							<em>
-								<?
-									$data = $this->db->where('ID',$id)->get('account');
-										foreach($data->result_array() as $row){
-											echo"email: ".$row['email'];
-										}
-								?>
+								<? echo"email: ".$email; ?>
 							</em>
 						</center>
 					</div>
