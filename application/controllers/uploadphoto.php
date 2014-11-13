@@ -31,13 +31,23 @@ class Uploadphoto extends CI_Controller {
 		}
 		
 	}
-	/*
-	public function uploaded(){
-
+	
+	public function uploadphoto(){
+		$ID = $this->session->all_userdata();
+		
+		//เซฟลง db
+		$this->db->select_max('ID');
+		$sID = $this->db->get('picture'); // ซีเคว้นID ของ  picture
+		$sID = $sID->result_array();
+		foreach($sID as $row) $sID = $row['ID']+1;
+		$data = array('ID'=>$sID,'nameuser'=>$ID['ID'],'namealbum'=>$this->uri->segment(3));
+		$this->db->insert('picture',$data);
+		
+		//เอาไฟล์ลง server
 		$this->config =  array(
-			'file_name'    => "eiei.jpg", //ส่วนเปลี่ยนชื่อรูป
-			'upload_path'     => "./files/",
-			'allowed_types'   => "gif|jpg|png|jpeg",
+			'file_name'    => "".$sID.".jpg", //name
+			'upload_path'     => "./photo/",
+			'allowed_types'   => "jpg",
 			'overwrite'       => TRUE,
 			'max_size'        => "1000KB",
 			'max_height'      => "768",
@@ -46,12 +56,21 @@ class Uploadphoto extends CI_Controller {
 		$this->load->library('upload', $this->config);
 		
 		if($this->upload->do_upload()){
-			echo "file upload success";
+			$ID = $this->session->all_userdata();
+			echo "<script language='javascript'>
+					alert('Upload Complete');
+					window.location.href = '../../../../photo/show/".$ID['ID']."/".$this->uri->segment(3)"';
+				</script>";
+			
 		}
 		else{
-			echo "file upload failed";
+			echo "<script language='javascript'>
+					alert('Upload Fail');
+					window.location.href = '../../member/editprofile';
+				</script>";
 		}
+		
 	}
-	*/
+	
 }
 ?>
