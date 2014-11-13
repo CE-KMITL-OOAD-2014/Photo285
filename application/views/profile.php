@@ -94,12 +94,7 @@
 						<center>
 							<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a>
 							<h3>
-								<?
-								$data = $this->db->where('ID',$id)->get('account');
-									foreach($data->result_array() as $row){
-										echo"".$row['name'];
-								}
-								?>
+								<? echo"".$name; ?>
 							</h3>
 							<em>
 								<?
