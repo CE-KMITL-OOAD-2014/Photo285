@@ -297,6 +297,7 @@ html, body { height: 100%;}
 	</head>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<body background="../../../../img/white.jpg">
 	   <div class="container">
 			<div class="col-md-3 col-xs-12 col-sm-12">
@@ -306,6 +307,9 @@ html, body { height: 100%;}
 						<h3><? echo "".$name; ?></h3>
 =======
 	<body background="../../../img/white.jpg">
+=======
+	<body background="../../../../img/white.jpg">
+>>>>>>> parent of cb2bcb9... test
 =======
 	<body background="../../../../img/white.jpg">
 >>>>>>> parent of cb2bcb9... test
