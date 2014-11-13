@@ -9,6 +9,7 @@ class Photo extends CI_Controller {
 		foreach($showpic->result_array() as $row){
 			echo "".$row['ID']." ";
 		}
+		$this->load->view('navbar');
 		$this->load->view('photopage');
 	}
 	
