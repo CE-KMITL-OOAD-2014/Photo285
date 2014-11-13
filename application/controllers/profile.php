@@ -19,7 +19,7 @@ class Profile extends CI_Controller {
 				$email = $this->member_model->getEmail($id);
 				$detail = $this->member_model->getDetail($id);
 				$resume = $this->member_model->getResume($id);
-				$data = array('name' => $name , 'id' => $ID['ID'] , 'email' => $email , 'detail' => $detail , 'resume' => $resume);
+				$data = array('name' => $name , 'id' => $id , 'email' => $email , 'detail' => $detail , 'resume' => $resume);
 				
 				$this->load->view('navbar');
 				$this->load->view('profile',$data);
