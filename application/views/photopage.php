@@ -411,8 +411,8 @@ html, body { height: 100%;}
 						<button type="button" class="btn btn-default btn-md">
 							<span class="glyphicon glyphicon-trash" >Delete Photo</span>
 						</button>
-						<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target=".bs-example-modal-lg4">
-							<span class="glyphicon glyphicon-glyphicon glyphicon-globe">เลือกรูปนี้ให้แสดงในหน้าหลัก</span>
+						<button type="button" class="btn btn-default btn-md" >เลือกรูปนี้ให้แสดงในหน้าหลัก
+							<span class="glyphicon glyphicon-glyphicon glyphicon-globe" data-toggle="modal" data-target=".bs-example-modal-lg4"></span>
 						</button>
 					</div>
 					<ul class="img-comment-list">
