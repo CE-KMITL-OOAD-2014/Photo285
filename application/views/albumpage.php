@@ -313,9 +313,9 @@ img {
 										<img src='../../../photo/album.jpg'>
 									</a>
 								</div>
-								<tr class="info">test</tr>
 								<div class='panel-footer'>
 									<center>
+										<button type="button" class="btn btn-info">".$row['namealbum']."</button>
 										<h4><a href='"."เข้าไปที่ALBUMที่กด"."' title='".$row['namealbum']." Album'>".$row['namealbum']."</a></h4>
 									</center>
 								</div>
