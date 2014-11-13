@@ -416,7 +416,23 @@ html, body { height: 100%;}
 						</button>
 					</div>
 					<ul class="img-comment-list">
-					
+					<?if($comment==NULL)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
+					{ echo"";//เข้า if (ไม่มี comment ก็ไม่ต้องทำอะไร
+					}
+					  else 
+					  for($i=0; $i <count($booklist) ; $i++) //วน comment เพื่อให้รูปขึ้น
+						{echo"
+						<li>
+							<div class='comment-img'>
+							  <img src='http://lorempixel.com/50/50/people/6'>
+							</div>
+							<div class='comment-text'>
+								<strong><a href="">".$UserComment."</a></strong>
+								<p>".$commentMessage."</p> 
+							</div>
+						</li>";
+						}
+					?>
 					</ul>
               </div>
               <div class="modal-meta-bottom">
