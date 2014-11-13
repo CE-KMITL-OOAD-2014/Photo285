@@ -66,7 +66,7 @@ class Uploadphoto extends CI_Controller {
 		else{
 			echo "<script language='javascript'>
 					alert('Upload Fail');
-					window.location.href = '../../member/editprofile';
+					window.location.href = '../../../../album/show/".$ID['ID']."';
 				</script>";
 		}
 		
