@@ -167,7 +167,7 @@ html, body { height: 100%;}
 	</style>
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../../../https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../../js/bootstrap.min.js"></script>
 	<script> <!--นำมาจาก bootsnipp.com--->
@@ -295,7 +295,7 @@ html, body { height: 100%;}
   </script>
 	
 	</head>
-	<body background="../../../../img/white.jpg">
+	<body background="../../../img/white.jpg">
 	   <div class="container">
 			<div class="col-md-3 col-xs-12 col-sm-12">
 				<div class="col-md-12 col-xs-12 col-sm-12">
@@ -417,7 +417,7 @@ html, body { height: 100%;}
 					<ul class="img-comment-list">
 					<?if($comment==NULL)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
 					{ echo"<center>
-								<h4>You don't have any comment</h4>
+								<h4>You don't have any comment just test ,</h4>
 							</center>";//เข้า if (ไม่มี comment ก็ไม่ต้องทำอะไร
 					}
 					  else 
