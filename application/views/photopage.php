@@ -159,10 +159,7 @@ html, body { height: 100%;}
     font-size: .8em; 
     color: #aaa;
 }	
-.chkhidden{
-		display:none;
-		position: absolute;
-	}
+
 <!--ส่วน comment_like-->
 	</style>
 	
