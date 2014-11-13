@@ -92,7 +92,7 @@
 			<div class="col-md-3 col-xs-12 col-sm-12"> <!--colในส่วนซ้าย ที่มี รายละเอียดของผู้ใช้งาน-->
 				  <div class="col-md-12 col-xs-12 col-sm-12">
 						<center>
-							<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a>
+							<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../../photo/profile/<? echo "".$this->uri->segment(3).".jpg"; ?>" name="aboutme" width="140" height="140" class="img-circle"></a>
 							<h3>
 								<? echo"".$name; ?>
 							</h3>
@@ -107,7 +107,7 @@
 						<div class="row">
 						<center>
 							<br>
-							<button type="button" class="btn btn-primary navbar-btn"><a href="../../album/show/<?$ID = $this->session->all_userdata(); echo "".$this->uri->segment(3); ?>"><div class="link">See More Album</div></a></button> <!-----see album----->
+							<button type="button" class="btn btn-primary navbar-btn"><a href="../../album/show/<? echo "".$this->uri->segment(3); ?>"><div class="link">See More Album</div></a></button> <!-----see album----->
 						</center>
 						</ul>
 					</div>
