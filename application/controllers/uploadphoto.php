@@ -32,7 +32,7 @@ class Uploadphoto extends CI_Controller {
 		
 	}
 	
-	public function uploadphoto(){
+	public function upphoto(){
 		$ID = $this->session->all_userdata();
 		
 		//૿ŧ db
