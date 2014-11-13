@@ -13,7 +13,6 @@ class Ptshow extends CI_Controller {
 		//	echo "".$row['ID']." ";
 		//}
 
-		$this->load->view('photopage');
 	}
 	
 }
