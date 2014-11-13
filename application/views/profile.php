@@ -118,12 +118,7 @@
 								<div class="info">
 									<h3 class="title">ข่าวสาร</h3>
 									<p>
-										<?
-											$data = $this->db->where('ID',$id)->get('account');
-												foreach($data->result_array() as $row){
-													echo"".$row['detail'];
-												}
-										?>
+										<? echo"".$detail; ?>
 									</p>
 								</div>
 							</div>
@@ -139,39 +134,24 @@
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
 								<h4 class="modal-title" id="myModalLabel">
-									<?
-										$data = $this->db->where('ID',$id)->get('account');
-											foreach($data->result_array() as $row){
-												echo"".$row['ID'];
-											}
-									?>
+									<? echo"".$id; ?>
 								</h4>   <!--ดึงชื่อมาจาก db-->
 							</div>
 							<div class="modal-body">
 								<center>
-									<img src="../../../photo/profile/<?$ID = $this->session->all_userdata(); echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+									<img src="../../../photo/profile/<? echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
 									
 									<h3 class="media-heading"><? echo $id; ?></h3> <!--รับตัวแปร id มาจาก controller-->
 									<span><strong>Email: </strong></span>
 									<span>
 									<!--ดึงข้อมูลจาก db มาแสดง email-->
-										<?
-											$data = $this->db->where('ID',$id)->get('account');
-												foreach($data->result_array() as $row){
-													echo"".$row['email'];
-												}
-										?>
+										<? echo"".$email; ?>
 									</span>
 								</center>
 								<hr>
 								<center>
 								<p class="text-left"><strong>ประวัติส่วนตัว: </strong><br>
-									<?
-										$data = $this->db->where('ID',$id)->get('account');
-											foreach($data->result_array() as $row){
-												echo"".$row['resume'];
-											}
-									?>								
+									<? echo"".$resume; ?>								
 								
 								</p>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 								<br>
