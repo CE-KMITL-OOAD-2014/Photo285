@@ -411,9 +411,9 @@ html, body { height: 100%;}
 						<button type="button" class="btn btn-default btn-md">
 							<span class="glyphicon glyphicon-trash" >Delete Photo</span>
 						</button>
-						<button type="button" class="btn btn-default btn-md" >เลือกรูปนี้ให้แสดงในหน้าหลัก
-							<span class="glyphicon glyphicon-glyphicon glyphicon-globe" data-toggle="modal" data-target=".bs-example-modal-lg4"></span>
-						</button>
+						<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target=".bs-example-modal-lg4"><span class="glyphicon glyphicon-glyphicon glyphicon-globe" ></span>เลือกรูปนี้ให้แสดงในหน้าหลัก</button>
+						
+						
 					</div>
 					<ul class="img-comment-list">
 					<?if($comment==NULL)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
