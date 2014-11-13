@@ -295,18 +295,6 @@ html, body { height: 100%;}
   </script>
 	
 	</head>
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<body background="../../../../img/white.jpg">
-	   <div class="container">
-			<div class="col-md-3 col-xs-12 col-sm-12">
-				<div class="col-md-12 col-xs-12 col-sm-12">
-					<center>
-						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
-						<h3><? echo "".$name; ?></h3>
-=======
-=======
->>>>>>> origin/master
 	<body background="../../../img/white.jpg">
 	   <div class="container">
 			<div class="col-md-3 col-xs-12 col-sm-12">
