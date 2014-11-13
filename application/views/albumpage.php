@@ -16,7 +16,12 @@ img {
     margin-bottom:20px;
 }
 
-
+.link
+{
+   color:white;
+   text-decoration: none; 
+   background-color: none; <!--Link remove href-->
+}
 
 .dynamicTile .col-sm-2.col-xs-4{
     padding:5px;
@@ -314,7 +319,7 @@ img {
 								</div>
 								<div class='panel-footer'>
 									<center>
-										<h4><a href='../../photo/show/".$this->uri->segment(3)."/".$row['namealbum']."' title='".$row['namealbum']." Album' style='text-decoration:none;'>".$row['namealbum']."</a></h4>
+										<h4><a href='../../photo/show/".$this->uri->segment(3)."/".$row['namealbum']."' title='".$row['namealbum']." Album'><div class='link'> ".$row['namealbum']."</div></a></h4>
 									</center>
 								</div>
 							</div>
