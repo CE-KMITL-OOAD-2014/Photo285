@@ -180,7 +180,8 @@ img {
 }
 	</script>
 	<script>
-	$("#mytextbox").on("keypress", function(event) {
+  $(document).ready(function(){
+  $("#mytextbox").on("keypress", function(event) {
 
     // Disallow anything not matching the regex pattern (A to Z uppercase, a to z lowercase and white space)
     // For more on JavaScript Regular Expressions, look here: https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions
@@ -209,8 +210,8 @@ $('#mytextbox').on("paste",function(e)
 {
     e.preventDefault();
 });
-
-	</script>
+});
+  </script>
 	</head>
 	<body background="../../../img/white.jpg">
 	   <div class="container mt40">
