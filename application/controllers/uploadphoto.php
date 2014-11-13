@@ -41,7 +41,6 @@ class Uploadphoto extends CI_Controller {
 		$sID = $sID->result_array();
 		foreach($sID as $row) $sID = $row['ID']+1;
 		$data = array('ID'=>$sID,'nameuser'=>$ID['ID'],'namealbum'=>$this->uri->segment(3));
-		$this->db->insert('picture',$data);
 		
 		//àÍÒä¿ÅìÅ§ server
 		$this->config =  array(
@@ -61,7 +60,7 @@ class Uploadphoto extends CI_Controller {
 					alert('Upload Complete');
 					window.location.href = '../../../../photo/show/".$ID['ID']."/".$this->uri->segment(3)."';
 				</script>";
-			
+			$this->db->insert('picture',$data); // à«¿Å§ DB
 		}
 		else{
 			echo "<script language='javascript'>
