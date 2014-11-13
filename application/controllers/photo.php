@@ -6,10 +6,11 @@ class Photo extends CI_Controller {
 		//echo $this->uri->segment(3); // nameuser
 		//echo $this->uri->segment(4); // namealbum
 		$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
+		$this->load->view('navbar');
 		foreach($showpic->result_array() as $row){
 			echo "".$row['ID']." ";
 		}
-		$this->load->view('navbar');
+
 		$this->load->view('photopage');
 	}
 	
