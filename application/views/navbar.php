@@ -160,12 +160,12 @@ $('#mytextbox').on("paste",function(e)
 	</div> <!---LOG IN------->
 	
 	
-	<!-- Modal ส่วน SIGN UP-->
+	 <!-- Modal ส่วน SIGN UP-->
 	<div class="modal fade bs-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!--ส่วนเชื่อม แถบเด้งๆ---ของ SIGN UP------->
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 				<div class= "row">
-					<form role="form" action="../../member/register" method="post">  
+					<form role="form" action="../member/register" method="post">  
 						<br/>
 						<div class="col-md-12">  <!--ส่วนกรอก username----A-->
 								<div class="form-group">
