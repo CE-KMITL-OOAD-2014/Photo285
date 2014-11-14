@@ -118,8 +118,8 @@
 								<div class="info">
 									<h3 class="title">ข่าวสาร</h3>
 									<p>
-										<? echo"".$detail; ?>
-										<? echo"".$photom1; ?>
+										<? echo"".$detail.$photom1; ?>
+										
 									</p>
 								</div>
 							</div>
