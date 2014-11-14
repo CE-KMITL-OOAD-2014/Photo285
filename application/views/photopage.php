@@ -293,7 +293,7 @@ html, body { height: 100%;}
     });                                        
 });
 	function photoToggle(){
-	$('#photoModal').modal('toggle');
+	$('#<?echo"".$row['ID'];?>').modal('toggle');
 	}
   </script>
 	
