@@ -247,6 +247,9 @@ html, body { height: 100%;}
    document.getElementById('welcomeDiv').style.display = "block";
 }
 	</script>
+	<?
+$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');	
+	?>
 	<script> 
   $(function(){
     // This code is not even almost production ready. It's 2am here, and it's a cheap proof-of-concept if anything.
@@ -273,7 +276,9 @@ html, body { height: 100%;}
         
         return false;
     })
-	$('#photoModal<? echo $row['ID']; ?>').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->
+	<?
+	foreach($showpic->result_array() as $row)
+	echo"$('#photoModal<? echo $row['ID']; ?>').modal('toggle').click();"; <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->   ?>
 });
   </script>
   <script> <!--ส่วนนี้ นับ LIKE--ตรงนี้ต้องแก้ให้มัน กดซ้ำ แล้ว UNLIKE->
@@ -292,9 +297,13 @@ html, body { height: 100%;}
         $(this).ekkoLightbox();
     });                                        
 });
-	function photoToggle<? echo $row['ID']; ?>(){
-	$('#photoModal<? echo $row['ID']; ?>').modal('toggle');
-	}
+<?
+foreach($showpic->result_array() as $row)
+echo"
+	function photoToggle".$row['ID']."(){
+	$('#photoModal".$row['ID']."').modal('toggle');
+	}";
+?>
   </script>
 	
 	</head>
@@ -367,7 +376,7 @@ html, body { height: 100%;}
 					<div class='col-md-9 col-xs-12 col-sm-12'> 
 						<span onclick='javascript:$('#photoModal').modal('toggle');'> <!--ถ้าคลิก จะเชื่อมไป photomodal เด้ง comment&like-->
 							<?
-							$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
+							
 							if($this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->count_all_results('picture')==0) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
 							{
 								echo" 
