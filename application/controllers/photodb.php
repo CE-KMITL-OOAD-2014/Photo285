@@ -68,13 +68,12 @@ class Photodb extends CI_Controller {
 					window.location.href = '../../../../album/show/".$ID['ID']."';
 				</script>";
 		}
-		
-		public function deletephoto(){
-			$checkdelete = $this->uri->segment(3);
-			echo "".$checkdelete;
-			$this->db->delete('picture', array('ID' => $checkdelete));
-		}
-		
+	}
+	
+	public function deletephoto(){
+		$checkdelete = $this->uri->segment(3);
+		echo "".$checkdelete;
+		$this->db->delete('picture', array('ID' => $checkdelete));
 	}
 	
 }
