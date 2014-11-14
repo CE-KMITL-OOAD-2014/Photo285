@@ -14,15 +14,15 @@ class Profile extends CI_Controller {
 				$id = $this->uri->segment(3); // ถ้ามี / อันที่ 3 เช่น (web.net/profile/show/admin) user คือ admin ก็เอามาเก็บในตัวแปล id
 	
 				//loadรายละเอียดส่วนตัวต่างๆ
-				{
-				$this->load->model('member_model');
+				
+				$this->load->model('member_model','member_model');
 				$name = $this->member_model->getName($id);
 				$email = $this->member_model->getEmail($id);
 				$detail = $this->member_model->getDetail($id);
 				$resume = $this->member_model->getResume($id);
-				}
+				
 				//load photo หน้าหลัก
-				//$this->load->model('photo_model');
+				$this->load->model('photo_model','photo_model');
 				//$photom1 = $this->photo_model->getphotom1($id);
 				//$photom2 = $this->photo_model->getphotom2($id);
 				//$photom3 = $this->photo_model->getphotom3($id);
