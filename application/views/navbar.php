@@ -90,11 +90,11 @@
 		</nav>
 		
 		<!---ส่วน modal ที่จะเด้งเป็นหน้า login ขึ้นมา--->
-		<div class="modal fade bs-example-modal-sm2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!-- LOG IN------->
+		<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!-- LOG IN------->
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 				<div class= "row">
-					<form action="..."  method="post" role="form">
+					<form action="../../../../member/login"  method="post" role="form">
 						<div class="col-md-12">
 							<div class="col-md-12">
 							<h2 class="form">Please log in</h2>
