@@ -71,11 +71,39 @@ class Photodb extends CI_Controller {
 	}
 	
 	public function deletephoto(){
-		$checkdelete = $this->uri->segment(3);
-		echo "".$checkdelete;
-		$this->db->delete('picture', array('ID' => $checkdelete));
-			
+		idphoto = $this->uri->segment(3);
+		$callprofile = $this->db->where('ID',$idphoto)->get('picture');
+		$callprofile = $callprofile->result_array();
+		foreach($callprofile as $row){
+			$idprofile = $row['nameuser']; // ส่ง ID photo เข้าไป load id profile
+			$idalbum = $row['namealbum'];
+		}
+		$this->db->delete('picture', array('ID' => idphoto));
+		echo "<script language='javascript'>
+					alert('Delete Complete');
+					window.location.href = '../../../../photo/show/".$idprofile."/".$idalbum."';
+				</script>";
 	}
 	
 }
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

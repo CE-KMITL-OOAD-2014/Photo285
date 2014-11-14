@@ -397,7 +397,7 @@ html, body { height: 100%;}
 						<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
 						<h4 class='modal-title' id='mySmallModalLabel'>คุณต้องการลบรูปนี้?:</h4>  
 					</div>
-					<form action='....' method='POST' enctype='multipart/form-data' >	
+					<form action='../../../../photodb/deletephoto/<? echo "".$this->uri->segment(3); ?>' method='POST' enctype='multipart/form-data' >	
 							<center>
 							<button  class="btn btn-danger btn-md"  >
 								<span class="glyphicon glyphicon-ok" > ใช่</span>
