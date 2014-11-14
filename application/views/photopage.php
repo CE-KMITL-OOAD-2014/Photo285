@@ -296,7 +296,11 @@ html, body { height: 100%;}
 	function photoToggle(photoid){
 	$('#'+photoid).modal('toggle');
 	}
-	
+	<?
+	$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
+	foreach($showpic->result_array() as $row)
+	echo"$('#'+".$row['ID'].").modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->";
+  ?>
   </script>
 	
 	</head>
@@ -368,7 +372,7 @@ html, body { height: 100%;}
 					<hr>
 					<div class='col-md-9 col-xs-12 col-sm-12'> 
 							<?
-							$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
+							
 							if($this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->count_all_results('picture')==0) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
 							{
 								echo" 
