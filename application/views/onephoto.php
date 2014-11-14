@@ -312,7 +312,7 @@ html, body { height: 100%;}
 									<a href=""><img class="img-circle" src="../../../../photo/profile/<? echo "".$idprofile.".jpg"; ?>"/><!--รูปของเจ้าของภาพ--></a>
 									<strong><a href=""><? echo "".$idprofile; ?></a></strong>
 									<button type="button" class="btn btn-default btn-md">
-										<span class="glyphicon glyphicon-trash"  aria-hidden="true" ></span>
+										<span class="glyphicon glyphicon-trash"  aria-hidden="true" data-toggle="modal" data-target=".bs-example-modal-lg5"></span>
 									</button>
 									<button  class="btn btn-default btn-md" data-toggle="modal" data-target=".bs-example-modal-lg4" ><span class="glyphicon glyphicon-globe" > เลือกรูปหน้าหลัก</span></button>
 								</div>
@@ -380,6 +380,30 @@ html, body { height: 100%;}
 								รูปหน้าหลักที่ 4
 							</label>
 						</div>						
+						<hr>
+						<center>
+							<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
+						</center>
+					</form>
+				</div>
+			</div>
+		</div><!---กดตกลงเพื่อเลือกรูปไปหน้าหลัก-->
+		
+		<!-- Small modal --> <!--ส่วนที่ตัวเด้ง ตั้งรูปให้อยู่หน้าหลัก---> 
+		<div class='modal fade bs-example-modal-lg5' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
+			<div class='modal-dialog modal-sm'>
+				<div class='modal-content'>
+					<div class='modal-header'>
+						<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
+						<h4 class='modal-title' id='mySmallModalLabel'>คุณต้องการลบรูป?:</h4>  
+					</div>
+					<form action='....' method='POST' enctype='multipart/form-data' >					
+						<button  class="btn btn-default btn-md"  >
+							<span class="glyphicon glyphicon-ok" > ใช่</span>
+						</button>
+						<button  class="btn btn-default btn-md"  >
+							<span class="glyphicon glyphicon-remove" > ไม่</span>
+						</button>
 						<hr>
 						<center>
 							<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
