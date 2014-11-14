@@ -293,7 +293,7 @@ html, body { height: 100%;}
     });                                        
 });
 	function photoToggle(){
-	$('#<?echo"".$row['ID'].?>').modal('toggle');
+	$('#photomodal').modal('toggle');
 	}
   </script>
 	
@@ -391,7 +391,7 @@ html, body { height: 100%;}
 
 
 		<!-- Modal -->
-<div class="modal img-modal" id="<?echo"".$row['ID'].?>">
+<div class="modal img-modal" id="photomodal">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
