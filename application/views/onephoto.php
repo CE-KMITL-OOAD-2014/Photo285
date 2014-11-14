@@ -402,14 +402,10 @@ html, body { height: 100%;}
 							<button  class="btn btn-danger btn-md"  >
 								<span class="glyphicon glyphicon-ok" > ใช่</span>
 							</button>
-							</center>
-							<center>
 							<button  class="btn btn-warning btn-md"  >
 								<span class="glyphicon glyphicon-remove" > ไม่</span>
 							</button>
 							</center>
-						<br>
-						<hr>
 					</form>
 				</div>
 			</div>
