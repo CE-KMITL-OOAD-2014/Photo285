@@ -293,7 +293,7 @@ html, body { height: 100%;}
     });                                        
 });
 	function photoToggle(){
-	$('#photomodal').modal('toggle');
+	$('#photoModal').modal('toggle');
 	}
   </script>
 	
@@ -391,7 +391,7 @@ html, body { height: 100%;}
 
 
 		<!-- Modal -->
-<div class="modal img-modal" id="photomodal">
+<div class="modal img-modal" id="photoModal">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
