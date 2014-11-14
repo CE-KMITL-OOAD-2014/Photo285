@@ -294,7 +294,7 @@ html, body { height: 100%;}
     });                                        
 });
 	function photoToggle(){
-	$('#<?echo"".$row['ID'];?>').modal('toggle');
+	$('#<?echo"".$row['ID']?>').modal('toggle');
 	}
   </script>
 	
