@@ -247,9 +247,6 @@ html, body { height: 100%;}
    document.getElementById('welcomeDiv').style.display = "block";
 }
 	</script>
-	<?
-$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');	
-	?>
 	<script> 
   $(function(){
     // This code is not even almost production ready. It's 2am here, and it's a cheap proof-of-concept if anything.
@@ -276,9 +273,7 @@ $showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum
         
         return false;
     })
-	<?
-	foreach($showpic->result_array() as $row)
-	echo"$('#photoModal".$row['ID']."').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->";   ?>
+	$('#photoModal').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->
 });
   </script>
   <script> <!--ส่วนนี้ นับ LIKE--ตรงนี้ต้องแก้ให้มัน กดซ้ำ แล้ว UNLIKE->
@@ -297,13 +292,9 @@ $showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum
         $(this).ekkoLightbox();
     });                                        
 });
-<?
-foreach($showpic->result_array() as $row)
-echo"
-	function photoToggle".$row['ID']."(){
-	$('#photoModal".$row['ID']."').modal('toggle');
-	}";
-?>
+	function photoToggle(){
+	$('#photoModal').modal('toggle');
+	}
   </script>
 	
 	</head>
@@ -376,7 +367,7 @@ echo"
 					<div class='col-md-9 col-xs-12 col-sm-12'> 
 						<span onclick='javascript:$('#photoModal').modal('toggle');'> <!--ถ้าคลิก จะเชื่อมไป photomodal เด้ง comment&like-->
 							<?
-							
+							$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
 							if($this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->count_all_results('picture')==0) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
 							{
 								echo" 
@@ -388,7 +379,7 @@ echo"
 							foreach($showpic->result_array() as $row) //วน for เพื่อให้ รูปขึ้น
 							echo"
 							<div class='col-md-3 col-xs-6 col-sm-4'> 
-								<img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg' class='img-rounded' width='150' height='150' onclick='photoToggle".$row['ID']."();'> <!--รูปในอัลบั้ม-->
+								<img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg' class='img-rounded' width='150' height='150' onclick='photoToggle();'> <!--รูปในอัลบั้ม-->
 								&nbsp
 							</div>
 							";
@@ -402,31 +393,28 @@ echo"
 
 
 		<!-- Modal -->
-<?
-foreach($showpic->result_array() as $row){
-echo"
-<div class='modal img-modal' id='photoModal".$row['ID']."'>
-  <div class='modal-dialog modal-lg'>
-    <div class='modal-content'>
-      <div class=''modal-body'>
+<div class="modal img-modal" id="photoModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
 			
-            <div class='col-md-8 col-sm-8 col-xs-8 modal-image'>
-                 <img class='img-responsive ' src='../../../../photo/".$row['ID'].".jpg'>        
-				<a href='' class='img-modal-btn right'><i id='like1' class='glyphicon glyphicon-thumbs-up'></i> <div id='like1-bs3'></div></a>
+            <div class="col-md-8 col-sm-8 col-xs-8 modal-image">
+                 <img class="img-responsive " src="http://www.pimart.eu/wp-content/uploads/2014/04/martin-schoeller-george-clooney-portrait-up-close-and-personal.jpeg">        
+				<a href="" class="img-modal-btn right"><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
           	</div>
-        	<div class='col-md-4 col-sm-4 col-xs-4 modal-meta'>
-              <div class='modal-meta-top'>
-                  <button type='button' class='close'  data-dismiss='modal'><span aria-hidden='true'>×</span><span class='sr-only'>Close</span></button>
-                  <div class='img-poster clearfix'>
-						<a href=''><img class='img-circle' src='../../../../photo/profile/".$this->uri->segment(3).".jpg'/><!--รูปของเจ้าของภาพ--></a>
-						<strong><a href=''>".$this->uri->segment(3)."<!--ชื่อคนcomment--></a></strong>
-						<button type='button' class='btn btn-default btn-md'>
-							<span class='glyphicon glyphicon-trash'  aria-hidden='true' ></span>
+        	<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
+              <div class="modal-meta-top">
+                  <button type="button" class="close"  data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                  <div class="img-poster clearfix">
+						<a href=""><img class="img-circle" src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"/><!--รูปของเจ้าของภาพ--></a>
+						<strong><a href="">Jone Doe<!--ชื่อคนcomment--></a></strong>
+						<button type="button" class="btn btn-default btn-md">
+							<span class="glyphicon glyphicon-trash"  aria-hidden="true" ></span>
 						</button>
-						<button  class='btn btn-default btn-md' data-toggle='modal' data-target='.bs-example-modal-lg4' ><span class='glyphicon glyphicon-globe' > เลือกรูปหน้าหลัก</span></button>
+						<button  class="btn btn-default btn-md" data-toggle="modal" data-target=".bs-example-modal-lg4" ><span class="glyphicon glyphicon-globe" > เลือกรูปหน้าหลัก</span></button>
 					</div>
-					<ul class='img-comment-list'>";
-					if($comment==NULL)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
+					<ul class="img-comment-list">
+					<?if($comment==NULL)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
 					{ echo"<center>
 								<h4>You don't have any comment just test ,</h4>
 							</center>";//เข้า if (ไม่มี comment ก็ไม่ต้องทำอะไร
@@ -444,18 +432,17 @@ echo"
 							</div>
 						</li>";
 						}
-					echo"</ul>
+					?>
+					</ul>
               </div>
-              <div class='modal-meta-bottom'>
-                  <input type='text' class='form-control' placeholder='Leave a commment..'/>
+              <div class="modal-meta-bottom">
+                  <input type="text" class="form-control" placeholder="Leave a commment.."/>
               </div>
           	</div>
       </div>
     </div>
   </div>
-</div>";
-}
-?>
+</div>
 
 <!-- Small modal --> <!--ส่วนที่ตัวเด้ง ตั้งรูปให้อยู่หน้าหลัก---> 
 											<div class='modal fade bs-example-modal-lg4' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
