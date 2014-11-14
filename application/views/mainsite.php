@@ -473,12 +473,7 @@ $('#mytextbox').on("paste",function(e)
 						</div>
 						<div class="col-md-12">
 							<div class="col-md-6">
-								<div class="row"><div<em><label><font color="white">Don't have an account?</font></label></em></div>
 								<button class="btn btn-lg btn-success btn-block" type="submit">Log in</button></br>
-							</div>
-							<div class="col-md-6">
-								<em><label>Don't have an account?</label></em>
-								<button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up Here</button></br>
 							</div>
 						</div>
 					</form>
