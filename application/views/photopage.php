@@ -293,7 +293,7 @@ html, body { height: 100%;}
     });                                        
 });
 	function photoToggle(){
-	$('#photoModal').modal('toggle');
+	$('#<?echo"".$row['ID'].?>').modal('toggle');
 	}
   </script>
 	
@@ -391,21 +391,21 @@ html, body { height: 100%;}
 
 
 		<!-- Modal -->
-<div class="modal img-modal" id="photoModal">
+<div class="modal img-modal" id="<?echo"".$row['ID'].?>">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
 			
             <div class="col-md-8 col-sm-8 col-xs-8 modal-image">
-                 <img class="img-responsive " <!--รูปคุณลุง-->src="http://www.pimart.eu/wp-content/uploads/2014/04/martin-schoeller-george-clooney-portrait-up-close-and-personal.jpeg">        
+                 <img class="img-responsive " <!--รูปคุณลุง-->src="../../../../photo/<?echo"".$row['ID'].?>.jpg">        
 				<a href="" class="img-modal-btn right"><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
           	</div>
         	<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
               <div class="modal-meta-top">
                   <button type="button" class="close"  data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                   <div class="img-poster clearfix">
-						<a href=""><img class="img-circle" src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"/><!--รูปของเจ้าของภาพ--></a>
-						<strong><a href="">Jone Doe<!--ชื่อคนcomment--></a></strong>
+						<a href=""><img class="img-circle" src="../../../../photo/profile/<?echo "".$this->uri->segment(3).".jpg" ?>"/><!--รูปของเจ้าของภาพ--></a>
+						<strong><a href=""><? echo "".$name; ?><!--ชื่อคนcomment--></a></strong>
 						<button type="button" class="btn btn-default btn-md">
 							<span class="glyphicon glyphicon-trash"  aria-hidden="true" ></span>
 						</button>
