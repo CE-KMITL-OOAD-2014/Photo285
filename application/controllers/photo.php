@@ -22,3 +22,5 @@ class Photo extends CI_Controller {
 		
 	}	
 }
+
+?>
