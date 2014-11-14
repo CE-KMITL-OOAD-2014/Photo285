@@ -294,7 +294,7 @@ html, body { height: 100%;}
     });                                        
 });
 	function photoToggle(){
-	$(#photoModal).modal('toggle');
+	$('#photoModal').modal('toggle');
 	}
 
 	
