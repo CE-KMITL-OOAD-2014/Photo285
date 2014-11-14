@@ -178,17 +178,17 @@
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-3">
 					<a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-						<img src="https://s3.amazonaws.com/ooomf-com-files/deYU3EyQP9cN23moYfLw_Dandelion.jpg" alt="...">
+						<img src="../../../../photo/<?echo"".$photom2.".jpg";?>" alt="...">
 					</a>
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-3">
 					<a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-						<img src="https://s3.amazonaws.com/ooomf-com-files/8H0UdTsvRFqe03hZkNJr_New%20York%20-%20On%20the%20rock%20-%20Empire%20State%20Building.jpg" alt="...">
+						<img src="../../../../photo/<?echo"".$photom3.".jpg";?>" alt="...">
 					</a>
 				</div>
 				<div class="col-md-12 col-xs-6 col-sm-3">
 					<a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-						<img src="https://s3.amazonaws.com/ooomf-com-files/Z3LXxzFMRe65FC3Dmhnp_woody_unsplash_DSC0129.jpg" alt="...">
+						<img src="../../../../photo/<?echo"".$photom4.".jpg";?>" alt="...">
 					</a>
 				</div>
 			</div>	
