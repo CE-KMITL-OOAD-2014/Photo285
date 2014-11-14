@@ -398,16 +398,16 @@ html, body { height: 100%;}
 						<h4 class='modal-title' id='mySmallModalLabel'>คุณต้องการลบรูป?:</h4>  
 					</div>
 					<form action='....' method='POST' enctype='multipart/form-data' >					
-						<button  class="btn btn-default btn-md"  >
+						<button  class="btn btn-danger btn-md"  >
 							<span class="glyphicon glyphicon-ok" > ใช่</span>
 						</button>
 						<hr>
-						<button  class="btn btn-default btn-md"  >
+						<button  class="btn btn-waring btn-md"  >
 							<span class="glyphicon glyphicon-remove" > ไม่</span>
 						</button>
 						<hr>
 						<center>
-							<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
+							<input type='submit' name='submit' value='Summit' class='btn btn-primary' />   
 						</center>
 					</form>
 				</div>
