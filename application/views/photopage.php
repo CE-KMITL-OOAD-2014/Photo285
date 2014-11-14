@@ -276,7 +276,8 @@ html, body { height: 100%;}
 	$('#echo"".$row['ID'].>').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->
 });
   </script>
-  <?echo"
+  <?
+  echo"
   <script> <!--ส่วนนี้ นับ LIKE--ตรงนี้ต้องแก้ให้มัน กดซ้ำ แล้ว UNLIKE->
   $(document).ready(function() {              
        $('i.glyphicon-thumbs-up').click(function(){    
@@ -297,7 +298,8 @@ html, body { height: 100%;}
 	$('#".$row['ID']."').modal('toggle');
 	}
   </script>
-  ";?>
+  ";
+  ?>
 	
 	</head>
 	<body background="../../../../img/white.jpg">
