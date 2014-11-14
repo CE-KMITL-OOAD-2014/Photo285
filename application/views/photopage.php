@@ -393,34 +393,37 @@ html, body { height: 100%;}
 
 
 		<!-- Modal -->
-<div class="modal img-modal" id="photoModal">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
+<?
+foreach($showpic->result_array() as $row){
+echo"
+<div class='modal img-modal' id='photoModal".$row['ID']."'>
+  <div class='modal-dialog modal-lg'>
+    <div class='modal-content'>
+      <div class=''modal-body'>
 			
-            <div class="col-md-8 col-sm-8 col-xs-8 modal-image">
-                 <img class="img-responsive " <!--รูปคุณลุง-->src="http://www.pimart.eu/wp-content/uploads/2014/04/martin-schoeller-george-clooney-portrait-up-close-and-personal.jpeg">        
-				<a href="" class="img-modal-btn right"><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
+            <div class='col-md-8 col-sm-8 col-xs-8 modal-image'>
+                 <img class='img-responsive ' src='../../../../photo/".$row['ID'].".jpg'>        
+				<a href='' class='img-modal-btn right'><i id='like1' class='glyphicon glyphicon-thumbs-up'></i> <div id='like1-bs3'></div></a>
           	</div>
-        	<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
-              <div class="modal-meta-top">
-                  <button type="button" class="close"  data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                  <div class="img-poster clearfix">
-						<a href=""><img class="img-circle" src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"/><!--รูปของเจ้าของภาพ--></a>
-						<strong><a href="">Jone Doe<!--ชื่อคนcomment--></a></strong>
-						<button type="button" class="btn btn-default btn-md">
-							<span class="glyphicon glyphicon-trash"  aria-hidden="true" ></span>
+        	<div class='col-md-4 col-sm-4 col-xs-4 modal-meta'>
+              <div class='modal-meta-top'>
+                  <button type='button' class='close'  data-dismiss='modal'><span aria-hidden='true'>×</span><span class='sr-only'>Close</span></button>
+                  <div class='img-poster clearfix'>
+						<a href=''><img class='img-circle' src='../../../../photo/profile/".$this->uri->segment(3).".jpg'/><!--รูปของเจ้าของภาพ--></a>
+						<strong><a href=''>".$this->uri->segment(3)."<!--ชื่อคนcomment--></a></strong>
+						<button type='button' class='btn btn-default btn-md'>
+							<span class='glyphicon glyphicon-trash'  aria-hidden='true' ></span>
 						</button>
-						<button  class="btn btn-default btn-md" data-toggle="modal" data-target=".bs-example-modal-lg4" ><span class="glyphicon glyphicon-globe" > เลือกรูปหน้าหลัก</span></button>
+						<button  class='btn btn-default btn-md' data-toggle='modal' data-target='.bs-example-modal-lg4' ><span class='glyphicon glyphicon-globe' > เลือกรูปหน้าหลัก</span></button>
 					</div>
-					<ul class="img-comment-list">
-					<?if($comment==NULL)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
+					<ul class='img-comment-list'>";
+					if($comment==NULL)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
 					{ echo"<center>
 								<h4>You don't have any comment just test ,</h4>
 							</center>";//เข้า if (ไม่มี comment ก็ไม่ต้องทำอะไร
 					}
 					  else 
-					  for($i=0; $i <count($booklist) ; $i++) //วน comment เพื่อให้รูปขึ้น
+					  for($i=0; $i <count($comment) ; $i++) //วน comment เพื่อให้รูปขึ้น
 						{echo"
 						<li>
 							<div class='comment-img'>
@@ -432,17 +435,18 @@ html, body { height: 100%;}
 							</div>
 						</li>";
 						}
-					?>
-					</ul>
+					echo"</ul>
               </div>
-              <div class="modal-meta-bottom">
-                  <input type="text" class="form-control" placeholder="Leave a commment.."/>
+              <div class='modal-meta-bottom'>
+                  <input type='text' class='form-control' placeholder='Leave a commment..'/>
               </div>
           	</div>
       </div>
     </div>
   </div>
-</div>
+</div>";
+}
+?>
 
 <!-- Small modal --> <!--ส่วนที่ตัวเด้ง ตั้งรูปให้อยู่หน้าหลัก---> 
 											<div class='modal fade bs-example-modal-lg4' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
