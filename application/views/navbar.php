@@ -65,7 +65,7 @@ $('#mytextbox').on("paste",function(e)
   <script>
 						<!--เช็คpassword ว่าตรงกับ comfirm ไหม -->
 						function checkPasswordMatch() {
-							var password = $("#pass").val();
+							var password = $("#regpass").val();
 							var confirmPassword = $("#cpass").val();
 							if (password != confirmPassword){
 								  $("#cpass").css( "background-color", "#F78181" );
@@ -224,7 +224,7 @@ $('#mytextbox').on("paste",function(e)
 									<label for="exampleInputPassword1">Password</label>
 								</div>
 								<div class="col-md-12">
-									<input type="password" name="pass" class="form-control" pattern=".{6,12}" required title="6 to 12 characters" id="pass" placeholder="Password" required autofocus>
+									<input type="password" name="pass" class="form-control" pattern=".{6,12}" required title="6 to 12 characters" id="regpass" placeholder="Password" required autofocus>
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก PASSWAORD---->
