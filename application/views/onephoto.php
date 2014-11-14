@@ -404,9 +404,9 @@ html, body { height: 100%;}
 							</button>
 							&nbsp
 							&nbsp
-							<button  class="btn btn-warning btn-md"  >
+							<a href="" id ="cancel" class="btn btn-warning btn-md"  >
 								<span class="glyphicon glyphicon-remove" > ไม่</span>
-							</button>
+							</a>
 							</center>
 					</form>
 				</div>
