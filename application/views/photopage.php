@@ -273,10 +273,9 @@ html, body { height: 100%;}
         
         return false;
     })
-	
+	$('#photoModal').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->
 });
   </script>
-  
   <script> <!--ส่วนนี้ นับ LIKE--ตรงนี้ต้องแก้ให้มัน กดซ้ำ แล้ว UNLIKE->
   $(document).ready(function() {              
        $('i.glyphicon-thumbs-up').click(function(){    
@@ -296,11 +295,6 @@ html, body { height: 100%;}
 	function photoToggle(){
 	$('#photoModal').modal('toggle');
 	}
-
-	
-	
-	$('#photoModal').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->";
-  
   </script>
 	
 	</head>
@@ -371,6 +365,7 @@ html, body { height: 100%;}
 					<h1 class="muted"><? echo "".$albumname; ?></h1>
 					<hr>
 					<div class='col-md-9 col-xs-12 col-sm-12'> 
+						<span onclick='javascript:$('#photoModal').modal('toggle');'> <!--ถ้าคลิก จะเชื่อมไป photomodal เด้ง comment&like-->
 							<?
 							$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
 							if($this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->count_all_results('picture')==0) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
@@ -384,12 +379,13 @@ html, body { height: 100%;}
 							foreach($showpic->result_array() as $row) //วน for เพื่อให้ รูปขึ้น
 							echo"
 							<div class='col-md-3 col-xs-6 col-sm-4'> 
-								<img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg' id='".$row['ID']."' class='img-rounded' width='150' height='150' onclick='photoToggle();'> <!--รูปในอัลบั้ม-->
+								<img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg' class='img-rounded' width='150' height='150' onclick='photoToggle();'> <!--รูปในอัลบั้ม-->
 								&nbsp
 							</div>
 							";
 							}
 							?>
+						</span>
 					</div>
 				</div>
 			</div>	
@@ -403,15 +399,15 @@ html, body { height: 100%;}
       <div class="modal-body">
 			
             <div class="col-md-8 col-sm-8 col-xs-8 modal-image">
-                 <img class="img-responsive" <?echo"src ='../../../../photo/".$row['ID'].".jpg'"?>>        
+                 <img class="img-responsive " <!--รูปคุณลุง-->src="http://www.pimart.eu/wp-content/uploads/2014/04/martin-schoeller-george-clooney-portrait-up-close-and-personal.jpeg">        
 				<a href="" class="img-modal-btn right"><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
           	</div>
         	<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
               <div class="modal-meta-top">
                   <button type="button" class="close"  data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                   <div class="img-poster clearfix">
-						<a href=""><img class="img-circle" src="..."/><!--รูปของเจ้าของภาพ--></a>
-						<strong><a href=""><? echo "".$name; ?><!--ชื่อคนcomment--></a></strong>
+						<a href=""><img class="img-circle" src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"/><!--รูปของเจ้าของภาพ--></a>
+						<strong><a href="">Jone Doe<!--ชื่อคนcomment--></a></strong>
 						<button type="button" class="btn btn-default btn-md">
 							<span class="glyphicon glyphicon-trash"  aria-hidden="true" ></span>
 						</button>
