@@ -27,7 +27,7 @@
 			return $ID->result_array();
 		}
 		
-		function getphotom1($iduser){
+		function getphotom1($iduser){ // รูปโชว์หน้าหลักรูปแรก
 			$check = $this->db->where('nameuser',$iduser)->where('showm1',1)->count_all_results('picture');
 				if($check == 1){
 					$show = $this->db->where('nameuser',$iduser)->where('showm1',1)->get('picture');
@@ -37,6 +37,39 @@
 				}
 				else return 0;
 		}
-	
+		
+		function getphotom2($iduser){ //รูปโชว์หน้าหลักรูปสอง
+			$check = $this->db->where('nameuser',$iduser)->where('showm2',1)->count_all_results('picture');
+				if($check == 1){
+					$show = $this->db->where('nameuser',$iduser)->where('showm2',1)->get('picture');
+					$show = $show->result_array();
+					foreach($show as $row) $show = $row['ID'];
+					return $show;
+				}
+				else return 0;
+		}
+		
+		function getphotom3($iduser){ //รูปโชว์หน้าหลักรูปสาม
+			$check = $this->db->where('nameuser',$iduser)->where('showm3',1)->count_all_results('picture');
+				if($check == 1){
+					$show = $this->db->where('nameuser',$iduser)->where('showm3',1)->get('picture');
+					$show = $show->result_array();
+					foreach($show as $row) $show = $row['ID'];
+					return $show;
+				}
+				else return 0;
+		}
+		
+		function getphotom4($iduser){
+			$check = $this->db->where('nameuser',$iduser)->where('showm4',1)->count_all_results('picture');
+				if($check == 1){
+					$show = $this->db->where('nameuser',$iduser)->where('showm4',1)->get('picture');
+					$show = $show->result_array();
+					foreach($show as $row) $show = $row['ID'];
+					return $show;
+				}
+				else return 0;
+		}
+		
 	}
 ?>

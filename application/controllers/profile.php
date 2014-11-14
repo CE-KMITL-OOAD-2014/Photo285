@@ -24,13 +24,13 @@ class Profile extends CI_Controller {
 				//load photo หน้าหลัก
 				$this->load->model('photo_model','photo_model');
 				$photom1 = $this->photo_model->getphotom1($id);
-				//$photom2 = $this->photo_model->getphotom2($id);
-				//$photom3 = $this->photo_model->getphotom3($id);
-				//$photom4 = $this->photo_model->getphotom4($id);
+				$photom2 = $this->photo_model->getphotom2($id);
+				$photom3 = $this->photo_model->getphotom3($id);
+				$photom4 = $this->photo_model->getphotom4($id);
 				
 				
 				
-				$data = array('name' => $name , 'id' => $id , 'email' => $email , 'detail' => $detail , 'resume' => $resume , 'photom1' => $photom1);
+				$data = array('name' => $name , 'id' => $id , 'email' => $email , 'detail' => $detail , 'resume' => $resume , 'photom1' => $photom1 , 'photom2' => $photom2 , 'photom3' => $photom3 ,'photom4' => $photom4);
 				
 				$this->load->view('navbar');
 				$this->load->view('profile',$data);
