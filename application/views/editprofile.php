@@ -117,7 +117,7 @@
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
 					<h4 class="modal-title" id="mySmallModalLabel">Choose your profile picture :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
 				</div>
-				<form action="../../uploadphoto/uploadprofile" method="POST" enctype="multipart/form-data" >
+				<form action="../../photodb/uploadprofile" method="POST" enctype="multipart/form-data" >
 					Select File To Upload:<br />
 					<input type="file" name="userfile"  />
 					<br />
