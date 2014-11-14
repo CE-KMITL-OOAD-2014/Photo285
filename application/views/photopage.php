@@ -160,9 +160,11 @@
 					<center>
 						<br>
 						<?
-						$ID = $this->session->all_userdata();
-						$ID = $ID['ID'];
-						if($ID == $this->uri->segment(3)) echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-sm'>Upload photo</a>";
+						if($this->session->userdata('ID')){
+							$ID = $this->session->all_userdata();
+							$ID = $ID['ID'];
+							if($ID == $this->uri->segment(3)) echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-sm'>Upload photo</a>";
+						}
 						?>
 					</center>
 					</ul>
