@@ -101,7 +101,7 @@ $('#mytextbox').on("paste",function(e)
 						echo "<a href='../../../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log out</div></button></a>";
 					}
 					else echo "<button type='input' class='btn btn-primary navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg3'><div class='link'>Sign Up</div></button>	
-					<a href='#'><button type='input' class='btn btn-danger navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg2'><div class='link'>Log in</div></button></a>";
+					<a href='#'><button type='input' class='btn btn-success navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg2'><div class='link'>Log in</div></button></a>";
 				  ?>
 					 <li ><a href="../../../../profile/show/<? // redirect ไปโชว์โปรไฟล์ตัวเอง
 						if($this->session->userdata('ID')){ 
