@@ -296,9 +296,7 @@ html, body { height: 100%;}
 	function photoToggle(photoid){
 	$('#'+photoid).modal('toggle');
 	}
-	<?foreach($showpic->result_array() as $row)
-	echo"$('#'+".$row['ID'].").modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->";
-  ?>
+	
   </script>
 	
 	</head>
