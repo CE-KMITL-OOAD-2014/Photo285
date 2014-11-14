@@ -97,7 +97,7 @@
 					<form action="../../../../member/login"  method="post" role="form">
 						<div class="col-md-12">
 							<div class="col-md-12">
-							<h2 class="form">Please sign in</h2>
+							<h2 class="form">Please log in</h2>
 							</div>
 						</div>
 						<div class="col-md-12">
@@ -106,13 +106,16 @@
 							</div>
 						</div>
 						<div class="col-md-12">
-						<div class="col-md-12">
-							<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+							<div class="col-md-12">
+								<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
 							</div>
 						</div>
 						<div class="col-md-12">
-						<div class="col-md-12">
-							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></br>
+							<div class="col-md-6">
+								<button class="btn btn-lg btn-success btn-block" type="submit">Log in</button></br>
+							</div>
+							<div class="col-md-6">
+								<button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button></br>
 							</div>
 						</div>
 					</form>
