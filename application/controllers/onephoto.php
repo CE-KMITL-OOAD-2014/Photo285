@@ -3,7 +3,15 @@
 class Onephoto extends CI_Controller {
 
 	public function show(){
-		$this->load->view('onephoto');
+		$idphoto = $this->uri->segment(3);
+		$callprofile = $this->db->where('ID',$idphoto)->get('picture');
+		$callprofile = $callprofile->result_array();
+		foreach($callprofile as $row){
+			$idprofile = $row['nameuser']; // ส่ง ID photo เข้าไป load id profile
+		}
+		
+		$data = array('idprofile' => $idprofile);
+		$this->load->view('onephoto',$data);
 		
 	}	
 	

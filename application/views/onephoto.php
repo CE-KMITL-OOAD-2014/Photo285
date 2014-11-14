@@ -309,8 +309,8 @@ html, body { height: 100%;}
 							<div class="modal-meta-top">
 								<button type="button" class="close"  data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
 								<div class="img-poster clearfix">
-									<a href=""><img class="img-circle" src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"/><!--รูปของเจ้าของภาพ--></a>
-									<strong><a href="">Jone Doe<!--ชื่อคนcomment--></a></strong>
+									<a href=""><img class="img-circle" src="../../../../photo/profile/<? echo "".$idprofile.".jpg"; ?>"/><!--รูปของเจ้าของภาพ--></a>
+									<strong><a href=""><? echo "".$idprofile; ?></a></strong>
 									<button type="button" class="btn btn-default btn-md">
 										<span class="glyphicon glyphicon-trash"  aria-hidden="true" ></span>
 									</button>
