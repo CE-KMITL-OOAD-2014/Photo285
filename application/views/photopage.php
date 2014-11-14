@@ -273,7 +273,7 @@ html, body { height: 100%;}
         
         return false;
     })
-	$('#<?echo"".$row['ID'];?>').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->
+	
 });
   </script>
   
@@ -293,9 +293,12 @@ html, body { height: 100%;}
         $(this).ekkoLightbox();
     });                                        
 });
-	function photoToggle(){
-	$('#<?echo"".$row['ID']?>').modal('toggle');
+	function photoToggle(photoid){
+	$('#'+photoid).modal('toggle');
 	}
+	<?foreach($showpic->result_array() as $row)
+	echo"$('#'+".$row['ID'].").modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->";
+  ?>
   </script>
 	
 	</head>
@@ -379,7 +382,7 @@ html, body { height: 100%;}
 							foreach($showpic->result_array() as $row) //วน for เพื่อให้ รูปขึ้น
 							echo"
 							<div class='col-md-3 col-xs-6 col-sm-4'> 
-								<img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg' class='img-rounded' width='150' height='150' onclick='photoToggle();'> <!--รูปในอัลบั้ม-->
+								<img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg' id='".$row['ID']."' class='img-rounded' width='150' height='150' onclick='photoToggle(".$row['ID'].");'> <!--รูปในอัลบั้ม-->
 								&nbsp
 							</div>
 							";
