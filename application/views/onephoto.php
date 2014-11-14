@@ -412,6 +412,7 @@ html, body { height: 100%;}
 							</button>
 							</center>
 						</div>
+						<br>
 						<hr>
 						<center>
 							<input type='submit' name='submit' value='Summit' class='btn btn-primary' />   
