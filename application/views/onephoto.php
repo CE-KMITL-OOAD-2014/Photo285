@@ -397,14 +397,17 @@ html, body { height: 100%;}
 						<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
 						<h4 class='modal-title' id='mySmallModalLabel'>คุณต้องการลบรูป?:</h4>  
 					</div>
-					<form action='....' method='POST' enctype='multipart/form-data' >					
-						<button  class="btn btn-danger btn-md"  >
-							<span class="glyphicon glyphicon-ok" > ใช่</span>
-						</button>
-						<hr>
-						<button  class="btn btn-waring btn-md"  >
-							<span class="glyphicon glyphicon-remove" > ไม่</span>
-						</button>
+					<form action='....' method='POST' enctype='multipart/form-data' >	
+						<div class="col-md-6 col-sm-6 col-xs-6">	
+							<button  class="btn btn-danger btn-md"  >
+								<span class="glyphicon glyphicon-ok" > ใช่</span>
+							</button>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<button  class="btn btn-warning btn-md"  >
+								<span class="glyphicon glyphicon-remove" > ไม่</span>
+							</button>
+						</div>
 						<hr>
 						<center>
 							<input type='submit' name='submit' value='Summit' class='btn btn-primary' />   
