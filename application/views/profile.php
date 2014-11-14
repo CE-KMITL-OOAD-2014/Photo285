@@ -118,7 +118,7 @@
 								<div class="info">
 									<h3 class="title">ข่าวสาร</h3>
 									<p>
-										<? echo"".$detail.$photom1; ?>
+										<? echo"".$detail; ?>
 										
 									</p>
 								</div>
