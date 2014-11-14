@@ -71,8 +71,8 @@ class Photodb extends CI_Controller {
 		
 		public function deletephoto(){
 			$checkdelete = $this->uri->segment(3);
+			echo "".$checkdelete;
 			$this->db->delete('picture', array('ID' => $checkdelete));
-			echo"<script language='javascript'>window.location.href = '../../../../'</script>";
 		}
 		
 	}
