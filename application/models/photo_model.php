@@ -37,24 +37,6 @@
 				}
 				else return 0;
 		}
-		
-		function getphotom1($iduser){
-		
-		
-		}
-		
-		function getphotom1($iduser){
-		
-		
-		}
-		
-		function getphotom1($iduser){
-		
-		
-		}
-		
-		
-		
-		
+	
 	}
 ?>
