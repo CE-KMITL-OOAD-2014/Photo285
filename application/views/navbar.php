@@ -119,7 +119,7 @@ $('#mytextbox').on("paste",function(e)
 					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
 						echo "<a href='../../../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log out</div></button></a>";
 					}
-					else echo "<button type='input' class='btn btn-primary navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg3'><div class='link'>Sign Up</div></button>	
+					else echo "<button type='input' class='btn btn-primary navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg7'><div class='link'>Sign Up</div></button>	
 					<a href='#'><button type='input' class='btn btn-success navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg2'><div class='link'>Log in</div></button></a>";
 				  ?>
 					 <li ><a href="../../../../profile/show/<? // redirect ไปโชว์โปรไฟล์ตัวเอง
@@ -147,7 +147,7 @@ $('#mytextbox').on("paste",function(e)
 	
 	
 	 <!-- Modal ส่วน SIGN UP-->
-	<div class="modal fade bs-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!--ส่วนเชื่อม แถบเด้งๆ---ของ SIGN UP------->
+	<div class="modal fade bs-example-modal-lg7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!--ส่วนเชื่อม แถบเด้งๆ---ของ SIGN UP------->
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content"> 
 				<div class= "row">
