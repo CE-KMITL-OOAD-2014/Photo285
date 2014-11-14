@@ -74,13 +74,10 @@ class Photodb extends CI_Controller {
 		$checkdelete = $this->uri->segment(3);
 		echo "".$checkdelete;
 		$this->db->delete('picture', array('ID' => $checkdelete));
-		$path_to_file = './photo/';
-		if(unlink($checkdelete.".jpg")) {
-			 echo 'deleted successfully';
-		}
-		else {
-			 echo 'errors occured';
-		}
+		$this->load->helper('file');
+		delete_files('./path/to/directory/',$checkdelete.".jpg");
+		
+		
 	}
 	
 }
