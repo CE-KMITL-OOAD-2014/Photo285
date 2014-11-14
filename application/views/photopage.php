@@ -159,7 +159,11 @@
 				<div class="row">
 					<center>
 						<br>
-						<a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">Upload photo</a>
+						<?
+						$ID = $this->session->all_userdata();
+						$ID = $ID['ID'];
+						if($ID == $this->uri->segment(3)) <a class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-sm">Upload photo</a>
+						?>
 					</center>
 					</ul>
 				</div>			
