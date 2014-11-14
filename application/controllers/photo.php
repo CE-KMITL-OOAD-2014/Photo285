@@ -18,7 +18,7 @@ class Photo extends CI_Controller {
 		$resume = $this->member_model->getResume($id);
 		$data = array('name' => $name , 'id' => $id , 'email' => $email, 'resume' => $resume , 'albumname' => $albumname);
 		$this->load->view('navbar');
-		$this->load->view('photopage',$data);
+		$this->load->view('photopageall',$data);
 		
 	}	
 }
