@@ -100,7 +100,8 @@ $('#mytextbox').on("paste",function(e)
 					if($this->session->userdata('ID')){ // เปลี่ยนรูปแบบปุ่มเมื่อไม่ได้ login
 						echo "<a href='../../../../member/logout'><button type='input' class='btn btn-danger navbar-btn'><div class='link'>Log out</div></button></a>";
 					}
-					else echo "<a href='#'><button type='input' class='btn btn-danger navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg2'><div class='link'>Log in</div></button></a>";
+					else echo "<button class='btn btn-lg btn-primary btn-block' type='submit' data-toggle='modal' data-target='.bs-example-modal-lg3'>Sign Up Here</button></br>	
+					<a href='#'><button type='input' class='btn btn-danger navbar-btn' data-toggle='modal' data-target='.bs-example-modal-lg2'><div class='link'>Log in</div></button></a>";
 				  ?>
 					 <li ><a href="../../../../profile/show/<? // redirect ไปโชว์โปรไฟล์ตัวเอง
 						if($this->session->userdata('ID')){ 
@@ -145,14 +146,11 @@ $('#mytextbox').on("paste",function(e)
 							</div>
 						</div>
 						<div class="col-md-12">
-							<div class="col-md-6">
+							<div class="col-md-12">
 								<div class="row"><div<em><label><font color="white">Don't have an account?</font></label></em></div>
 								<button class="btn btn-lg btn-success btn-block" type="submit">Log in</button></br>
 							</div>
-							<div class="col-md-6">
-								<em><label>Don't have an account?</label></em>
-								<button class="btn btn-lg btn-primary btn-block" type="submit" data-toggle='modal' data-target='.bs-example-modal-lg3'>Sign Up Here</button></br>
-							</div>
+							
 						</div>
 					</form>
 				</div>
