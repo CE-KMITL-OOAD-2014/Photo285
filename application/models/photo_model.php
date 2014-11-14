@@ -28,13 +28,14 @@
 		}
 		
 		function getphotom1($iduser){
-			$check = $this->db->where('nameuser',$iduser)->where('showm1',1)->count_all_results('account');
+			$check = $this->db->where('nameuser',$iduser)->where('showm1',1)->count_all_results('picture');
 				if(check == 1){
 					$show = $this->db->where('nameuser',$iduser)->where('showm1',1)->get('picture');
 					$show = $show->result_array();
 					foreach($show as $row) $show = $row['ID'];
 					return $show;
 				}
+				else return 0;
 		}
 		
 		function getphotom1($iduser){
