@@ -391,7 +391,7 @@ html, body { height: 100%;}
 
 
 		<!-- Modal -->
-<div class="modal img-modal" id="photoModal">
+<div class="modal img-modal" id="<?echo"".$row['ID'].?>">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
