@@ -278,7 +278,7 @@ $showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum
     })
 	<?
 	foreach($showpic->result_array() as $row)
-	echo"$('#photoModal<? echo $row['ID']; ?>').modal('toggle').click();"; <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->   ?>
+	echo"$('#photoModal<? echo $row['ID']; ?>').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->";   ?>
 });
   </script>
   <script> <!--ส่วนนี้ นับ LIKE--ตรงนี้ต้องแก้ให้มัน กดซ้ำ แล้ว UNLIKE->
