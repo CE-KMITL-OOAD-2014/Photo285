@@ -75,7 +75,7 @@ class Photodb extends CI_Controller {
 		echo "".$checkdelete;
 		$this->db->delete('picture', array('ID' => $checkdelete));
 		$this->load->helper('file');
-		delete_files('./path/to/directory/',$checkdelete.".jpg");
+		delete_files('./photo/',$checkdelete.".jpg");
 		
 		
 	}
