@@ -75,11 +75,7 @@ class Album extends CI_Controller {
 		$this->db->delete('album', array('nameuser' => $ID['ID'],'namealbum'=>$checkdelete));
 		echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
 	}
-	
-	public function albumcover(){ // show รูปหน้าปก album
-		
-	
-	}
+
 	
 }
 

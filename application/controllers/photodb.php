@@ -37,12 +37,12 @@ class Photodb extends CI_Controller {
 		
 		//à«¿Å§ db
 		$this->db->select_max('ID');
-		$sID = $this->db->get('picture'); // «Õà¤Çé¹ID ¢Í§  picture
+		$sID = $this->db->get('picture'); // ï¿½ï¿½ï¿½ï¿½ï¿½ID ï¿½Í§  picture
 		$sID = $sID->result_array();
 		foreach($sID as $row) $sID = $row['ID']+1;
 		$data = array('ID'=>$sID,'nameuser'=>$ID['ID'],'namealbum'=>$this->uri->segment(3));
 		
-		//àÍÒä¿ÅìÅ§ server
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å§ server
 		$this->config =  array(
 			'file_name'    => "".$sID.".jpg", //name
 			'upload_path'     => "./photo/",
@@ -54,7 +54,7 @@ class Photodb extends CI_Controller {
 		);
 		$this->load->library('upload', $this->config);
 		
-		if($this->upload->do_upload()){ // ¶éÒ upload ÊÓàÃç¨
+		if($this->upload->do_upload()){ // ï¿½ï¿½ï¿½ upload ï¿½ï¿½ï¿½ï¿½ï¿½
 			$ID = $this->session->all_userdata();
 			echo "<script language='javascript'>
 					alert('Upload Complete');
@@ -67,6 +67,12 @@ class Photodb extends CI_Controller {
 					alert('Upload Fail');
 					window.location.href = '../../../../album/show/".$ID['ID']."';
 				</script>";
+		}
+		
+		public function deletephoto(){
+			$checkdelete = $this->uri->segment(3);
+			$this->db->delete('album', array('ID' => $checkdelete));
+			echo"<script language='javascript'>window.location.href = '../../../../';</script>";
 		}
 		
 	}
