@@ -365,7 +365,7 @@ html, body { height: 100%;}
 					<h1 class="muted"><? echo "".$albumname; ?></h1>
 					<hr>
 					<div class='col-md-9 col-xs-12 col-sm-12'> 
-						<span onclick='javascript:$('#photoModal').modal('toggle');'> <!--ถ้าคลิก จะเชื่อมไป photomodal เด้ง comment&like-->
+						<span > <!--ถ้าคลิก จะเชื่อมไป photomodal เด้ง comment&like-->
 							<?
 							$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
 							if($this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->count_all_results('picture')==0) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
