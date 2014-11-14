@@ -273,7 +273,7 @@ html, body { height: 100%;}
         
         return false;
     })
-	$('#<?echo"".$row['ID'];?>').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->
+	$('#<?echo"photoModal"?>').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->
 });
   </script>
   
@@ -294,7 +294,7 @@ html, body { height: 100%;}
     });                                        
 });
 	function photoToggle(){
-	$('#<?echo"".$row['ID']?>').modal('toggle');
+	$('#<?echo"photoModal"?>').modal('toggle');
 	}
   </script>
 	
