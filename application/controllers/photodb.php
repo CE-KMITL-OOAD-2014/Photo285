@@ -71,7 +71,7 @@ class Photodb extends CI_Controller {
 	}
 	
 	public function deletephoto(){
-		idphoto = $this->uri->segment(3);
+		$idphoto = $this->uri->segment(3);
 		$callprofile = $this->db->where('ID',$idphoto)->get('picture');
 		$callprofile = $callprofile->result_array();
 		foreach($callprofile as $row){
