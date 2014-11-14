@@ -111,10 +111,10 @@
 							</div>
 						</div>
 						<div class="col-md-12">
-							<div class="col-md-12">
+							<div class="col-md-6">
 								<button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button></br>
 							</div>
-							<div class="col-md-12">
+							<div class="col-md-6">
 								<em><label>Don't have an account?</label></em>
 								<button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up Here</button></br>
 							</div>
