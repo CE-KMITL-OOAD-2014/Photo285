@@ -173,7 +173,7 @@
 			<div class="col-md-9 col-xs-0 col-sm-0"> <!---ส่วนที่ col แสดงรูปภาพที่ต้องการแสดง-->
 				<div class="col-md-4 col-xs-6 col-sm-3">
 					<a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-						<img src="https://s3.amazonaws.com/ooomf-com-files/lqCNpAk3SCm0bdyd5aA0_IMG_4060_1%20copy.jpg" alt="...">
+						<img src="../../../../photo/<?echo"".$photom1.".jpg";?>" alt="...">
 					</a>
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-3">
