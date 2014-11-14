@@ -398,23 +398,24 @@ html, body { height: 100%;}
 						<h4 class='modal-title' id='mySmallModalLabel'>คุณต้องการลบรูป?:</h4>  
 					</div>
 					<form action='....' method='POST' enctype='multipart/form-data' >	
-						<div class="col-md-6 col-sm-6 col-xs-6">
+						
 							<center>
 							<button  class="btn btn-danger btn-md"  >
 								<span class="glyphicon glyphicon-ok" > ใช่</span>
 							</button>
 							</center>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-6">
+					
+						
 							<center>
 							<button  class="btn btn-warning btn-md"  >
 								<span class="glyphicon glyphicon-remove" > ไม่</span>
 							</button>
 							</center>
-						</div>
+						
 						<br>
 						<hr>
-						<div class='modal-footer'></div>
+						
+						
 					</form>
 				</div>
 			</div>
