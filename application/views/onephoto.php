@@ -395,7 +395,7 @@ html, body { height: 100%;}
 				<div class='modal-content'>
 					<div class='modal-header'>
 						<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
-						<h4 class='modal-title' id='mySmallModalLabel'>คุณต้องการลบรูป?:</h4>  
+						<h4 class='modal-title' id='mySmallModalLabel'>คุณต้องการลบรูปนี้?:</h4>  
 					</div>
 					<form action='....' method='POST' enctype='multipart/form-data' >	
 							<center>
