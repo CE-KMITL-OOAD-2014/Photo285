@@ -273,33 +273,30 @@ html, body { height: 100%;}
         
         return false;
     })
-	$('#echo"".$row['ID'].>').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->
+	$('#<?echo"".$row['ID'];?>').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->
 });
   </script>
-  <?
-  echo"
+  
   <script> <!--ส่วนนี้ นับ LIKE--ตรงนี้ต้องแก้ให้มัน กดซ้ำ แล้ว UNLIKE->
   $(document).ready(function() {              
        $('i.glyphicon-thumbs-up').click(function(){    
         var $this = $(this),
         c = $this.data('count'),
-		str = '<br/><br/><br/><center>'; 
+		str = "<br/><br/><br/><center>"; 
         if (!c) c = 0;
         c++;
         $this.data('count',c);
-        $('#'+this.id).html((str.concat(c)).concat('</center>'));
+        $('#'+this.id).html((str.concat(c)).concat("</center>"));
     });  
-    $(document).delegate('*[data-toggle='lightbox']', 'click', function(event) {
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
         event.preventDefault();
         $(this).ekkoLightbox();
     });                                        
 });
 	function photoToggle(){
-	$('#".$row['ID']."').modal('toggle');
+	$('#<?echo"".$row['ID'];?>').modal('toggle');
 	}
   </script>
-  ";
-  ?>
 	
 	</head>
 	<body background="../../../../img/white.jpg">
