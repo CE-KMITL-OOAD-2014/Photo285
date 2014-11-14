@@ -114,9 +114,10 @@
 							<div class="col-md-12">
 								<button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button></br>
 							</div>
-							<em><label>
-								<button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button></br>
-							</label></em>
+							<div class="col-md-12">
+								<em><label>Don't have an account?</label></em>
+								<button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up Here</button></br>
+							</div>
 						</div>
 					</form>
 				</div>
