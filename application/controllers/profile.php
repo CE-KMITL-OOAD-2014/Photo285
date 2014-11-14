@@ -30,7 +30,7 @@ class Profile extends CI_Controller {
 				
 				
 				
-				$data = array('name' => $name , 'id' => $id , 'email' => $email , 'detail' => $detail , 'resume' => $resume);
+				$data = array('name' => $name , 'id' => $id , 'email' => $email , 'detail' => $detail , 'resume' => $resume , 'photom1' => $photom1);
 				
 				$this->load->view('navbar');
 				$this->load->view('profile',$data);
