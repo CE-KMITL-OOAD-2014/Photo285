@@ -293,15 +293,14 @@ html, body { height: 100%;}
         $(this).ekkoLightbox();
     });                                        
 });
-	function photoToggle(photoid){
-	$('#'+photoid).modal('toggle');
+	function photoToggle(){
+	$(#photoModal).modal('toggle');
 	}
-	var sharp = "#";
-	<?
-	$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
-	foreach($showpic->result_array() as $row)
-	echo"$(sharp.concat(".$row['ID'].")).modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->";
-  ?>
+
+	
+	
+	$('#photoModal').modal('toggle').click(); <!--ส่วนนี้ทำให้คลิก แล้ว modal เด้ง--->";
+  
   </script>
 	
 	</head>
@@ -373,7 +372,7 @@ html, body { height: 100%;}
 					<hr>
 					<div class='col-md-9 col-xs-12 col-sm-12'> 
 							<?
-							
+							$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
 							if($this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->count_all_results('picture')==0) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
 							{
 								echo" 
@@ -385,7 +384,7 @@ html, body { height: 100%;}
 							foreach($showpic->result_array() as $row) //วน for เพื่อให้ รูปขึ้น
 							echo"
 							<div class='col-md-3 col-xs-6 col-sm-4'> 
-								<img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg' id='".$row['ID']."' class='img-rounded' width='150' height='150' onclick='photoToggle(".$row['ID'].");'> <!--รูปในอัลบั้ม-->
+								<img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg' id='".$row['ID']."' class='img-rounded' width='150' height='150' onclick='photoToggle();'> <!--รูปในอัลบั้ม-->
 								&nbsp
 							</div>
 							";
@@ -398,7 +397,7 @@ html, body { height: 100%;}
 
 
 		<!-- Modal -->
-<div class="modal img-modal" id="<?echo"".$row['ID'];?>">
+<div class="modal img-modal" id="photoModal">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
