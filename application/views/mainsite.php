@@ -472,7 +472,7 @@ $('#mytextbox').on("paste",function(e)
 							</div>
 						</div>
 						<div class="col-md-12">
-							<div class="col-md-6">
+							<div class="col-md-12">
 								<button class="btn btn-lg btn-success btn-block" type="submit">Log in</button></br>
 							</div>
 						</div>
