@@ -1,5 +1,5 @@
 <?php
-class Uploadphoto extends CI_Controller {
+class Photodb extends CI_Controller {
 
 	public function uploadprofile(){
 		$ID = $this->session->all_userdata();
