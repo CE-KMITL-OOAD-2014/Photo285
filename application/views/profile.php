@@ -120,6 +120,9 @@
 									<p>
 										<? echo"".$detail; ?>
 										<? echo"".$photom1; ?>
+										<? echo"".$photom2; ?>
+										<? echo"".$photom3; ?>
+										<? echo"".$photom4; ?>
 									</p>
 								</div>
 							</div>
