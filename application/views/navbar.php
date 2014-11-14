@@ -65,7 +65,7 @@ $('#mytextbox').on("paste",function(e)
   <script>
 						<!--เช็คpassword ว่าตรงกับ comfirm ไหม -->
 						function checkPasswordMatch() {
-							var password = $("#regpass").val();
+							var password = $("#pass").val();
 							var confirmPassword = $("#cpass").val();
 							if (password != confirmPassword){
 								  $("#cpass").css( "background-color", "#F78181" );
@@ -143,39 +143,7 @@ $('#mytextbox').on("paste",function(e)
 			</div><!-- /.container-fluid -->
 		</nav>
 		
-		<!---ส่วน modal ที่จะเด้งเป็นหน้า login ขึ้นมา--->
-		<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!-- LOG IN------->
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content"> 
-				<div class= "row">
-					<form action="../../../../member/login"  method="post" role="form">
-						<div class="col-md-12">
-							<div class="col-md-12">
-							<h2 class="form">Please log in</h2>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="col-md-12">
-							<input type="username" name="ID" id="ID" class="form-control" placeholder="Username" required autofocus>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="col-md-12">
-								<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="col-md-12">
-								<div class="row"><div<em><label><font color="white">Don't have an account?</font></label></em></div>
-								<button class="btn btn-lg btn-success btn-block" type="submit">Log in</button></br>
-							</div>
-							
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div> <!---LOG IN------->
+	
 	
 	
 	 <!-- Modal ส่วน SIGN UP-->
@@ -224,7 +192,7 @@ $('#mytextbox').on("paste",function(e)
 									<label for="exampleInputPassword1">Password</label>
 								</div>
 								<div class="col-md-12">
-									<input type="password" name="pass" class="form-control" pattern=".{6,12}" required title="6 to 12 characters" id="regpass" placeholder="Password" required autofocus>
+									<input type="password" name="pass" class="form-control" pattern=".{6,12}" required title="6 to 12 characters" id="pass" placeholder="Password" required autofocus>
 								</div>
 							</div>
 						</div> <!--ส่วนกรอก PASSWAORD---->
@@ -251,6 +219,40 @@ $('#mytextbox').on("paste",function(e)
 			</div>
 		</div>
 	</div>  <!--ปิดส่วนเชื่อม แถบเด้งๆ-----ของ SIGN UP----->
+	
+		<!---ส่วน modal ที่จะเด้งเป็นหน้า login ขึ้นมา--->
+		<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!-- LOG IN------->
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content"> 
+				<div class= "row">
+					<form action="../../../../member/login"  method="post" role="form">
+						<div class="col-md-12">
+							<div class="col-md-12">
+							<h2 class="form">Please log in</h2>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="col-md-12">
+							<input type="username" name="ID" id="ID" class="form-control" placeholder="Username" required autofocus>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="col-md-12">
+								<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="col-md-12">
+								<div class="row"><div<em><label><font color="white">Don't have an account?</font></label></em></div>
+								<button class="btn btn-lg btn-success btn-block" type="submit">Log in</button></br>
+							</div>
+							
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> <!---LOG IN------->
 	
   </body>
 </html>
