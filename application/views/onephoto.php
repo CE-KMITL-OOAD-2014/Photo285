@@ -412,6 +412,9 @@ html, body { height: 100%;}
 							</button>
 							</center>
 						</div>
+						<br>
+						<hr>
+						<div class='modal-footer'></div>
 					</form>
 				</div>
 			</div>
