@@ -401,6 +401,7 @@ html, body { height: 100%;}
 						<button  class="btn btn-default btn-md"  >
 							<span class="glyphicon glyphicon-ok" > ใช่</span>
 						</button>
+						<hr>
 						<button  class="btn btn-default btn-md"  >
 							<span class="glyphicon glyphicon-remove" > ไม่</span>
 						</button>
