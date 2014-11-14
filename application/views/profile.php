@@ -119,7 +119,6 @@
 									<h3 class="title">ข่าวสาร</h3>
 									<p>
 										<? echo"".$detail; ?>
-										
 									</p>
 								</div>
 							</div>
