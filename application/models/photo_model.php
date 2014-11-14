@@ -29,7 +29,7 @@
 		
 		function getphotom1($iduser){
 			$check = $this->db->where('nameuser',$iduser)->where('showm1',1)->count_all_results('picture');
-				if(check == 1){
+				if($check == 1){
 					$show = $this->db->where('nameuser',$iduser)->where('showm1',1)->get('picture');
 					$show = $show->result_array();
 					foreach($show as $row) $show = $row['ID'];
