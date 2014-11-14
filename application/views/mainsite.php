@@ -92,7 +92,7 @@
 
     // Disallow anything not matching the regex pattern (A to Z uppercase, a to z lowercase and white space)
     // For more on JavaScript Regular Expressions, look here: https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions
-    var englishAlphabet= /[A-Za-z]/g;
+    var englishAlphabetAndWhiteSpace= /[A-Za-z]/g;
    
     // Retrieving the key from the char code passed in event.which
     // For more info on even.which, look here: http://stackoverflow.com/q/3050984/114029
@@ -105,7 +105,7 @@
     // keyCode == 37 is left arrow
     // keyCode == 39 is right arrow
     // englishAlphabetAndWhiteSpace.test(key) does the matching, that is, test the key just typed against the regex pattern
-	 if (event.keyCode == 8 ||event.keyCode == 46|| englishAlphabet.test(key)) {
+	 if (event.keyCode == 8 ||event.keyCode == 46|| englishAlphabetAndWhiteSpace.test(key)) {
         return true;
     }
 
