@@ -111,12 +111,12 @@
 							</div>
 						</div>
 						<div class="col-md-12">
-							<div class="col-md-6">
-								<button class="btn btn-lg btn-success btn-block" type="submit">Log in</button></br>
+							<div class="col-md-12">
+								<button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button></br>
 							</div>
-							<div class="col-md-6">
+							<em><label>
 								<button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button></br>
-							</div>
+							</label></em>
 						</div>
 					</form>
 				</div>
