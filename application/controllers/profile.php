@@ -22,7 +22,7 @@ class Profile extends CI_Controller {
 				
 				//load photo หน้าหลัก
 				$this->load->model('photo_model');
-				$photom1 = $this->photo_model->getphotom1($id);
+				//$photom1 = $this->photo_model->getphotom1($id);
 				//$photom2 = $this->photo_model->getphotom2($id);
 				//$photom3 = $this->photo_model->getphotom3($id);
 				//$photom4 = $this->photo_model->getphotom4($id);
