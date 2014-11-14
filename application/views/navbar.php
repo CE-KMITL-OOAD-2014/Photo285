@@ -28,6 +28,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../../../js/bootstrap.min.js"></script>
+	<script>
+  $(document).ready(function(){
+  $("#mytextbox").on("keypress", function(event) {
+
+    // Disallow anything not matching the regex pattern (A to Z uppercase, a to z lowercase and white space)
+    // For more on JavaScript Regular Expressions, look here: https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions
+    var englishAlphabetAndWhiteSpace= /[A-Z0-9a-z]/g;
+   
+    // Retrieving the key from the char code passed in event.which
+    // For more info on even.which, look here: http://stackoverflow.com/q/3050984/114029
+    var key = String.fromCharCode(event.which);
+    
+    //alert(event.keyCode);
+    
+    // For the keyCodes, look here: http://stackoverflow.com/a/3781360/114029
+    // keyCode == 8  is backspace
+    // keyCode == 37 is left arrow
+    // keyCode == 39 is right arrow
+    // englishAlphabetAndWhiteSpace.test(key) does the matching, that is, test the key just typed against the regex pattern
+	 if (event.keyCode == 8 || englishAlphabetAndWhiteSpace.test(key)) {
+        return true;
+    }
+
+    // If we got this far, just return false because a disallowed key was typed.
+    return false;
+});
+
+$('#mytextbox').on("paste",function(e)
+{
+    e.preventDefault();
+});
+});
+  </script>
   <body>
     
 	<nav class="navbar navbar-default" role="navigation"><!---นำ template จาก bootstrap.com มาต่อเติม-->
@@ -117,7 +150,7 @@
 							</div>
 							<div class="col-md-6">
 								<em><label>Don't have an account?</label></em>
-								<button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up Here</button></br>
+								<button class="btn btn-lg btn-primary btn-block" type="submit" data-toggle='modal' data-target='.bs-example-modal-lg3'>Sign Up Here</button></br>
 							</div>
 						</div>
 					</form>
@@ -125,6 +158,98 @@
 			</div>
 		</div>
 	</div> <!---LOG IN------->
+	
+	
+	<!-- Modal ส่วน SIGN UP-->
+	<div class="modal fade bs-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!--ส่วนเชื่อม แถบเด้งๆ---ของ SIGN UP------->
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content"> 
+				<div class= "row">
+					<form role="form" action="../member/register" method="post">  
+						<br/>
+						<div class="col-md-12">  <!--ส่วนกรอก username----A-->
+								<div class="form-group">
+									<div class="col-md-12">
+										<label for="exampleInputUsername1">Username</label>
+									</div>
+									<div class="col-md-12">
+										<input type="text" name="ID" class="form-control" pattern=".{6,15}" required title="6 to 15 characters" width = "50%" id="mytextbox" placeholder="Enter username" required autofocus>
+									</div>
+								</div>
+						</div> <!--ส่วนกรอก username------>
+						
+						<div class="col-md-12"> <!--ส่วนกรอก NAME----A-->
+							<div class="form-group">
+								<div class="col-md-12">
+									<label for="exampleInputName1">Name</label>
+								</div>
+								<div class="col-md-12">
+									<input type="text" name="name" class="form-control" pattern=".{6,15}" required title="6 to 15 characters" id="exampleInputName1" placeholder="Enter name" required autofocus>
+								</div>
+							</div>
+						</div>  <!--ส่วนกรอก NAME------>
+	
+						<div class="col-md-12">  <!--ส่วนกรอก EMAIL----A-->
+							<div class="form-group">
+								<div class="col-md-12">
+									<label for="exampleInputEmail1">Email address</label>
+								</div>
+								<div class="col-md-12">
+									<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required autofocus>
+								</div>
+							</div>
+						</div>  <!--ส่วนกรอก EMAIL------>
+						
+						<div class="col-md-12"> <!--ส่วนกรอก PASSWAORD--A-->
+							<div class="form-group">
+								<div class="col-md-12">
+									<label for="exampleInputPassword1">Password</label>
+								</div>
+								<div class="col-md-12">
+									<input type="password" name="pass" class="form-control" pattern=".{6,12}" required title="6 to 12 characters" id="pass" placeholder="Password" required autofocus>
+								</div>
+							</div>
+						</div> <!--ส่วนกรอก PASSWAORD---->
+						
+						<div class="col-md-12"> <!--ส่วนกรอก CONFIRMPASSWAORD--A-->
+							<div class="form-group">
+								<div class="col-md-12">
+									<label for="exampleInputPassword1">Confirm Password</label>
+								</div>
+								<div class="col-md-12">
+									<input type="password" name="cpass" class="form-control" id="cpass" placeholder="Password" required autofocus>
+								</div>
+							</div>
+						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
+						<script>
+						<!--เช็คpassword ว่าตรงกับ comfirm ไหม -->
+						function checkPasswordMatch() {
+							var password = $("#pass").val();
+							var confirmPassword = $("#cpass").val();
+							if (password != confirmPassword){
+								  $("#cpass").css( "background-color", "#F78181" );
+								  $("#regisbutton").prop("type", "button");	 
+							}
+							else{//เปลี่ยนสี
+								$("#cpass").css( "background-color", "#9FF781" );
+								$("#regisbutton").prop("type", "submit");
+							}
+						}
+						$(document).ready(function () {
+						   $("#cpass").keyup(checkPasswordMatch);					
+						});
+						</script>
+						
+						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
+							<div class="col-md-12">
+							<button type="submit" value="OK" id ="regisbutton" class="btn btn-default">Submit</button>
+							</div>
+						</div> <!------ส่วนกด SUMMIT--->
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>  <!--ปิดส่วนเชื่อม แถบเด้งๆ-----ของ SIGN UP----->
 	
   </body>
 </html>
