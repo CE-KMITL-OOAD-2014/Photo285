@@ -345,8 +345,10 @@ html, body { height: 100%;}
 								<script>
 									$("#input").keypress(function(event) {
 									if (event.which == 13) {
-										event.preventDefault();
-										$("form").submit();
+										if($this->session->userdata('ID')){
+											event.preventDefault();
+											$("form").submit();
+										}
 									}
 								});
 								</script>
