@@ -9,8 +9,7 @@
 			$datadb = array('ID'=>$sID,'comment'=>$data['comment'],'idphoto'=>$data['idphoto'],'nameuser'=>$data['iduser']);
 			$this->db->insert('comment',$datadb);
 			echo "<script language='javascript'>
-					alert('Set Complete');
-					window.location.href = '../../../../onephoto/show/".$idphoto."/';
+					window.location.href = '../../../../onephoto/show/".$data['idphoto']."/';
 				</script>";
 		}	
 	}
