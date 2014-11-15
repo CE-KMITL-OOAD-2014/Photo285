@@ -168,38 +168,26 @@
 			</div>
 			<div class="col-md-9 col-xs-0 col-sm-0"> <!---ส่วนที่ col แสดงรูปภาพที่ต้องการแสดง-->
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+					<a href="#" class="thumbnail" > 
 						<img src="../../../../photo/<?echo"".$photom1.".jpg";?>" alt="..."width='220' height='220'>
 					</a>
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+					<a href="#" class="thumbnail"> 
 						<img src="../../../../photo/<?echo"".$photom2.".jpg";?>" alt="..."width='220' height='220'>
 					</a>
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+					<a href="#" class="thumbnail" > 
 						<img src="../../../../photo/<?echo"".$photom3.".jpg";?>" alt="..." width='220' height='220'>
 					</a>
 				</div>
 				<div class="col-md-12 col-xs-6 col-sm-3">
-					<a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+					<a href="#" class="thumbnail" > 
 						<img src="../../../../photo/<?echo"".$photom4.".jpg";?>" alt="..."width='500' height='500'>
 					</a>
 				</div>
 			</div>	
-		</div>
-
-		<!--modal ที่รูป จะเด้งขึ้นมา--->
-		<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
-				<div class="modal-content">
-					<div class="modal-body">
-						<img src="" alt="" />		
-					</div>
-				</div>
-			</div>
 		</div>
 	</body>
 </html>
