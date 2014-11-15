@@ -87,7 +87,7 @@
 	</script>
 
   </head>
-  <body background="../../img/white.jpg"> <!---body ที่ใส่ background เข้าไปด้วย--->
+  <body background="../../../img/white.jpg"> <!---body ที่ใส่ background เข้าไปด้วย--->
 	   <div class="container">
 			<div class="col-md-3 col-xs-12 col-sm-12"> <!--colในส่วนซ้าย ที่มี รายละเอียดของผู้ใช้งาน-->
 				  <div class="col-md-12 col-xs-12 col-sm-12">
