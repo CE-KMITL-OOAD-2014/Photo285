@@ -168,22 +168,22 @@
 			</div>
 			<div class="col-md-9 col-xs-0 col-sm-0"> <!---ส่วนที่ col แสดงรูปภาพที่ต้องการแสดง-->
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="#" class="thumbnail" > 
+					<a href="../../../../onephoto/show/<? echo"".$photom1 ?>" class="thumbnail" > 
 						<img src="../../../../photo/<?echo"".$photom1.".jpg";?>" alt="..."width='220' height='220'>
 					</a>
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="#" class="thumbnail"> 
+					<a href="../../../../onephoto/show/<? echo"".$photom2 ?>" class="thumbnail"> 
 						<img src="../../../../photo/<?echo"".$photom2.".jpg";?>" alt="..."width='220' height='220'>
 					</a>
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="#" class="thumbnail" > 
+					<a href="../../../../onephoto/show/<? echo"".$photom3 ?>" class="thumbnail" > 
 						<img src="../../../../photo/<?echo"".$photom3.".jpg";?>" alt="..." width='220' height='220'>
 					</a>
 				</div>
 				<div class="col-md-12 col-xs-6 col-sm-3">
-					<a href="#" class="thumbnail" > 
+					<a href="../../../../onephoto/show/<? echo"".$photom4 ?>" class="thumbnail" > 
 						<img src="../../../../photo/<?echo"".$photom4.".jpg";?>" alt="..."width='500' height='500'>
 					</a>
 				</div>
