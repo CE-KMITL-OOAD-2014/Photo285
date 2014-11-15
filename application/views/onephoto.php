@@ -326,13 +326,13 @@ html, body { height: 100%;}
 									<?
 									if($this->db->where('idphoto',$this->uri->segment(3))->count_all_results('comment')==0)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
 									{ echo"<center>
-												<h4>You don't have any comment just test ,</h4>
+												<h4>You don't have any comment</h4>
 											</center>";//เข้า if (ไม่มี comment ก็ไม่ต้องทำอะไร
 									}
-									else 
+									else {
 										$comments = $this->db->where('idphoto',$this->uri->segment(3))->get('comment');
 										foreach($comments->result_array() as $row) //วน comment เพื่อให้รูปขึ้น
-											{echo"
+										{echo"
 											<li>
 												<div class='comment-img'>
 												  <img src='../../../../photo/profile/".$row['nameuser'].".jpg'>
@@ -342,7 +342,8 @@ html, body { height: 100%;}
 													<p>".$row['comment']."</p> 
 												</div>
 											</li>";
-											}
+										}
+									}
 									?>
 								</ul>
 							</div>
