@@ -78,9 +78,9 @@
 			echo "nameprofile: ".$callprofile;
 			$checkmainphoto = $this->db->where('nameuser',$callprofile)->where('showm1',1)->count_all_results('picture'); // ดึงค่าจาก db มาตรวจสอบว่ามีการเซต mainphoto1 ไปแล้วหรือยัง
 			if($checkmainphoto==0){
-				echo "set ได้เลย";
+				echo " set dai lei";
 			}
-			else echo "ต้อง reset ค่าเก่าก่อน";
+			else echo " tong reset kon";
 		}
 		
 		function setphotom2($idphoto){
