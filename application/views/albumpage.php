@@ -182,37 +182,26 @@
 		}
 		</script>
 		<script>
-			$(document).ready(function(){
-			$("#mytextbox").on("keypress", function(event) {
+		$(document).ready(function () {
 
-			// Disallow anything not matching the regex pattern (A to Z uppercase, a to z lowercase and white space)
-			// For more on JavaScript Regular Expressions, look here: https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions
-			var englishAlphabetAndWhiteSpace = /[A-Za-z ]/g;
-		   
-			// Retrieving the key from the char code passed in event.which
-			// For more info on even.which, look here: http://stackoverflow.com/q/3050984/114029
-			var key = String.fromCharCode(event.which);
-			
-			//alert(event.keyCode);
-			
-			// For the keyCodes, look here: http://stackoverflow.com/a/3781360/114029
-			// keyCode == 8  is backspace
-			// keyCode == 37 is left arrow
-			// keyCode == 39 is right arrow
-			// englishAlphabetAndWhiteSpace.test(key) does the matching, that is, test the key just typed against the regex pattern
-			 if (englishAlphabetAndWhiteSpace.test(key)) {
-				return true;
+   $("#mytextbox").keyup(validateusername);
+  
+});
+
+   
+function validateusername(){
+		var regex = /^[a-zA-Z0-9]{6,12}$/;
+		var text = $("#mytextbox").val();
+			if(regex.test(text)){
+				$("#mytextbox").css( "background-color", "#9FF781" );
+				checkname = true;
 			}
-
-			// If we got this far, just return false because a disallowed key was typed.
-			return false;
-		});
-
-		$('#mytextbox').on("paste",function(e)
-		{
-			e.preventDefault();
-		});
-		});
+			else{
+				$("#mytextbox").css( "background-color", "#F78181" );
+				checkname = false;	
+				//$("#regisbutton").prop("type", "button");
+			}
+	}
 		</script>
 	</head>
 	
