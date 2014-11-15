@@ -8,7 +8,7 @@
 			foreach($sID as $row) $sID = $row['ID']+1;
 			
 			$datadb = array('ID'=>$sID,'comment'=>$data['comment'],'idphoto'=>$data['idphoto'],'nameuser'=>$data['iduser']);
-			$this->db->insert('comment',$data);
+			$this->db->insert('comment',$datadb);
 		}	
 	}
 ?>                                                               
