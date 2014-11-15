@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Photo285 : Upload Your Picture</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 	<style> <!--ส่วนตั้งค่ารูปนำโค้ดมาจาก bootsnipp.com-->
 	<!--ตั้งค่ารูป ใน dynamic tile--->
 .dynamicTile .col-sm-2.col-xs-4{
@@ -76,8 +76,8 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/font-awesome.min.css"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/font-awesome.min.css"></script>
 	<script> <!--ส่วนตั้งเวลา ไสลด์รูป-->
 		$(window).resize(function() {
 		if(this.resizeTO) clearTimeout(this.resizeTO);
