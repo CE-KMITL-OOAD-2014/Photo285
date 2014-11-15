@@ -261,7 +261,7 @@
 															<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
 															<h4 class='modal-title' id='mySmallModalLabel'>Delete Album :</h4>   
 														</div>
-														<form action='../delete' method='POST' enctype='multipart/form-data' >"; 
+														<form action='../delete' method='POST' enctype='multipart/form-data' ><!-ส่วนใ้หเลือกว่าจะลบอัลบั้มไหน-->"; 
 															 
 															$showal = $this->db->where('nameuser',$this->uri->segment(3))->get('album');
 															if($this->db->where('nameuser',$this->uri->segment(3))->count_all_results('album')==0)//ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
@@ -304,19 +304,19 @@
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-								<h4 class="modal-title" id="myModalLabel"><? echo "".$id; ?></h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button> <!---->
+								<h4 class="modal-title" id="myModalLabel"><? echo "".$id; ?></h4>   <!---ชื่อผู้ใช้-->
 							</div>
 							<div class="modal-body">
 								<center>
 									<img src="../../../photo/profile/<? echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
-									<h3 class="media-heading"><? echo "".$name; ?></h3> <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+									<h3 class="media-heading"><? echo "".$name; ?></h3> <!--ชื่อ-->
 									<span><strong>Email: </strong></span> 
-									<span><? echo "".$email; ?></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+									<span><? echo "".$email; ?></span>  <!--อีเมล-->
 								</center>
 								<hr>
 								<center>
-									<p class="text-left"><strong>ประวัติส่วนตัว:</strong><br><? echo "".$resume; ?></p>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+									<p class="text-left"><strong>ประวัติส่วนตัว:</strong><br><? echo "".$resume; ?></p>   <!--ประวัติส่วนตัว-->
 									<br>
 								</center>
 							</div>
@@ -349,7 +349,7 @@
 						<article class='col-xs-12 col-sm-6 col-md-3'>
 							<div class='panel panel-default'>
 								<div class='panel-body'>
-									<a href='../../photo/show/".$this->uri->segment(3)."/".$row['namealbum']."' title='".$row['namealbum']." Album' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป-->
+									<a href='../../photo/show/".$this->uri->segment(3)."/".$row['namealbum']."' title='".$row['namealbum']." Album' data-type='image' data-toggle='lightbox'><!--ชื่ออัลบั้มใต้รูป--> 
 										<img src='../../../photo/album.jpg'>
 									</a>
 								</div>
