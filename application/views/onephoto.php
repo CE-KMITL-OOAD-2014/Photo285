@@ -303,7 +303,7 @@ html, body { height: 100%;}
 					<div class="modal-body">
 						<div class="col-md-8 col-sm-8 col-xs-8 modal-image">
 							<img class="img-responsive " src="../../../../photo/<? echo "".$this->uri->segment(3).".jpg"; ?>">        
-							<a href=""><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
+							<a href="" class="btn btn-default right"><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
 						</div>
 						<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
 							<div class="modal-meta-top">
