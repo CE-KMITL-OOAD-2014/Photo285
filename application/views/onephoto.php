@@ -384,7 +384,7 @@ html, body { height: 100%;}
 					<form action='../../../../photodb/setmainphoto/<? echo "".$this->uri->segment(3); ?>' method='POST' enctype='multipart/form-data' >					
 						<div class='radio'>
 							<label>
-								<input type='radio' name='setmain' id='optionsRadios1' value='1'>
+								<input type='radio' name='setmain' id='optionsRadios1' value='1' checked>
 								รูปหน้าหลักที่ 1
 							</label>
 						</div>			
