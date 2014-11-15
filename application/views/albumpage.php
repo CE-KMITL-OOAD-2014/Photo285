@@ -263,25 +263,7 @@
 		<script src="../../../js/font-awesome.min.css"></script>
 		<script src="../../../js/ekko-lightbox.js"></script> <!--lightbox--->
 		<script>
-		var checkname = false;
-		$(document).ready(function () {
-		$("#mytextbox").keyup(validatealbumname);
-});
-
-function validatealbumname(){
-		
-		var regex = /^[a-zA-Z0-9]{6,12}$/;
-		var text = $("#mytextbox").val();
-			if(regex.test(text)){
-				$("#mytextbox").css( "background-color", "#9FF781" );
-				checkname = true;
-			}
-			else{
-				$("#mytextbox").css( "background-color", "#F78181" );
-				checkname = false;	
-				//$("#namalbumsummit").prop("type", "button");
-			}
-	}
+			$('#mytextbox').bind('keyup blur', function () { $(this).val($(this).val().replace(/[^A-Za-z]/g, '')) }); 
 		</script>
 		<script> <!--นำมาจาก bootsnipp.com--->
 			$(function () {
