@@ -199,7 +199,7 @@ function validateusername(){
 			else{
 				$("#mytextbox").css( "background-color", "#F78181" );
 				checkname = false;	
-				//$("#regisbutton").prop("type", "button");
+				$("#namalbumsummit").prop("type", "button");
 			}
 	}
 		</script>
@@ -235,7 +235,7 @@ function validateusername(){
 														<em><label for='exampleInputName1'>Type Album Name</label></em>
 														<input type='text' name='namealbum' id='mytextbox' class='form-control input-lg' autocomplete='off' placeholder='Allow Only [A-Za-z0-9]' tabindex='1' required='' autofocus='' style='background-color: rgb(247, 129, 129);'><br>
 															<center>
-															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
+															<input type='submit' name='submit' value='Summit'id='namalbumsummit' class='btn btn-success' />   
 															</center>
 														</form>
 													</div>
