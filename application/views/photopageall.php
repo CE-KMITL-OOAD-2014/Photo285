@@ -219,6 +219,7 @@
 				<div class="container">
 					<h1 class="muted"><? echo "".$albumname; ?></h1>
 					<hr>
+					
 					<div class='col-md-9 col-xs-12 col-sm-12 col-xs-12'> 
 						<span onclick='javascript:$('#photoModal').modal('toggle');'> <!--ถ้าคลิก จะเชื่อมไป photomodal เด้ง comment&like-->
 							<?
@@ -233,7 +234,7 @@
 							else {// ตรวจสอบแล้ว มีรูป ทำ else
 							foreach($showpic->result_array() as $row) //วน for เพื่อให้ รูปขึ้น
 							echo"
-							<div class='col-md-3 col-xs-6 col-sm-12'> 
+							<div class='col-md-3 col-xs-12 col-sm-4'> 
 								<a href='../../../../onephoto/show/".$row['ID']."'><img style='margin-top:9px;' src='../../../../photo/".$row['ID'].".jpg' class='img-rounded' width='150' height='150'></a> <!--รูปในอัลบั้ม-->
 								&nbsp
 							</div>
