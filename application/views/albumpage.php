@@ -221,8 +221,8 @@
 			<div class="col-md-3 col-xs-12 col-sm-12"> <!--แบ่งส่วนออกเป็น column--->
 				<div class="col-md-12 col-xs-12 col-sm-12">
 					<center>
-						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../../photo/profile/<?echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a>
-						<h3><? echo "".$name; ?></h3>
+						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../../photo/profile/<?echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a><!--รูปประจำตัวผูใช้งาน-->
+						<h3><? echo "".$name; ?></h3> <!--ชือของผู้ใช้งาน-->
 					</center>
 				</div>
 				<div class="row">
@@ -235,12 +235,12 @@
 										echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-lg'>Create Album</a>  <!---ปุ่มสร้างอัลบั้ม--->
 											  <a class='btn btn-warning ' data-toggle='modal' data-target='.bs-example-modal-lg3' >Delete</a><br> <!---ปุ่มลบอัลบั้ม-->
 											  <!-- Small modal --> <!--ส่วนที่ตัวเด้ง อัพโหลดจะเด้งขึ้นมา---> 
-											<div class='modal fade bs-example-modal-lg' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
+											<div class='modal fade bs-example-modal-lg' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'> <!--ส่วน modal สร้างอัลบั้ม-->
 												<div class='modal-dialog modal-sm'>
 													<div class='modal-content'>
 														<div class='modal-header'>
 															<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
-															<h4 class='modal-title' id='mySmallModalLabel'>Your Album Name :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+															<h4 class='modal-title' id='mySmallModalLabel'>Your Album Name :</h4>  
 														</div>
 														<form action='../create' method='POST' enctype='multipart/form-data' >
 														<em><label for='exampleInputName1'>Type Album Name</label></em>
@@ -251,7 +251,7 @@
 														</form>
 													</div>
 												</div>
-											</div> <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
+											</div>
 											
 											 <!-- Small modal --> <!--ส่วนที่ตัวเด้ง ลบรูป---> 
 											<div class='modal fade bs-example-modal-lg3' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
@@ -259,9 +259,9 @@
 													<div class='modal-content'>
 														<div class='modal-header'>
 															<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
-															<h4 class='modal-title' id='mySmallModalLabel'>Delete Album :</h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+															<h4 class='modal-title' id='mySmallModalLabel'>Delete Album :</h4>   
 														</div>
-														<form action='../delete' method='POST' enctype='multipart/form-data' >";
+														<form action='../delete' method='POST' enctype='multipart/form-data' >"; 
 															 
 															$showal = $this->db->where('nameuser',$this->uri->segment(3))->get('album');
 															if($this->db->where('nameuser',$this->uri->segment(3))->count_all_results('album')==0)//ตรวจสอบว่า มีอัลบั้มไหม? ถ้าไม่มี ทำ if
