@@ -71,7 +71,7 @@
 				else return 0;
 		}
 		
-		function setphotom1($idphoto){
+		function setphotom1($idphoto){ // set mainphoto อันที่ 1
 			$callprofile = $this->db->where('ID',$idphoto)->get('picture'); // ดึงชื่อ user ออกมา
 			$callprofile = $callprofile->result_array();
 			foreach($callprofile as $row) $callprofile = $row['nameuser']; // เก็บค่าชื่อ user 
@@ -97,8 +97,30 @@
 			}
 		}
 		
-		function setphotom2($idphoto){
-			echo "m2 ".$idphoto;
+		function setphotom2($idphoto){ // set mainphoto อันที่ 2
+			$callprofile = $this->db->where('ID',$idphoto)->get('picture'); // ดึงชื่อ user ออกมา
+			$callprofile = $callprofile->result_array();
+			foreach($callprofile as $row) $callprofile = $row['nameuser']; // เก็บค่าชื่อ user 
+			$checkmainphoto = $this->db->where('nameuser',$callprofile)->where('showm2',1)->count_all_results('picture'); // ดึงค่าจาก db มาตรวจสอบว่ามีการเซต mainphoto2 ไปแล้วหรือยัง
+			if($checkmainphoto==0){ // ถ้ายังไม่เคยเซตค่าใดๆเลย
+				$m2set = 1;
+				$data = array('showm2'=>$m2set);
+				$this->db->where('ID',$idphoto);
+				$this->db->update('picture',$data); //ส่งค่าไปเซตเก็บไว้ใน db
+			}
+			else { // เคยตั้งรูป mainphoto ไว้ก่อนแล้ว
+				//reset ค่าที่เคยตั้งรูปไว้
+				$m2reset = 0;
+				$dataReset = array('showm2'=>$m2reset);
+				$this->db->where('nameuser',$callprofile); //หาโปรไฟล์ที่เซตค่า mainphoto2 ไว้
+				$this->db->update('picture',$dataReset); //ส่งค่าไป reset การตั้งค่าออก
+				//set รูปใหม่
+				$m2set = 1;
+				$dataSet = array('showm2'=>$m2set);
+				$this->db->where('ID',$idphoto); // หารูปที่ต้องการจะ set จาก db
+				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto2
+			
+			}
 		}
 		
 		function setphotom3($idphoto){
