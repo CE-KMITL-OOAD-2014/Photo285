@@ -133,7 +133,7 @@
 														</div>
 														<form action='../create' method='POST' enctype='multipart/form-data' >
 														<em><label for='exampleInputName1'>Type Album Name</label></em>
-														<input  name='namealbum' id='mytextbox' pattern='[A-Za-z\\s]*' class='form-control input-lg' autocomplete='off' title='Please input only [A-Za-z0-9]'placeholder='Allow Only [A-Za-z0-9]' tabindex='1' required='' autofocus='' style='background-color: rgb(247, 129, 129);'><br>
+														<input  name='namealbum' id='mytextbox' pattern='[A-Za-z\\s]*' class='form-control input-lg' autocomplete='off' title='Please input only [A-Za-z0-9]'placeholder='Allow Only [A-Za-z0-9]' tabindex='1' required=''><br>
 															<center>
 															<input type='submit' name='submit' value='Summit'id='namalbumsummit' class='btn btn-success' />   
 															</center>
