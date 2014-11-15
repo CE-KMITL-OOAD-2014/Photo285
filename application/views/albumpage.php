@@ -263,7 +263,9 @@
 		<script src="../../../js/font-awesome.min.css"></script>
 		<script src="../../../js/ekko-lightbox.js"></script> <!--lightbox--->
 		<script>
-			$('#mytextbox').bind('keyup blur', function () { $(this).val($(this).val().replace(/[^A-Za-z]/g, '')) }); 
+			$('#mytextbox').bind('keyup blur', function () { 
+				$(this).val($(this).val().replace(/[^A-Za-z]/g, '')) 
+				}); 
 		</script>
 		<script> <!--นำมาจาก bootsnipp.com--->
 			$(function () {
