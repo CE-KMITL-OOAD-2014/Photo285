@@ -95,7 +95,7 @@
 				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto1
 			}
 			echo "<script language='javascript'>
-					alert('Delete Complete');
+					alert('Set Complete');
 					window.location.href = '../../../../profile/show/".$callprofile."/';
 				</script>";
 		}
@@ -124,7 +124,7 @@
 				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto2
 			}
 			echo "<script language='javascript'>
-					alert('Delete Complete');
+					alert('Set Complete');
 					window.location.href = '../../../../profile/show/".$callprofile."/';
 				</script>";
 		}
@@ -153,7 +153,7 @@
 				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto3
 			}
 			echo "<script language='javascript'>
-					alert('Delete Complete');
+					alert('Set Complete');
 					window.location.href = '../../../../profile/show/".$callprofile."/';
 				</script>";
 		}
@@ -182,7 +182,7 @@
 				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto4
 			}
 			echo "<script language='javascript'>
-					alert('Delete Complete');
+					alert('Set Complete');
 					window.location.href = '../../../../profile/show/".$callprofile."/';
 				</script>";
 		}
