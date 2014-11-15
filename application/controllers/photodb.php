@@ -84,19 +84,15 @@ class Photodb extends CI_Controller {
 					window.location.href = '../../../../photo/show/".$idprofile."/".$idalbum."';
 				</script>";
 	}
+		
+	public function setmainphoto(){
+		$setmain = $_POST["setmain"];
+		echo "".$this->uri->segment(3);
+		echo " ".$setmain;
 	
+	}
 }
 ?>
-
-
-
-
-
-
-
-
-
-
 
 
 
