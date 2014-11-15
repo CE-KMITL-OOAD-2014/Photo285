@@ -278,21 +278,21 @@ html, body { height: 100%;}
 });
 	</script>
 	<script> <!--ส่วนนี้ นับ LIKE--ตรงนี้ต้องแก้ให้มัน กดซ้ำ แล้ว UNLIKE->
-	//$(document).ready(function() {              
-     //  $('i.glyphicon-thumbs-up').click(function(){    
-      //  var $this = $(this),
-       // c = $this.data('count'),
-	//	str = "<br/><br/><br/><center>"; 
-    //    if (!c) c = 0;
-     //   c++;
-      //  $this.data('count',c);
-      //  $('#'+this.id).html((str.concat(c)).concat("</center>"));
-    //});  
-    //$(document).delegate('*[data-toggle="lightbox"]','click', function(event) {
-     //   event.preventDefault();
-     //   $(this).ekkoLightbox();
-    //});                                        
-//});
+	$(document).ready(function() {              
+       $('i.glyphicon-thumbs-up').click(function(){    
+        var $this = $(this),
+        c = $this.data('count'),
+		str = "<br/><br/><br/><center>"; 
+        if (!c) c = 0;
+        c++;
+        $this.data('count',c);
+        $('#'+this.id).html((str.concat(c)).concat("</center>"));
+    });  
+    $(document).delegate('*[data-toggle="lightbox"]','click', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });                                        
+});
 	</script>
 	</head>
 	<body>
@@ -303,7 +303,7 @@ html, body { height: 100%;}
 					<div class="modal-body">
 						<div class="col-md-8 col-sm-8 col-xs-8 modal-image">
 							<img class="img-responsive " src="../../../../photo/<? echo "".$this->uri->segment(3).".jpg"; ?>">        
-							<a href="www.google.co.th"  class="img-modal-btn right"><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
+							<a href="#"  class="img-modal-btn right"><i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
 						</div>
 						<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
 							<div class="modal-meta-top">
