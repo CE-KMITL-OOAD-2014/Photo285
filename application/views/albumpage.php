@@ -101,107 +101,7 @@
 			 .ekko-lightbox .glyphicon-chevron-right{right:0;float:right;padding-right:15px;text-align:right}
 			 .ekko-lightbox .modal-footer{text-align:left}
 		</style> 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> <!---template from bootstrap.com--> 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="../../../js/bootstrap.min.js"></script>
-		<script src="../../../jquery/jquery-1.10.2.min.js"></script>
-		<script src="../../../js/font-awesome.min.css"></script>
-		<script src="../../../js/ekko-lightbox.js"></script> <!--lightbox--->
-		<script>
-		var checkname = false;
-		$(document).ready(function () {
-		$("#mytextbox").keyup(validatealbumname);
-});
-
-function validatealbumname(){
 		
-		var regex = /^[a-zA-Z0-9]{6,12}$/;
-		var text = $("#mytextbox").val();
-			if(regex.test(text)){
-				$("#mytextbox").css( "background-color", "#9FF781" );
-				checkname = true;
-			}
-			else{
-				$("#mytextbox").css( "background-color", "#F78181" );
-				checkname = false;	
-				//$("#namalbumsummit").prop("type", "button");
-			}
-	}
-		</script>
-		<script> <!--นำมาจาก bootsnipp.com--->
-			$(function () {
-			$('.button-checkbox').each(function () { <!--ส่วนปุ่ม checkbox icon---->
-				// Settings
-				var $widget = $(this),
-					$button = $widget.find('button'),
-					$checkbox = $widget.find('input:checkbox'),
-					color = $button.data('color'),
-					settings = {
-						on: {
-							icon: 'glyphicon glyphicon-unchecked'
-						},
-						off: {
-							icon: 'glyphicon glyphicon-check'
-						}
-					};
-				// Event Handlers
-				$button.on('click', function () { <!---การเปลี่ยนแแปลงเมื่อกด button-->
-					$checkbox.prop('checked', !$checkbox.is(':checked'));
-					$checkbox.triggerHandler('change');
-					updateDisplay();
-				});
-				$checkbox.on('change', function () {
-					updateDisplay();
-				});
-				// Actions
-				function updateDisplay() {
-					var isChecked = $checkbox.is(':checked');
-
-					// Set the button's state
-					$button.data('state', (isChecked) ? "on" : "off");
-
-					// Set the button's icon
-					$button.find('.state-icon')
-						.removeClass()
-						.addClass('state-icon ' + settings[$button.data('state')].icon);
-
-					// Update the button's color
-					if (isChecked) {
-						$button
-							.removeClass('btn-default')
-							.addClass('btn-' + color + ' active');
-					}
-					else {
-						$button
-							.removeClass('btn-' + color + ' active')
-							.addClass('btn-default');
-					}
-				}
-
-				// Initialization
-				function init() {
-					updateDisplay();
-					// Inject the icon if applicable
-					if ($button.find('.state-icon').length == 0) {
-						$button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
-					}
-				}
-				init();
-			});
-				
-				$("#btndel").click(function(){
-					$(".btnchk").toggleClass("chkhidden");
-					$(".btnchk").siblings("input").prop("checked");
-					console.log($(".btnchk").siblings("input").is(":checked"));
-				}).click();
-		});
-		</script>
-		<script> <!--นำ code มาจาก bootsnipp.com---->
-			function showDiv() {
-			document.getElementById('welcomeDiv').style.display = "block";
-		}
-		</script>
 		
 	</head>
 	
@@ -354,5 +254,108 @@ function validatealbumname(){
 				 ?>		
 			</div>
 		</div>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> <!---template from bootstrap.com--> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../../js/bootstrap.min.js"></script>
+		<script src="../../../jquery/jquery-1.10.2.min.js"></script>
+		<script src="../../../js/font-awesome.min.css"></script>
+		<script src="../../../js/ekko-lightbox.js"></script> <!--lightbox--->
+		<script>
+		var checkname = false;
+		$(document).ready(function () {
+		$("#mytextbox").keyup(validatealbumname);
+});
+
+function validatealbumname(){
+		
+		var regex = /^[a-zA-Z0-9]{6,12}$/;
+		var text = $("#mytextbox").val();
+			if(regex.test(text)){
+				$("#mytextbox").css( "background-color", "#9FF781" );
+				checkname = true;
+			}
+			else{
+				$("#mytextbox").css( "background-color", "#F78181" );
+				checkname = false;	
+				//$("#namalbumsummit").prop("type", "button");
+			}
+	}
+		</script>
+		<script> <!--นำมาจาก bootsnipp.com--->
+			$(function () {
+			$('.button-checkbox').each(function () { <!--ส่วนปุ่ม checkbox icon---->
+				// Settings
+				var $widget = $(this),
+					$button = $widget.find('button'),
+					$checkbox = $widget.find('input:checkbox'),
+					color = $button.data('color'),
+					settings = {
+						on: {
+							icon: 'glyphicon glyphicon-unchecked'
+						},
+						off: {
+							icon: 'glyphicon glyphicon-check'
+						}
+					};
+				// Event Handlers
+				$button.on('click', function () { <!---การเปลี่ยนแแปลงเมื่อกด button-->
+					$checkbox.prop('checked', !$checkbox.is(':checked'));
+					$checkbox.triggerHandler('change');
+					updateDisplay();
+				});
+				$checkbox.on('change', function () {
+					updateDisplay();
+				});
+				// Actions
+				function updateDisplay() {
+					var isChecked = $checkbox.is(':checked');
+
+					// Set the button's state
+					$button.data('state', (isChecked) ? "on" : "off");
+
+					// Set the button's icon
+					$button.find('.state-icon')
+						.removeClass()
+						.addClass('state-icon ' + settings[$button.data('state')].icon);
+
+					// Update the button's color
+					if (isChecked) {
+						$button
+							.removeClass('btn-default')
+							.addClass('btn-' + color + ' active');
+					}
+					else {
+						$button
+							.removeClass('btn-' + color + ' active')
+							.addClass('btn-default');
+					}
+				}
+
+				// Initialization
+				function init() {
+					updateDisplay();
+					// Inject the icon if applicable
+					if ($button.find('.state-icon').length == 0) {
+						$button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+					}
+				}
+				init();
+			});
+				
+				$("#btndel").click(function(){
+					$(".btnchk").toggleClass("chkhidden");
+					$(".btnchk").siblings("input").prop("checked");
+					console.log($(".btnchk").siblings("input").is(":checked"));
+				}).click();
+		});
+		</script>
+		<script> <!--นำ code มาจาก bootsnipp.com---->
+			function showDiv() {
+			document.getElementById('welcomeDiv').style.display = "block";
+		}
+		</script>
+		
   </body>
 </html>
