@@ -315,7 +315,7 @@ html, body { height: 100%;}
 										$ID = $this->session->all_userdata();
 										if($ID['ID']==$idprofile){
 											echo"<button type='button' class='btn btn-default btn-md'>
-													<span class='glyphicon glyphicon-trash'  aria-hidden='true' data-toggle='modal' data-target='.bs-example-modal-lg5'></span>
+													<span class='glyphicon glyphicon-trash'  aria-hidden='true' data-toggle='modal' data-target='.bs-example-modal-lg5'>.</span>
 												</button>";
 											echo "<button  class='btn btn-default btn-md' data-toggle='modal' data-target='.bs-example-modal-lg4' ><span class='glyphicon glyphicon-globe' > เลือกรูปหน้าหลัก</span></button>";
 										}
