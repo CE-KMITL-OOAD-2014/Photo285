@@ -314,7 +314,7 @@ html, body { height: 100%;}
 									<?if($this->session->userdata('ID')){
 										$ID = $this->session->all_userdata();
 										if($ID['ID']==$idprofile){
-											echo"<label>ddddd</label>;"
+											echo"<label>ddddd</label>";
 											echo"<button class='btn btn-default btn-md' '>
 													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true'></span>
 												</button>";
