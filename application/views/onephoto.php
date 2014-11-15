@@ -283,7 +283,7 @@ html, body { height: 100%;}
         var $this = $(this),
         c = $this.data('count'),
 		str = "<br/><br/><br/><center>"; 
-        if (!c) c = 0;
+        if (c!=0) c = 0;
         c++;
         $this.data('count',c);
         $('#'+this.id).html((str.concat(c)).concat("</center>"));
