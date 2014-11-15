@@ -3,7 +3,8 @@
 class Comment extends CI_Controller {
 
 	public function sendcommend(){
-		
+		$comment = $_POST["comment"];
+		echo "".$comment;
 		
 	}
 	

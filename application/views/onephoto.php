@@ -338,9 +338,9 @@ html, body { height: 100%;}
 									?>
 								</ul>
 							</div>
-							<form action="...." method="post">
+							<form action="../../../../comment/sendcommend/" method="post">
 							<div class="modal-meta-bottom">
-								<input type="text" id="inputcomment"class="form-control" placeholder="Leave a commment.."/>
+								<input type="text" name="comment" id="inputcomment"class="form-control" placeholder="Leave a commment.."/>
 								<input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
 								<script>
 									$("#input").keypress(function(event) {
