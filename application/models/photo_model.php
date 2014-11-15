@@ -71,5 +71,22 @@
 				else return 0;
 		}
 		
+		function setphotom1($idphoto){
+			echo "m1 ".$idphoto;
+		}
+		
+		function setphotom2($idphoto){
+			echo "m2 ".$idphoto;
+		}
+		
+		function setphotom3($idphoto){
+			echo "m3 ".$idphoto;
+		}
+		
+		function setphotom4($idphoto){
+			echo "m4 ".$idphoto;
+		}
+		
+		
 	}
 ?>
