@@ -6,12 +6,22 @@ class Member extends CI_Controller {
 		$name = $_POST["name"];
 		$email = $_POST["email"];
 		$data = array('ID'=>$ID,'pass'=>$pass,'name'=>$name,'email'=>$email);
-		$this->load->model('member_model');	
-		$this->member_model->register($data);
-		echo"<script language='javascript'>
-			alert('Signup done');
-			window.location.href = '../';
-			</script>";
+		$check = $this->db->where('ID',$ID)->count_all_results('account');
+		if($check==0){
+			$this->load->model('member_model');	
+			$this->member_model->register($data);
+			echo"<script language='javascript'>
+				alert('Signup done');
+				window.location.href = '../';
+				</script>";
+		}
+		else {
+			echo "<script language='javascript'>
+					alert('login fail');
+					window.location.href = '../';
+				</script>";
+		}
+
 	}
 	
 	public function login(){
