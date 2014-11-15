@@ -124,11 +124,55 @@
 		}
 		
 		function setphotom3($idphoto){
-			echo "m3 ".$idphoto;
+			$callprofile = $this->db->where('ID',$idphoto)->get('picture'); // ดึงชื่อ user ออกมา
+			$callprofile = $callprofile->result_array();
+			foreach($callprofile as $row) $callprofile = $row['nameuser']; // เก็บค่าชื่อ user 
+			$checkmainphoto = $this->db->where('nameuser',$callprofile)->where('showm3',1)->count_all_results('picture'); // ดึงค่าจาก db มาตรวจสอบว่ามีการเซต mainphoto3 ไปแล้วหรือยัง
+			if($checkmainphoto==0){ // ถ้ายังไม่เคยเซตค่าใดๆเลย
+				$m3set = 1;
+				$data = array('showm3'=>$m3set);
+				$this->db->where('ID',$idphoto);
+				$this->db->update('picture',$data); //ส่งค่าไปเซตเก็บไว้ใน db
+			}
+			else { // เคยตั้งรูป mainphoto ไว้ก่อนแล้ว
+				//reset ค่าที่เคยตั้งรูปไว้
+				$m3reset = 0;
+				$dataReset = array('showm3'=>$m3reset);
+				$this->db->where('nameuser',$callprofile); //หาโปรไฟล์ที่เซตค่า mainphoto3 ไว้
+				$this->db->update('picture',$dataReset); //ส่งค่าไป reset การตั้งค่าออก
+				//set รูปใหม่
+				$m3set = 1;
+				$dataSet = array('showm3'=>$m3set);
+				$this->db->where('ID',$idphoto); // หารูปที่ต้องการจะ set จาก db
+				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto3
+			
+			}
 		}
 		
 		function setphotom4($idphoto){
-			echo "m4 ".$idphoto;
+			$callprofile = $this->db->where('ID',$idphoto)->get('picture'); // ดึงชื่อ user ออกมา
+			$callprofile = $callprofile->result_array();
+			foreach($callprofile as $row) $callprofile = $row['nameuser']; // เก็บค่าชื่อ user 
+			$checkmainphoto = $this->db->where('nameuser',$callprofile)->where('showm4',1)->count_all_results('picture'); // ดึงค่าจาก db มาตรวจสอบว่ามีการเซต mainphoto4 ไปแล้วหรือยัง
+			if($checkmainphoto==0){ // ถ้ายังไม่เคยเซตค่าใดๆเลย
+				$m4set = 1;
+				$data = array('showm4'=>$m4set);
+				$this->db->where('ID',$idphoto);
+				$this->db->update('picture',$data); //ส่งค่าไปเซตเก็บไว้ใน db
+			}
+			else { // เคยตั้งรูป mainphoto ไว้ก่อนแล้ว
+				//reset ค่าที่เคยตั้งรูปไว้
+				$m4reset = 0;
+				$dataReset = array('showm4'=>$m4reset);
+				$this->db->where('nameuser',$callprofile); //หาโปรไฟล์ที่เซตค่า mainphoto4 ไว้
+				$this->db->update('picture',$dataReset); //ส่งค่าไป reset การตั้งค่าออก
+				//set รูปใหม่
+				$m4set = 1;
+				$dataSet = array('showm4'=>$m4set);
+				$this->db->where('ID',$idphoto); // หารูปที่ต้องการจะ set จาก db
+				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto4
+			
+			}
 		}
 		
 		
