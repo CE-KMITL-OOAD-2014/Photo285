@@ -2,7 +2,7 @@
 
 class Like extends CI_Controller {
 
-	public function sendcommend(){
+	public function sentlike(){
 		$idphoto = $this->uri->segment(3);
 		$iduser = $this->uri->segment(4);
 		$data = array('idphoto'=>$idphoto ,'iduser'=>$iduser);
