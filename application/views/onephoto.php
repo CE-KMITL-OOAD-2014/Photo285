@@ -276,6 +276,12 @@ html, body { height: 100%;}
     })
 
 });
+.link
+			{
+			   color:white;
+			   text-decoration: none; 
+			   background-color: none; <!--Link remove href-->
+			}
 	</script>
 	
 	</head>
@@ -304,9 +310,9 @@ html, body { height: 100%;}
 												</a>";
 										}
 										else {
-											echo"<a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-info btn-md' '>
+											echo"<div class='link'><a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-info btn-md' '>
 													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true'>  ".$numlike."</span>
-												</a>";
+												</a></div>";
 										}
 										
 										if($ID['ID']==$idprofile){
