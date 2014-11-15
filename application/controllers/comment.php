@@ -7,11 +7,7 @@ class Comment extends CI_Controller {
 		$idphoto = $this->uri->segment(3);
 		$iduser = $this->uri->segment(4);
 		$data = array('comment'=>$comment , 'idphoto'=>$idphoto ,'iduser'=>$iduser);
-		
 		$this->load->model('comment_model','comment_model');
-		$this->comment_model->addcomment($data);
-		
-		
+		$this->comment_model->addcomment($data);	
 	}
-	
 }
