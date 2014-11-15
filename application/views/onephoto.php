@@ -298,7 +298,7 @@ html, body { height: 100%;}
 									<?if($this->session->userdata('ID')){
 										$ID = $this->session->all_userdata();
 										echo"<a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-default btn-md' '>
-													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true'>".$numlike."</span>
+													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true'>  ".$numlike."</span>
 												</a>";
 										if($ID['ID']==$idprofile){
 											echo"<button class='btn btn-default btn-md' data-toggle='modal' data-target='.bs-example-modal-lg5'>
