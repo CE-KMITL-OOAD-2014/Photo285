@@ -314,7 +314,13 @@ html, body { height: 100%;}
 									<button type="button" class="btn btn-default btn-md">
 										<span class="glyphicon glyphicon-trash"  aria-hidden="true" data-toggle="modal" data-target=".bs-example-modal-lg5"></span>
 									</button>
-									<button  class="btn btn-default btn-md" data-toggle="modal" data-target=".bs-example-modal-lg4" ><span class="glyphicon glyphicon-globe" > เลือกรูปหน้าหลัก</span></button>
+									<?if($this->session->userdata('ID')){
+										$ID = $this->session->all_userdata();
+										if($ID['ID']==$idprofile){
+											echo "<button  class='btn btn-default btn-md' data-toggle='modal' data-target='.bs-example-modal-lg4' ><span class='glyphicon glyphicon-globe' > เลือกรูปหน้าหลัก</span></button>";
+										}
+									}
+									?>
 								</div>
 								<ul class="img-comment-list">
 									<?if($comment==NULL)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
