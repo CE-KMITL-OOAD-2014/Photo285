@@ -341,7 +341,7 @@ html, body { height: 100%;}
 							<form action="../../../../comment/sendcommend/<? echo "".$this->uri->segment(3)."/"; ?><?if($this->session->userdata('ID')){ $ID = $this->session->all_userdata(); echo "".$ID['ID'];} ?>" method="post">
 							<div class="modal-meta-bottom">
 								<input type="text" name="comment" id="inputcomment"class="form-control" placeholder="Leave a commment.."/>
-								<input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+								<!--<input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/> -->
 								<script>
 									$("#input").keypress(function(event) {
 									if (event.which == 13) {
