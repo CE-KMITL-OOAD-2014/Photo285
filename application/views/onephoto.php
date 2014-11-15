@@ -310,9 +310,9 @@ html, body { height: 100%;}
 												</a>";
 										}
 										else {
-											echo"<div class='link'><a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-info btn-md' '>
+											echo"<a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-info btn-md' '>
 													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true' style='color:white'>  ".$numlike."</span>
-												</a></div>";
+												</a>";
 										}
 										
 										if($ID['ID']==$idprofile){
