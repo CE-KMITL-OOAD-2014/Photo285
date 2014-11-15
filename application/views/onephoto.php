@@ -315,7 +315,7 @@ html, body { height: 100%;}
 										$ID = $this->session->all_userdata();
 										if($ID['ID']==$idprofile){
 											echo"<button class='btn btn-default btn-md' '>
-													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true'>จำนวนไลค์</span>
+													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true'> จำนวนไลค์</span>
 												</button>";
 											echo"<button class='btn btn-default btn-md' data-toggle='modal' data-target='.bs-example-modal-lg5'>
 													<span class='glyphicon glyphicon-trash'  aria-hidden='true'></span>
