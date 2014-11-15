@@ -12,13 +12,13 @@ class Member extends CI_Controller {
 			$this->member_model->register($data);
 			echo"<script language='javascript'>
 				alert('Signup done');
-				window.location.href = '../';
+				window.location.href = '../../';
 				</script>";
 		}
 		else {
 			echo "<script language='javascript'>
-					alert('login fail');
-					window.location.href = '../';
+					alert('Have already ID');
+					window.location.href = '../../';
 				</script>";
 		}
 
