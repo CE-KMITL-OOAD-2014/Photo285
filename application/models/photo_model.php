@@ -79,12 +79,15 @@
 			$checkmainphoto = $this->db->where('nameuser',$callprofile)->where('showm1',1)->count_all_results('picture'); // ดึงค่าจาก db มาตรวจสอบว่ามีการเซต mainphoto1 ไปแล้วหรือยัง
 			if($checkmainphoto==0){
 				$showm1 = 1;
-				$this->db->where('ID',$idphoto)->update('picture',$showm1);
+				$data = array('showm1'=>$showm1);
+				$this->db->where('ID',$idphoto);
+				$this->db->update('picture',$data);
 			}
-			else {
-				$this->db->where('nameuser',$callprofile)->where('showm1',1)->update('showm1',0);
-			
-			}
+			//else {
+			//	$showm1 = 0;
+			//	$this->db->where('nameuser',$callprofile)->update('picture',$showm1);
+			//
+			//}
 		}
 		
 		function setphotom2($idphoto){
