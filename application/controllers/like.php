@@ -9,4 +9,5 @@ class Like extends CI_Controller {
 		$this->load->model('like_model','like_model');
 		$this->like_model->addlike($data);	
 	}
+
 }

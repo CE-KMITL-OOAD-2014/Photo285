@@ -20,6 +20,12 @@
 						window.location.href = '../../../../onephoto/show/".$data['idphoto']."/';
 					</script>";
 			}
-		}	
+		}
+
+		function getlike($idphoto){
+			$numlike = $this->db->where('idphoto',$idphoto)->count_all_results('likedb');
+			return $numlike;
+		}
+		
 	}
 ?>                                                               

@@ -10,8 +10,11 @@ class Onephoto extends CI_Controller {
 			$idprofile = $row['nameuser']; // ส่ง ID photo เข้าไป load id profile
 		}
 		
-		$data = array('idprofile' => $idprofile);
-		//$data = array('idprofile' => $idprofile,'like'=>$like);
+		//load photo หน้าหลัก
+		$this->load->model('like_model','like_model');
+		$numlike = $this->like_model->getlike($idphoto);
+		
+		$data = array('idprofile' => $idprofile,'numlike'=>$numlike);
 		$this->load->view('onephoto',$data);
 		
 	}	
