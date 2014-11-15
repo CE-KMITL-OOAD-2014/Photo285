@@ -46,7 +46,7 @@ class Photodb extends CI_Controller {
 		$this->config =  array(
 			'file_name'    => "".$sID.".jpg", //name
 			'upload_path'     => "./photo/",
-			'allowed_types'   => "jpg",
+			'allowed_types'   => "jpg|png|jpeg|gif",
 			'overwrite'       => TRUE,
 			'max_size'        => "1000KB",
 			'max_height'      => "768",
