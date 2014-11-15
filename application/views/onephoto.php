@@ -278,21 +278,21 @@ html, body { height: 100%;}
 });
 	</script>
 	<script> <!--ส่วนนี้ นับ LIKE--ตรงนี้ต้องแก้ให้มัน กดซ้ำ แล้ว UNLIKE->
-	$(document).ready(function() {              
-       $('i.glyphicon-thumbs-up').click(function(){    
-        var $this = $(this),
-        c = $this.data('count'),
-		str = "<br/><br/><br/><center>"; 
-        if (!c) c = 0;
-        c++;
-        $this.data('count',c);
-        $('#'+this.id).html((str.concat(c)).concat("</center>"));
-    });  
-    $(document).delegate('*[data-toggle="lightbox"]','click', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });                                        
-});
+	//$(document).ready(function() {              
+     //  $('i.glyphicon-thumbs-up').click(function(){    
+      //  var $this = $(this),
+       // c = $this.data('count'),
+	//	str = "<br/><br/><br/><center>"; 
+    //    if (!c) c = 0;
+     //   c++;
+      //  $this.data('count',c);
+      //  $('#'+this.id).html((str.concat(c)).concat("</center>"));
+    //});  
+    //$(document).delegate('*[data-toggle="lightbox"]','click', function(event) {
+     //   event.preventDefault();
+     //   $(this).ekkoLightbox();
+    //});                                        
+//});
 	</script>
 	</head>
 	<body>
