@@ -361,49 +361,55 @@ html, body { height: 100%;}
 				</div>
 			</div>
 		</div>
-
-		<!-- Small modal --> <!--ส่วนที่ตัวเด้ง ตั้งรูปให้อยู่หน้าหลัก---> 
-		<div class='modal fade bs-example-modal-lg4' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
-			<div class='modal-dialog modal-sm'>
-				<div class='modal-content'>
-					<div class='modal-header'>
-						<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
-						<h4 class='modal-title' id='mySmallModalLabel'>เลือกรูปให้อยู่ในหน้าหลัก :</h4>  
-					</div>
-					<form action='../../../../photodb/setmainphoto/<? echo "".$this->uri->segment(3); ?>' method='POST' enctype='multipart/form-data' >					
-						<div class='radio'>
-							<label>
-								<input type='radio' name='setmain' id='optionsRadios1' value='1'>
-								รูปหน้าหลักที่ 1
-							</label>
-						</div>			
-						<div class='radio'>
-							<label>
-								<input type='radio' name='setmain' id='optionsRadios1' value='2'>
-								รูปหน้าหลักที่ 2
-							</label>
-						</div>
-						<div class='radio'>
-							<label>
-								<input type='radio' name='setmain' id='optionsRadios1' value='3'>
-								รูปหน้าหลักที่ 3
-							</label>
-						</div>
-						<div class='radio'>
-							<label>
-								<input type='radio' name='setmain' id='optionsRadios1' value='4'>
-								รูปหน้าหลักที่ 4
-							</label>
-						</div>						
-						<hr>
-						<center>
-							<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
-						</center>
-					</form>
-				</div>
-			</div>
-		</div><!---กดตกลงเพื่อเลือกรูปไปหน้าหลัก-->
+	
 		
+		
+		<!-- Small modal --> <!--ส่วนที่ตัวเด้ง ตั้งรูปให้อยู่หน้าหลัก---> 
+		<?if($this->session->userdata('ID')){
+			$ID = $this->session->all_userdata();
+			if($ID['ID']==$idprofile){
+				echo "<div class='modal fade bs-example-modal-lg4' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
+						<div class='modal-dialog modal-sm'>
+							<div class='modal-content'>
+								<div class='modal-header'>
+									<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
+									<h4 class='modal-title' id='mySmallModalLabel'>เลือกรูปให้อยู่ในหน้าหลัก :</h4>  
+								</div>
+								<form action='../../../../photodb/setmainphoto/".$this->uri->segment(3);" ' method='POST' enctype='multipart/form-data' >					
+									<div class='radio'>
+										<label>
+											<input type='radio' name='setmain' id='optionsRadios1' value='1'>
+											รูปหน้าหลักที่ 1
+										</label>
+									</div>			
+									<div class='radio'>
+										<label>
+											<input type='radio' name='setmain' id='optionsRadios1' value='2'>
+											รูปหน้าหลักที่ 2
+										</label>
+									</div>
+									<div class='radio'>
+										<label>
+											<input type='radio' name='setmain' id='optionsRadios1' value='3'>
+											รูปหน้าหลักที่ 3
+										</label>
+									</div>
+									<div class='radio'>
+										<label>
+											<input type='radio' name='setmain' id='optionsRadios1' value='4'>
+											รูปหน้าหลักที่ 4
+										</label>
+									</div>						
+									<hr>
+									<center>
+										<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
+									</center>
+								</form>
+							</div>
+						</div>
+				</div><!---กดตกลงเพื่อเลือกรูปไปหน้าหลัก-->"
+			}
+		}
 		<!-- Small modal --> <!--ส่วนที่ตัวเด้ง ตั้งรูปให้อยู่หน้าหลัก---> 
 		<div class='modal fade bs-example-modal-lg5' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
 			<div class='modal-dialog modal-sm'>
