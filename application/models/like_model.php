@@ -7,7 +7,7 @@
 			foreach($sID as $row) $sID = $row['ID']+1;
 			$likeup = 1;
 			$datadb = array('ID'=>$sID,'likeup'=>$likeup,'idphoto'=>$data['idphoto'],'nameuser'=>$data['iduser']);
-			$this->db->insert('like',$datadb);
+			$this->db->insert('likedb',$datadb);
 			echo "<script language='javascript'>
 					window.location.href = '../../../../onephoto/show/".$data['idphoto']."/';
 				</script>";
