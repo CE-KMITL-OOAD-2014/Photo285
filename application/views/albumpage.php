@@ -233,7 +233,7 @@ function validateusername(){
 														</div>
 														<form action='../create' method='POST' enctype='multipart/form-data' >
 														<em><label for='exampleInputName1'>Type Album Name</label></em>
-														<input type='text' name='namealbum' class='form-control' id='mytextbox' placeholder='Only English letters are allowed here...' required autofocus><br>
+														<input type='text' name='namealbum' id='mytextbox' class='form-control input-lg' autocomplete='off' placeholder='Allow Only [A-Za-z0-9]' tabindex='1' required='' autofocus='' style='background-color: rgb(247, 129, 129);'>form-control' id='mytextbox' placeholder='Only English letters are allowed here...' required autofocus><br>
 															<center>
 															<input type='submit' name='submit' value='Summit' class='btn btn-success' />   
 															</center>
