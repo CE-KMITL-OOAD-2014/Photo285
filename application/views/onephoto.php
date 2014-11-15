@@ -288,7 +288,7 @@ html, body { height: 100%;}
         $this.data('count',c);
         $('#'+this.id).html((str.concat(c)).concat("</center>"));
     });  
-    $(document).delegate('click', function(event) {
+    $(document).delegate('*[data-toggle="lightbox"]','click', function(event) {
         event.preventDefault();
         $(this).ekkoLightbox();
     });                                        
