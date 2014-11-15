@@ -323,24 +323,26 @@ html, body { height: 100%;}
 									?>
 								</div>
 								<ul class="img-comment-list">
-									<?if($comment==NULL)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
+									<?
+									if($this->db->where('idphoto',$this->uri->segment(3))->count_all_results('comment')==0)//ตรวจสอบว่า มีcomment ไหม? ถ้าไม่มี ทำ if
 									{ echo"<center>
 												<h4>You don't have any comment just test ,</h4>
 											</center>";//เข้า if (ไม่มี comment ก็ไม่ต้องทำอะไร
 									}
-									  else 
-									  for($i=0; $i <count($comment) ; $i++) //วน comment เพื่อให้รูปขึ้น
-										{echo"
-										<li>
-											<div class='comment-img'>
-											  <img src='http://lorempixel.com/50/50/people/6'>
-											</div>
-											<div class='comment-text'>
-												<strong><a href=''>".$UserComment."</a></strong>
-												<p>".$commentMessage."</p> 
-											</div>
-										</li>";
-										}
+									else 
+										$comments = $this->db->where('idphoto',$this->uri->segment(3))->get('comment');
+										foreach($comments->result_array() as $row) //วน comment เพื่อให้รูปขึ้น
+											{echo"
+											<li>
+												<div class='comment-img'>
+												  <img src='http://lorempixel.com/50/50/people/6'>
+												</div>
+												<div class='comment-text'>
+													<strong><a href=''>".$row['nameuser']."</a></strong>
+													<p>".$row['comment']."</p> 
+												</div>
+											</li>";
+											}
 									?>
 								</ul>
 							</div>
