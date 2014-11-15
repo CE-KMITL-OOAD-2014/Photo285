@@ -10,8 +10,8 @@ class Photodb extends CI_Controller {
 			'allowed_types'   => "jpg|png|jpeg|gif",
 			'overwrite'       => TRUE,
 			'max_size'        => "1000KB",
-			'max_height'      => "768",
-			'max_width'       => "1024"  
+			'max_height'      => "2000",
+			'max_width'       => "2000"  
 		);
 		$this->load->library('upload', $this->config);
 		
