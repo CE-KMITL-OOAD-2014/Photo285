@@ -184,12 +184,12 @@
 		<script>
 		$(document).ready(function () {
 
-   $("#mytextbox").keyup(validateusername);
+   $("#mytextbox").keyup(validatealbumname);
   
 });
 
    
-function validateusername(){
+function validatealbumname(){
 		var regex = /^[a-zA-Z0-9]{6,12}$/;
 		var text = $("#mytextbox").val();
 			if(regex.test(text)){
