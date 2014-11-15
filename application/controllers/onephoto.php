@@ -11,6 +11,7 @@ class Onephoto extends CI_Controller {
 		}
 		
 		$data = array('idprofile' => $idprofile);
+		//$data = array('idprofile' => $idprofile,'like'=>$like);
 		$this->load->view('onephoto',$data);
 		
 	}	
