@@ -297,9 +297,18 @@ html, body { height: 100%;}
 									<strong><a href="../../../../profile/show/<? echo "".$idprofile; ?>"><? echo "".$idprofile; ?></a></strong>
 									<?if($this->session->userdata('ID')){
 										$ID = $this->session->all_userdata();
-										echo"<a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-info btn-md' '>
+										$checklike = $this->db->where('idphoto',$this->uri->segment(3))->where('nameuser',$ID['ID'])->count_all_results('likedb');
+										if($checklike==0){
+											echo"<a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-default btn-md' '>
 													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true'>  ".$numlike."</span>
 												</a>";
+										}
+										else {
+											echo"<a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-info btn-md' '>
+													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true'>  ".$numlike."</span>
+												</a>";
+										}
+										
 										if($ID['ID']==$idprofile){
 											echo"<button class='btn btn-default btn-md' data-toggle='modal' data-target='.bs-example-modal-lg5'>
 													<span class='glyphicon glyphicon-trash'  aria-hidden='true'></span>
