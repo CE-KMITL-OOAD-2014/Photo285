@@ -5,7 +5,7 @@ class Photodb extends CI_Controller {
 		$ID = $this->session->all_userdata();
 		
 		$this->config =  array(
-			'file_name'    => "".$ID['ID'], //name
+			'file_name'    => "".$ID['ID'].".jpg", //name
 			'upload_path'     => "./photo/profile",
 			'allowed_types'   => "jpg|png|jpeg|gif",
 			'overwrite'       => TRUE,
