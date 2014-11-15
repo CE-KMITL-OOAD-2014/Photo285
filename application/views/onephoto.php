@@ -307,7 +307,7 @@ html, body { height: 100%;}
 						</div>
 						<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
 							<div class="modal-meta-top">
-								<button type="button" class="close"  data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+								<a href="../../../../" class="close" ><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
 								<div class="img-poster clearfix">
 									<a href="../../../../profile/show/<? echo "".$idprofile; ?>"><img class="img-circle" src="../../../../photo/profile/<? echo "".$idprofile.".jpg"; ?>"/><!--รูปของเจ้าของภาพ--></a>
 									<strong><a href="../../../../profile/show/<? echo "".$idprofile; ?>"><? echo "".$idprofile; ?></a></strong>
