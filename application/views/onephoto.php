@@ -304,6 +304,7 @@ html, body { height: 100%;}
 						<div class="col-md-8 col-sm-8 col-xs-8 modal-image">
 							<img class="img-responsive " src="../../../../photo/<? echo "".$this->uri->segment(3).".jpg"; ?>">        
 							<a href="../../"  class="btn img-modal-btn right"><i class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div></a>
+							<a href="../../profile/show/<? echo "".$id; ?>" id ="cancel" class="btn btn-warning"><div class="link">cancel</div></a>
 						</div>
 						<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
 							<div class="modal-meta-top">
