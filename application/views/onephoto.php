@@ -297,7 +297,7 @@ html, body { height: 100%;}
 									<strong><a href="../../../../profile/show/<? echo "".$idprofile; ?>"><? echo "".$idprofile; ?></a></strong>
 									<?if($this->session->userdata('ID')){
 										$ID = $this->session->all_userdata();
-										echo"<a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-default btn-md' '>
+										echo"<a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-info btn-md' '>
 													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true'>  ".$numlike."</span>
 												</a>";
 										if($ID['ID']==$idprofile){
