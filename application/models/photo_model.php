@@ -88,7 +88,11 @@
 				$dataReset = array('showm1'=>$m1reset);
 				$this->db->where('nameuser',$callprofile); //หาโปรไฟล์ที่เซตค่า mainphoto1 ไว้
 				$this->db->update('picture',$dataReset); //ส่งค่าไป reset การตั้งค่าออก
-				
+				//set รูปใหม่
+				$m1set = 1;
+				$dataSet = array('showm1'=>$m1set);
+				$this->db->where('ID',$idphoto); // หารูปที่ต้องการจะ set จาก db
+				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto1
 			
 			}
 		}
