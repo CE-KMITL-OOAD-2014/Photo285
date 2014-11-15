@@ -74,20 +74,23 @@
 		function setphotom1($idphoto){
 			$callprofile = $this->db->where('ID',$idphoto)->get('picture'); // ดึงชื่อ user ออกมา
 			$callprofile = $callprofile->result_array();
-			foreach($callprofile as $row) $callprofile = $row['nameuser']; // ได้ชื่อ user 
-			echo "nameprofile: ".$callprofile;
+			foreach($callprofile as $row) $callprofile = $row['nameuser']; // เก็บค่าชื่อ user 
 			$checkmainphoto = $this->db->where('nameuser',$callprofile)->where('showm1',1)->count_all_results('picture'); // ดึงค่าจาก db มาตรวจสอบว่ามีการเซต mainphoto1 ไปแล้วหรือยัง
-			if($checkmainphoto==0){
-				$showm1 = 1;
-				$data = array('showm1'=>$showm1);
+			if($checkmainphoto==0){ // ถ้ายังไม่เคยเซตค่าใดๆเลย
+				$m1set = 1;
+				$data = array('showm1'=>$m1set);
 				$this->db->where('ID',$idphoto);
-				$this->db->update('picture',$data);
+				$this->db->update('picture',$data); //ส่งค่าไปเซตเก็บไว้ใน db
 			}
-			//else {
-			//	$showm1 = 0;
-			//	$this->db->where('nameuser',$callprofile)->update('picture',$showm1);
-			//
-			//}
+			else { // เคยตั้งรูป mainphoto ไว้ก่อนแล้ว
+				//reset ค่าที่เคยตั้งรูปไว้
+				$m1reset = 0;
+				$dataReset = array('showm1'=>$m1reset);
+				$this->db->where('nameuser',$callprofile); //หาโปรไฟล์ที่เซตค่า mainphoto1 ไว้
+				$this->db->update('picture',$dataReset); //ส่งค่าไป reset การตั้งค่าออก
+				
+			
+			}
 		}
 		
 		function setphotom2($idphoto){
