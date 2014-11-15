@@ -335,7 +335,7 @@ html, body { height: 100%;}
 											{echo"
 											<li>
 												<div class='comment-img'>
-												  <img src='http://lorempixel.com/50/50/people/6'>
+												  <img src='../../../../photo/profile/".$row['nameuser']."'>
 												</div>
 												<div class='comment-text'>
 													<strong><a href=''>".$row['nameuser']."</a></strong>
