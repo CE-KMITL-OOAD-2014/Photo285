@@ -78,7 +78,7 @@
 			echo "nameprofile: ".$callprofile;
 			$checkmainphoto = $this->db->where('nameuser',$callprofile)->where('showm1',1)->count_all_results('picture'); // ดึงค่าจาก db มาตรวจสอบว่ามีการเซต mainphoto1 ไปแล้วหรือยัง
 			if($checkmainphoto==0){
-				$this->db->where('ID',$idphoto)->update('showm1',1);
+				$this->db->where('ID',$idphoto)->update('showm1',"1");
 			}
 			else {
 				$this->db->where('nameuser',$callprofile)->where('showm1',1)->update('showm1',0);
