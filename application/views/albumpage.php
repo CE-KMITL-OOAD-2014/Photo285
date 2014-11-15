@@ -282,6 +282,7 @@ function validatealbumname(){
 												</div>
 											</div>"; // <!--ปุ่มยืนยันการลบ ที่จะเด้งขึ้นมาหลังจาก กดปุ่ม delete แล้ว---->
 									}
+
 								}
 							?>
 					</center>
