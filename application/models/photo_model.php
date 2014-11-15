@@ -93,8 +93,11 @@
 				$dataSet = array('showm1'=>$m1set);
 				$this->db->where('ID',$idphoto); // หารูปที่ต้องการจะ set จาก db
 				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto1
-			
 			}
+			echo "<script language='javascript'>
+					alert('Delete Complete');
+					window.location.href = '../../../../profile/show/".$callprofile."/';
+				</script>";
 		}
 		
 		function setphotom2($idphoto){ // set mainphoto อันที่ 2
@@ -119,8 +122,11 @@
 				$dataSet = array('showm2'=>$m2set);
 				$this->db->where('ID',$idphoto); // หารูปที่ต้องการจะ set จาก db
 				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto2
-			
 			}
+			echo "<script language='javascript'>
+					alert('Delete Complete');
+					window.location.href = '../../../../profile/show/".$callprofile."/';
+				</script>";
 		}
 		
 		function setphotom3($idphoto){
@@ -145,8 +151,11 @@
 				$dataSet = array('showm3'=>$m3set);
 				$this->db->where('ID',$idphoto); // หารูปที่ต้องการจะ set จาก db
 				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto3
-			
 			}
+			echo "<script language='javascript'>
+					alert('Delete Complete');
+					window.location.href = '../../../../profile/show/".$callprofile."/';
+				</script>";
 		}
 		
 		function setphotom4($idphoto){
@@ -171,8 +180,11 @@
 				$dataSet = array('showm4'=>$m4set);
 				$this->db->where('ID',$idphoto); // หารูปที่ต้องการจะ set จาก db
 				$this->db->update('picture',$dataSet); // ส่งค่า set ไปที่รูปต้องการจะ set เป็น mainphoto4
-			
 			}
+			echo "<script language='javascript'>
+					alert('Delete Complete');
+					window.location.href = '../../../../profile/show/".$callprofile."/';
+				</script>";
 		}
 		
 		
