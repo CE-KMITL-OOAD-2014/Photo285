@@ -8,99 +8,99 @@
 		<!-- Bootstrap -->
 		<link href="../../../css/bootstrap.min.css" rel="stylesheet">
 		<style> <!--จาก bootsnipp.com--->
-img {
-    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    margin-bottom:20px;
-}
+			img {
+				-webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+				-moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+				box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+				margin-bottom:20px;
+			}
 
-.link
-{
-   color:white;
-   text-decoration: none; 
-   background-color: none; <!--Link remove href-->
-}
+			.link
+			{
+			   color:white;
+			   text-decoration: none; 
+			   background-color: none; <!--Link remove href-->
+			}
 
-.dynamicTile .col-sm-2.col-xs-4{
-    padding:5px;
-}
+			.dynamicTile .col-sm-2.col-xs-4{
+				padding:5px;
+			}
 
-.dynamicTile .col-sm-4.col-xs-8{
-    padding:5px;
-}
+			.dynamicTile .col-sm-4.col-xs-8{
+				padding:5px;
+			}
 
-#tile1{
-    background: rgb(0,172,238);
-}
+			#tile1{
+				background: rgb(0,172,238);
+			}
 
-.tilecaption{
-    position: relative;
-    top: 100%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%); 
-    margin:0!important;
-    text-align: center;
-    color:white;
-    font-family: Segoe UI;
-    font-weight: lighter;
-}
+			.tilecaption{
+				position: relative;
+				top: 100%;
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%); 
+				margin:0!important;
+				text-align: center;
+				color:white;
+				font-family: Segoe UI;
+				font-weight: lighter;
+			}
 
-@import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+			@import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
 
-.mt40 { margin-top: 40px; }
+			.mt40 { margin-top: 40px; }
 
-.panel { position: relative; overflow: hidden; display: block; border-radius: 0 !important;  }
-.panel-default { border-color: #ebedef !important; }
-.panel .panel-body { position: relative; padding: 0 !important; overflow: hidden; height: auto; }
-.panel .panel-body a { overflow: hidden; }
-.panel .panel-body a img { display: block; margin: 0; width: 100%; height: auto; 
-    transition: all 0.5s; 
-    -moz-transition: all 0.5s; 
-    -webkit-transition: all 0.5s; 
-    -o-transition: all 0.5s; 
-}
-.panel .panel-body a.zoom:hover img { transform: scale(1.3); -ms-transform: scale(1.3); -webkit-transform: scale(1.3); -o-transform: scale(1.3); -moz-transform: scale(1.3); }
-.panel .panel-body a.zoom span.overlay { position: absolute; top: 0; left: 0; visibility: hidden; height: 100%; width: 100%; background-color: #000; opacity: 0; 
-    transition: opacity .25s ease-out;
-    -moz-transition: opacity .25s ease-out;
-    -webkit-transition: opacity .25s ease-out;
-    -o-transition: opacity .25s ease-out;
-}     
-.panel .panel-body a.zoom:hover span.overlay { display: block; visibility: visible; opacity: 0.55; -moz-opacity: 0.55; -webkit-opacity: 0.55; filter: alpha(opacity=65); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; }  
-.panel .panel-body a.zoom:hover span.overlay i { position: absolute; top: 45%; left: 0%; width: 100%; font-size: 2.25em; color: #fff !important; text-align: center;
-    opacity: 1;
-    -moz-opacity: 1;
-    -webkit-opacity: 1;
-    filter: alpha(opacity=1);    
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-}
-.panel .panel-footer { padding: 8px !important; background-color: #A4A4A4 !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }	
-.panel .panel-footer h4 { display: inline; font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #FFFFFF margin: 0 !important; padding: 0 !important; }
-.panel .panel-footer i.glyphicon { display: inline; font-size: 1.125em; cursor: pointer; }
-.panel .panel-footer i.glyphicon-thumbs-up { color: #1abc9c; }
-.panel .panel-footer i.glyphicon-thumbs-down { color: #e74c3c; padding-left: 5px; }
-.panel .panel-footer div { width: 15px; display: inline; font: 300 normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #34495e; text-align: center; background-color: transparent !important; border: none !important; }	
+			.panel { position: relative; overflow: hidden; display: block; border-radius: 0 !important;  }
+			.panel-default { border-color: #ebedef !important; }
+			.panel .panel-body { position: relative; padding: 0 !important; overflow: hidden; height: auto; }
+			.panel .panel-body a { overflow: hidden; }
+			.panel .panel-body a img { display: block; margin: 0; width: 100%; height: auto; 
+				transition: all 0.5s; 
+				-moz-transition: all 0.5s; 
+				-webkit-transition: all 0.5s; 
+				-o-transition: all 0.5s; 
+			}
+			.panel .panel-body a.zoom:hover img { transform: scale(1.3); -ms-transform: scale(1.3); -webkit-transform: scale(1.3); -o-transform: scale(1.3); -moz-transform: scale(1.3); }
+			.panel .panel-body a.zoom span.overlay { position: absolute; top: 0; left: 0; visibility: hidden; height: 100%; width: 100%; background-color: #000; opacity: 0; 
+				transition: opacity .25s ease-out;
+				-moz-transition: opacity .25s ease-out;
+				-webkit-transition: opacity .25s ease-out;
+				-o-transition: opacity .25s ease-out;
+			}     
+			.panel .panel-body a.zoom:hover span.overlay { display: block; visibility: visible; opacity: 0.55; -moz-opacity: 0.55; -webkit-opacity: 0.55; filter: alpha(opacity=65); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; }  
+			.panel .panel-body a.zoom:hover span.overlay i { position: absolute; top: 45%; left: 0%; width: 100%; font-size: 2.25em; color: #fff !important; text-align: center;
+				opacity: 1;
+				-moz-opacity: 1;
+				-webkit-opacity: 1;
+				filter: alpha(opacity=1);    
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+			}
+			.panel .panel-footer { padding: 8px !important; background-color: #A4A4A4 !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }	
+			.panel .panel-footer h4 { display: inline; font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #FFFFFF margin: 0 !important; padding: 0 !important; }
+			.panel .panel-footer i.glyphicon { display: inline; font-size: 1.125em; cursor: pointer; }
+			.panel .panel-footer i.glyphicon-thumbs-up { color: #1abc9c; }
+			.panel .panel-footer i.glyphicon-thumbs-down { color: #e74c3c; padding-left: 5px; }
+			.panel .panel-footer div { width: 15px; display: inline; font: 300 normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #34495e; text-align: center; background-color: transparent !important; border: none !important; }	
 
-.modal-title { font: 400 normal 1.625em "Roboto",Arial,Verdana,sans-serif; }
-.modal-footer { font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; } 
+			.modal-title { font: 400 normal 1.625em "Roboto",Arial,Verdana,sans-serif; }
+			.modal-footer { font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; } 
 
 
-/*!
- * Lightbox for Bootstrap 3 by @ashleydw
- * https://github.com/ashleydw/lightbox
- *
- * License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
- */
- .ekko-lightbox-container{position:relative}
- .ekko-lightbox-nav-overlay{position:absolute;top:0;left:0;z-index:100;width:100%;height:100%}
- .ekko-lightbox-nav-overlay a{z-index:100;display:block;width:49%;height:100%;padding-top:45%;font-size:30px;color:#fff;text-shadow:2px 2px 4px #000;opacity:0;filter:dropshadow(color=#000000,offx=2,offy=2);-webkit-transition:opacity .5s;-moz-transition:opacity .5s;-o-transition:opacity .5s;transition:opacity .5s}
- .ekko-lightbox-nav-overlay a:empty{width:49%}.ekko-lightbox a:hover{text-decoration:none;opacity:1}
- .ekko-lightbox .glyphicon-chevron-left{left:0;float:left;padding-left:15px;text-align:left}
- .ekko-lightbox .glyphicon-chevron-right{right:0;float:right;padding-right:15px;text-align:right}
- .ekko-lightbox .modal-footer{text-align:left}
-	</style> 
+			/*!
+			 * Lightbox for Bootstrap 3 by @ashleydw
+			 * https://github.com/ashleydw/lightbox
+			 *
+			 * License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
+			 */
+			 .ekko-lightbox-container{position:relative}
+			 .ekko-lightbox-nav-overlay{position:absolute;top:0;left:0;z-index:100;width:100%;height:100%}
+			 .ekko-lightbox-nav-overlay a{z-index:100;display:block;width:49%;height:100%;padding-top:45%;font-size:30px;color:#fff;text-shadow:2px 2px 4px #000;opacity:0;filter:dropshadow(color=#000000,offx=2,offy=2);-webkit-transition:opacity .5s;-moz-transition:opacity .5s;-o-transition:opacity .5s;transition:opacity .5s}
+			 .ekko-lightbox-nav-overlay a:empty{width:49%}.ekko-lightbox a:hover{text-decoration:none;opacity:1}
+			 .ekko-lightbox .glyphicon-chevron-left{left:0;float:left;padding-left:15px;text-align:left}
+			 .ekko-lightbox .glyphicon-chevron-right{right:0;float:right;padding-right:15px;text-align:right}
+			 .ekko-lightbox .modal-footer{text-align:left}
+		</style> 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> <!---template from bootstrap.com--> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -109,119 +109,116 @@ img {
 		<script src="../../../js/font-awesome.min.css"></script>
 		<script src="../../../js/ekko-lightbox.js"></script> <!--lightbox--->
 		<script> <!--นำมาจาก bootsnipp.com--->
-	$(function () {
-    $('.button-checkbox').each(function () { <!--ส่วนปุ่ม checkbox icon---->
+			$(function () {
+			$('.button-checkbox').each(function () { <!--ส่วนปุ่ม checkbox icon---->
+				// Settings
+				var $widget = $(this),
+					$button = $widget.find('button'),
+					$checkbox = $widget.find('input:checkbox'),
+					color = $button.data('color'),
+					settings = {
+						on: {
+							icon: 'glyphicon glyphicon-unchecked'
+						},
+						off: {
+							icon: 'glyphicon glyphicon-check'
+						}
+					};
+				// Event Handlers
+				$button.on('click', function () { <!---การเปลี่ยนแแปลงเมื่อกด button-->
+					$checkbox.prop('checked', !$checkbox.is(':checked'));
+					$checkbox.triggerHandler('change');
+					updateDisplay();
+				});
+				$checkbox.on('change', function () {
+					updateDisplay();
+				});
+				// Actions
+				function updateDisplay() {
+					var isChecked = $checkbox.is(':checked');
 
-        // Settings
-        var $widget = $(this),
-            $button = $widget.find('button'),
-            $checkbox = $widget.find('input:checkbox'),
-            color = $button.data('color'),
-            settings = {
-                on: {
-                    icon: 'glyphicon glyphicon-unchecked'
-                },
-                off: {
-                    icon: 'glyphicon glyphicon-check'
-                }
-            };
+					// Set the button's state
+					$button.data('state', (isChecked) ? "on" : "off");
 
-        // Event Handlers
-        $button.on('click', function () { <!---การเปลี่ยนแแปลงเมื่อกด button-->
-            $checkbox.prop('checked', !$checkbox.is(':checked'));
-            $checkbox.triggerHandler('change');
-            updateDisplay();
-        });
-        $checkbox.on('change', function () {
-            updateDisplay();
-        });
-        // Actions
-        function updateDisplay() {
-            var isChecked = $checkbox.is(':checked');
+					// Set the button's icon
+					$button.find('.state-icon')
+						.removeClass()
+						.addClass('state-icon ' + settings[$button.data('state')].icon);
 
-            // Set the button's state
-            $button.data('state', (isChecked) ? "on" : "off");
+					// Update the button's color
+					if (isChecked) {
+						$button
+							.removeClass('btn-default')
+							.addClass('btn-' + color + ' active');
+					}
+					else {
+						$button
+							.removeClass('btn-' + color + ' active')
+							.addClass('btn-default');
+					}
+				}
 
-            // Set the button's icon
-            $button.find('.state-icon')
-                .removeClass()
-                .addClass('state-icon ' + settings[$button.data('state')].icon);
+				// Initialization
+				function init() {
+					updateDisplay();
+					// Inject the icon if applicable
+					if ($button.find('.state-icon').length == 0) {
+						$button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+					}
+				}
+				init();
+			});
+				
+				$("#btndel").click(function(){
+					$(".btnchk").toggleClass("chkhidden");
+					$(".btnchk").siblings("input").prop("checked");
+					console.log($(".btnchk").siblings("input").is(":checked"));
+				}).click();
+		});
+		</script>
+		<script> <!--นำ code มาจาก bootsnipp.com---->
+			function showDiv() {
+			document.getElementById('welcomeDiv').style.display = "block";
+		}
+		</script>
+		<script>
+			$(document).ready(function(){
+			$("#mytextbox").on("keypress", function(event) {
 
-            // Update the button's color
-            if (isChecked) {
-                $button
-                    .removeClass('btn-default')
-                    .addClass('btn-' + color + ' active');
-            }
-            else {
-                $button
-                    .removeClass('btn-' + color + ' active')
-                    .addClass('btn-default');
-            }
-        }
+			// Disallow anything not matching the regex pattern (A to Z uppercase, a to z lowercase and white space)
+			// For more on JavaScript Regular Expressions, look here: https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions
+			var englishAlphabetAndWhiteSpace = /[A-Za-z ]/g;
+		   
+			// Retrieving the key from the char code passed in event.which
+			// For more info on even.which, look here: http://stackoverflow.com/q/3050984/114029
+			var key = String.fromCharCode(event.which);
+			
+			//alert(event.keyCode);
+			
+			// For the keyCodes, look here: http://stackoverflow.com/a/3781360/114029
+			// keyCode == 8  is backspace
+			// keyCode == 37 is left arrow
+			// keyCode == 39 is right arrow
+			// englishAlphabetAndWhiteSpace.test(key) does the matching, that is, test the key just typed against the regex pattern
+			 if (englishAlphabetAndWhiteSpace.test(key)) {
+				return true;
+			}
 
-        // Initialization
-        function init() {
+			// If we got this far, just return false because a disallowed key was typed.
+			return false;
+		});
 
-            updateDisplay();
-
-            // Inject the icon if applicable
-            if ($button.find('.state-icon').length == 0) {
-                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
-            }
-        }
-        init();
-    });
-		
-		$("#btndel").click(function(){
-			$(".btnchk").toggleClass("chkhidden");
-			$(".btnchk").siblings("input").prop("checked");
-			console.log($(".btnchk").siblings("input").is(":checked"));
-		}).click();
-});
-	</script>
-	<script> <!--นำ code มาจาก bootsnipp.com---->
-	function showDiv() {
-   document.getElementById('welcomeDiv').style.display = "block";
-}
-	</script>
-	<script>
-  $(document).ready(function(){
-  $("#mytextbox").on("keypress", function(event) {
-
-    // Disallow anything not matching the regex pattern (A to Z uppercase, a to z lowercase and white space)
-    // For more on JavaScript Regular Expressions, look here: https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions
-    var englishAlphabetAndWhiteSpace = /[A-Za-z ]/g;
-   
-    // Retrieving the key from the char code passed in event.which
-    // For more info on even.which, look here: http://stackoverflow.com/q/3050984/114029
-    var key = String.fromCharCode(event.which);
-    
-    //alert(event.keyCode);
-    
-    // For the keyCodes, look here: http://stackoverflow.com/a/3781360/114029
-    // keyCode == 8  is backspace
-    // keyCode == 37 is left arrow
-    // keyCode == 39 is right arrow
-    // englishAlphabetAndWhiteSpace.test(key) does the matching, that is, test the key just typed against the regex pattern
-	 if (englishAlphabetAndWhiteSpace.test(key)) {
-        return true;
-    }
-
-    // If we got this far, just return false because a disallowed key was typed.
-    return false;
-});
-
-$('#mytextbox').on("paste",function(e)
-{
-    e.preventDefault();
-});
-});
-  </script>
+		$('#mytextbox').on("paste",function(e)
+		{
+			e.preventDefault();
+		});
+		});
+		</script>
 	</head>
-	<body background="../../../img/white.jpg">
-	   <div class="container mt40">
-			<div class="col-md-3 col-xs-12 col-sm-12">
+	
+	<body background="../../../img/white.jpg"> <!--ส่วน body (เพิ่ม backgroundเข้าไปด้วย)-->
+	   <div class="container mt40"> <!-- container ใส่body ทั้งหมด--->
+			<div class="col-md-3 col-xs-12 col-sm-12"> <!--แบ่งส่วนออกเป็น column--->
 				<div class="col-md-12 col-xs-12 col-sm-12">
 					<center>
 						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../../photo/profile/<?echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a>
