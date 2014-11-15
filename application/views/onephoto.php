@@ -410,7 +410,8 @@ html, body { height: 100%;}
 				</div><!---กดตกลงเพื่อเลือกรูปไปหน้าหลัก-->"
 			}
 		}
-		<!-- Small modal --> <!--ส่วนที่ตัวเด้ง ตั้งรูปให้อยู่หน้าหลัก---> 
+		?>
+		<!-- Small modal --> <!--ส่วนที่ตัวเด้ง ตั้งรูปใหอยู่หน้าหลัก--->
 		<div class='modal fade bs-example-modal-lg5' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
 			<div class='modal-dialog modal-sm'>
 				<div class='modal-content'>
