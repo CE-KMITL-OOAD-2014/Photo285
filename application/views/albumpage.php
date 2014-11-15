@@ -109,11 +109,13 @@
 		<script src="../../../js/font-awesome.min.css"></script>
 		<script src="../../../js/ekko-lightbox.js"></script> <!--lightbox--->
 		<script>
+		var checkname = false;
 		$(document).ready(function () {
 		$("#mytextbox").keyup(validatealbumname);
 });
 
 function validatealbumname(){
+		
 		var regex = /^[a-zA-Z0-9]{6,12}$/;
 		var text = $("#mytextbox").val();
 			if(regex.test(text)){
@@ -123,7 +125,7 @@ function validatealbumname(){
 			else{
 				$("#mytextbox").css( "background-color", "#F78181" );
 				checkname = false;	
-				$("#namalbumsummit").prop("type", "button");
+				//$("#namalbumsummit").prop("type", "button");
 			}
 	}
 		</script>
