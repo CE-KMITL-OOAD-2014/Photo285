@@ -285,7 +285,7 @@ html, body { height: 100%;}
 	</script>
 	
 	</head>
-	<body>
+	<body background="../../../../../img/wood.jpg">
 		<!-- Modal -->
 		<div class="modal img-modal" id="photoModal">
 			<div class="modal-dialog modal-lg">
