@@ -355,7 +355,7 @@ html, body { height: 100%;}
 						<button type='button' class='close' data-dismiss='modal' aria-hidden='true'></button>
 						<h4 class='modal-title' id='mySmallModalLabel'>เลือกรูปให้อยู่ในหน้าหลัก :</h4>  
 					</div>
-					<form action='../../../../photodb/setmainphoto/<? echo "".$this->uri->segment(3).".jpg"; ?>' method='POST' enctype='multipart/form-data' >					
+					<form action='../../../../photodb/setmainphoto/<? echo "".$this->uri->segment(3); ?>' method='POST' enctype='multipart/form-data' >					
 						<div class='radio'>
 							<label>
 								<input type='radio' name='setmain' id='optionsRadios1' value='1'>
