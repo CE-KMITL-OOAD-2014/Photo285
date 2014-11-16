@@ -31,7 +31,7 @@ class Member extends CI_Controller {
 		if($check==1){
 			$data = array('ID'=>$ID);
 			$this->load->model('member_model','member_model');
-			$this->member_model->login($ID);
+			$this->member_model->login($data);
 		}
 		else {
 			echo "<script language='javascript'>
