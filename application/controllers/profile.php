@@ -13,7 +13,7 @@ class Profile extends CI_Controller {
 			if($check==1){ // เช็คว่าใส่ profile ถูกไหม
 				$id = $this->uri->segment(3); // ถ้ามี / อันที่ 3 เช่น (web.net/profile/show/admin) user คือ admin ก็เอามาเก็บในตัวแปล id
 	
-				//loadรายละเอียดส่วนตัวต่างๆ
+				//loadรายละเอียดส่วนตัวต่างๆ ชื่อ อีเมลล์ ข่าวสาร ประวัติส่วนตัว
 				
 				$this->load->model('member_model','member_model');
 				$name = $this->member_model->getName($id);
@@ -21,14 +21,12 @@ class Profile extends CI_Controller {
 				$detail = $this->member_model->getDetail($id);
 				$resume = $this->member_model->getResume($id);
 				
-				//load photo หน้าหลัก
+				//load ชื่อ photo ที่จะให้แสดงผลในหน้าหลัก 
 				$this->load->model('photo_model','photo_model');
 				$photom1 = $this->photo_model->getphotom1($id);
 				$photom2 = $this->photo_model->getphotom2($id);
 				$photom3 = $this->photo_model->getphotom3($id);
 				$photom4 = $this->photo_model->getphotom4($id);
-				
-				
 				
 				$data = array('name' => $name , 'id' => $id , 'email' => $email , 'detail' => $detail , 'resume' => $resume , 'photom1' => $photom1 , 'photom2' => $photom2 , 'photom3' => $photom3 ,'photom4' => $photom4);
 				
