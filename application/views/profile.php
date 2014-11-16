@@ -168,9 +168,22 @@
 			</div>
 			<div class="col-md-9 col-xs-0 col-sm-0"> <!---ส่วนที่ col แสดงรูปภาพที่ต้องการแสดง-->
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="../../../../onephoto/show/<? echo"".$photom1 ?>" class="thumbnail" >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 1--->
-						<img src="../../../../photo/<?echo"".$photom1.".jpg";?>" alt="..."width='220' height='220'>
-					</a>
+					<?
+					if($photom1==0){
+						echo "
+							<a href='#' class='thumbnail'>
+							<img src='../../../../photo/".$photom1.".jpg' alt='...'width='220' height='220'>
+							</a>
+						";
+					}
+					else{
+						echo "
+							<a href='../../../../onephoto/show/".$photom1."' class='thumbnail' >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 1--->
+							<img src='../../../../photo/".$photom1.".jpg' alt='...'width='220' height='220'>
+							</a>
+						";
+					}
+					?>
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-3">
 					<a href="../../../../onephoto/show/<? echo"".$photom2 ?>" class="thumbnail">  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 2--->

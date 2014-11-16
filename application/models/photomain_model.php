@@ -1,75 +1,54 @@
 <?php
 	class Photomain_model extends CI_Model{
-	/*
-		function addPhoto($data){
-			$this->db->insert('picture',$data);	
-		}	
-		
-		function addAlbum($data){
-			$this->db->insert('album',$data);
-		
-		}
-		
-		function getPhoto($dataID){
-			$ID = $dataID['ID'];
-			$show = $this->db->where('ID',$ID)->get('picture');
-			return $show;
-		}
-		
-		function getAlbum($albumID){
-			$ID = $albumID['ID'];
-			$show = $this->db->where('ID',$ID)->get('album');
-			return $show;
-		}
-		*/
-		function number(){
+
+		function number(){ //ไว้ return ค่าล่าสุดของ idphoto
 			$this->db->select_max('ID');
 			$ID = $this->db->get('picture');
 			return $ID->result_array();
 		}
 		
 		function getphotom1($iduser){ // รูปโชว์หน้าหลักรูปแรก
-			$check = $this->db->where('nameuser',$iduser)->where('showm1',1)->count_all_results('picture');
-				if($check == 1){
+			$check = $this->db->where('nameuser',$iduser)->where('showm1',1)->count_all_results('picture'); //เก็บค่าว่ามีการเซตรูปโชว์หน้าหลักไว้ไหม
+				if($check == 1){ //มีการ set รูปโชว์หน้าหลักแล้ว
 					$show = $this->db->where('nameuser',$iduser)->where('showm1',1)->get('picture');
 					$show = $show->result_array();
 					foreach($show as $row) $show = $row['ID'];
-					return $show;
+					return $show; // ส่งค่า idphoto ของรูปที่มีการเซตโชว์หน้าหลักกลับไป
 				}
-				else return 0;
+				else return 0; // ยังไม่มีการ set รูปโชว์หน้าหลัก
 		}
 		
 		function getphotom2($iduser){ //รูปโชว์หน้าหลักรูปสอง
-			$check = $this->db->where('nameuser',$iduser)->where('showm2',1)->count_all_results('picture');
-				if($check == 1){
+			$check = $this->db->where('nameuser',$iduser)->where('showm2',1)->count_all_results('picture'); //เก็บค่าว่ามีการเซตรูปโชว์หน้าหลักไว้ไหม
+				if($check == 1){ //มีการ set รูปโชว์หน้าหลักแล้ว
 					$show = $this->db->where('nameuser',$iduser)->where('showm2',1)->get('picture');
 					$show = $show->result_array();
 					foreach($show as $row) $show = $row['ID'];
-					return $show;
+					return $show; // ส่งค่า idphoto ของรูปที่มีการเซตโชว์หน้าหลักกลับไป
 				}
-				else return 0;
+				else return 0; // ยังไม่มีการ set รูปโชว์หน้าหลัก
 		}
 		
 		function getphotom3($iduser){ //รูปโชว์หน้าหลักรูปสาม
-			$check = $this->db->where('nameuser',$iduser)->where('showm3',1)->count_all_results('picture');
-				if($check == 1){
+			$check = $this->db->where('nameuser',$iduser)->where('showm3',1)->count_all_results('picture'); //เก็บค่าว่ามีการเซตรูปโชว์หน้าหลักไว้ไหม
+				if($check == 1){ //มีการ set รูปโชว์หน้าหลักแล้ว
 					$show = $this->db->where('nameuser',$iduser)->where('showm3',1)->get('picture');
 					$show = $show->result_array();
 					foreach($show as $row) $show = $row['ID'];
-					return $show;
+					return $show; // ส่งค่า idphoto ของรูปที่มีการเซตโชว์หน้าหลักกลับไป
 				}
-				else return 0;
+				else return 0; // ยังไม่มีการ set รูปโชว์หน้าหลัก
 		}
 		
 		function getphotom4($iduser){
-			$check = $this->db->where('nameuser',$iduser)->where('showm4',1)->count_all_results('picture');
-				if($check == 1){
+			$check = $this->db->where('nameuser',$iduser)->where('showm4',1)->count_all_results('picture'); //เก็บค่าว่ามีการเซตรูปโชว์หน้าหลักไว้ไหม
+				if($check == 1){ //มีการ set รูปโชว์หน้าหลักแล้ว
 					$show = $this->db->where('nameuser',$iduser)->where('showm4',1)->get('picture');
 					$show = $show->result_array();
 					foreach($show as $row) $show = $row['ID'];
-					return $show;
+					return $show; // ส่งค่า idphoto ของรูปที่มีการเซตโชว์หน้าหลักกลับไป
 				}
-				else return 0;
+				else return 0; // ยังไม่มีการ set รูปโชว์หน้าหลัก
 		}
 		
 		function setphotom1($idphoto){ // set mainphoto อันที่ 1
