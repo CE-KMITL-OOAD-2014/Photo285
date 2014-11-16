@@ -2,8 +2,8 @@
 	class Like_model extends CI_Model{
 		function addlike($data){ //จัดเก็บ like ลง database
 			$check = $this->db->where('idphoto',$data['idphoto'])->where('nameuser',$data['iduser'])->count_all_results('likedb'); // จัดเก็บค่าที่เช็คว่า user เคยทำการกด like รูปภาพนี้แล้วหรือยัง
-			if($check==1){ // ถ้าเคยกดแล้วให้กลับไปแสดงผลหน้าเดิมไม่มีอะไรเปลี่ยนแปลง
-				$this->db->delete('likedb', array('nameuser' => $data['iduser'],'idphoto'=>$data['idphoto'])); // ส่งค่าเข้าไปจัดเก็บใน database
+			if($check==1){ // ถ้าเคยกดแล้วให้ทำการ unlike ออก
+				$this->db->delete('likedb', array('nameuser' => $data['iduser'],'idphoto'=>$data['idphoto'])); // ส่งค่าเข้าไปจัดการลบประวัติการ like ออก
 				echo "<script language='javascript'>
 						window.location.href = '../../../../onephoto/show/".$data['idphoto']."/';
 					</script>";
