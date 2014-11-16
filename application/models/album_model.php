@@ -9,7 +9,7 @@
 			foreach($sID as $row) $sID = $row['ID']+1;
 			$datadb = array('ID'=>$sID,'nameuser'=>$data['nameuser'],'namealbum'=>$data['namealbum']);
 			$this->db->insert('album',$datadb);
-			echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
+			echo"<script language='javascript'>window.location.href = 'show/".$data['nameuser']."';</script>";
 	
 		}
 		
