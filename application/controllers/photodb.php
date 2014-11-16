@@ -18,9 +18,6 @@ class Photodb extends CI_Controller {
 		if($this->upload->do_upload()){ // ถ้าทำการ upload สำเร็จ
 			$ID = $this->session->all_userdata();
 			echo "
-			    <div class='progress progress-striped active'>
-				<div class='bar' style='width: 40%;'></div>
-				</div>
 			<script language='javascript'>
 					alert('Upload Complete');
 					window.location.href = '../../profile/show/".$ID['ID']."';

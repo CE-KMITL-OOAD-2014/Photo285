@@ -179,6 +179,9 @@
 							Select File To Upload:<br />
 							<input type="file" name="userfile"  />
 							<br /><br />
+							<div class='progress progress-striped active'>
+							<div class='bar' style='width: 40%;'></div>
+							</div>
 							<input type="submit" name="submit" value="Upload" class="btn btn-success" />
 						</form>
 					</div>
