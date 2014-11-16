@@ -60,7 +60,9 @@ class Photodb extends CI_Controller {
 					alert('Upload Complete');
 					window.location.href = '../../../../photo/show/".$ID['ID']."/".$this->uri->segment(3)."';
 				</script>";
-			$this->db->insert('picture',$data); // ૿ŧ DB
+			$this->load->model('updelphoto_model','updelphoto_model');
+			$this->updelphoto_model->upphoto($data);
+			
 		}
 		else{
 			echo "<script language='javascript'>
