@@ -1,14 +1,14 @@
 <?php
 	class Album_model extends CI_Model{
 		
-		public function create(){ // create album
+		public function create($data){ // create album
 			
 			$this->db->select_max('ID');
 			$sID = $this->db->get('album');
 			$sID = $sID->result_array();
 			foreach($sID as $row) $sID = $row['ID']+1;
-			$data = array('ID'=>$sID,'nameuser'=>$nameuser,'namealbum'=>$namealbum);
-			$this->db->insert('album',$data);
+			$datadb = array('ID'=>$sID,'nameuser'=>$data['nameuser'],'namealbum'=>$data['namealbum']);
+			$this->db->insert('album',$datadb);
 			echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
 	
 		}
