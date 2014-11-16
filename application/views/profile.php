@@ -234,14 +234,14 @@
 					if($photom4==0){ //กรณีที่ยังไม่มีการ set รูปหน้าหลัก
 						echo "
 							<a href='#' class='thumbnail'> <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 4--->
-							<img src='../../../../photo/".$photom4.".jpg' alt='...'width='220' height='220'>
+							<img src='../../../../photo/".$photom4.".jpg' alt='...'width='500' height='500'>
 							</a>
 						";
 					}
 					else{ //กรณีที่มีการ set รูปหน้าหลักแล้ว
 						echo "
 							<a href='../../../../onephoto/show/".$photom4."' class='thumbnail' >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 4--->
-							<img src='../../../../photo/".$photom4.".jpg' alt='...'width='220' height='220'>
+							<img src='../../../../photo/".$photom4.".jpg' alt='...'width='500' height='500'>
 							</a>
 						";
 					}
