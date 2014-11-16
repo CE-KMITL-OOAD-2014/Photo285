@@ -340,7 +340,7 @@ html, body { height: 100%;}
 												  <img src='../../../../photo/profile/".$row['nameuser'].".jpg'>
 												</div>
 												<div class='comment-text'>
-													<strong><a href=''>".$row['nameuser']."</a></strong>
+													<strong><a href='../../../../profile/show/".$row['nameuser']."'>".$row['nameuser']."</a></strong>
 													<p>".$row['comment']."</p> 
 												</div>
 											</li>";
