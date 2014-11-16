@@ -5,6 +5,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('mainsite'); //เรียกใช้ mainsite เป็นหน้าเว็บหลัก
+		$this->load->view('footer');
 	}
 }
 

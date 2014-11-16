@@ -13,7 +13,7 @@ class Photo extends CI_Controller {
 		$data = array('name' => $name , 'id' => $id , 'email' => $email, 'resume' => $resume , 'albumname' => $albumname);
 		$this->load->view('navbar');
 		$this->load->view('photopageall',$data);
-		
+		$this->load->view('footer');
 	}	
 }
 

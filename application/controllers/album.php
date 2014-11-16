@@ -21,6 +21,7 @@ class Album extends CI_Controller {
 				$data = array('name' => $name , 'id' => $id , 'email' => $email, 'resume' => $resume);
 				$this->load->view('navbar');
 				$this->load->view('albumpage',$data); //ส่งค่าต่างๆไปโชว์ที่ albumpage
+				$this->load->view('footer');
 			}
 			else echo"<script language='javascript'>window.location.href = '../../';</script>"; //ถ้า profile ไม่ถูก redirect ไปหน้าแรก
 		}
