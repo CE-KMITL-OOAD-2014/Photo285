@@ -167,16 +167,18 @@
 				</div>				
 			</div>
 			<div class="col-md-9 col-xs-0 col-sm-0"> <!---ส่วนที่ col แสดงรูปภาพที่ต้องการแสดง-->
+				
+				<!--รูปที่ 1 -->
 				<div class="col-md-4 col-xs-6 col-sm-3">
 					<?
-					if($photom1==0){
+					if($photom1==0){ //กรณีที่ยังไม่มีการ set รูปหน้าหลัก
 						echo "
-							<a href='#' class='thumbnail'>
+							<a href='#' class='thumbnail'> <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 1--->
 							<img src='../../../../photo/".$photom1.".jpg' alt='...'width='220' height='220'>
 							</a>
 						";
 					}
-					else{
+					else{ //กรณีที่มีการ set รูปหน้าหลักแล้ว
 						echo "
 							<a href='../../../../onephoto/show/".$photom1."' class='thumbnail' >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 1--->
 							<img src='../../../../photo/".$photom1.".jpg' alt='...'width='220' height='220'>
@@ -185,20 +187,65 @@
 					}
 					?>
 				</div>
+				
+				<!--รูปที่ 2 -->
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="../../../../onephoto/show/<? echo"".$photom2 ?>" class="thumbnail">  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 2--->
-						<img src="../../../../photo/<?echo"".$photom2.".jpg";?>" alt="..."width='220' height='220'>
-					</a>
+					<?
+					if($photom2==0){ //กรณีที่ยังไม่มีการ set รูปหน้าหลัก
+						echo "
+							<a href='#' class='thumbnail'> <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 2--->
+							<img src='../../../../photo/".$photom2.".jpg' alt='...'width='220' height='220'>
+							</a>
+						";
+					}
+					else{ //กรณีที่มีการ set รูปหน้าหลักแล้ว
+						echo "
+							<a href='../../../../onephoto/show/".$photom2."' class='thumbnail' >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 2--->
+							<img src='../../../../photo/".$photom2.".jpg' alt='...'width='220' height='220'>
+							</a>
+						";
+					}
+					?>
 				</div>
+				
+				<!--รูปที่ 3 -->
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="../../../../onephoto/show/<? echo"".$photom3 ?>" class="thumbnail" >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 3--->
-						<img src="../../../../photo/<?echo"".$photom3.".jpg";?>" alt="..." width='220' height='220'>
-					</a>
+					<?
+					if($photom3==0){ //กรณีที่ยังไม่มีการ set รูปหน้าหลัก
+						echo "
+							<a href='#' class='thumbnail'> <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 3--->
+							<img src='../../../../photo/".$photom3.".jpg' alt='...'width='220' height='220'>
+							</a>
+						";
+					}
+					else{ //กรณีที่มีการ set รูปหน้าหลักแล้ว
+						echo "
+							<a href='../../../../onephoto/show/".$photom3."' class='thumbnail' >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 3--->
+							<img src='../../../../photo/".$photom3.".jpg' alt='...'width='220' height='220'>
+							</a>
+						";
+					}
+					?>
 				</div>
+				
+				<!--รูปที่ 4 -->
 				<div class="col-md-12 col-xs-6 col-sm-3">
-					<a href="../../../../onephoto/show/<? echo"".$photom4 ?>" class="thumbnail" >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 4--->
-						<img src="../../../../photo/<?echo"".$photom4.".jpg";?>" alt="..."width='500' height='500'>
-					</a>
+					<?
+					if($photom4==0){ //กรณีที่ยังไม่มีการ set รูปหน้าหลัก
+						echo "
+							<a href='#' class='thumbnail'> <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 4--->
+							<img src='../../../../photo/".$photom4.".jpg' alt='...'width='220' height='220'>
+							</a>
+						";
+					}
+					else{ //กรณีที่มีการ set รูปหน้าหลักแล้ว
+						echo "
+							<a href='../../../../onephoto/show/".$photom4."' class='thumbnail' >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 4--->
+							<img src='../../../../photo/".$photom4.".jpg' alt='...'width='220' height='220'>
+							</a>
+						";
+					}
+					?>
 				</div>
 			</div>	
 		</div>
