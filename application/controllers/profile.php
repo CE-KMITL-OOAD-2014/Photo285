@@ -32,7 +32,6 @@ class Profile extends CI_Controller {
 				
 				$this->load->view('navbar');
 				$this->load->view('profile',$data);
-				$this->load->view('footer');
 			}
 			else echo"<script language='javascript'>window.location.href = '../../';</script>"; //ถ้า profile ไม่ถูก redirect ไปหน้าแรก
 
