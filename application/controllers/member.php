@@ -42,8 +42,8 @@ class Member extends CI_Controller {
 	}
 	
 	public function logout(){
-		$this->session->sess_destroy();
-		echo"<script language='javascript'>window.location.href = '../../';</script>";
+		$this->load->model('member_model','member_model');
+		$this->member_model->logout();
 	}
 	
 	public function editProfile(){

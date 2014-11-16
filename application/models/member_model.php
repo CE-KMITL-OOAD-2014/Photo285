@@ -10,6 +10,11 @@
 			echo"<script language='javascript'>window.location.href = '../profile/show/".$data['ID']."';</script>"; //redirect หน้าหลัง login
 		}
 		
+		function logout(){
+			$this->session->sess_destroy();
+			echo"<script language='javascript'>window.location.href = '../../';</script>";
+		}
+		
 		function editprofile($data){
 			$ID = $this->session->all_userdata();
 			$this->db->where('ID', $ID['ID']);
