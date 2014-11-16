@@ -15,7 +15,7 @@
 		
 		public function delete($data){ // delete album
 			$this->db->delete('album', array('nameuser' => $data['nameuser'],'namealbum'=>$data['namealbum']));
-			echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
+			echo"<script language='javascript'>window.location.href = 'show/".$data['nameuser']."';</script>";
 		}
 			
 		
