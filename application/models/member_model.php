@@ -15,6 +15,7 @@
 			echo"<script language='javascript'>window.location.href = '../../';</script>";
 		}
 		
+		
 		function editprofile($data){
 			$ID = $this->session->all_userdata();
 			$this->db->where('ID', $ID['ID']);
