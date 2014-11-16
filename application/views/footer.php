@@ -16,26 +16,20 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <style>
-  #footerBar {
-    height: 70px;
-    background: #F5FFFA	
-}
-
-  </style>
+ 
   <body >
 	<br>
 	<br>
     <footer id="footerBar">
 		<div class="col-md-10 col-sm-10 col-xs-10"></div>
 		<div class="col-md-2 col-sm-2 col-xs-2">
-			<em><strong><center><label>special thanks<label></center></strong></em>
+			<font color="white"><em><strong><center><label>special thanks<label></center></strong></em></font>
 			<div class="col-md-2 col-sm-2 col-xs-2">
-				<label> credit: </label>
+				<font color="white"><label> credit: </label></font>
 			</div>
 			<div class="col-md-10 col-sm-10 col-xs-10">
-				<a href="http://getbootstrap.com/">http://getbootstrap.com/ </a>
-				<a href="http://bootsnipp.com/">http://bootsnipp.com/</a>	
+				<font color="white"><a href="http://getbootstrap.com/">http://getbootstrap.com/ </a></font>
+				<font color="white"><a href="http://bootsnipp.com/">http://bootsnipp.com/</a></font>
 			</div>
 		</div>
 	</footer>
