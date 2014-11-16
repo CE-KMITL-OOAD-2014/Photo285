@@ -120,9 +120,10 @@
 					<form action="../../photodb/uploadprofile" method="POST" enctype="multipart/form-data" >
 						Select File To Upload:<br />
 						<input type="file" name="userfile"  />
-						<br />
+						<hr>
 						<em><label>Picture must be small than 2000px*2000px</label></em><br>
-						<em><label>Type : JPG || PNG ||JPEG</label></em>
+						<em><label>Type : JPG || PNG ||JPEG</label></em><br>
+						
 						<input type="submit" name="submit" value="Upload" class="btn btn-success" />
 					</form>
 				</div>
