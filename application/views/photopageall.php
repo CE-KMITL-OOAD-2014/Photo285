@@ -178,10 +178,9 @@
 						<form action="../../../../photodb/upphoto/<?echo "".$this->uri->segment(4) ?>" method="POST" enctype="multipart/form-data" >
 							Select File To Upload:<br />
 							<input type="file" name="userfile"  />
-							<br /><br />
-							<div class='progress progress-striped active'>
-							<div class='bar' style='width: 40%;'></div>
-							</div>
+							<hr>
+						<em><label>Picture must be small than 2000px*2000px</label></em><br>
+						<em><label>Type : JPG || PNG ||JPEG</label></em><br>
 							<input type="submit" name="submit" value="Upload" class="btn btn-success" />
 						</form>
 					</div>
