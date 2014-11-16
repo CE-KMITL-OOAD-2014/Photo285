@@ -121,6 +121,8 @@
 						Select File To Upload:<br />
 						<input type="file" name="userfile"  />
 						<br />
+						<em><label>Picture must be small than 2000px*2000px</label></em><br>
+						<em><label>Type : JPG || PNG ||JPEG</label></em>
 						<input type="submit" name="submit" value="Upload" class="btn btn-success" />
 					</form>
 				</div>
