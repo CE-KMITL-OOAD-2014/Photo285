@@ -8,7 +8,6 @@
     <!-- Bootstrap -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
 	<style> <!--ส่วนตั้งค่ารูปนำโค้ดมาจาก bootsnipp.com-->
-	<!--ตั้งค่ารูป ใน dynamic tile--->
 .dynamicTile .col-sm-2.col-xs-4{
     padding:5px;
 }
@@ -17,7 +16,7 @@
     padding:5px;
 }
 
-<!--ส่วนพื้นหลังของแต่ละ title-->
+
 #tile1{
     background: rgb(0,172,238);
 }
@@ -58,7 +57,7 @@
     background: rgb(71,193,228);
 ;
 }
-<!---ตั้งค่า tilecaption-->
+
 .tilecaption{
     position: relative;
     top: 100%;
