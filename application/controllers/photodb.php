@@ -89,21 +89,21 @@ class Photodb extends CI_Controller {
 		$setmain = $_POST["setmain"];
 		
 		//set main photo 
-		$this->load->model('photo_model','photo_model');
+		$this->load->model('photomain_model','photomain_model');
 		if($setmain == 1){
-			$this->photo_model->setphotom1($this->uri->segment(3));
+			$this->photomain_model->setphotom1($this->uri->segment(3));
 		}
 		
 		if($setmain == 2){
-			$this->photo_model->setphotom2($this->uri->segment(3));
+			$this->photomain_model->setphotom2($this->uri->segment(3));
 		}
 		
 		if($setmain == 3){
-			$this->photo_model->setphotom3($this->uri->segment(3));
+			$this->photomain_model->setphotom3($this->uri->segment(3));
 		}
 		
 		if($setmain == 4){
-			$this->photo_model->setphotom4($this->uri->segment(3));
+			$this->photomain_model->setphotom4($this->uri->segment(3));
 		}
 		
 	}

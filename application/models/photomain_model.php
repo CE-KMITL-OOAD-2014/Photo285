@@ -1,5 +1,6 @@
 <?php
-	class Photo_model extends CI_Model{
+	class Photomain_model extends CI_Model{
+	/*
 		function addPhoto($data){
 			$this->db->insert('picture',$data);	
 		}	
@@ -20,7 +21,7 @@
 			$show = $this->db->where('ID',$ID)->get('album');
 			return $show;
 		}
-		
+		*/
 		function number(){
 			$this->db->select_max('ID');
 			$ID = $this->db->get('picture');
