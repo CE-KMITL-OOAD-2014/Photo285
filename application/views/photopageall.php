@@ -149,7 +149,7 @@
 	</head>
 	<body background="../../../../img/white.jpg">
 	   <div class="container">
-			<div class="col-md-3 col-xs-12 col-sm-12">
+			<div class="col-md-3 col-xs-12 col-sm-12"> <!--ส่วนฝั่งซ้าย ช้อมูลผู้ใช้งาน-->
 				<div class="col-md-12 col-xs-12 col-sm-12">
 					<center>		
 						<a href="#aboutModal" data-toggle="modal" data-target="#myModal"><!--เปลี่ยนเป็นรูปตาม userprofile--><img src="../../../../photo/profile/<?echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" class="img-circle"></a>
@@ -160,10 +160,10 @@
 					<center>
 						<br>
 						<?
-						if($this->session->userdata('ID')){
-							$ID = $this->session->all_userdata();
+						if($this->session->userdata('ID')){ //ถ้าล็อกอินอยู่
+							$ID = $this->session->all_userdata(); //เก็บชื่อของคนที่ล็อกอินอยู่
 							$ID = $ID['ID'];
-							if($ID == $this->uri->segment(3)) echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-sm'>Upload photo</a>";
+							if($ID == $this->uri->segment(3)) echo "<a class='btn btn-primary ' data-toggle='modal' data-target='.bs-example-modal-sm'>Upload photo</a>"; 
 						}
 						?>
 					</center>
@@ -190,19 +190,19 @@
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-							<h4 class="modal-title" id="myModalLabel"><? echo "".$id; ?></h4>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button> <!--ปุ่มกดปิด--->
+							<h4 class="modal-title" id="myModalLabel"><? echo "".$id; ?></h4>   <!--ชื่อผู้ใช้-->
 						</div>
 						<div class="modal-body">
 							<center>
 								<img src="../../../../photo/profile/<?echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
-									<h3 class="media-heading"><? echo "".$name; ?> </h3> <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-								<span><strong>Email: </strong></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
-									<span><? echo "".$email; ?></span>  <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+									<h3 class="media-heading"><? echo "".$name; ?> </h3> <!--ช้อมูลผู้ใช้งาน---->
+								<span><strong>Email: </strong></span>  <!--อีเมล-->
+									<span><? echo "".$email; ?></span>  <!--อีเมล-->
 							</center>
 							<hr>
 							<center>
-								<p class="text-left"><strong>ประวัติส่วนตัว: </strong><br><? echo "".$resume; ?></p>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+								<p class="text-left"><strong>ประวัติส่วนตัว: </strong><br><? echo "".$resume; ?></p>   <!--ประวัติส่วนตัว-->
 								<br>
 							</center>
 						</div>
@@ -217,11 +217,10 @@
 		
 			<div class="col-md-9 col-xs-12 col-sm-12"> <!---ส่วนแสดงรูปในอัลบั้ม-->
 				<div class="container">
-					<h1 class="muted"><? echo "".$albumname; ?></h1>
+					<h1 class="muted"><? echo "".$albumname; ?></h1> <!--ชื่ออัลบั้ม-->
 					<hr>
 					
 					<div class='col-md-9 col-xs-12 col-sm-12 '> 
-						<span onclick='javascript:$('#photoModal').modal('toggle');'> <!--ถ้าคลิก จะเชื่อมไป photomodal เด้ง comment&like-->
 							<?
 							$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
 							if($this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->count_all_results('picture')==0) //ตรวจสอบว่า มีรูปไหม? ถ้าไม่มี ทำ if
@@ -241,7 +240,6 @@
 							";
 							}
 							?>
-						</span>
 					</div>
 				</div>
 			</div>	
