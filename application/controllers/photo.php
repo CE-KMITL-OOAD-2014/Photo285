@@ -3,16 +3,10 @@
 class Photo extends CI_Controller {
 
 	public function show(){
-		//echo $this->uri->segment(3); // nameuser
-		//echo $this->uri->segment(4); // namealbum
-		//$showpic = $this->db->where('nameuser',$this->uri->segment(3))->where('namealbum',$this->uri->segment(4))->get('picture');
-		//foreach($showpic->result_array() as $row){
-		//	echo "".$row['ID']." ";
-		//}
 		$id = $this->uri->segment(3); // ถ้ามี / อันที่ 3 เช่น (web.net/profile/show/admin) user คือ admin ก็เอามาเก็บในตัวแปล id
-		$albumname = $this->uri->segment(4);	
+		$albumname = $this->uri->segment(4); //จัดเก็บชื่อ album จาก segment 4
 		//load all
-		$this->load->model('member_model');
+		$this->load->model('member_model'); //ดึงรายละเอียดของโปรไฟล์ต่างๆจาก member_model
 		$name = $this->member_model->getName($id);
 		$email = $this->member_model->getEmail($id);
 		$resume = $this->member_model->getResume($id);

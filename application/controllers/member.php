@@ -29,10 +29,9 @@ class Member extends CI_Controller {
 		$pass = md5($_POST["pass"]);
 		$check = $this->db->where('ID',$ID)->where('pass',$pass)->count_all_results('account');
 		if($check==1){
-			$newdata = array('ID' => $ID,'logged_in' => TRUE);
-			$this->session->set_userdata($newdata);
-			echo"<script language='javascript'>window.location.href = '../profile/show/".$ID."';</script>"; //redirect หน้าหลัง login
-			
+			$data = array('ID'=>$ID);
+			$this->load->model('member_model','member_model');
+			$this->member_model->login($ID);
 		}
 		else {
 			echo "<script language='javascript'>

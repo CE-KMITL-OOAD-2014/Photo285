@@ -4,6 +4,12 @@
 			$this->db->insert('account',$data);	
 		}	
 		
+		function login($data){
+			$newdata = array('ID' => $data['ID'],'logged_in' => TRUE);
+			$this->session->set_userdata($newdata);
+			echo"<script language='javascript'>window.location.href = '../profile/show/".$data['ID']."';</script>"; //redirect หน้าหลัง login
+		}
+		
 		function editprofile($data){
 			$ID = $this->session->all_userdata();
 			$this->db->where('ID', $ID['ID']);
