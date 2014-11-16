@@ -123,8 +123,7 @@
 						<hr>
 						<em><label>Picture must be small than 2000px*2000px</label></em><br>
 						<em><label>Type : JPG || PNG ||JPEG</label></em><br>
-						
-						<input type="submit" name="submit" value="Upload" class="btn btn-success" />
+						<center><input type="submit" name="submit" value="Upload" class="btn btn-success" /></center>
 					</form>
 				</div>
 			</div>
