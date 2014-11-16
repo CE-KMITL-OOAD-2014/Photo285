@@ -13,10 +13,8 @@
 	
 		}
 		
-		public function delete(){ // delete album
-			$checkdelete = $_POST["checkdelete"];
-			$ID = $this->session->all_userdata();
-			$this->db->delete('album', array('nameuser' => $ID['ID'],'namealbum'=>$checkdelete));
+		public function delete($data){ // delete album
+			$this->db->delete('album', array('nameuser' => $data['nameuser'],'namealbum'=>$data['namealbum']));
 			echo"<script language='javascript'>window.location.href = 'show/".$ID['ID']."';</script>";
 		}
 			
