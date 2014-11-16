@@ -286,36 +286,36 @@ html, body { height: 100%;}
 	
 	</head>
 	<body background="../../../../../img/wood.jpg">
-		<!-- Modal -->
+		<!-- Modal หน้าดูรูป-->
 		<div class="modal img-modal" id="photoModal">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-body">
 						<div class="col-md-8 col-sm-8 col-xs-8 modal-image">
-							<img class="img-responsive " src="../../../../photo/<? echo "".$this->uri->segment(3).".jpg"; ?>">        
+							<img class="img-responsive " src="../../../../photo/<? echo "".$this->uri->segment(3).".jpg"; ?>"> <!--รูปที่กดดู--->       
 							
 						</div>
 						<div class="col-md-4 col-sm-4 col-xs-4 modal-meta">
 							<div class="modal-meta-top">
-								<a href="../../../../" class="close" ><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+								<a href="../../../../" class="close" ><span aria-hidden="true">×</span><span class="sr-only">Close</span></button> <!--ปุ่มกดปิด-->
 								<div class="img-poster clearfix">
-									<a href="../../../../profile/show/<? echo "".$idprofile; ?>"><img class="img-circle" src="../../../../photo/profile/<? echo "".$idprofile.".jpg"; ?>"/><!--รูปของเจ้าของภาพ--></a>
-									<strong><a href="../../../../profile/show/<? echo "".$idprofile; ?>"><? echo "".$idprofile; ?></a></strong>
-									<?if($this->session->userdata('ID')){
-										$ID = $this->session->all_userdata();
-										$checklike = $this->db->where('idphoto',$this->uri->segment(3))->where('nameuser',$ID['ID'])->count_all_results('likedb');
+									<a href="../../../../profile/show/<? echo "".$idprofile; ?>"><img class="img-circle" src="../../../../photo/profile/<? echo "".$idprofile.".jpg"; ?>"/></a><!--รูปของเจ้าของภาพ-->
+									<strong><a href="../../../../profile/show/<? echo "".$idprofile; ?>"><? echo "".$idprofile; ?></a></strong> <!---ชื่อเจ้าของรูปภาพ-->
+									<?if($this->session->userdata('ID')){ //ถ้า log in อยู่
+										$ID = $this->session->all_userdata(); 
+										$checklike = $this->db->where('idphoto',$this->uri->segment(3))->where('nameuser',$ID['ID'])->count_all_results('likedb'); //ส่วนตรวจสอบ LIKE
 										if($checklike==0){
 											echo"<a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-default btn-md' '>
 													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true'>  ".$numlike."</span>
 												</a>";
 										}
-										else {
+										else { 
 											echo"<a href='../../../../like/sentlike/".$ID['ID']."/".$this->uri->segment(3)."' class='btn btn-info btn-md' '>
 													<span class='glyphicon glyphicon-thumbs-up'  aria-hidden='true' style='color:white'>  ".$numlike."</span>
 												</a>";
 										}
 										
-										if($ID['ID']==$idprofile){
+										if($ID['ID']==$idprofile){ //ID เจ้าของรูป ตรงกับไอดีที่จะใช้ฟังก์ชันนี้ไหม? (ลบ-เลือกรูปหน้าหลัก)
 											echo"<button class='btn btn-default btn-md' data-toggle='modal' data-target='.bs-example-modal-lg5'>
 													<span class='glyphicon glyphicon-trash'  aria-hidden='true'></span>
 												</button>";
@@ -349,10 +349,10 @@ html, body { height: 100%;}
 									?>
 								</ul>
 							</div>
-							<? if($this->session->userdata('ID')){
+							<? if($this->session->userdata('ID')){ //ถ้าล็อกอินอยู่
 							echo "<form action='../../../../comment/sendcommend/".$this->uri->segment(3)."/";
 								$ID = $this->session->all_userdata(); echo $ID['ID']."' method='post'> 
-							<div class='modal-meta-bottom'>
+							<div class='modal-meta-bottom'> <!--ส่วน comment--->
 								<input type='text' name='comment' id='inputcomment'class='form-control' placeholder='Leave a commment..'/>
 								<input type='submit' style='position: absolute; left: -9999px; width: 1px; height: 1px;'/>
 								<script>
@@ -417,7 +417,7 @@ html, body { height: 100%;}
 			</div>
 		</div><!---กดตกลงเพื่อเลือกรูปไปหน้าหลัก-->
 		
-		<!-- Small modal --> <!--ส่วนที่ตัวเด้ง ตั้งรูปให้อยู่หน้าหลัก---> 
+		<!-- Small modal --> <!--ส่วนที่ตัวเด้ง ลบรูป---> 
 		<div class='modal fade bs-example-modal-lg5' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>
 			<div class='modal-dialog modal-sm'>
 				<div class='modal-content'>
@@ -428,7 +428,7 @@ html, body { height: 100%;}
 					<form action='../../../../photodb/deletephoto/<? echo "".$this->uri->segment(3); ?>' method='POST' enctype='multipart/form-data' >	
 							<center>
 							<button  class="btn btn-danger btn-md"  >
-								<span class="glyphicon glyphicon-ok" > ใช่</span>
+								<span class="glyphicon glyphicon-ok" > ใช่</span> 
 							</button>
 							&nbsp
 							&nbsp
