@@ -107,7 +107,7 @@
 						<div class="row">
 						<center>
 							<br>
-							<a href="../../../album/show/<? echo "".$this->uri->segment(3); ?>"><button type="button" class="btn btn-primary navbar-btn"><div class="link">See More Album</div></button></a> <!-----see album----->
+							<a href="../../../album/show/<? echo "".$this->uri->segment(3); ?>"><button type="button" class="btn btn-primary navbar-btn"><div class="link">See More Album</div></button></a> <!-----เปลี่ยนไปหน้า Manage album----->
 						</center>
 						</ul>
 					</div>
@@ -118,7 +118,7 @@
 								<div class="info">
 									<h3 class="title">ข่าวสาร</h3>
 									<p>
-										<? echo"".$detail; ?>
+										<? echo"".$detail; ?> <!--ข่าวสาร--->
 									</p>
 								</div>
 							</div>
@@ -141,7 +141,7 @@
 								<center>
 									<img src="../../../photo/profile/<? echo "".$this->uri->segment(3).".jpg" ?>" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
 									
-									<h3 class="media-heading"><? echo $id; ?></h3> <!--รับตัวแปร id มาจาก controller-->
+									<h3 class="media-heading"><? echo $id; ?></h3> <!--แสดงชื่อผู้ใช้-->
 									<span><strong>Email: </strong></span>
 									<span>
 									<!--ดึงข้อมูลจาก db มาแสดง email-->
@@ -151,9 +151,9 @@
 								<hr>
 								<center>
 								<p class="text-left"><strong>ประวัติส่วนตัว: </strong><br>
-									<? echo"".$resume; ?>								
+									<? echo"".$resume; ?>		<!--ประวัติส่วนตัว--->						
 								
-								</p>   <!--ต้องเปลี่ยนเป็นชื่อคัวแปร-->
+								</p>  
 								<br>
 								</center>
 							</div>
@@ -168,22 +168,22 @@
 			</div>
 			<div class="col-md-9 col-xs-0 col-sm-0"> <!---ส่วนที่ col แสดงรูปภาพที่ต้องการแสดง-->
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="../../../../onephoto/show/<? echo"".$photom1 ?>" class="thumbnail" > 
+					<a href="../../../../onephoto/show/<? echo"".$photom1 ?>" class="thumbnail" >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 1--->
 						<img src="../../../../photo/<?echo"".$photom1.".jpg";?>" alt="..."width='220' height='220'>
 					</a>
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="../../../../onephoto/show/<? echo"".$photom2 ?>" class="thumbnail"> 
+					<a href="../../../../onephoto/show/<? echo"".$photom2 ?>" class="thumbnail">  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 2--->
 						<img src="../../../../photo/<?echo"".$photom2.".jpg";?>" alt="..."width='220' height='220'>
 					</a>
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-3">
-					<a href="../../../../onephoto/show/<? echo"".$photom3 ?>" class="thumbnail" > 
+					<a href="../../../../onephoto/show/<? echo"".$photom3 ?>" class="thumbnail" >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 3--->
 						<img src="../../../../photo/<?echo"".$photom3.".jpg";?>" alt="..." width='220' height='220'>
 					</a>
 				</div>
 				<div class="col-md-12 col-xs-6 col-sm-3">
-					<a href="../../../../onephoto/show/<? echo"".$photom4 ?>" class="thumbnail" > 
+					<a href="../../../../onephoto/show/<? echo"".$photom4 ?>" class="thumbnail" >  <!--ส่วนแสดงรูปภาพหน้าหลัก รูป 4--->
 						<img src="../../../../photo/<?echo"".$photom4.".jpg";?>" alt="..."width='500' height='500'>
 					</a>
 				</div>
