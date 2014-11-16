@@ -162,7 +162,7 @@ $('#mytextbox').on("paste",function(e)
 										<input type="text" name="ID" class="form-control" pattern=".{6,15}" required title="6 to 15 characters" width = "50%" id="mytextbox" placeholder="Enter username" required autofocus>
 									</div>
 								</div>
-						</div> <!--ส่วนกรอก username------>
+						</div> <!--ปิดส่วนกรอก username------>
 						
 						<div class="col-md-12"> <!--ส่วนกรอก NAME----A-->
 							<div class="form-group">
@@ -173,7 +173,7 @@ $('#mytextbox').on("paste",function(e)
 									<input type="text" name="name" class="form-control" pattern=".{6,15}" required title="6 to 15 characters" id="exampleInputName1" placeholder="Enter name" required autofocus>
 								</div>
 							</div>
-						</div>  <!--ส่วนกรอก NAME------>
+						</div>  <!--ปิดส่วนกรอก NAME------>
 	
 						<div class="col-md-12">  <!--ส่วนกรอก EMAIL----A-->
 							<div class="form-group">
@@ -184,7 +184,7 @@ $('#mytextbox').on("paste",function(e)
 									<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required autofocus>
 								</div>
 							</div>
-						</div>  <!--ส่วนกรอก EMAIL------>
+						</div>  <!--ปิดส่วนกรอก EMAIL------>
 						
 						<div class="col-md-12"> <!--ส่วนกรอก PASSWAORD--A-->
 							<div class="form-group">
@@ -195,7 +195,7 @@ $('#mytextbox').on("paste",function(e)
 									<input type="password" name="pass" class="form-control" pattern=".{6,12}" required title="6 to 12 characters" id="pass" placeholder="Password" required autofocus>
 								</div>
 							</div>
-						</div> <!--ส่วนกรอก PASSWAORD---->
+						</div> <!--ปิดส่วนกรอก PASSWAORD---->
 						
 						<div class="col-md-12"> <!--ส่วนกรอก CONFIRMPASSWAORD--A-->
 							<div class="form-group">
@@ -206,14 +206,14 @@ $('#mytextbox').on("paste",function(e)
 									<input type="password" name="cpass" class="form-control" id="cpass" placeholder="Password" required autofocus>
 								</div>
 							</div>
-						</div> <!--ส่วนกรอก CONFIRMPASSWAORD---->
+						</div> <!--ปิดส่วนกรอก CONFIRMPASSWAORD---->
 						
 						
 						<div class="col-md-12"> <!------ส่วนกด SUMMIT--->
 							<div class="col-md-12">
 							<button type="submit" value="OK" id ="regisbutton" class="btn btn-default">Submit</button>
 							</div>
-						</div> <!------ส่วนกด SUMMIT--->
+						</div> <!------ปิดส่วนกด SUMMIT--->
 					</form>
 				</div>
 			</div>
@@ -233,12 +233,12 @@ $('#mytextbox').on("paste",function(e)
 						</div>
 						<div class="col-md-12">
 							<div class="col-md-12">
-							<input type="username" name="ID" id="ID" class="form-control" placeholder="Username" required autofocus>
+							<input type="username" name="ID" id="ID" class="form-control" placeholder="Username" required autofocus> <!---กรอกusername-->
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="col-md-12">
-								<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+								<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required> <!---กรอกพาสเวิร์ด--->
 							</div>
 						</div>
 						<div class="col-md-12">
@@ -252,7 +252,7 @@ $('#mytextbox').on("paste",function(e)
 				</div>
 			</div>
 		</div>
-	</div> <!---LOG IN------->
+	</div> <!---ปิดLOG IN------->
 	
   </body>
 </html>
