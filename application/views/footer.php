@@ -28,8 +28,8 @@
 				<font color="white"><label> credit: </label></font>
 			</div>
 			<div class="col-md-10 col-sm-10 col-xs-10">
-				<font color="white"><a href="http://getbootstrap.com/">http://getbootstrap.com/ </a></font>
-				<font color="white"><a href="http://bootsnipp.com/">http://bootsnipp.com/</a></font>
+				<font color="white"><b><a href=" http://getbootstrap.com/">http://getbootstrap.com/ </a></b></font>
+				<font color="white"><b><a href=" http://bootsnipp.com/">http://bootsnipp.com/</a></b></font>
 			</div>
 		</div>
 	</footer>
