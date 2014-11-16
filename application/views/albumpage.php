@@ -194,7 +194,7 @@
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button> <!---->
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button> <!--ปุ่มปิด-->
 								<h4 class="modal-title" id="myModalLabel"><? echo "".$id; ?></h4>   <!---ชื่อผู้ใช้-->
 							</div>
 							<div class="modal-body">
