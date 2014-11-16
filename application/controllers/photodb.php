@@ -80,7 +80,9 @@ class Photodb extends CI_Controller {
 			$idprofile = $row['nameuser']; // ส่ง ID photo เข้าไป load id profile
 			$idalbum = $row['namealbum'];
 		}
-		$this->db->delete('picture', array('ID' => $idphoto));
+		
+		$this->load->model('updelphoto_model','updelphoto_model');
+		$this->updelphoto_model->delphoto($idphoto);
 		echo "<script language='javascript'>
 					alert('Delete Complete');
 					window.location.href = '../../../../photo/show/".$idprofile."/".$idalbum."';
