@@ -92,7 +92,7 @@
 								<label for="exampleInputEmail1">ข่าวสาร</label>
 							</div>
 							<div class="col-md-12">
-								<input type="text" name="detail" maxlength="64" class="form-control" id="test" value="<? echo "".$detail; ?>"> <!---ช่องกรอก NOTICE---->
+								<input type="text" name="detail" maxlength="500" class="form-control" id="test" value="<? echo "".$detail; ?>"> <!---ช่องกรอก NOTICE---->
 							</div>
 						</div>
 					</div>  
